@@ -1,0 +1,340 @@
+{
+  "resourceType": "ValueSet",
+  "id": "claim-denial-codes",
+  "version": "1",
+  "name": "Claim Denial Codes",
+  "status": "active",
+  "date": "2021-08-15",
+  "publisher": "Health Claims Exchange",
+  "description": "This is the value set that includes the codes for understanding of the adjudication result and explaining variance from expected amount",
+  "expansion": {
+    "timestamp": "2021-08-15T08:15:30+05:30",
+    "contains": [
+      {
+        "code": "ELIG-001",
+        "display": "Patient is not a covered member",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "ELIG-005",
+        "display": "Services performed after the last date of coverage",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "ELIG-006",
+        "display": "Services performed prior to the effective date of coverage",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "ELIG-007",
+        "display": "Services performed by a non-network provider",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-001",
+        "display": "Prior approval is required and was not obtained",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-003",
+        "display": "PriorAuthorizationNumber is invalid",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-004",
+        "display": "Service(s) is (are) performed outside authorization validity date",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-005",
+        "display": "Claim information is inconsistent with pre-certified/authorized services",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-006",
+        "display": "Alert drug - drug interaction or drug is contra-indicated",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-007",
+        "display": "Drug duplicate therapy",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-008",
+        "display": "Inappropriate drug dose",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-009",
+        "display": "Prescription out of date",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-010",
+        "display": "Authorization request overlaps or is within the period of another paid claim or approved authorization",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-011",
+        "display": "Waiting period on pre-existing / specific conditions",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "AUTH-012",
+        "display": "Request for information",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "BENX-002",
+        "display": "Benefit maximum for this time period or occurrence has been reached",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "BENX-005",
+        "display": "Annual limit/sublimit amount exceeded",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-007",
+        "display": "Claim is a work-related injury/illness and thus the liability of the employer",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-008",
+        "display": "Claim overlaps inpatient stay. Resubmit only those services rendered outside the inpatient stay",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-009",
+        "display": "Date of birth follows the date of service",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-010",
+        "display": "Date of death precedes the date of service",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-011",
+        "display": "Inpatient admission spans multiple rate periods.  Resubmit separate claims",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-012",
+        "display": "Submission not compliant with contractual agreement between provider & payer",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-014",
+        "display": "Claim not compliant with Resubmission type (used only for resubmissions)",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-017",
+        "display": "Services not available on direct billing",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-018",
+        "display": "Claims Recalled By Provider",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CODE-010",
+        "display": "Activity/diagnosis inconsistent with clinician specialty",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CODE-012",
+        "display": "Encounter type inconsistent with service(s) / diagnosis",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CODE-013",
+        "display": "Invalid principal diagnosis",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CODE-014",
+        "display": "Activity/diagnosis is inconsistent with the patient's age/gender",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CODE-015",
+        "display": "Activity/diagnosis is inconsistent with the provider type",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "DUPL-001",
+        "display": "Claim is a duplicate based on service codes and dates",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "DUPL-002",
+        "display": "Payment already made for same/similar service within set time frame",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "MNEC-003",
+        "display": "Service is not clinically indicated based on good clinical practice",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "MNEC-004",
+        "display": "Service is not clinically indicated based on good clinical practice, without additional supporting diagnoses/activities",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "MNEC-005",
+        "display": "Service/supply may be appropriate, but too frequent",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "MNEC-006",
+        "display": "Alternative service should have been utilized",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "NCOV-001",
+        "display": "Diagnosis(es) is (are) not covered",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "NCOV-002",
+        "display": "Pre-existing conditions are not covered",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "NCOV-003",
+        "display": "Service(s) is (are) not covered",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "NCOV-025",
+        "display": "Service(s) is (are) not performed (used after audit)",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-001",
+        "display": "Calculation discrepancy",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-002",
+        "display": "Payment is included in the allowance for another service",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-003",
+        "display": "Recovery of Payment",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-006",
+        "display": "Consultation within free follow up period",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-007",
+        "display": "Service has no contract price",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-008",
+        "display": "Multiple procedure payment rules incorrectly applied",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-009",
+        "display": "Charges inconsistent with clinician specialty",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-010",
+        "display": "Use bundled code",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "PRCE-011",
+        "display": "Discount discrepancy",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "TIME-001",
+        "display": "Time limit for submission has expired",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "TIME-002",
+        "display": "Requested additional information was not received or was not received within time limit",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "TIME-003",
+        "display": "Appeal procedures not followed or time limits not met",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "COPY-001",
+        "display": "Deductible/co-pay not collected from member",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-001",
+        "display": "Severe drug - drug interaction",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-002",
+        "display": "Severe drug - age contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-003",
+        "display": "Severe drug - gender contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-004",
+        "display": "Severe drug - diaganosis contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-005",
+        "display": "Severe procedure\\service - diagnosis contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-006",
+        "display": "Severe procedure\\service - drug contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-007",
+        "display": "Severe procedure\\service - procedure contraindication",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "SURC-008",
+        "display": "Serious safety issue with drug dose",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "WRNG-001",
+        "display": "Wrong submission, receiver is not responsible for the payer within this transaction submission.",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-019",
+        "display": "Wrong IR-DRG code",
+        "system": "http://hcp.org/codes/denial-code"
+      },
+      {
+        "code": "CLAI-020",
+        "display": "Missing IR-DRG code",
+        "system": "http://hcp.org/codes/denial-code"
+      }
+    ]
+  }
+}

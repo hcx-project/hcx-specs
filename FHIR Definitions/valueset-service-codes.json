@@ -1,0 +1,270 @@
+{
+  "resourceType": "ValueSet",
+  "id": "claim-service-codes",
+  "version": "1",
+  "name": "Claim Service Codes",
+  "status": "active",
+  "date": "2021-08-15",
+  "publisher": "Health Claims Exchange",
+  "description": "This is the value set that includes the codes to identify the general type of benefits under which products and services are provided",
+  "expansion": {
+    "timestamp": "2021-08-15T08:15:30+05:30",
+    "contains": [
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes"
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "501000",
+            "display": "Visit charges",
+            "system": "http://hcp.org/codes/service-codes"
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "501000",
+            "display": "Visit charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "501001",
+                "display": "Consultation charges",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "501000",
+            "display": "Visit charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "501002",
+                "display": "Medical Supervision Charges",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "501000",
+            "display": "Visit charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "501003",
+                "display": "Professional fees",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "502000",
+            "display": "Surgery charges",
+            "system": "http://hcp.org/codes/service-codes"
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "502000",
+            "display": "Surgery charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "502001",
+                "display": "Surgeons Charges",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "502000",
+            "display": "Surgery charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "502002",
+                "display": "Assistant Surgeons Fee",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "503000",
+            "display": "Anaesthetists Fee",
+            "system": "http://hcp.org/codes/service-codes"
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "503000",
+            "display": "Anaesthetists Fee",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "503001",
+                "display": "Anaesthetists fee",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "503000",
+            "display": "Anaesthetists Fee",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "503002",
+                "display": "OT standby charges",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "504000",
+            "display": "Intensivist charges",
+            "system": "http://hcp.org/codes/service-codes"
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "504000",
+            "display": "Procedure charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "504001",
+                "display": "Beside procedures",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "504000",
+            "display": "Procedure charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "504002",
+                "display": "Suture charges",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "505000",
+            "display": "Physiotherapy",
+            "system": "http://hcp.org/codes/service-codes"
+          }
+        ]
+      },
+      {
+        "code": "500000",
+        "display": "Professional fees charges",
+        "system": "http://hcp.org/codes/service-codes",
+        "contains": [
+          {
+            "code": "505000",
+            "display": "Technician charges",
+            "system": "http://hcp.org/codes/service-codes",
+            "contains": [
+              {
+                "code": "505000",
+                "display": "OT/Cath Lab Technician",
+                "system": "http://hcp.org/codes/service-codes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
