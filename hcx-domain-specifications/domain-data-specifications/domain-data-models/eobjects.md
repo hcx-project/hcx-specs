@@ -41,12 +41,15 @@ As per the design considerations and guidelines listed in the previous sections,
 | CoverageEligibilityResponse | <p>The document must contain a CoverageEligibilityResponse resource.</p><p><strong>FHIR Profile</strong>: <a href="https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-CoverageEligibilityResponse.html">link</a></p><p><strong>structure definition</strong>: <a href="https://github.com/Swasth-Digital-Health-Foundation/standards/blob/main/IG-Publisher/input/hcx-definitions/StructureDefinition-CoverageEligibilityResponse.json">CoverageEligibilityResponse</a></p>                         |
 | Coverage                    | <p>The document should contain one or more Coverage resources with minimal information of the policy about which the information is being returned.</p><p><strong>FHIR Profile details</strong>:</p><ul><li>Coverage resources should mandatorily have an identifier for the policy ID issued by the insurer.</li></ul><p><strong>structure definition</strong>: <a href="https://github.com/Swasth-Digital-Health-Foundation/standards/blob/main/IG-Publisher/input/hcx-definitions/StructureDefinition-Coverage.json">Coverage</a></p> |
 
+The Coverage Eligibility Response should include the InsurancePlan URL as part of the domain header. The InsurancePlan object helps in determining the benefits of the plan (not the subscriber sepecific policy which is present in Coverage object), but more generic information. It also contains the documents required, questionnaires to answer and any important information necessary for a successful preauthorization/claim submission, there by reducing the claim submission errors. It also helps in rendering the claim creation UI on the provider side by allowing to filter/view only the necessary options in stages. This is also dicussed in the Policy Markup Language [section](../../domain-specific-languages-dsls.md).
+
 #### Domain Headers:
 
-| **Key** | **Description** |
-| ------- | --------------- |
-|         |                 |
-|         |                 |
+| **Key**                  | **Description**                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| x-hcx-insurance_plan_url | <p> Url to the InsurancePlan object with the details on benefits, required documents and other important information to submit claims </p> |
+|                          |                                                                                                                                            |
+
 
 #### Search Parameters:
 
