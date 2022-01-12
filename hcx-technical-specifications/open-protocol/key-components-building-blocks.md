@@ -181,7 +181,7 @@ Please note that search APIs are expected to support search parameters as detail
   * /hcx/search
   * /hcx/on\_search
 
-Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/standards/main/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail.
+Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v1.1/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail.
 
 ## Questions for Consultation&#x20;
 

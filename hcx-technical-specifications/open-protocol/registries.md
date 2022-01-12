@@ -53,7 +53,7 @@ While the exchange protocol by itself may not need to focus on the human user (a
 | Tenant       | Base tenant of the admin user                                                                                                        | String | <ul><li>Mandatory</li><li>Represents key operational geography and function of the user</li></ul>                                                                                                         |
 | linkedUserId | User ID in the source system                                                                                                         | String | <ul><li>Optional</li></ul>                                                                                                                                                                                |
 
-Following [OpenAPI 3.0 document](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/standards/main/API%20Definitions/openapi\_hcx\_registry.yml) describes these registries and the associated APIs.
+Following [OpenAPI 3.0 document](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v1.1/API%20Definitions/openapi\_hcx\_registry.yml) describes these registries and the associated APIs.
 
 ## Questions for Consultation&#x20;
 
