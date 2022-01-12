@@ -166,6 +166,13 @@ Please note that search APIs are expected to support search parameters as detail
   * /claim/submit (provider->HCX, HCX->payor)
   * /claim/on\_submit (payor->HCX, HCX->provider)
 
+### **Communications**
+
+Communications API will be used for communications between the payors and providers within the claims cycle.
+
+* /communication/request
+* /communication/on\_request
+
 ### **Payments**
 
 * **Payment notice and acknowledgement**
