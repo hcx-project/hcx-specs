@@ -112,10 +112,10 @@ JSON object containing a map of domain-specific header values as proposed in dom
 * use\_case\_name = short name (<16 chars) given to the use case by domain working group, it is advisable to keep it the same as the one in API’s URI path
 * Parameter\_name = short name (<32 chars) given to the parameter
 
-| Domain Header Name       | Description                                                                                                                                                                                                                                                     |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| x-hcx-insuranceplan\_url | This domain header has to be returned in the successful response to coverage eligibility check API. The value should point to a valid URL where the insurance plan object (of the beneficiary for whom the eligibility coverage is requested for) is available. |
-|                          |                                                                                                                                                                                                                                                                 |
+| Domain Header Name         | Description                                                                                                                                                                                                                                                  |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| x-hcx-insurance\_plan\_url | This domain header has to be returned in the successful response to coverage eligibility check API. The value should be a url to the InsurancePlan object with the details on benefits, required documents and other important information to submit claims. |
+|                            |                                                                                                                                                                                                                                                              |
 
 Therefore the protected headers will be:
 
