@@ -9,7 +9,7 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  version: 1.0.0
+  version: 1.1.0
 externalDocs:
   description: HCX Specifications
   url: >-
@@ -29,6 +29,9 @@ tags:
   - name: Communication APIs
     description: >-
       APIs for sending communication requests and receiving responses to the communication requests
+  - name: Operational APIs
+    description: >-
+      APIs for the participant systems to check and manage their operations via the HCX gateway 
       
 paths:
   /coverageeligibility/check:
@@ -570,6 +573,108 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
       security:
       - bearer_auth: []
+      
+  /hcx/status:
+    post:
+      tags:
+        - Operational APIs
+      description: >-
+         This API is for senders to query the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. <br/><br/>
+         
+         The request body for this API should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
+         
+         As defined in the specs, JWE should contain the protected headers and the encrypted FHIR resource as the domain payload. 
+         
+         1. Protected headers should have the protocol headers as defined in the ProtocolHeader schema definition below. Specifically for this API, the header x-hcx-correlation_id should carry the correlation id of the request for which the status is being requested for.
+         
+         2. The domain payload should be an encrypted CommunicationRequest FHIR resource. The CommunicationRequest resource should have the reference to the entity for which the status is being quered for in the "**about**" element. This reference object should contain the sender's reference id of the entity.
+         
+         
+         HCX gateway shall validate the incoming request and send the protocol status in the http response. The protocol status value could be one of the following:
+         
+         - **request.queued** - This status means that HCX gateway has not yet forwarded the original request (for which the status is being requeested for) to the intended recipient. The request is still under processing by the HCX gateway. In this scenario, there shall not be a status response via the call back API /hcx/on_status to the caller.
+         
+         - **request.dispatched** - This means that HCX gateway has dispatched the original request to the intended recipient and thus, HCX gateway will forward the status request to the same recipient. And the recipient shall respond with status details via the call back API /hcx/on_status to the caller.
+        
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/JWEPayload'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusSuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
+  /hcx/on_status:
+    post:
+      tags:
+        - Operational APIs
+      description: >-
+        This is the callback API to return the response for status requests. <br/><br/>
+        Domain Payload for this API has to an encrypted Communication FHIR resource containing the following information:
+        
+        
+          - **basedOn** - reference to the entity sent by the sender in the original request and should contain sender's reference id of the entity.
+          - **about** - reference to the response entity and should contain the recipient's reference id and the current status of the response entity.
+        
+        
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/JWEPayload'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
   
 components:
   schemas:
@@ -710,6 +815,9 @@ components:
           
           
             The participant system sending the originating request of the cycle must set the x-hcx-correlation_id in the initial API call and the HCX gateway shall forward the same correlation id to the recipient of the request. The recipient must set the same correlation id in the response API call and in other API calls related to the original request (e.g. communication request, forward/redirect requests). And the same correlation id must be sent in all subsequent API calls (related to the same cycle).
+            
+            
+            In case of status API call, this header should have the correlation id of the request for which the status is being requested for.
           format: uuid
         x-hcx-workflow_id:
           type: string
@@ -730,6 +838,9 @@ components:
           type: string
           description: Operational status of the message. Depending on the leg of the message, it would be one of the defined values in the enum.
           enum: ["request.queued", "request.dispatched", "response.complete", "response.error", "response.partial", "response.redirect"]
+        x-hcx-redirect_to:
+          type: string
+          description: Expected to be set when the x-hcx-status value is "response.redirect". The value should be the registry code of the recipient to whom the request has to be redirected to
         x-hcx-error_details:
           type: object
           description: Expected to be used for providing details of the status. Will be specially useful in scenarios where operational status indicates irrecoverable error.
@@ -746,7 +857,7 @@ components:
             trace:
               type: string
               description: Long description supporting the Code 
-          additionalProperties: true
+          additionalProperties: false
         x-hcx-debug_details:
           type: object
           description: Expected to be used for providing details of the status. Will be specially useful in debugging scenarios.
@@ -760,7 +871,7 @@ components:
             trace:
               type: string
               description: Long description supporting the Code 
-          additionalProperties: true
+          additionalProperties: false
     
     DomainHeaders:
       type: object
@@ -815,6 +926,29 @@ components:
           description: >-
             That is present in the transport header of the request.
           format: uuid
+          
+    StatusSuccessResponse:
+      type: object
+      allOf:
+          - $ref: '#/components/schemas/SuccessResponse'
+          - properties:
+              result:
+                $ref: '#/components/schemas/StatusResponseObject'
+                
+    StatusResponseObject:
+      type: object
+      properties:
+        sender_code:
+          type: string
+        recipient_code:
+          type: string
+        entity_type:
+          type: string
+          enum: ["coverageeligibility", "predetermination", "preauth", "claim"]
+        protocol_status:
+          type: string
+          enum: ["request.queued", "request.dispatched"]
+      
     Error:
       type: object
       properties:
