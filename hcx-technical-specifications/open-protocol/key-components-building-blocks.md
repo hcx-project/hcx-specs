@@ -103,7 +103,7 @@ The following table provides the protocol related header elements in the claims 
 | x-hcx-status          | <p>Operational status of the message. Depending on the leg of the message it would be:</p><ul><li><em><strong>request.queued</strong></em>: when the request is submitted to the HCX gateway but the gateway has not yet forwarded the request to the intended recipient.</li><li><em><strong>request.dispatched</strong></em>: when the request is successfully dispatched by the HCX gateway to the intended recipient.</li><li><em><strong>response.complete</strong></em>: when the recipient is sending a successful final response to the sender. This marks the completion of the request and cycle (in the case when the response is for the originating request of the cycle).</li><li><em><strong>response.partial</strong></em>: when the recipient is sending a partial response to the sender. Senders should expect more responses when a message with this status is received.</li><li><em><strong>response.error</strong></em>: when the recipient wants to communicate an error to the sender. Details of the error should be provided in the x-hcx-error_details protocol header (and also within the FHIR resource being returned, if applicable).</li><li><em><strong>response.redirect</strong></em>: when the recipient wants to send a redirection instruction to the sender. The header x-hcx-redirect_to must be set when this status is used (to inform the sender to whom the request must be redirected to).</li></ul> | String                                                                                                               | <ul><li>Optional</li></ul>  |
 | x-hcx-redirect\_to    | Expected to be set when the x-hcx-status value is "response.redirect". The value should be the registry code of the recipient to whom the request has to be redirected to.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | String                                                                                                               | <ul><li>Optional</li></ul>  |
 | x-hcx-error\_details  | <p>Expected to be used for providing details of the status. It Will be especially useful in scenarios where Operational status indicates an irrecoverable error.</p><p>Key elements of this object are:</p><ul><li><strong>code</strong>: error, info, debug code from the system - expected to be namespaced for better readability. Mandatory.</li><li><strong>message</strong>: Short description of the detail. Mandatory.</li><li><strong>trace</strong>: Long description supporting the Code</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <p>JSON Object -</p><p>E.g.</p><p>{error.code: “bad.input”, error.message: “Provider code not found”, trace: “”}</p> | <ul><li>Optional</li></ul>  |
-| x-hcx-debug\_details  | <p>Expected to be used for providing details of the status. It Will be especially useful in debugging scenarios</p><p>Key elements of this object are:</p><ul><li><strong>code</strong>: error, info, debug code from the system - expected to be namespaced for better readability. Mandatory.</li><li></li><li><strong>message</strong>: Short description of the detail. Mandatory.</li><li><strong>trace</strong>: Long description supporting the Code</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <p>JSON Object -</p><p>E.g.</p><p>{error.code: “bad.input”, error.message: “Provider code not found”, trace: “”}</p> | <ul><li>Optional</li></ul>  |
+| x-hcx-debug\_details  | <p>Expected to be used for providing details of the status. It Will be especially useful in debugging scenarios</p><p>Key elements of this object are:</p><ul><li><strong>code</strong>: error, info, debug code from the system - expected to be namespaced for better readability. Mandatory.</li><li><strong>message</strong>: Short description of the detail. Mandatory.</li><li> <strong>trace</strong>: Long description supporting the Code</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <p>JSON Object -</p><p>E.g.</p><p>{error.code: “bad.input”, error.message: “Provider code not found”, trace: “”}</p> | <ul><li>Optional</li></ul>  |
 
 #### **HCX Domain Headers**
 
@@ -111,6 +111,11 @@ JSON object containing a map of domain-specific header values as proposed in dom
 
 * use\_case\_name = short name (<16 chars) given to the use case by domain working group, it is advisable to keep it the same as the one in API’s URI path
 * Parameter\_name = short name (<32 chars) given to the parameter
+
+| Domain Header Name       | Description                                                                                                                                                                                                                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| x-hcx-insuranceplan\_url | This domain header has to be returned in the successful response to coverage eligibility check API. The value should point to a valid URL where the insurance plan object (of the beneficiary for whom the eligibility coverage is requested for) is available. |
+|                          |                                                                                                                                                                                                                                                                 |
 
 Therefore the protected headers will be:
 
@@ -151,27 +156,30 @@ Please note that search APIs are expected to support search parameters as detail
 
 ### **Claims**
 
+* **PreDetermination submission**
+  * /predetermination/submit (provider->HCX, HCX->payor)
+  * /predetermintation/on\_submit (payor->HCX, HCX->provider)
 * **PreAuth submission**
   * /preauth/submit (provider->HCX, HCX->payor)
   * /preauth/on\_submit (payor->HCX, HCX->provider)
-* **PreAuth Search**
-  * /preauth/search (provider->HCX, HCX->payor)
-  * /preauth/on\_search (payor->HCX, HCX->provider)
 * **Claim submission**
   * /claim/submit (provider->HCX, HCX->payor)
   * /claim/on\_submit (payor->HCX, HCX->provider)
-* **Claims Search** (Also supports status search)
-  * /claim/search (provider|regulator|auditor->HCX, HCX->payor)
-  * /claim/on\_search (payor->HCX, HCX->provider|regulator|auditor)
 
 ### **Payments**
 
 * **Payment notice and acknowledgement**
   * /paymentnotice/request (payor>HCX, HCX->provider-)
   * /paymentnotice/on\_request (provider->HCX, HCX->payor)
-* **Payment Search** (Also supports status search)
-  * /paymentnotice/search (provider->HCX, HCX->payor)
-  * /paymentnotice/on\_search (payor->HCX, HCX->provider)
+
+### **Operational APIs**
+
+* **Entity Status API**: Status API can be used by providers to know the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. HCX gateway shall return the protocol status synchronously and the recipient returns the status in the on\_status callback API asynchronously.&#x20;
+  * /hcx/status
+  * /hcx/on\_status
+* **Entity Search API**: Search API is for regulators/observers to fetch the details of claims for reconciliation and may be for grievance redressal (in future). For example, NHA can request for all claims processed by all payors in the last one week. The response to the search request will be via the callback API (/hcx/on\_search) containing a list of encrypted FHIR objects matching the search criteria.
+  * /hcx/search
+  * /hcx/on\_search
 
 Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/standards/main/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail.
 
