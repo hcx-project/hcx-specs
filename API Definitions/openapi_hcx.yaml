@@ -9,7 +9,7 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  version: 1.1.0
+  version: 0.7.0
 externalDocs:
   description: HCX Specifications
   url: >-
@@ -640,6 +640,122 @@ paths:
         
           - **basedOn** - reference to the entity sent by the sender in the original request and should contain sender's reference id of the entity.
           - **about** - reference to the response entity and should contain the recipient's reference id and the current status of the response entity.
+        
+        
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/JWEPayload'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
+      
+  /hcx/search:
+    post:
+      tags:
+        - Operational APIs
+      description: >-
+         This API is for regulators/observers to fetch the details of claims for reconciliation and may be for grievance redressal (in future). For example, NHA can request for all claims processed by all payors in the last one week. <br/><br/>
+         
+         The request body for this API should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
+         
+         The JWE protected header should contain the following additional search specific headers carrying the search criteria:
+         
+         - x-hcx-search.time_period: duration is number of hours. This is a mandatory parameter. HCX gateway shall have a configured default value and maximum allowed value.
+         
+         - x-hcx-search.filters: list of search criteria:
+            
+            - senders: list of sender registry codes
+            - receivers: list of recipient registry codes
+            - entity_types: list of entity types (coverageligibility, predetermination, preauth, claim)
+            - correlation_ids: list of correlation ids
+            - workflow_ids: list of workflow ids
+            - entity_status: list of business status values
+         
+         
+         HCX Gateway uses the search filters & time period to filter the list of recipients to whom the search query is to be forwarded to. HCX gateway sends search requests to multiple recipients. Recipients shall process the search requests and send the response to the HCX gateway via the search callback API (/hcx/on_search). The recipient should do the role and access checks whether the requestor (i.e. the sender of the search request) can be provided with the requested search results or not.
+        
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/JWEPayload'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusSuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
+  /hcx/on_search:
+    post:
+      tags:
+        - Operational APIs
+      description: >-
+        This is the callback API to return the response for search requests. The recipients who received the search request will send their response to the gateway using this API. <br/><br/>
+        
+        The request body of this API is in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) which contains the protected headers and the encrypted domain payload.
+        
+        
+        1. Protected headers section should contain all the protocol headers defined in the specifications. In addition, the response should contain the following search specific domain headers:
+        
+            - x-hcx-search_response.count: total count of results returned by the recipient
+            - x-hcx-search_response.entity_counts: count of results per each entity type. e.g.: {claim: 2, coverageeligibility: 3}
+            
+        2. The domain paylod should be a list of encrypted FHIR resources encrypted using the original sender's encryption key. This payload can be accessed only by the original sender. 
+        
+        
+        HCX gateway shall return the individual responses from each recipient to the sender with the x-hcx-status header value as "response.partial" and after all the expected responses have arrived, the gateway shall send a "response.complete" response to the original sender.
+        
+        
+        An alternate flow is that HCX gateway will have a configured timeout value post which the gateway shall automatically send a "response.complete" response to the original sender even if the responses from all the recipients are not received. 
         
         
       requestBody:
