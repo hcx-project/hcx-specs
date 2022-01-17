@@ -11,7 +11,7 @@
     * [Key Design Considerations](hcx-technical-specifications/open-protocol/key-design-considerations.md)
     * [Registries](hcx-technical-specifications/open-protocol/registries.md)
     * [Health Claims Exchange (HCX) Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks.md)
-    * [Error Descriptions](hcx-technical-specifications/open-protocol/error-descriptions.md)
+    * [Error Handling](hcx-technical-specifications/open-protocol/error-descriptions.md)
     * [Data Security and Privacy](hcx-technical-specifications/open-protocol/data-security-and-privacy/README.md)
       * [Transport Security](hcx-technical-specifications/open-protocol/data-security-and-privacy/transport-security.md)
       * [Message Security and Integrity](hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity.md)
