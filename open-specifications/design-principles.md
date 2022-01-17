@@ -29,14 +29,3 @@ They must provide mechanisms to view and verify attribute trails - who accessed 
 #### Unbundled
 
 They should strive to break down the complexity of the domain into multiple simple pieces thereby resulting in multiple simple specifications which can be bundled in a modular manner to suit the needed context and help solve dynamic challenges.
-
-## Questions for Consultation
-
-#### Question 1
-
-Please share your thoughts on the comprehensiveness of the [design principles](design-principles.md) outlined, and suggest methods to ensure these principles are adhered to. Please suggest if there are other principles that must be included and how are they going to help with the design of Open Specifications.&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../how-to-submit-responses.md).
-{% endhint %}
-

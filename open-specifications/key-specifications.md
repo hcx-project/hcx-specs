@@ -45,18 +45,8 @@ A thriving data exchange will also require clear rules of engagement to ensure t
 
 1. Access control (Data sharing) policies - which actor plays what role and gets to see which parts of the data. These policies will then affect the visibility and access to domain-specific attributes that will typically travel in the body of the data structures defined by the data exchange.
 2. Business SLAs
-3. Charges/Fees  - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
+3. Charges/Fees - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
 4. Dispute resolution policies
 5. Onboarding
 6. Defaulting/deboarding policies
 7. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
-
-## Questions for Consultation&#x20;
-
-#### Question 1
-
-Please comment on the comprehensiveness of [key categories of the specifications](key-specifications.md) mentioned and suggest any additional areas which will require open specifications for efficient working of the HCX ecosystem.&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../how-to-submit-responses.md).
-{% endhint %}

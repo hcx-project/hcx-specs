@@ -34,7 +34,7 @@ In its initial version, HCN is focused on facilitating message exchange for the 
 3. Pre auth request flow
 4. Claims request flow
 5. Payment notification
-6. Payment acknowledgement&#x20;
+6. Payment acknowledgement
 7. Search/fetch claims data for status checks, regulatory compliance, etc.
 
 ### Key constituents
@@ -47,14 +47,6 @@ The claims network will consist of the following key building blocks:
 4. **Health Claim Platform runtime(s)** - Operating instances of the health claims platform that enable real-world claims interactions on the network. Like with the internet and email example, there can be multiple such running instances that are expected to be interoperable by adhering to the standards defined as in #1 above.
 5. **Participating platforms** - These are digital systems of the network participants (Payors, Providers, Regulators, Observers, etc) that sit on the edges of the claims network and initiate/receive the communication happening through the network. These would be analogous to client/servers in the internet analogy and various email service providers in the email analogy.
 
-The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.&#x20;
+The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
-## Questions for Consultation
-
-#### Question 1
-
-HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/appendix-a-hcx-relay-example.md)). What challenges do you foresee in both scenarios - single HCX for all stakeholders v/s multiple connected HCXs? What would be your criteria to choose one scenario over the other?&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](how-to-submit-responses.md).
-{% endhint %}
+HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/appendix-a-hcx-relay-example.md)). What challenges do you foresee in both scenarios - single HCX for all stakeholders v/s multiple connected HCXs? What would be your criteria to choose one scenario over the other?
