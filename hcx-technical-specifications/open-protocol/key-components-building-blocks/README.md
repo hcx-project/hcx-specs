@@ -18,64 +18,7 @@ As indicated in the [**overall message flow diagram**](./#overall-message-flow-d
       2. Payload - Domain object defined for the pertinent use case. Usually, this data will be encrypted using the recipient's key to ensure that HCX instances cannot view this data.
 5. **Senders and Receivers** - Two systems participating in the information exchange. They may also be referred to as client/server as per current industry terminology. E.g. Provider(s) are senders in claims flow use case, and Payor(s) are senders in Payment Notice use case in the flow diagram above.
 
-## API Structure
 
-Based on the above protocol definition and the message structure, each use case API in the HCP ecosystem is expected to follow the following pattern for the onward and return journey of the use case message:
-
-\<transport\_protocol>://\<server\_address>/\<protocol\_version/>\<resource\_name>/\<action|on\_action>, where
-
-* **transport\_protocol** - for HCX V1 purpose it will always be **https**
-* **server\_address** is the address of the server on which the API is called (an HCX for payor/provider or a payor/provider/HCX for an HCX)
-* **protocol\_version** - API version for the current protocol to help support protocol transitions
-* **resource\_name** is the name of the domain resource that the API is serving. E.g. for cashless claims, it may be “claims”, “coverage eligibility”, etc. based on the use case.
-* **action** is the action sought within the context of that resource
-* **on\_action** represents the callback from the receiving system for responding to the original message
-
-Keeping this pattern in mind, in the current cashless use case following APIs are expected to be supported.
-
-Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](../../../hcx-domain-specifications/domain-data-specifications/). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
-
-### **CoverageEligibility**
-
-* **Eligibility check**
-  * /coverageeligibility/check (provider->HCX, HCX->payor)
-  * /coverageeligibility/on\_check (payor->HCX, HCX->provider)
-
-### **Claims**
-
-* **PreDetermination submission**
-  * /predetermination/submit (provider->HCX, HCX->payor)
-  * /predetermintation/on\_submit (payor->HCX, HCX->provider)
-* **PreAuth submission**
-  * /preauth/submit (provider->HCX, HCX->payor)
-  * /preauth/on\_submit (payor->HCX, HCX->provider)
-* **Claim submission**
-  * /claim/submit (provider->HCX, HCX->payor)
-  * /claim/on\_submit (payor->HCX, HCX->provider)
-
-### **Communications**
-
-Communications API will be used for communications between the payors and providers within the claims cycle.
-
-* /communication/request
-* /communication/on\_request
-
-### **Payments**
-
-* **Payment notice and acknowledgement**
-  * /paymentnotice/request (payor>HCX, HCX->provider-)
-  * /paymentnotice/on\_request (provider->HCX, HCX->payor)
-
-### **Operational APIs**
-
-* **Entity Status API**: Status API can be used by providers to know the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. HCX gateway shall return the protocol status synchronously and the recipient returns the status in the on\_status callback API asynchronously.
-  * /hcx/status
-  * /hcx/on\_status
-* **Entity Search API**: Search API is for regulators/observers to fetch the details of claims for reconciliation and may be for grievance redressal (in future). For example, NHA can request for all claims processed by all payors in the last one week. The response to the search request will be via the callback API (/hcx/on\_search) containing a list of encrypted FHIR objects matching the search criteria.
-  * /hcx/search
-  * /hcx/on\_search
-
-Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail.
 
 ## Questions for Consultation
 
