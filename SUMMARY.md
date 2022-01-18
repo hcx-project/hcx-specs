@@ -21,7 +21,6 @@
       * [Message Security and Integrity](hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity.md)
       * [API Security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md)
       * [Audit and Reporting](hcx-technical-specifications/open-protocol/data-security-and-privacy/audit.md)
-  * [Appendix A - HCX Relay example](hcx-technical-specifications/appendix-a-hcx-relay-example.md)
 * [Domain Specifications](hcx-domain-specifications/README.md)
   * [Domain Data Specifications](hcx-domain-specifications/domain-data-specifications/README.md)
     * [Domain Data Models](hcx-domain-specifications/domain-data-specifications/domain-data-models/README.md)
