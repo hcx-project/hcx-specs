@@ -17,10 +17,10 @@ The specification document can also be downloaded as a PDF for offline consumpti
 Please respond to the individual questions captured in various sections. You may refer to the relevant sections to read the full text.
 
 {% hint style="warning" %}
-Please note that the questions included are intended to guide the consultation process and not to restrict the thinking on these lines. Therefore participants are invited to think of and suggest any other relevant guiding questions/comments/suggestions and include them in their responses.&#x20;
+Please note that the questions included are intended to guide the consultation process and not to restrict the thinking on these lines. Therefore participants are invited to think of and suggest any other relevant guiding questions/comments/suggestions and include them in their responses.
 {% endhint %}
 
-#### 1. [Consultation Questions on Context](./#questions-for-consultation)
+#### 1. [Consultation Questions on Context](<README (1).md#questions-for-consultation>)
 
 #### 2. [Consultation Questions on Introduction to HCX](what-is-hcx.md#questions-for-consultation)
 
@@ -30,7 +30,7 @@ Please note that the questions included are intended to guide the consultation p
 * [Key Specifications](open-specifications/key-specifications.md#questions-for-consultation)
 * [Governance](open-specifications/governance.md#questions-for-consultation)
 
-#### 4. Consultation Questions on Technical Specifications&#x20;
+#### 4. Consultation Questions on Technical Specifications
 
 * [Key Design Considerations](hcx-technical-specifications/open-protocol/key-design-considerations.md#questions-for-consultation)
 * [Registries](hcx-technical-specifications/open-protocol/registries.md#questions-for-consultation)
@@ -39,7 +39,7 @@ Please note that the questions included are intended to guide the consultation p
 * [API Security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md#questions-for-consultation)
 * [Audit and Reporting](hcx-technical-specifications/open-protocol/data-security-and-privacy/audit.md#questions-for-consultation)
 
-#### 5. Consultation Questions on Domain Specifications&#x20;
+#### 5. Consultation Questions on Domain Specifications
 
 * [Domain Data Models](hcx-domain-specifications/domain-data-specifications/domain-data-models/#questions-for-consultation)
 * [Terminologies](hcx-domain-specifications/domain-data-specifications/terminologies-code-sets-or-metadata-standards.md#questions-for-consultation)
