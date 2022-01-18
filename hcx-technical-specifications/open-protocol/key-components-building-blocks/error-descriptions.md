@@ -1,5 +1,5 @@
 ---
-description: Types of errors, list of protocol error codes and their descriptions
+description: Types of protocol errors, list of error codes and their descriptions
 ---
 
 # Error Handling

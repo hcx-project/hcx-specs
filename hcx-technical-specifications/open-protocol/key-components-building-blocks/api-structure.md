@@ -1,5 +1,5 @@
 ---
-description: Details of the protocol APIs
+description: Details of the protocol APIs that facilitate the exchange
 ---
 
 # API Structure
