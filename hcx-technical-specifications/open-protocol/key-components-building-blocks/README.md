@@ -4,7 +4,7 @@ description: Building blocks of the Health Claims Data Exchange protocol
 
 # Health Claims Exchange (HCX) Protocol
 
-As indicated in the [**overall message flow diagram**](key-components-building-blocks.md#overall-message-flow-diagram), the exchange platform will be the routing engine that will be responsible for receiving the data from either participant (provider, payor, another HCX instance, ...), and performing necessary validations, and forwarding it to the intended recipients.
+As indicated in the [**overall message flow diagram**](./#overall-message-flow-diagram), the exchange platform will be the routing engine that will be responsible for receiving the data from either participant (provider, payor, another HCX instance, ...), and performing necessary validations, and forwarding it to the intended recipients.
 
 ## **Terminology**
 
@@ -20,7 +20,7 @@ As indicated in the [**overall message flow diagram**](key-components-building-b
 
 ## **Overall Message Flow Diagram**
 
-![](<../../.gitbook/assets/0 (1).png>)
+![](<../../../.gitbook/assets/0 (1).png>)
 
 HCX protocol is designed for the exchanges to work in an asynchronous manner (like SMTP), therefore each use case will be completed in a cycle of messages as shown below:
 
@@ -62,7 +62,7 @@ Steps 6 and 12 in the above diagram as examples of this leg.
 
 **Relays**
 
-In case Sender and receiver are listed/registered on different HCX instances, there may be relays between the HCXs. Steps 2, 5, 8 and 11 in the above diagram may involve such relays. [Appendix A](../appendix-a-hcx-relay-example.md) provides an example of a provider-payor use case with a relay between two HCXs.
+In case Sender and receiver are listed/registered on different HCX instances, there may be relays between the HCXs. Steps 2, 5, 8 and 11 in the above diagram may involve such relays. [Appendix A](../../appendix-a-hcx-relay-example.md) provides an example of a provider-payor use case with a relay between two HCXs.
 
 ## Message Structure
 
@@ -123,7 +123,7 @@ Protected Headers = (Registered JOSE headers) U (HCX Protocol Headers) U (HCX Do
 
 ### **Payload**
 
-Use case-specific base64 encoded, encrypted payload as defined in [Domain Data specifications](../../hcx-domain-specifications/domain-data-specifications/). This can be thought of as a private claim in JWT terminology. JSON web encryption as defined in [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516) to be used for encrypting the payload with “alg” and “enc” as defined in the JOSE header above.
+Use case-specific base64 encoded, encrypted payload as defined in [Domain Data specifications](../../../hcx-domain-specifications/domain-data-specifications/). This can be thought of as a private claim in JWT terminology. JSON web encryption as defined in [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516) to be used for encrypting the payload with “alg” and “enc” as defined in the JOSE header above.
 
 E.g. In the current cashless claims scenario, domain working groups have decided the payload to be an FHIR bundle of the appropriate type. Therefore the payload will be an encrypted FHIR bundle as defined in the domain data specs.
 
@@ -146,7 +146,7 @@ Based on the above protocol definition and the message structure, each use case 
 
 Keeping this pattern in mind, in the current cashless use case following APIs are expected to be supported.
 
-Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](../../hcx-domain-specifications/domain-data-specifications/). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
+Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](../../../hcx-domain-specifications/domain-data-specifications/). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
 
 ### **CoverageEligibility**
 
@@ -201,5 +201,5 @@ Please review the Exchange Protocol and provide comments/suggestions on its comp
 While the consultation paper covers only interactions between the provider and payer, and the interactions with the beneficiary will be detailed post public consultation, what additional workflows do you think must be considered?
 
 {% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
+Instructions to send responses to the consultation questions are available [here](../../../how-to-submit-responses.md).
 {% endhint %}

@@ -34,7 +34,7 @@ Please note that the questions included are intended to guide the consultation p
 
 * [Key Design Considerations](hcx-technical-specifications/open-protocol/key-design-considerations.md#questions-for-consultation)
 * [Registries](hcx-technical-specifications/open-protocol/registries.md#questions-for-consultation)
-* [HCX Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks.md#questions-for-consultation)
+* [HCX Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/#questions-for-consultation)
 * [Message Security and Integrity](hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity.md#questions-for-consultation)
 * [API Security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md#questions-for-consultation)
 * [Audit and Reporting](hcx-technical-specifications/open-protocol/data-security-and-privacy/audit.md#questions-for-consultation)

@@ -17,13 +17,13 @@ In order to fulfil architectural principles listed in [Health Claims Data Exchan
 * The protocol should be designed to allow for the inclusion of the new types of use cases
 * The protocol should be designed to allow extending a use case as per the need of the use case/program (for example, a particular government scheme or innovative health financing solution may need different information about the beneficiary, provider, or intervention)
 
-Based on these principles and design considerations, the [next section](key-components-building-blocks.md) lists key components of the HCX protocols.
+Based on these principles and design considerations, the [next section](key-components-building-blocks/) lists key components of the HCX protocols.
 
-## Questions for Consultation&#x20;
+## Questions for Consultation
 
 #### Question 1
 
-Please review [Key Design Considerations](key-design-considerations.md) and suggest if there are other considerations that could help in the better design of Open Protocol.&#x20;
+Please review [Key Design Considerations](key-design-considerations.md) and suggest if there are other considerations that could help in the better design of Open Protocol.
 
 {% hint style="info" %}
 Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
