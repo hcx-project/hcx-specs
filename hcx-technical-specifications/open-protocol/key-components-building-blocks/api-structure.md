@@ -24,41 +24,113 @@ Please note that search APIs are expected to support search parameters as detail
 ### **CoverageEligibility**
 
 * **Eligibility check**
-  * /coverageeligibility/check (provider->HCX, HCX->payor)
-  * /coverageeligibility/on\_check (payor->HCX, HCX->provider)
+* /coverageeligibility/check (provider->HCX, HCX->payor)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/coverageeligibility/check" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /coverageeligibility/on\_check (payor->HCX, HCX->provider)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/coverageeligibility/on_check" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
 
 ### **Claims**
 
 * **PreDetermination submission**
-  * /predetermination/submit (provider->HCX, HCX->payor)
-  * /predetermintation/on\_submit (payor->HCX, HCX->provider)
+* /predetermination/submit (provider->HCX, HCX->payor)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/predetermination/submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /predetermintation/on\_submit (payor->HCX, HCX->provider)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/predetermination/on_submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* **PreDetermination status check**
+  * /predetermination/status (provider->HCX, HCX->payor)
+  * /predetermintation/on\_status (payor->HCX, HCX->provider)
 * **PreAuth submission**
-  * /preauth/submit (provider->HCX, HCX->payor)
-  * /preauth/on\_submit (payor->HCX, HCX->provider)
+* /preauth/submit (provider->HCX, HCX->payor)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/preauth/submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /preauth/on\_submit (payor->HCX, HCX->provider)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/preauth/on_submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* **PreAuth status check**
+  * /preauth/status (provider->HCX, HCX->payor)
+  * /preauth/on\_status (payor->HCX, HCX->provider)
 * **Claim submission**
-  * /claim/submit (provider->HCX, HCX->payor)
-  * /claim/on\_submit (payor->HCX, HCX->provider)
+* /claim/submit (provider->HCX, HCX->payor)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/claim/submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /claim/on\_submit (payor->HCX, HCX->provider)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/claim/on_submit" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* **Claim status check**
+  * /claim/status (provider->HCX, HCX->payor)
+  * /claim/on\_status (payor->HCX, HCX->provider)
 
 ### **Communications**
 
 Communications API will be used for communications between the payors and providers within the claims cycle.
 
 * /communication/request
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/communication/request" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
 * /communication/on\_request
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/communication/on_request" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
 
 ### **Payments**
 
 * **Payment notice and acknowledgement**
-  * /paymentnotice/request (payor>HCX, HCX->provider-)
-  * /paymentnotice/on\_request (provider->HCX, HCX->payor)
+* /paymentnotice/request (payor>HCX, HCX->provider-)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/paymentnotice/request" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /paymentnotice/on\_request (provider->HCX, HCX->payor)
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/paymentnotice/on_request" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
 
 ### **Operational APIs**
 
 * **Entity Status API**: Status API can be used by providers to know the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. HCX gateway shall return the protocol status synchronously and the recipient returns the status in the on\_status callback API asynchronously.
-  * /hcx/status
-  * /hcx/on\_status
-* **Entity Search API**
-  * /hcx/search
-  * /hcx/on\_search
+* /hcx/status
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/hcx/status" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
+
+* /hcx/on\_status
+
+{% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/hcx/on_status" method="post" %}
+[https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
+{% endswagger %}
 
 Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail.: Search API is for regulators/observers to fetch the details of claims for reconciliation and maybe for grievance redressal (in future). For example, NHA can request for all claims processed by all payors in the last one week. The response to the search request will be via the callback API (/hcx/on\_search) containing a list of encrypted FHIR objects matching the search criteria.
