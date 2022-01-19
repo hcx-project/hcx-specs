@@ -3,8 +3,11 @@
 This version of the HCX specification defines the domain model specifications required for the following eObjects:
 
 * Coverage Eligibility Request and Coverage Eligibility Response
-* Claim Request and Claim Response: These objects will be used for both Pre-Authorization and Claim use cases (and for Pre-Determination also in future).
+* Claim Request and Claim Response: These objects will be used for Pre-Determination, Pre-Authorization and Claim use cases.
 * Payment Notice and Payment Reconciliation
+* InsurancePlan
+* Communication Request and Communication
+* Task
 
 As mentioned in the design considerations for domain specification, the eObjects leverage HL7/FHIR4 specification and extend it, wherever required.
 
@@ -24,14 +27,6 @@ As per the design considerations and guidelines listed in the previous sections,
 | **Key** | **Description** |
 | ------- | --------------- |
 |         |                 |
-|         |                 |
-
-#### Search Parameters:
-
-| **Key** | **Description** |
-| ------- | --------------- |
-|         |                 |
-|         |                 |
 
 ## Coverage Eligibility Response
 
@@ -45,22 +40,14 @@ The Coverage Eligibility Response should include the InsurancePlan URL as part o
 
 #### Domain Headers:
 
-| **Key**                  | **Description**                                                                                                                            |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| x-hcx-insurance_plan_url | <p> Url to the InsurancePlan object with the details on benefits, required documents and other important information to submit claims </p> |
-|                          |                                                                                                                                            |
-
-
-#### Search Parameters:
-
-| **Key** | **Description** |
-| ------- | --------------- |
-|         |                 |
-|         |                 |
+| **Key**                    | **Description**                                                                                                                   |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| x-hcx-insurance\_plan\_url | Url to the InsurancePlan object with the details on benefits, required documents and other important information to submit claims |
+|                            |                                                                                                                                   |
 
 ## Claim Request
 
-Claim object is used by providers to submit pre-authorization and claim requests to the payers. The same eObject can be used for both these use cases and the usage can be differentiated by the value of “claim.use” element. The value of this element should be set as “**preauthorization**” for Pre-Authorization requests and as “**claim**” for Claim requests.
+Claim object is used by providers to submit pre-authorization and claim requests to the payers. The same eObject can be used for both these use cases and the usage can be differentiated by the value of “claim.use” element. The value of this element should be set as "**predetermination**" for Pre-Determination requests, “**preauthorization**” for Pre-Authorization requests and as “**claim**” for Claim requests.
 
 | **Resource**        | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -73,21 +60,13 @@ Claim object is used by providers to submit pre-authorization and claim requests
 
 #### Domain Headers:
 
-| **Key** | **Description**                                                                         |
-| ------- | --------------------------------------------------------------------------------------- |
-| usage   | “preauthorization” or “claim”, to indicate the use case this eObject is being used for. |
-|         |                                                                                         |
-
-#### Search Parameters:
-
 | **Key** | **Description** |
 | ------- | --------------- |
-|         |                 |
 |         |                 |
 
 ## Claim Response
 
-ClaimResponse object is used by payers to send the response for pre-authorization and claim requests to the providers. The same eObject can be used for both these use cases and the usage can be differentiated by the value of “ClaimResponse.use” element. The value of this element should be set as “**preauthorization**” for Pre-Authorization responses and as “**claim**” for Claim responses.
+ClaimResponse object is used by payers to send the response for pre-authorization and claim requests to the providers. The same eObject can be used for both these use cases and the usage can be differentiated by the value of “ClaimResponse.use” element. The value of this element should be set as "**predetermination**" for Pre-Determination requests, “**preauthorization**” for Pre-Authorization responses and as “**claim**” for Claim responses.
 
 | **Resource**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,16 +75,8 @@ ClaimResponse object is used by payers to send the response for pre-authorizatio
 
 #### Domain Headers:
 
-| **Key** | **Description**                                                                         |
-| ------- | --------------------------------------------------------------------------------------- |
-| usage   | “preauthorization” or “claim”, to indicate the use case this eObject is being used for. |
-|         |                                                                                         |
-
-#### Search Parameters:
-
 | **Key** | **Description** |
 | ------- | --------------- |
-|         |                 |
 |         |                 |
 
 ## Payment Notice
@@ -121,11 +92,42 @@ ClaimResponse object is used by payers to send the response for pre-authorizatio
 | **Key** | **Description** |
 | ------- | --------------- |
 |         |                 |
-|         |                 |
 
-#### Search Parameters:
+## Insurance Plan
 
-| **Key** | **Description** |
-| ------- | --------------- |
-|         |                 |
-|         |                 |
+The InsurancePlan object is used for encoding the benefits of a plan (not the subscriber sepecific policy which is present in Coverage object but more generic information) in a machine readable format. This object covers the following aspects of an insurance plan:
+
+| Resource                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| InsurancePlan            | <p>InsurancePlan basic plan details required for administrative purposes:</p><ul><li>Most of the basic details like name, IRDA UIN as identifier, validity, etc.. are covered in InsurancePlan profile.</li><li>InsurancePlan.plan.specificCost is used to describe the individual benefits that are covered under the plan. A benefit could be expressed against a procedure, a package (in the context of Indian Health Insurance industry), a diagnosis, a physical good or a service. For each benefit, the cost and the count upto which the benefit would be reimbursed could be specified.</li></ul><p><strong>structure definition</strong>: (add link)</p> |
+| HCXDiagnosticDocuments   | <p>The documents required to submit at predetermination, preauthorization and/or claim stage.<br><strong>structure definition</strong>: (add link)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ProofOfIdentityDocuments | <p>The proof of identity requirements prior to the predeteermination, preauthorization and/or claim stage.<br><strong>structure definition</strong>: (add link)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ProofOfPresenceDocuments | <p>The proof of presence requirements prior to the predeteermination, preauthorization and/or claim stage.<br><strong>structure definition</strong>: (add link)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Questionnaires           | <p>The questionnaires required to be answered and submitted along with a predeteermination, preauthorization and/or a claim request.<br><strong>structure definition</strong>: (add link)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| InformationalMessages    | <p>The informational and compliance messages that the provider should be aware of, prior to the predetermination, preauthorization or claim request.<br><strong>structure definition</strong>: (add link)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+## Communication Request
+
+The FHIR resource CommunicationRequest is used by payors to send a communication request to providers requesting for additional information about a predetermination, preauthorization or a claim request. In future, this object may be used for other communication purposes also.
+
+| Resource             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CommunicationRequest | <p>This resource is a record of a request for a communication to be performed. It should contain the following details:</p><ul><li><strong>about</strong> - reference to the predetermination, preauthorization or claim request for which the communication request is created</li><li><strong>payload</strong> - text, attachments or resources to be communicated to the recipient of the communication request</li></ul><p><strong>structure definition</strong>: (add link)</p> |
+
+## Communication
+
+The FHIR resource Communication is used by providers to respond to the communication requests sent to them. A communication is a conveyance of information from one entity, a sender, to another entity, a receiver.
+
+| Resource      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Communication | <p>This resource is a record of a communication even if it is planned or has failed. It shall contain the following details:</p><ul><li><strong>about</strong> - reference to the predetermination, preauthorization or claim request for which the communication is being sent</li><li><strong>payload</strong> - text, attachments or resources to be communicated to the recipient of the communication</li></ul><p><strong>structure definition</strong>: (add link)</p> |
+
+## Task
+
+The Task object is used for capturing activities that can be performed and for tracking the completion of the activity. In this version of the specification, the Task object is intended to be used for providers to do a status check of requests submitted by them and for the payors to respond with the status details. FHIR also recommends the usage of Task FHIR resource for status requests & responses ([link](https://hl7.org/fhir/R4/financial-module.html#order)).
+
+| Resource | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Task     | <p>Task object is used as the payload in status request and response APIs. The object shall have the following details:</p><ul><li><strong>code</strong> - specifies the nature of the task, i.e. status check</li><li><strong>focus</strong> - specifies the context identifiers (e.g case-id for a registered pre-auth, claim id of the provider TMS)</li><li><strong>output</strong> - carries the result of a status request. The result is the status code reflecting the status of the corresponding request (CoverageEligibilityCheck, PreAuthorization, Claim, etc..). The valueSets for the status codes must be the same as specified in the corresponding response FHIR profiles</li></ul><p><strong>structure definition</strong>: (add link)</p> |
+
+&#x20;
