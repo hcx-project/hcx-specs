@@ -45,13 +45,8 @@ paths:
          1. A set of header attributes that provide transport, security, message integrity and summary information about the message being exchanged. This information is used by the HCX gateway for routing the request and auditing purposes.
          2. Domain payload containing the CoverageEligibilityRequest domain entity (eObject) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-request). This needs to be encrypted so that HCX cannot read this and can be decrypted & processed only by the intended recipient.
         
-        The domain payload should be a [CoverageEligibilityRequest document](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-request) resource as per [HCX FHIR profile definitions](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-CoverageEligibilityRequestDocument.html) (an extension of HL7 FHIR). The CoverageEligibilityRequest document FHIR resource created as per the HCX FHIR profile should be sent in the request body in encrypted form and HCX gateway shall not be able to read the contents of the domain payload. 
-        
         
         Overall, the request body (header attributes and the FHIR document) should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
-        
-        
-        Note: Refer to the JWEPayload schema definition below for details & structure of the JWE token that has to be sent as the request body in this API.
         
         
         The response to this API could be one of the following:
@@ -67,8 +62,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -110,25 +104,10 @@ paths:
             
           2. If the coverage eligibility request is successfully processed, payor should send a CoverageEligibilityResponse domain entity (eObject) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-response). This needs to be encrypted so that HCX cannot read this and can be decrypted & processed only by the intended recipient.
           
-          4. In case of errors, the Coverage Eligibility Response API payload should contain the error details. 
-
-        
-        In a successful coverage eligibility reponse scenario, the domain payload should contain a [CoverageEligibilityResponse document](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-response) resource as per [HCX FHIR profile definitions](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-CoverageEligibilityResponseDocument.html). 
-
-        
-        In case of errors, the error details should be sent in the following manner:
-          - Basic details about the error must be sent as part of the header attributes. HCX gateway shall read and store this information for audit & search purposes. Following header attributes should be used for sending the error details:
-              - **x-hcx-status** should be set to **response.fail**.
-              - **x-hcx-error_details** attribute should be set with the appropriate error code, message and trace details (if available).
-          - In case where there are clinical, patient or business related errors, the payor should send exact details of the error to the recipient. These details should not be shared with the HCX gateway and hence, should be sent in encrypted form. Payor should embed the error details within the CoverageEligibilityResponse resource that is sent as part of the request body.
-        
-        The CoverageEligibilityResponse document or Communication FHIR resource created as per the HCX FHIR profile should be encrypted and sent in the request body and HCX gateway shall not be able to read the contents of the FHIR response document. 
+          4. In case of errors, the Coverage Eligibility Response API request body should contain the error details. 
         
         
         The request body (header attributes and the FHIR resources) should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
-        
-        
-        Note: Refer to the JWEPayload schema definition for details & structure of the JWE token that has to be sent as the request body in this API.
         
         
         The response to this API could be one of the following:
@@ -139,8 +118,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -180,8 +158,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -220,8 +197,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -261,8 +237,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -301,8 +276,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -342,8 +316,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -382,8 +355,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -423,8 +395,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -463,8 +434,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -499,13 +469,16 @@ paths:
         - Communication APIs
       description: >-
         This API is for payors to raise a communication requests to HCX gateway and for HCX gateway to route the same request to providers during the claims cycle. <br/><br/>
+        
+        A communication request can happen only within the context of a existing claim cycle (predetermination, preauth or the actual claim). The protocol header x-hcx-correlation_id should carry the correlation id of the original claim request for which the communication request is being raised. HCX gateway should validate that the correlation id is a valid identifier and the original claim request is still open.
+        
+        
         Payload for this API has to be created as per the Communication Request Document defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -544,8 +517,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -579,16 +551,14 @@ paths:
       tags:
         - Operational APIs
       description: >-
-         This API is for senders to query the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. <br/><br/>
+         Participants (Provider/Payors) in the network  can check the business status of particular processes initiated, for example, status of pre-auth request, claim, status of information requested.  The request payload is expressed using FHIR Task, where 
+            - Task.code specifies the nature of the check,  and 
+            - Task.focus specifies the context identifiers (e.g case-id for a registered pre-auth, claim id of the provider TMS).
+         
+         The protocol header x-hcx-correlation_id should carry the correlation id of the process (request) for which the status is being requested for. HCX gateway should validate that the correlation id is a valid identifier and the request is still open.
+
          
          The request body for this API should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
-         
-         As defined in the specs, JWE should contain the protected headers and the encrypted FHIR resource as the domain payload. 
-         
-         1. Protected headers should have the protocol headers as defined in the ProtocolHeader schema definition below. Specifically for this API, the header x-hcx-correlation_id should carry the correlation id of the request for which the status is being requested for.
-         
-         2. The domain payload should be an encrypted CommunicationRequest FHIR resource. The CommunicationRequest resource should have the reference to the entity for which the status is being quered for in the "**about**" element. This reference object should contain the sender's reference id of the entity.
-         
          
          HCX gateway shall validate the incoming request and send the protocol status in the http response. The protocol status value could be one of the following:
          
@@ -600,8 +570,7 @@ paths:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -635,135 +604,19 @@ paths:
         - Operational APIs
       description: >-
         This is the callback API to return the response for status requests. <br/><br/>
-        Domain Payload for this API has to an encrypted Communication FHIR resource containing the following information:
+        The response for status API is also expressed as FHIR Task resource, where
+        
+        - Task.output carries the status result. The result is the status code reflecting the status of the corresponding request (CoverageEligibilityCheck, PreAuthorization, Claim, etc..). The valueSets for the status codes must be the same as specified in the corresponding response FHIR profiles.
         
         
-          - **basedOn** - reference to the entity sent by the sender in the original request and should contain sender's reference id of the entity.
-          - **about** - reference to the response entity and should contain the recipient's reference id and the current status of the response entity.
-        
-        
-      requestBody:
-        content:
-          application/json:
-            schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
-      responses:
-        '202':
-          description: Accepted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SuccessResponse'
-        '400':
-          description: Request Validation failed
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '404':
-          description: Requested resource was not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '500':
-          description: Downstream systems down/unhandled exceptions.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      security:
-      - bearer_auth: []
-      
-  /hcx/search:
-    post:
-      tags:
-        - Operational APIs
-      description: >-
-         This API is for regulators/observers to fetch the details of claims for reconciliation and may be for grievance redressal (in future). For example, NHA can request for all claims processed by all payors in the last one week. <br/><br/>
-         
-         The request body for this API should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
-         
-         The JWE protected header should contain the following additional search specific headers carrying the search criteria:
-         
-         - x-hcx-search.time_period: duration is number of hours. This is a mandatory parameter. HCX gateway shall have a configured default value and maximum allowed value.
-         
-         - x-hcx-search.filters: list of search criteria:
-            
-            - senders: list of sender registry codes
-            - receivers: list of recipient registry codes
-            - entity_types: list of entity types (coverageligibility, predetermination, preauth, claim)
-            - correlation_ids: list of correlation ids
-            - workflow_ids: list of workflow ids
-            - entity_status: list of business status values
-         
-         
-         HCX Gateway uses the search filters & time period to filter the list of recipients to whom the search query is to be forwarded to. HCX gateway sends search requests to multiple recipients. Recipients shall process the search requests and send the response to the HCX gateway via the search callback API (/hcx/on_search). The recipient should do the role and access checks whether the requestor (i.e. the sender of the search request) can be provided with the requested search results or not.
-        
-      requestBody:
-        content:
-          application/json:
-            schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
-      responses:
-        '202':
-          description: Accepted
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/StatusSuccessResponse'
-        '400':
-          description: Request Validation failed
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '404':
-          description: Requested resource was not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '500':
-          description: Downstream systems down/unhandled exceptions.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-      security:
-      - bearer_auth: []
-  /hcx/on_search:
-    post:
-      tags:
-        - Operational APIs
-      description: >-
-        This is the callback API to return the response for search requests. The recipients who received the search request will send their response to the gateway using this API. <br/><br/>
-        
-        The request body of this API is in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) which contains the protected headers and the encrypted domain payload.
-        
-        
-        1. Protected headers section should contain all the protocol headers defined in the specifications. In addition, the response should contain the following search specific domain headers:
-        
-            - x-hcx-search_response.count: total count of results returned by the recipient
-            - x-hcx-search_response.entity_counts: count of results per each entity type. e.g.: {claim: 2, coverageeligibility: 3}
-            
-        2. The domain paylod should be a list of encrypted FHIR resources encrypted using the original sender's encryption key. This payload can be accessed only by the original sender. 
-        
-        
-        HCX gateway shall return the individual responses from each recipient to the sender with the x-hcx-status header value as "response.partial" and after all the expected responses have arrived, the gateway shall send a "response.complete" response to the original sender.
-        
-        
-        An alternate flow is that HCX gateway will have a configured timeout value post which the gateway shall automatically send a "response.complete" response to the original sender even if the responses from all the recipients are not received. 
+        The status API call is designed to be simple in nature with just a high level status returned as a single code in response. Complex status responses and bundling of status checks on multiple items would be considered in future versions of the protocol by the working groups.
         
         
       requestBody:
         content:
           application/json:
             schema:
-              allOf:
-                - $ref: '#/components/schemas/JWEPayload'
+                $ref: '#/components/schemas/JWEPayload'
       responses:
         '202':
           description: Accepted
@@ -797,97 +650,92 @@ components:
     JWEPayload:
       required:
         - payload
-        - encrypted_key
-        - iv
-        - ciphertext
-        - tag
       type: object
       format: byte
       description: All the HCX protocol APIs require the request body to sent in JWE format (as defined in [RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)). 
       
       properties:
         payload:
-          type: string
+          type: object
+          format: string
           description: The paylod should be a JWE token containing the following elements.
           
-            1. Protected headers (**protected**) - A set of attributes that provide transport, security, message integrity and summary information about the message being exchanged. Refer to the ProtectedHeader schema definition below for details.
+            1. Protected headers (**protected**) - A set of attributes that provide transport, security, message integrity and summary information about the message being exchanged.
         
-            2. JWE element (**encrypted_key**) - Content Encryption Key. Refer to the EncryptedKey schema definition below for details.
+            2. JWE element (**encrypted_key**) - Content Encryption Key.
         
-            3. JWE element (**iv**) - Initialisation Vector for the algorithm. Refer to the InitializationVector schema definition below for details.
+            3. JWE element (**iv**) - Initialisation Vector for the algorithm.
         
-            4. JWE element (**aad**) - Additional authentication data. Refer to AAD schema definition below for details.
+            4. Encrypted Payload (**ciphertext**) - Payload containing the relevant domain entity (eObject) as prescribed for the use case by the domain specifications. This needs to be encrypted so that HCX cannot read this.
         
-            5. Encrypted Payload (**ciphertext**) - Payload containing the relevant domain entity (eObject) as prescribed for the use case by the domain specifications. This needs to be encrypted so that HCX cannot read this. Refer to CipherText schema definition below for more details.
-        
-            6. Authentication tag (**tag**) - Digital signature on the protected header and the payload of the message to ensure its integrity. Refer to AuthenticationTag schema definition below for more details.
+            5. Authentication tag (**authentication_tag**) - Digital signature on the protected header and the payload of the message to ensure its integrity.
+            
+            
+            The final payload should be serialzed using JWE compact serialization as defined in the RFC-7516:<br/>
+            **protected || '.' || encrypted_key || '.' || iv || '.' || ciphertext || '.' || authentication_tag**
             
             
             Detailed steps on how to construct the JWE token are provided in this [section](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption) of the HCX specifications.
-          example: "eyJlbmMiOiJBMjU2R0NNIiwKImFsZyI6IlJTQS1PQUVQIiwKIngtaGN4LXNlbmRlcl9jb2RlIjoiMS00ZGMzZTA4OC1hMzEzLTQ0YWItYWZhMS0wMjIyOTU5Y2I3NWIiLAoieC1oY3gtcmVjaXBpZW50X2NvZGUiOiIxLTkzZjkwOGJhLWI1NzktNDUzZS04YjJhLTU2MDIyYWZhZDI3NSIsCiJ4LWhjeC1yZXF1ZXN0X2lkIjoiMjZiMTA2MGMtMWU4My00NjAwLTk2MTItZWEzMWUwY2E1MDkxIiwKIngtaGN4LWNvcnJlbGF0aW9uX2lkIjoiNWU5MzRmOTAtMTExZC00ZjBiLWIwMTYtYzIyZDgyMDY3NGUxIiwKIngtaGN4LXRpbWVzdGFtcCI6IjIwMjEtMTAtMjdUMjA6MzU6NTIuNjM2KzA1MzAiLAoieC1oY3gtc3RhdHVzIjoicmVxdWVzdC5pbml0aWF0ZSIsCiJ4LWhjeC13b3JrZmxvd19pZCI6IjVlOTM0ZjkwLTExMWQtNGYwYi1iMDE2LWMyMmQ4MjA2NzRlMiIsCiJ4LWhjeC1kZWJ1Z19mbGFnIjoiSW5mbyIsCiJ4LWhjeC1lcnJvcl9kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCAidHJhY2UiOiAiIn0sCiJ4LWhjeC1kZWJ1Z19kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCJ0cmFjZSI6IiJ9LAoiandzX2hlYWRlciI6eyJ0eXAiOiJKV1QiLCAiYWxnIjoiUlMyNTYifSwKImp3ZV9oZWFkZXIiOnsiYWxnIjoiUlNBLU9BRVAiLCJlbmMiOiJBMjU2R0NNIn0KfQ==.6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.AxY8DCtDaGlsbGljb3RoZQ.KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY.Mz-VPPyU4RlcuYv1IwIvzw"
-    
-    ProtectedHeader:
-      type: string
-      description: Protected headers contain information that helps HCX gateway to identify senders, receivers of the message, perform integrity checks, audits and routing functionality. Header values are posted in clear and must never contain any Personally Identifiable Information (PII) about the patient or any person. HCX protocol uses JWE protected headers for such information to ensure these are not tampered with by the intermediate gateways. Protected Headers for HCX will be the union of the following three header categories.
+          example: "eyJlbmMiOiJBMjU2R0NNIiwKImFsZyI6IlJTQS1PQUVQIiwKIngtaGN4LXNlbmRlcl9jb2RlIjoiMS00ZGMzZTA4OC1hMzEzLTQ0YWItYWZhMS0wMjIyOTU5Y2I3NWIiLAoieC1oY3gtcmVjaXBpZW50X2NvZGUiOiIxLTkzZjkwOGJhLWI1NzktNDUzZS04YjJhLTU2MDIyYWZhZDI3NSIsCiJ4LWhjeC1yZXF1ZXN0X2lkIjoiMjZiMTA2MGMtMWU4My00NjAwLTk2MTItZWEzMWUwY2E1MDkxIiwKIngtaGN4LWNvcnJlbGF0aW9uX2lkIjoiNWU5MzRmOTAtMTExZC00ZjBiLWIwMTYtYzIyZDgyMDY3NGUxIiwKIngtaGN4LXRpbWVzdGFtcCI6IjIwMjEtMTAtMjdUMjA6MzU6NTIuNjM2KzA1MzAiLAoieC1oY3gtc3RhdHVzIjoicmVxdWVzdC5pbml0aWF0ZSIsCiJ4LWhjeC13b3JrZmxvd19pZCI6IjVlOTM0ZjkwLTExMWQtNGYwYi1iMDE2LWMyMmQ4MjA2NzRlMiIsCiJ4LWhjeC1kZWJ1Z19mbGFnIjoiSW5mbyIsCiJ4LWhjeC1lcnJvcl9kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCAidHJhY2UiOiAiIn0sCiJ4LWhjeC1kZWJ1Z19kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCJ0cmFjZSI6IiJ9LAoiandzX2hlYWRlciI6eyJ0eXAiOiJKV1QiLCAiYWxnIjoiUlMyNTYifSwKImp3ZV9oZWFkZXIiOnsiYWxnIjoiUlNBLU9BRVAiLCJlbmMiOiJBMjU2R0NNIn0KfQ==.6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY.Mz-VPPyU4RlcuYv1IwIvzw"
+          properties:
+            protected:
+              type: object
+              format: string
+              description: Protected headers contain information that helps HCX gateway to identify senders, receivers of the message, perform integrity checks, audits and routing functionality. Header values are posted in clear and must never contain any Personally Identifiable Information (PII) about the patient or any person. HCX protocol uses JWE protected headers for such information to ensure these are not tampered with by the intermediate gateways. Protected Headers for HCX will be the union of the following three header categories.
           
-            1. JOSE Headers - JSON Web encryption header as per [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516#section-4). For HCX V1, this is proposed to be fixed to {"alg":"RSA-OAEP","enc":"A256GCM"}. Refer to _JOSEHeader_ schema definition for details.
+                1. JOSE Headers - JSON Web encryption header as per [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516#section-4). For HCX V1, this is proposed to be fixed to {"alg":"RSA-OAEP","enc":"A256GCM"}.
             
-            2. HCX Protocol Headers - Private headers as per [RFC7516 section 4.3](https://datatracker.ietf.org/doc/html/rfc7516#section-4.3). List of header values that are allowed in HCX APIs and their details are defined in this [section](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/key-components-building-blocks#hcx-protocol-headers) of HCX Specifications. Refer to _ProtocolHeader_ schema definition for details.
+                2. HCX Protocol Headers - Private headers as per [RFC7516 section 4.3](https://datatracker.ietf.org/doc/html/rfc7516#section-4.3). List of header values that are allowed in HCX APIs and their details are defined in this [section](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/key-components-building-blocks#hcx-protocol-headers) of HCX Specifications.
             
-            3. HCX Domain Headers - JSON object containing a map of domain-specific header values as proposed in domain data specifications for each entity. E.g. For claims use cases, domain specs may decide to populate the total claimed amount, list of diagnostics/procedures. Please note that all such parameter names must follow the naming convention _x-hcx-<use_case_name>-<parameter_name>_. Refer to _DomainHeaders_ schema definition for details.
+                3. HCX Domain Headers - JSON object containing a map of domain-specific header values as proposed in domain data specifications for each entity. E.g. For claims use cases, domain specs may decide to populate the total claimed amount, list of diagnostics/procedures. Please note that all such parameter names must follow the naming convention _x-hcx-<use_case_name>-<parameter_name>_.
             
             
-          Overall, the protected headers should be created as - <br/>
-            JWE Protected Header = BASE64URL(UTF8( (JOSE headers) + (HCX Protocol Headers) + (HCX Domain Headers) ))
-      example: "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2In0"
-    
-    EncryptedKey:
-      type: string
-      description: The JWE encrypted key should be generated using the following process
+                  Overall, the protected headers should be created as - <br/>
+                  JWE Protected Header = BASE64URL(UTF8( (JOSE headers) + (HCX Protocol Headers) + (HCX Domain Headers) ))
+              allOf:
+                - $ref: '#/components/schemas/JOSEHeader'
+                - $ref: '#/components/schemas/ProtocolHeader'
+                - $ref: '#/components/schemas/DomainHeaders'
+              example: "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2In0"
+              
+            encrypted_key:
+              type: string
+              description: The JWE encrypted key should be generated using the following process
             
-            1. A random content encryption key (CEK) has to be generated by the sender. 
+                1. A random content encryption key (CEK) has to be generated by the sender. 
             
-            2. Encrypt the CEK with the recipient's public key using the RSAES-OAEP algorithm to produce the JWE Encrypted Key.
+                2. Encrypt the CEK with the recipient's public key using the RSAES-OAEP algorithm to produce the JWE Encrypted Key.
             
-            3. Base64url-encode the JWE Encrypted Key.
+                3. Base64url-encode the JWE Encrypted Key.
           
             
-            The encrypted & base64 encoded key should be set as the encrypted_key in the JWE token and also used for encrypting the domain payload (i.e. the FHIR resource) to be sent in the request. The recipient shall decrypt the content encryption key using their private key (corresponding to the public key used by the sender) and use the decrypted CEK for decrypting the domain payload. 
-      example: "6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ"
-    
-    InitializationVector:
-      type: string
-      description: Initialization vector (_iv_) is needed in the encryption process of the payload and for the recipient (along with the encrypted_key and aad) to subsequently decrypt the payload. The "iv" should be created by generating a random JWE initialization vector and Base64url-encoding the JWE initialization vector. 
-      example: "AxY8DCtDaGlsbGljb3RoZQ"
-    
-    AAD:
-      type: string
-      description: Similar to "iv", Additional Authenticated Data (aad) is also needed for encryption and decryption of the payload data. The value of "aad" should be created in the same way the "protected" header is created - 
-          
-          
-        aad = ASCII(BASE64URL(UTF8(JWE Protected Header)))
+                The encrypted & base64 encoded key should be set as the encrypted_key in the JWE token and also used for encrypting the domain payload (i.e. the FHIR resource) to be sent in the request. The recipient shall decrypt the content encryption key using their private key (corresponding to the public key used by the sender) and use the decrypted CEK for decrypting the domain payload. 
+              
+              example: "6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ"
             
-      example: "eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ"
-    
-    CipherText:
-      type: string
-      description: _ciphertext_ contains the domain payload (that has to  be sent to the recipient) in encrypted form. Usecase specific   JSON payload defined in the [eObjects](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects) section of the HCX specifications (i.e. the FHIR resource defined for the use case, e.g. CoverageEligibilityRequest document for coverage eligibility request API) should be encrypted as per JWE specification and sent as the _ciphertext_ in the request.
+            iv:
+              type: string
+              description: Initialization vector (_iv_) is needed in the encryption process of the payload and for the recipient (along with the encrypted_key and aad) to subsequently decrypt the payload. The "iv" should be created by generating a random JWE initialization vector and Base64url-encoding the JWE initialization vector. 
+              example: "AxY8DCtDaGlsbGljb3RoZQ"
+              
+            ciphertext:
+              type: string
+              description: _ciphertext_ contains the domain payload (that has to  be sent to the recipient) in encrypted form. Usecase specific   JSON payload defined in the [eObjects](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects) section of the HCX specifications (i.e. the FHIR resource defined for the use case, e.g. CoverageEligibilityRequest document for coverage eligibility request API) should be encrypted as per JWE specification and sent as the _ciphertext_ in the request.
           
           
-        Steps to create the ciphertext element - 
+                Steps to create the ciphertext element - 
             
-            1. Create the JSON payload for the API request as per the [eObjects specification](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects).
+                1. Create the JSON payload for the API request as per the [eObjects specification](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects).
             
-            2. Perform authenticated encryption on the JSON payload with the AES GCM algorithm using the CEK as the encryption key (_encrypted_key_), the JWE Initialization Vector (_iv_)), and the Additional Authenticated Data value (_aad_), requesting a 128-bit Authentication Tag output. This step outputs a ciphertext and an authentication tag (_tag_).
+                2. Perform authenticated encryption on the JSON payload with the AES GCM algorithm using the CEK as the encryption key (_encrypted_key_), the JWE Initialization Vector (_iv_)), and the Additional Authenticated Data value (_aad_), requesting a 128-bit Authentication Tag output. This step outputs a ciphertext and an authentication tag (_tag_).
             
-            3. Base64url-encode the ciphertext output from the previous step and set it as the _ciphertext_ element in the request body.
-            
-      example: "KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY"
-    
-    AuthenticationTag:
-      type: string
-      description: The authentication tag generated as an output of the payload encryption algorithm (used for creating the _ciphertext_) should be sent as the _tag_ element in the request body. This tag is required for decrypting the encrypted payload.
-      example: "Mz-VPPyU4RlcuYv1IwIvzw"
+                3. Base64url-encode the ciphertext output from the previous step and set it as the _ciphertext_ element in the request body.
+              example: "KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY"
+              
+            authentication_tag:
+              type: string
+              description: The authentication tag generated as an output of the payload encryption algorithm (used for creating the _ciphertext_) should be sent as the _tag_ element in the request body. This tag is required for decrypting the encrypted payload.
+              example: "Mz-VPPyU4RlcuYv1IwIvzw"
     
     JOSEHeader:
       required:
