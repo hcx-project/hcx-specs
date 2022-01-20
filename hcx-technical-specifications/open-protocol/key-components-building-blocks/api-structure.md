@@ -51,9 +51,6 @@ Please note that search APIs are expected to support search parameters as detail
 [https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
 {% endswagger %}
 
-* **PreDetermination status check**
-  * /predetermination/status (provider->HCX, HCX->payor)
-  * /predetermintation/on\_status (payor->HCX, HCX->provider)
 * **PreAuth submission**
 * /preauth/submit (provider->HCX, HCX->payor)
 
@@ -67,9 +64,6 @@ Please note that search APIs are expected to support search parameters as detail
 [https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
 {% endswagger %}
 
-* **PreAuth status check**
-  * /preauth/status (provider->HCX, HCX->payor)
-  * /preauth/on\_status (payor->HCX, HCX->provider)
 * **Claim submission**
 * /claim/submit (provider->HCX, HCX->payor)
 
@@ -82,10 +76,6 @@ Please note that search APIs are expected to support search parameters as detail
 {% swagger src="https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml" path="/claim/on_submit" method="post" %}
 [https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml)
 {% endswagger %}
-
-* **Claim status check**
-  * /claim/status (provider->HCX, HCX->payor)
-  * /claim/on\_status (payor->HCX, HCX->provider)
 
 ### **Communications**
 
