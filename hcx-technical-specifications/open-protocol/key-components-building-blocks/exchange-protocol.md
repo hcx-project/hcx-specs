@@ -71,7 +71,7 @@ Redirect flow would have the following steps:&#x20;
 3. \[S] sends a new request to \[R1] by re-encrypting the request using the \[R1] key and marking the appropriate participant id to HCX.&#x20;
 4. HCX forwards the new request to \[R1]. Further processing of the request is handled by the recipient \[R1].
 
-![](../../../.gitbook/assets/mermaid-diagram-20220120115948.png)
+![](../../../.gitbook/assets/mermaid-diagram-20220120125442.png)
 
 ### Forward&#x20;
 
@@ -86,6 +86,8 @@ A forward flow would have the following steps:&#x20;
 5. \[R1] responds to \[R]&#x20;
 6. \[R] may repeat steps 2-4 for multiple next recipients (\[R2], \[R3], …) in parallel or sequentially and receive responses.&#x20;
 7. \[R] processes responses from all forwarded requests and respond with the final response to \[S]
+
+![](../../../.gitbook/assets/mermaid-diagram-20220120125203.png)
 
 ### Intra Cycle communication (Ask for supplementary Information)&#x20;
 
