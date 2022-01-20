@@ -3,7 +3,7 @@
 * [Summary](README.md)
 * [Context](<README (1).md>)
 * [Introduction to HCX](what-is-hcx.md)
-* [Open Specifications](open-specifications/README.md)
+* [Approach](open-specifications/README.md)
   * [Design Principles](open-specifications/design-principles.md)
   * [Key Specifications](open-specifications/key-specifications.md)
   * [Governance](open-specifications/governance.md)

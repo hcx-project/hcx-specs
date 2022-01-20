@@ -4,7 +4,7 @@ description: >-
   Specifications
 ---
 
-# Open Specifications
+# Approach
 
 Specifications here refer to the blueprint of each aspect of the envisioned claims data exchange. In this context, the specifications can be thought of as a collection of minimal requirements and definitions which helps participants on the claims data exchange to -
 
@@ -13,4 +13,4 @@ Specifications here refer to the blueprint of each aspect of the envisioned clai
 * Define and meet the necessary regulations/policies
 * Allow participants the choice of technology/solutions
 
-In order to foster collaborative work while still maintaining consistency, envisioned specifications should adhere to key design principles defined in the [next section](design-principles.md).
+In order to foster collaborative work while still maintaining consistency, envisioned specifications following subsections detail the strategy and approach to facilitate the creation and maintenance of Open Specifications.&#x20;
