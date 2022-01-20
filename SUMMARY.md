@@ -9,7 +9,6 @@
   * [Governance](open-specifications/governance.md)
 * [Technical Specifications](hcx-technical-specifications/README.md)
   * [Open Protocol](hcx-technical-specifications/open-protocol/README.md)
-    * [Key Design Considerations](hcx-technical-specifications/open-protocol/key-design-considerations.md)
     * [Registries](hcx-technical-specifications/open-protocol/registries.md)
     * [Health Claims Exchange (HCX) Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/README.md)
       * [Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol.md)

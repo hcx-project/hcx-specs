@@ -32,7 +32,7 @@ Please note that the questions included are intended to guide the consultation p
 
 #### 4. Consultation Questions on Technical Specifications
 
-* [Key Design Considerations](hcx-technical-specifications/open-protocol/key-design-considerations.md#questions-for-consultation)
+* [Key Design Considerations](broken-reference)
 * [Registries](hcx-technical-specifications/open-protocol/registries.md#questions-for-consultation)
 * [HCX Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/#questions-for-consultation)
 * [Message Security and Integrity](hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity.md#questions-for-consultation)
