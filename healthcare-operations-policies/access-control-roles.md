@@ -22,17 +22,3 @@ The following table further describes these roles for their corresponding access
 | **member.isnp**                                                  | <ol><li><p>Eligibility check</p><ol><li>Receive request</li><li>Send response</li></ol></li><li><p>Search</p><ol><li>Pre Auths - aggregate and/or anonymised</li><li>Claims - aggregate and/or anonymised</li><li>Claims - Individual claims data as per beneficiary consent</li></ol></li></ol>                                                                                                                                       | As facilitators of insurance eCommerce, it is proposed to provide ISNPs access to the data available to research role as well as individual beneficiary queries (preauth, claims) based on beneficiary consent. This consent flow is expected to work with existing consent management infrastructure and ISNPs are expected to submit the acquired consent as part of the domain header. |
 | **agency.sponsor**                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                        | As planners of the insurance schemes, sponsors are proposed to be given access equivalent to **payer** role.                                                                                                                                                                                                                                                                              |
 | **HIE/HIO.HCX**                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                        | As an HCX this participant is expected to play different roles as per the need of the use case. However, due to the data privacy and security measures prescribed in the Open Protocol, it will not be able to view the actual payload.                                                                                                                                                   |
-
-## Questions for Consultation
-
-#### Question 1&#x20;
-
-The primary stakeholders/roles in the HCX ecosystem are mentioned in the section [Access Control](access-control-roles.md). Are there any other primary or secondary stakeholders that should be considered as  HCX participants? If yes, please outline their role in the HCX ecosystem.
-
-#### Question 2
-
-This section also mentioned allowed actions for the current set of stakeholders, please review these actions and suggest any changes needed for those actors.&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
-{% endhint %}

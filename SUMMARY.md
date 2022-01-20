@@ -26,7 +26,7 @@
   * [Terminologies (Code sets or Metadata standards)](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md)
   * [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-specific-languages-dsls.md)
   * [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
-* [Healthcare Operations Policies](healthcare-operations-policies/README.md)
+* [Business Policy Specifications](healthcare-operations-policies/README.md)
   * [Access Control (Roles)](healthcare-operations-policies/access-control-roles.md)
   * [Guidelines for Participant Onboarding](healthcare-operations-policies/participant-onboarding.md)
   * [Guidelines for Grievance Redressal](healthcare-operations-policies/guidelines-for-grievance-redressal.md)

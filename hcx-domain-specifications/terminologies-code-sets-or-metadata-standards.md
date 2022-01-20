@@ -33,19 +33,3 @@ The table below lists the code systems/value sets proposed by current domain wor
 | <p>Health Service Provider role</p><p>(claim.careTeam.role)</p>            | [link](https://swasth-digital-health-foundation.github.io/standards/output/ValueSet-health-service-provider-role.html) | Example                       |
 
 HCX or a neutral protocol supporting organisation will host domain specific FHIR Terminology Services which the ecosystem can leverage to retrieve information and use, and validate resources as defined by the IG.
-
-
-
-## Questions for Consultation
-
-#### Question 1
-
-During multiple discussions with the ecosystem, it has been suggested that while the specifications suggest recommended terminologies, they are not yet mandated (hence the low binding strength's against each terminology). Kindly provide your view on mandatory standardisation of terminologies and approaches to enable your suggestions.&#x20;
-
-#### Question 2
-
-In your view, what clinical terminologies and codes (e.g SNOMED-CT, ICD-10, LOINC) be considered? In addition, are you aware of any well established and accepted codes/value sets available that can be applicable to the Indian scenario? Kindly provide details.&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
-{% endhint %}

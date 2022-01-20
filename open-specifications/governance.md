@@ -8,7 +8,7 @@ description: A proposed approach for the governance of HCX specifications
 
 Specifications are fundamental to the success of the envisioned claims network. Specifications need to create consensus amongst a broad base of health system stakeholders to ensure that they can act as this common foundation. This document proposes a governance approach for the open specifications in line with [key design principles ](design-principles.md)outlined in the [National Digital Health Blueprint](https://main.mohfw.gov.in/sites/default/files/Final%20NDHB%20report\_0.pdf) and further contextualized for HCX specifications.
 
-## Proposed Governance Approach and Process for  Specifications at Swasth during the pilot period
+## Proposed Governance Approach and Process for Specifications at Swasth during the pilot period
 
 As evident, creating functional specifications will require a robust process and deep collaboration between multiple stakeholders. The process must:
 
@@ -41,16 +41,6 @@ Swasth proposes to maintain and enhance specifications using an inclusive, open,
 13. Swasth will also create a fully independent ethics and conflicts committee to act as an appellate authority for all our work, including stewardship of specifications
 14. All deliberations, minutes, and documents produced by the ethics and conflicts committee, specifications governance council, and working groups will be made publicly available
 
-## Proposed Governance Approach for  Specifications at iSPIRT&#x20;
+## Proposed Governance Approach for Specifications at iSPIRT
 
-Post one year of finalizing the first version of these specifications, iSPIRT Foundation proposes to govern all the health claims specifications and develop additional specifications including Health Claims Protocol and associated protocols related to multi-party dispute resolution system, fraud registry, regulatory supervision, HCX gateway, and Policy markup language. Further APIs and Standards for Other claim artefacts will be developed by iSPIRT as and when required for use cases. iSPIRT will organize a governance group with Swasth as one of the members to govern the development of the specifications.
-
-## Questions for Consultation&#x20;
-
-#### Question 1
-
-Is the governance approach laid out here practical and appropriate? What approaches, other than the ones mentioned in the [Governance section](governance.md), can be considered for managing and governing the HCX Open Specifications? Please provide details.
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../how-to-submit-responses.md).
-{% endhint %}
+Post one year of finalizing the first version of these specifications, iSPIRT Foundation proposes to govern all the health claims specifications and develop additional specifications including Health Claims Protocol and associated protocols related to multi-party dispute resolution system, fraud registry, regulatory supervision, HCX gateway, and Policy markup language. Further APIs and Standards for other claim artefacts will be developed by iSPIRT as and when required for use cases. iSPIRT will organize a governance group with Swasth as one of the members to govern the development of the specifications.

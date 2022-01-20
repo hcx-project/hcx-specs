@@ -93,15 +93,3 @@ HCX instances while making the calls to the participant system will use a self-g
 * JWS Signature must be computed in the manner defined for RS256 algorithm over the input ASCII(BASE64URL(UTF8(JOSE Header)) || '.' || BASE64URL(JWS Payload)) using the private key of the HCX instance.
 
 Participant systems should validate the API key signature using the public key of the HCX instance.
-
-
-
-## Questions for Consultation
-
-#### Question 1
-
-This section suggests JSON Web Tokens as per [RFC7519](https://datatracker.ietf.org/doc/html/rfc7516) as the mechanism for API security. Which alternative mechanism for API security would you explore for HCX? Kindly provide the pros and cons of the alternative mechanism.   &#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../../how-to-submit-responses.md).
-{% endhint %}

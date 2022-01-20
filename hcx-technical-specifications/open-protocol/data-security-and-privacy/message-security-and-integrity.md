@@ -43,7 +43,7 @@ The high-level steps to decrypt and verify the integrity of the payload using th
 
 1. From the received JSON serialized JWE token, Base64url decode the encoded representations of the JWE Protected Header (protected), the JWE Encrypted Key (encrypted\_key), the JWE Initialization Vector (iv), the JWE Ciphertext (ciphertext), the JWE Authentication Tag (tag), and the JWE AAD (aad), following the restriction that no line breaks, whitespace, or other additional characters have been used.
 2. Verify that the octet sequence resulting from decoding the encoded JWE Protected Header is a UTF-8-encoded representation of a completely valid JSON object conforming to [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159); let the JWE Protected Header be this JSON object.
-3. &#x20;Let the JOSE Header be the JWE Protected Header. Verify that the resulting JOSE Header does not contain duplicate Header Parameter names.
+3. Let the JOSE Header be the JWE Protected Header. Verify that the resulting JOSE Header does not contain duplicate Header Parameter names.
 4. Determine the Key Management Mode employed by the algorithm specified by the "alg" (algorithm) Header Parameter.
 5. Verify that the JWE uses a key known to the recipient.
 6. Decrypt the JWE Encrypted Key to produce the CEK. The CEK MUST have a length equal to that required for the content-encryption algorithm.
@@ -63,17 +63,3 @@ Here is a sample of the set of libraries that you can explore:
 4. Libgcrypt
 5. PyNaCl
 6. TweetNaCl
-
-## Questions for Consultation
-
-#### Question 1
-
-This section suggests JSON Web Encryption as per [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516) as the mechanism for payload security and integrity. Which alternative mechanism for payload security and privacy would you explore for HCX? Kindly provide the pros and cons of the alternative mechanism.&#x20;
-
-#### Question 2
-
-In addition to the best practices mentioned in [RFC8725](https://datatracker.ietf.org/doc/html/rfc8725), which other best practices/guidelines would you suggest to HCX participants for data security and privacy?&#x20;
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../../how-to-submit-responses.md).
-{% endhint %}

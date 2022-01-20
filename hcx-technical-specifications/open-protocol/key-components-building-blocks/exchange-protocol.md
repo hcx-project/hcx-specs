@@ -91,8 +91,6 @@ A forward flow would have the following steps:&#x20;
 
 ### Intra Cycle communication (Ask for supplementary Information)&#x20;
 
-\<LGeneralise description, steps and diagram from “Use case document” and use here.>
-
 ![](../../../.gitbook/assets/mermaid-diagram-20220120132852.png)
 
 ### Relay

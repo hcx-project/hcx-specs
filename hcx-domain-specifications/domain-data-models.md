@@ -218,21 +218,3 @@ The Task object is used for capturing activities that can be performed and for t
 | Task     | <p>Task object is used as the payload in status request and response APIs. The object shall have the following details:</p><ul><li><strong>code</strong> - specifies the nature of the task, i.e. status check</li><li><strong>focus</strong> - specifies the context identifiers (e.g case-id for a registered pre-auth, claim id of the provider TMS)</li><li><strong>output</strong> - carries the result of a status request. The result is the status code reflecting the status of the corresponding request (CoverageEligibilityCheck, PreAuthorization, Claim, etc..). The valueSets for the status codes must be the same as specified in the corresponding response FHIR profiles</li></ul><p><strong>structure definition</strong>: (add link)</p> |
 
 &#x20;
-
-## Questions for Consultation
-
-#### Question 1
-
-Payors/Providers can share certain information about eObjects with the HCX gateways as part of [domain headers](domain-data-models.md#domain-header) in the request body. At present, domain working groups have kept these headers empty. Please suggest the data in each eObject that can be shared with the HCX gateways.
-
-#### Question 2
-
-HCX defines search APIs to search eObjects. The search parameters for each eObject are not currently defined. Please suggest the search parameters for each eObject. Also, should there be additional search APIs that do not require FHIR encoding of the response payload? Kindly elaborate on the nature of these APIs.
-
-#### Question 3
-
-Proposed domain data models and terminologies require adopting FHIR as domain object standards. How does one facilitate and enable the participants to adopt FHIR and change their systems and processes?
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../how-to-submit-responses.md).
-{% endhint %}

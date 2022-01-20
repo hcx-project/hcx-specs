@@ -54,25 +54,3 @@ While the exchange protocol by itself may not need to focus on the human user (a
 | linkedUserId | User ID in the source system                                                                                                        | String | <ul><li>Optional</li></ul>                                                                                                                                                                                |
 
 Following [OpenAPI 3.0 document](https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/hcx-specs/v0.7/API%20Definitions/openapi\_hcx\_registry.yml) describes these registries and the associated APIs.
-
-## Questions for Consultation
-
-#### Question 1
-
-Please review the proposed [participant registry](registries.md#participating-organisations-systems-registry) details and provide comments on whether the given attributes are a minimal sufficient list for the functioning of the HCX? What other attributes may be included? What should be the cardinality of those attributes?
-
-#### Question 2
-
-Please review the proposed [participant registry](registries.md#participating-organisations-systems-registry) details and any other attributes advised in Question 2 above. Please provide your comments on the data privacy or security aspect of these attributes?
-
-#### Question 3
-
-Please review the proposed [user registry](registries.md#user-registry) details and provide comments on whether the given attributes are a minimal sufficient list for the functioning of the HCX? What other attributes may be included? What should be the cardinality of those attributes?
-
-#### Question 4
-
-Please review the proposed [user registry](registries.md#user-registry) details and any other attributes advised in Question 3 above. Please provide your comments on the data privacy or security aspect of these attributes?
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
-{% endhint %}

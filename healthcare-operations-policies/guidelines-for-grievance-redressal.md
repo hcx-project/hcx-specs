@@ -21,10 +21,10 @@ Final operational policies for grievance redressal are expected to be drafted by
 
 ## Proposed Approach for Policy Formulation
 
-Drafting and evolving an efficient and truly implementable policy for grievance resolution would need active participation from the HCX ecosystem. Keeping this in mind, the following high level approach is proposed in line with the overall [Approach for Open Specifications](../../open-specifications/governance.md):
+Drafting and evolving an efficient and truly implementable policy for grievance resolution would need active participation from the HCX ecosystem. Keeping this in mind, the following high level approach is proposed in line with the overall [Approach for Open Specifications](../open-specifications/governance.md):
 
 1. Like with the specifications so far, constitute a new working group for Dispute Resolution policies.
-2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](<../../README (1).md>) for the dispute resolution context.
+2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](<../README (1).md>) for the dispute resolution context.
 3. The working group drafts a model policy in accordance with the above principles and in line with the detailed approach from step 2 above.
 4. The principles, detailed approach and model dispute resolution policy draft is versioned and released for public consultation.
 5. The domain working group deliberates the feedback and enhances principles/model policy as needed.
@@ -34,17 +34,3 @@ Drafting and evolving an efficient and truly implementable policy for grievance 
 #### Next Steps
 
 This section proposes a high-level approach that can be adopted for grievance redressal policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for grievance redressal policy formulation as well as a model policy for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.
-
-## Questions for Consultation
-
-#### Question 1
-
-Beyond what’s being proposed as a guideline, what areas and roles do you think HCX as the data exchange gateway should play in grievance redressal?
-
-#### Question 2
-
-While the working groups will further deliberate on details, according to you what should be the mechanism of the grievance redressal on the network? What should be the key grievances that need to be honored between network participants? How should escalations work?
-
-{% hint style="info" %}
-Instructions to send responses to the consultation questions are available [here](../../how-to-submit-responses.md).
-{% endhint %}
