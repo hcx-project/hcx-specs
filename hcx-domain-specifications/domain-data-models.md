@@ -1,11 +1,97 @@
-# eObjects
+---
+description: >-
+  Guidelines to create and definition of eObjects used in the current version of
+  the protocol
+---
+
+# Domain Data Models
+
+The domain data model consists of the electronic claim (e-claim) objects (a.k.a. **eObjects)** that are designed to capture the required information essential for processing a health claim transaction. The e-claim objects, being machine-readable, facilitate the flow of data exchange between different systems and data processing in health claim transactions without the need for human intervention.
+
+## Guidelines for eObjects
+
+### Bundle Structure
+
+* All e-claim objects will be modelled as FHIR bundles of type "document", with "bundle.composition.type" specifying the type of bundle.
+* The first resource in the bundle shall be a “Composition” resource followed by a series of other resources referenced from the “Composition” resource. The elements “type”, “category” and “section” in the “Composition” shall be used to define the purpose and set the context of the document.
+* For example, the data packet for a coverage eligibility check request will be a bundle with “bundle.composition.type” as “Coverage Eligibility Check” and the bundle will have a “CoverageEligibilityRequest” FHIR resource embedded in it.
+
+{% tabs %}
+{% tab title="CoverageEligibilityRequest Document" %}
+* type = “document”
+* composition
+  * type = “_Coverage Eligibility Check Bundle_”
+  * section : cardinality (1..1)
+    * code = “_Coverage Eligibility Request_”
+    * entry : cardinality (1..1)
+      * reference : “CoverageEligibilityRequest”
+* CoverageEligibilityRequest FHIR resource
+* Patient FHIR resource
+* Coverage FHIR resource
+* Any other resources referenced in the CoverageEligibilityRequest resource
+{% endtab %}
+{% endtabs %}
+
+### Identifiers:
+
+* For any resources requiring identifiers (e.g. Patient.identifier), naming systems have to be defined and agreed upon within the affinity domain to be specified in the “identifier.system” element to namespace the identifier value. This can allow an entity or resource to be referenced against system-specific identifiers. For example, a patient may be referenced as:
+
+```
+{
+ "resourceType": "Patient",
+ "identifier": [
+   {
+     "system": "https://ndhm.gov.in/patients",
+     "value": "hinapatel@ndhm"
+   },
+   {
+     "system": "https://pmjay.gov.in/beneficiaries",
+     "value": "QWRT23456"
+   }
+ ]
+}
+```
+
+* For some identifiers, “identifier.type” can be used to provide additional information.
+* “identifier.use” can be used to indicate what/where/how a particular identifier might be used for.
+* Example:
+
+```
+{
+ "type": { // type of identifier
+   "coding": [
+     {
+       "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+       "code": "EI",
+       "display": "Employee Number"
+     }
+   ]
+ },
+ "system": "https://esi.karnataka.org/employees", // naming system
+ "value": "BEN-ID-1001"
+}
+```
+
+### Resources
+
+* For external entities like patients, organisations, practitioners, etc, a reference alone may be enough unless additional information is required to be passed. For example, patient address & other demographics.
+
+### Domain Header
+
+* All eObjects shall be encrypted and sent in the API request body and cannot be accessed by the HCX gateways. However, there is a provision in the API request body for providers and payers to share certain eObjects' related information with the HCX gateway. This information can be sent in the domain\_header part of the request body (as key-value pairs) which can be accessed and stored by HCX gateways for auditing and reporting purposes. Each eObject shall define the domain header values that are to be sent in the API request body.
+
+### Search Parameters
+
+* In addition to the workflow APIs for claim processing workflows, HCX shall also define APIs for searching eObjects. To support the search APIs, all eObjects will define the search request parameters.
+
+## eObjects
 
 This version of the HCX specification defines the domain model specifications required for the following eObjects:
 
 * Coverage Eligibility Request and Coverage Eligibility Response
 * Claim Request and Claim Response: These objects will be used for Pre-Determination, Pre-Authorization and Claim use cases.
 * Payment Notice and Payment Reconciliation
-* InsurancePlan
+* Insurance Plan
 * Communication Request and Communication
 * Task
 
@@ -36,7 +122,7 @@ As per the design considerations and guidelines listed in the previous sections,
 | CoverageEligibilityResponse | <p>The document must contain a CoverageEligibilityResponse resource.</p><p><strong>FHIR Profile</strong>: <a href="https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-CoverageEligibilityResponse.html">link</a></p><p><strong>structure definition</strong>: <a href="https://github.com/Swasth-Digital-Health-Foundation/standards/blob/main/IG-Publisher/input/hcx-definitions/StructureDefinition-CoverageEligibilityResponse.json">CoverageEligibilityResponse</a></p>                         |
 | Coverage                    | <p>The document should contain one or more Coverage resources with minimal information of the policy about which the information is being returned.</p><p><strong>FHIR Profile details</strong>:</p><ul><li>Coverage resources should mandatorily have an identifier for the policy ID issued by the insurer.</li></ul><p><strong>structure definition</strong>: <a href="https://github.com/Swasth-Digital-Health-Foundation/standards/blob/main/IG-Publisher/input/hcx-definitions/StructureDefinition-Coverage.json">Coverage</a></p> |
 
-The Coverage Eligibility Response should include the InsurancePlan URL as part of the domain header. The URL should point to an InsurancePlan object as defined [here](eobjects.md#insurance-plan).
+The Coverage Eligibility Response should include the Insurance Plan URL as part of the domain header as described below . The URL should point to an Insurance Plan object as defined [here](domain-data-models.md#insurance-plan).
 
 #### Domain Headers:
 
@@ -94,7 +180,7 @@ ClaimResponse object is used by payers to send the response for pre-determinatio
 
 ## Insurance Plan
 
-The InsurancePlan object helps in determining the benefits of the plan (not the subscriber sepecific policy which is present in Coverage object), but more generic information. It also contains the documents required, questionnaires to answer and any important information necessary for a successful preauthorization/claim submission, there by reducing the claim submission errors. It also helps in rendering the claim creation UI on the provider side by allowing to filter/view only the necessary options in stages. This is also detailed in the Policy Markup Language [section](../../domain-specific-languages-dsls.md).
+The Insurance Plan object helps in determining the benefits of the plan (not the policy specific to the subscriber which is present in the Coverage object), but more generic information about the plan/product. It also contains the documents required, questionnaires to answer and any important information necessary for a successful preauthorization/claim submission, with an objective to reduce the claim submission errors. It may also help in rendering the claim creation UI on the provider side by allowing to filter/view only the necessary options in stages. More details about it can be found in the Policy Markup Language [section](domain-specific-languages-dsls.md).
 
 This object covers the following aspects of an insurance plan:
 
@@ -109,7 +195,7 @@ This object covers the following aspects of an insurance plan:
 
 ## Communication Request
 
-The FHIR resource CommunicationRequest is used by payors to send a communication request to providers requesting for additional information about a predetermination, preauthorization or a claim request. In future, this object may be used for other communication purposes also.
+The FHIR resource CommunicationRequest is used by payors to send a communication request to providers requesting additional information about a predetermination, preauthorization or a claim request. In future, this object may be used for other communication purposes also.
 
 | Resource             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -117,7 +203,7 @@ The FHIR resource CommunicationRequest is used by payors to send a communication
 
 ## Communication
 
-The FHIR resource Communication is used by providers to respond to the communication requests sent to them. A communication is a conveyance of information from one entity, a sender, to another entity, a receiver.
+The FHIR resource Communication is used by providers to respond to the communication requests sent to them. Communication is a conveyance of information from one entity, a sender, to another entity, a receiver.
 
 | Resource      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,3 +218,21 @@ The Task object is used for capturing activities that can be performed and for t
 | Task     | <p>Task object is used as the payload in status request and response APIs. The object shall have the following details:</p><ul><li><strong>code</strong> - specifies the nature of the task, i.e. status check</li><li><strong>focus</strong> - specifies the context identifiers (e.g case-id for a registered pre-auth, claim id of the provider TMS)</li><li><strong>output</strong> - carries the result of a status request. The result is the status code reflecting the status of the corresponding request (CoverageEligibilityCheck, PreAuthorization, Claim, etc..). The valueSets for the status codes must be the same as specified in the corresponding response FHIR profiles</li></ul><p><strong>structure definition</strong>: (add link)</p> |
 
 &#x20;
+
+## Questions for Consultation
+
+#### Question 1
+
+Payors/Providers can share certain information about eObjects with the HCX gateways as part of [domain headers](domain-data-models.md#domain-header) in the request body. At present, domain working groups have kept these headers empty. Please suggest the data in each eObject that can be shared with the HCX gateways.
+
+#### Question 2
+
+HCX defines search APIs to search eObjects. The search parameters for each eObject are not currently defined. Please suggest the search parameters for each eObject. Also, should there be additional search APIs that do not require FHIR encoding of the response payload? Kindly elaborate on the nature of these APIs.
+
+#### Question 3
+
+Proposed domain data models and terminologies require adopting FHIR as domain object standards. How does one facilitate and enable the participants to adopt FHIR and change their systems and processes?
+
+{% hint style="info" %}
+Instructions to send responses to the consultation questions are available [here](../how-to-submit-responses.md).
+{% endhint %}

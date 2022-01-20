@@ -19,7 +19,7 @@ Based on the above protocol definition and the message structure, each use case 
 
 Keeping this pattern in mind, in the current cashless use case following APIs are expected to be supported.
 
-Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](../../../hcx-domain-specifications/domain-data-specifications/). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
+Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](broken-reference). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
 
 ### **CoverageEligibility**
 

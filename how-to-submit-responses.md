@@ -41,11 +41,11 @@ Please note that the questions included are intended to guide the consultation p
 
 #### 5. Consultation Questions on Domain Specifications
 
-* [Domain Data Models](hcx-domain-specifications/domain-data-specifications/domain-data-models/#questions-for-consultation)
-* [Terminologies](hcx-domain-specifications/domain-data-specifications/terminologies-code-sets-or-metadata-standards.md#questions-for-consultation)
-* [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-data-specifications/domain-specific-languages-dsls.md#questions-for-consultation)
-* [Access Control](hcx-domain-specifications/healthcare-operations-policies/access-control-roles.md#questions-for-consultation)
-* [Participant Onboarding Guidelines](hcx-domain-specifications/healthcare-operations-policies/participant-onboarding.md#questions-for-consultation)
-* [Grievance Redressal Guidelines](hcx-domain-specifications/healthcare-operations-policies/guidelines-for-grievance-redressal.md#questions-for-consultation)
+* [Domain Data Models](hcx-domain-specifications/domain-data-models.md#questions-for-consultation)
+* [Terminologies](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md#questions-for-consultation)
+* [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-specific-languages-dsls.md#questions-for-consultation)
+* [Access Control](healthcare-operations-policies/access-control-roles.md#questions-for-consultation)
+* [Participant Onboarding Guidelines](healthcare-operations-policies/participant-onboarding.md#questions-for-consultation)
+* [Grievance Redressal Guidelines](healthcare-operations-policies/guidelines-for-grievance-redressal.md#questions-for-consultation)
 
 #### 6. [Consultation Questions on Future Roadmap](next-steps.md#questions-for-consultation)
