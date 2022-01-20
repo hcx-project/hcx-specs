@@ -71,6 +71,8 @@ Redirect flow would have the following steps:&#x20;
 3. \[S] sends a new request to \[R1] by re-encrypting the request using the \[R1] key and marking the appropriate participant id to HCX.&#x20;
 4. HCX forwards the new request to \[R1]. Further processing of the request is handled by the recipient \[R1].
 
+![](../../../.gitbook/assets/mermaid-diagram-20220120115948.png)
+
 ### Forward&#x20;
 
 After the original message is received and acknowledged by the receiver, the receiver may forward the request to multiple parties for processing and get their responses before finally responding to the original requestor (sender).
@@ -91,12 +93,7 @@ A forward flow would have the following steps:&#x20;
 
 ### Relay
 
-
-
-&#x20;In case Sender and receiver are listed/registered on different HCX instances, there may be request/response relays between the HCXs. Steps 2, 5, 8 and 11 in the above diagram may involve such relays. The diagram below provides an example of a provider-payor use case with a relay between two HCXs.
-
-\
-
+&#x20;In case Sender and receiver are listed/registered on different HCX instances, there may be request/response relays between the HCXs. Steps 2, 5, 8 and 11 in the below diagram may involve such relays. The diagram below provides an example of a provider-payor use case with a relay between two HCXs.
 
 ![Example of relay between two HCX](https://docs.swasth.app/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MitSEyU3xYjwWrLQ5\_1%2Fuploads%2Fgit-blob-c85399ad4959f8ef82504a8df6ad15990b9d7d16%2F1.png?alt=media)
 
