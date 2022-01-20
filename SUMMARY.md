@@ -32,5 +32,4 @@
   * [Guidelines for Grievance Redressal](healthcare-operations-policies/guidelines-for-grievance-redressal.md)
   * [Guidelines for Event audits](healthcare-operations-policies/guidelines-for-event-audits.md)
   * [Guidelines for Beneficiary Authentication by Providers/Payors](healthcare-operations-policies/guidelines-for-beneficiary-authentication-by-providers-payors.md)
-* [Future roadmap](next-steps.md)
-* [How to submit responses?](how-to-submit-responses.md)
+* [Contributing to the specifications](how-to-submit-responses.md)
