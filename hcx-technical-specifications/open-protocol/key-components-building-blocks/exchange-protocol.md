@@ -87,11 +87,13 @@ A forward flow would have the following steps:&#x20;
 6. \[R] may repeat steps 2-4 for multiple next recipients (\[R2], \[R3], …) in parallel or sequentially and receive responses.&#x20;
 7. \[R] processes responses from all forwarded requests and respond with the final response to \[S]
 
-![](../../../.gitbook/assets/mermaid-diagram-20220120125203.png)
+![](../../../.gitbook/assets/mermaid-diagram-20220120133416.png)
 
 ### Intra Cycle communication (Ask for supplementary Information)&#x20;
 
 \<LGeneralise description, steps and diagram from “Use case document” and use here.>
+
+![](../../../.gitbook/assets/mermaid-diagram-20220120132852.png)
 
 ### Relay
 
