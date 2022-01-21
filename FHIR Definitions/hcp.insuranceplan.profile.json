@@ -1,0 +1,159 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "HCXInsurancePlan",
+    "meta" : {
+      "lastUpdated" : "2019-11-01T09:29:23.356+11:00"
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"></div>"
+    },
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "Financial.General"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 0
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode" : "business"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "pa"
+    }],
+    "url" : "http://hcx-base-url/StructureDefinition/InsurancePlan",
+    "version" : "4.0.1",
+    "name" : "HCXInsurancePlan",
+    "status" : "draft",
+    "date" : "2021-12-28",
+    "publisher" : "HCX Working Group",
+    "contact" : [
+        {
+            "name": "HCX Working Group",
+            "telecom": [
+              {
+                "system": "email",
+                "value": "tbd@hcx.org.in",
+                "use": "work",
+                "rank": 1
+              }
+            ]
+          }
+    ],
+    "description" : "Details of a Health Insurance product/plan provided by an organization.",
+    "fhirVersion" : "4.0.1",
+    "mapping" : [{
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "resource",
+    "abstract" : false,
+    "type" : "InsurancePlan",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/InsurancePlan",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [
+        {
+            "id": "InsurancePlan.plan.extension",
+            "path": "InsurancePlan.plan",
+            "slicing": {
+                "discriminator":  [
+                    {
+                        "type": "value",
+                        "path": "url"
+                    }
+                ],
+                "rules": "open"
+            }
+        },
+        {
+            "id": "InsurancePlan.plan.extension:proofOfIdDocuments",
+            "path": "InsurancePlan.plan.extension",
+            "sliceName": "proofOfIdDocuments",
+            "short": "List of documents for Proof of Identification.",
+            "definition": "List of documents for Proof of Identification.",
+            "type":  [
+                {
+                    "code": "Extension",
+                    "profile":  [
+                        "http://https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "InsurancePlan.plan.extension:proofOfPresenceDocuments",
+            "path": "InsurancePlan.plan.extension",
+            "sliceName": "proofOfPresenceDocuments",
+            "short": "List of documents for Proof of Presence.",
+            "definition": "List of documents for Proof of Presence.",
+            "type":  [
+                {
+                    "code": "Extension",
+                    "profile":  [
+                        "http://https://hcx-base-url/StructureDefinition/HCXProofOfPresenceExtension"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "InsurancePlan.plan.specificCost.benefit.extension:clinicalDiagnosticDocuments",
+            "path": "InsurancePlan.plan.specificCost.benefit.extension",
+            "sliceName": "clinicalDiagnosticDocuments",
+            "short": "List of documents to be submitted to claim the benefit.",
+            "definition": "List of documents to be submitted to claim the benefit.",
+            "type":  [
+                {
+                    "code": "Extension",
+                    "profile":  [
+                        "http://https://hcx-base-url/StructureDefinition/HCXDiagnosticDocumentsExtension"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "InsurancePlan.plan.specificCost.benefit.extension:informationalMessages",
+            "path": "InsurancePlan.plan.specificCost.benefit.extension",
+            "sliceName": "informationalMessages",
+            "short": "Messages related to the benefit.",
+            "definition": "Messages related to the benefit.",
+            "type":  [
+                {
+                    "code": "Extension",
+                    "profile":  [
+                        "http://https://hcx-base-url/StructureDefinition/HCXInformationalMessagesExtension"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "InsurancePlan.plan.specificCost.benefit.extension:questionnaires",
+            "path": "InsurancePlan.plan.specificCost.benefit.extension",
+            "sliceName": "questionnnaires",
+            "short": "Questionnaires to be answered to claim the benefit.",
+            "definition": "Questionnaires to be answered to claim the benefit.",
+            "type":  [
+                {
+                    "code": "Extension",
+                    "profile":  [
+                        "http://https://hcx-base-url/StructureDefinition/HCXQuestionnairesExtension"
+                    ]
+                }
+            ]
+        }
+      ]
+    }
+  }

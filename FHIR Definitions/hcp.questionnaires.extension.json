@@ -1,0 +1,178 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "HCXQuestionnairesExtension",
+    "url": "https://hcx-base-url/StructureDefinition/HCXQuestionnairesExtension",
+    "version": "0.1.0",
+    "name": "HCXQuestionnairesExtension",
+    "title": "HCX Questionnaires Extension",
+    "status": "active",
+    "date": "2021-12-27",
+    "publisher": "HCX Working Group",
+    "contact": [
+      {
+        "name": "HCX Working Group",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "tbd@hcx.org.in",
+            "use": "work",
+            "rank": 1
+          }
+        ]
+      }
+    ],
+    "description": "Extension to provide questionnaires for HCX requests.",
+    "purpose": "Extension to provide questionnaires for HCX requests.",
+    "copyright": "TBD",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+      {
+        "type": "element",
+        "expression": "InsurancePlan.plan.specificCost.benefit"
+      }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Extension",
+          "path": "Extension",
+          "short": "Add a Questionnaire.",
+          "definition": "Add a Questionnaire."
+        },
+        {
+          "id": "Extension.extension",
+          "path": "Extension.extension",
+          "slicing": {
+            "discriminator": [
+              {
+                "type": "value",
+                "path": "url"
+              }
+            ],
+            "rules": "open"
+          }
+        },
+        {
+          "id": "Extension.extension:Questionnaire",
+          "path": "Extension.extension",
+          "sliceName": "questionnaire",
+          "short": "Questionnaire",
+          "definition": "Questionnaire",
+          "min": 1,
+          "max": "*"
+        },
+        {
+          "id": "Extension.extension:Questionnaire.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "Questionnaire"
+        },
+        {
+          "id": "Extension.extension:Questionnaire.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Questionnaire Reference",
+          "definition": "Questionnaire Reference",
+          "min": 1,
+          "type": [
+            {
+              "code": "Reference",
+              "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Questionnaire"]
+            }
+          ]
+        },
+        {
+          "id": "Extension.extension:RequiredFlag",
+          "path": "Extension.extension",
+          "sliceName": "required",
+          "short": "Required Flag",
+          "definition": "Indicates whether the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:RequiredFlag.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "QuestionnaireRequiredFlag"
+        },
+        {
+          "id": "Extension.extension:RequiredFlag.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Document Required Flag",
+          "definition": "Document Required Flag",
+          "min": 1,
+          "type": [
+            {
+              "code": "boolean"
+            }
+          ]
+        },
+        {
+          "id": "Extension.extension:ClaimUse",
+          "path": "Extension.extension",
+          "sliceName": "claimUse",
+          "short": "Claim use code",
+          "definition": "Indicates which stage of the claim that the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:ClaimUse.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "QuestionnaireClaimUse"
+        },
+        {
+          "id": "Extension.extension:ClaimUse.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Claim use code",
+          "definition": "Claim use code",
+          "min": 1,
+          "type": [
+            {
+              "code": "code"
+            }
+          ],
+          "binding" : {
+            "strength" : "preferred",
+            "valueSet" : "http://hl7.org/fhir/ValueSet/claim-use|4.0.1"
+          }
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl",
+          "path": "Extension.extension",
+          "sliceName": "documentationUrl",
+          "short": "Required Flag",
+          "definition": "Indicates whether the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "DocumentationUrl"
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Documention URL",
+          "definition": "Documention URL",
+          "min": 1,
+          "type": [
+            {
+              "code": "url"
+            }
+          ]
+        },
+        {
+          "id": "Extension.url",
+          "path": "Extension.url",
+          "fixedUri": "https://hcx-base-url/StructureDefinition/HCXQuestionnairesExtension"
+        },
+        {
+          "id": "Extension.value[x]",
+          "path": "Extension.value[x]",
+          "max": "0"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,210 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "HCXProofOfIdentificationExtension",
+    "url": "https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension",
+    "version": "0.1.0",
+    "name": "HCXProofOfIdentificationExtension",
+    "title": "HCX Proof Of Identification Extension",
+    "status": "active",
+    "date": "2021-12-27",
+    "publisher": "HCX Working Group",
+    "contact": [
+      {
+        "name": "HCX Working Group",
+        "telecom": [
+          {
+            "system": "email",
+            "value": "tbd@hcx.org.in",
+            "use": "work",
+            "rank": 1
+          }
+        ]
+      }
+    ],
+    "description": "Extension to add a list of proof of Identification Documents.",
+    "purpose": "Extension to add a list of proof of Identification Documents.",
+    "copyright": "TBD",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+      {
+        "type": "element",
+        "expression": "InsurancePlan.plan"
+      }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Extension",
+          "path": "Extension",
+          "short": "Extension to add a list of proof of Identification Documents.",
+          "definition": "Extension to add a list of proof of Identification Documents."
+        },
+        {
+          "id": "Extension.extension",
+          "path": "Extension.extension",
+          "slicing": {
+            "discriminator": [
+              {
+                "type": "value",
+                "path": "url"
+              }
+            ],
+            "rules": "open"
+          }
+        },
+        {
+          "id": "Extension.extension:ProofOfIdentificationDocument",
+          "path": "Extension.extension",
+          "sliceName": "proofOfIdDocumentCode",
+          "short": "POID Document",
+          "definition": "Proof of Identification Document",
+          "min": 1
+        },
+        {
+          "id": "Extension.extension:ProofOfIdentificationDocument.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "ProofOfIdentificationDocumentCode"
+        },
+        {
+          "id": "Extension.extension:ProofOfIdentificationDocument.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "POID Document Code",
+          "definition": "Proof of Identification Code",
+          "min": 1,
+          "type": [
+            {
+              "code": "CodeableConcept"
+            }
+          ],
+          "binding": {
+            "strength": "extensible",
+            "valueSet": "https://hcx-valuesets/proofOfIdentificationDocumentCodes"
+          }
+        },
+        {
+          "id": "Extension.extension:RequiredFlag",
+          "path": "Extension.extension",
+          "sliceName": "required",
+          "short": "Required Flag",
+          "definition": "Indicates whether the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:RequiredFlag.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "ProofOfIdentificationDocumentRequiredFlag"
+        },
+        {
+          "id": "Extension.extension:RequiredFlag.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "POID Document Required Flag",
+          "definition": "Proof of Identification Document Required Flag",
+          "min": 1,
+          "type": [
+            {
+              "code": "boolean"
+            }
+          ]
+        },
+        {
+          "id": "Extension.extension:MimeType",
+          "path": "Extension.extension",
+          "sliceName": "mimeType",
+          "short": "Mime type of the document",
+          "definition": "Indicates the mimetype",
+          "max": "*"
+        },
+        {
+          "id": "Extension.extension:MimeType.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "ProofOfIdentificationDocumentMimeType"
+        },
+        {
+          "id": "Extension.extension:MimeType.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Document Mime type code",
+          "definition": "Document Mime type code",
+          "min": 1,
+          "type": [
+            {
+              "code": "code"
+            }
+          ],
+          "binding" : {
+            "strength" : "required",
+            "description" : "The mime type of an attachment. Any valid mime type is allowed.",
+            "valueSet" : "http://hl7.org/fhir/ValueSet/mimetypes|4.0.1"
+          }
+        },
+        {
+          "id": "Extension.extension:ClaimUse",
+          "path": "Extension.extension",
+          "sliceName": "claimUse",
+          "short": "Claim use code",
+          "definition": "Indicates which stage of the claim that the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:ClaimUse.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "ClinicalDiagnosticDocumentClaimUse"
+        },
+        {
+          "id": "Extension.extension:ClaimUse.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Claim use code",
+          "definition": "Claim use code",
+          "min": 1,
+          "type": [
+            {
+              "code": "code"
+            }
+          ],
+          "binding" : {
+            "strength" : "preferred",
+            "valueSet" : "http://hl7.org/fhir/ValueSet/claim-use|4.0.1"
+          }
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl",
+          "path": "Extension.extension",
+          "sliceName": "documentationUrl",
+          "short": "Required Flag",
+          "definition": "Indicates whether the document is required",
+          "max": "1"
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl.url",
+          "path": "Extension.extension.url",
+          "fixedUri": "DocumentationUrl"
+        },
+        {
+          "id": "Extension.extension:DocumentationUrl.value[x]",
+          "path": "Extension.extension.value[x]",
+          "short": "Documention URL",
+          "definition": "Documention URL",
+          "min": 1,
+          "type": [
+            {
+              "code": "url"
+            }
+          ]
+        },
+        {
+          "id": "Extension.url",
+          "path": "Extension.url",
+          "fixedUri": "https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension"
+        },
+        {
+          "id": "Extension.value[x]",
+          "path": "Extension.value[x]",
+          "max": "0"
+        }
+      ]
+    }
+  }
