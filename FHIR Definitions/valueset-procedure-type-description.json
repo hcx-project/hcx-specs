@@ -1,0 +1,175 @@
+{
+    "resourceType": "ValueSet",
+    "id": "procedure-type-description",
+    "version": "1",
+    "name": "Procedure Type Description",
+    "status": "active",
+    "date": "2021-09-07",
+    "publisher": "Health Claims Exchange",
+    "description": "This is the value set that includes the codes to identify the procedure type description and services are provided",
+    "expansion": {
+      "timestamp": "2021-09-07T08:15:30+05:30",
+      "contains": [
+        {
+          "code": 1,
+          "display": "Administrative procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 2,
+          "display": "Blood bank procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 3,
+          "display": "Community health procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 4,
+          "display": "Determination of information related to transfusion (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 5,
+          "display": "Environmental care procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 6,
+          "display": "General treatment (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 7,
+          "display": "Laboratory procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 8,
+          "display": "Nuclear medicine procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 9,
+          "display": "Obstetric procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 10,
+          "display": "Outpatient procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 11,
+          "display": "Patient encounter procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 12,
+          "display": "Postoperative procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 13,
+          "display": "Preoperative procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 14,
+          "display": "Procedure by intent (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 15,
+          "display": "Procedure by method (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 16,
+          "display": "Procedure by priority (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 17,
+          "display": "Procedure by site (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 18,
+          "display": "Procedure categorized by device involved (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 19,
+          "display": "Procedure in coronary care unit (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 20,
+          "display": "Procedure on ganglion cyst (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 21,
+          "display": "Procedure on wound (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 22,
+          "display": "Procedure related to anesthesia and sedation (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 23,
+          "display": "Procedure related to breastfeeding (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 24,
+          "display": "Procedure with a clinical finding focus (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 25,
+          "display": "Procedure with a procedure focus (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 26,
+          "display": "Procedures relating to eating and drinking (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 27,
+          "display": "Procedures relating to mobility (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 28,
+          "display": "Promotion (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 29,
+          "display": "Provider-specific procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 30,
+          "display": "Regimes and therapies (regime/therapy)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 31,
+          "display": "Social service procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        },
+        {
+          "code": 32,
+          "display": "Staff related procedure (procedure)",
+          "system": "http://hcp.org/codes/procedure-type-description"
+        }
+      ]
+    }
+  }
