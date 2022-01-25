@@ -24,7 +24,7 @@ In earlier discussions, PML was being thought of as a single DSL to express Insu
 
 This version of the protocol has focused on digitally encoding the Insurance Plan (usually called Product) by the payers. In order to keep it consistent with rest of the domain specifications, protocol proposes to use a combination of FHIR resources and FHIR DSLs to express plans (#1 above) and most prevalent constraints (a large part of #2 above).
 
-The policies that are derived from the products specific to the individual or a group, would be planned in the future versions. Insurance Plan information is expected to be avialable publicly as it is not specific to any subscriber or group.
+The policies that are derived from the products specific to the individual or a group, would be planned in the future versions. Insurance Plan information is expected to be available publicly as it is not specific to any subscriber or group.
 
 The [FHIR InsurancePlan profile with some extensions](https://gist.github.com/gopi-vitraya/7c1a3a8526a64487fe04a91b17927b24#file-hcx-insuranceplan-json) are used to encode the above and covers the following key aspects:&#x20;
 
