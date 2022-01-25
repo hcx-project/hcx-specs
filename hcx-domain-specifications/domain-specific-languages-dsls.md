@@ -13,11 +13,16 @@ As indicated in the previous version of the protocol, policy markup language was
 
 In earlier discussions, PML was being thought of as a single DSL to express Insurance Plans (products) and Policies/rules around these plans. However, further analysis with various groups suggested that needs from PML can be unbundled into the following keys asks:&#x20;
 
-1. Plan/Product details - Publically shareable details of plan, procedures covered, limits etc.&#x20;
-2. Constraints (including pre-submission validations) - Key constraints on various plan elements&#x20;
-3. Routing information - Indication of various processign stages if a plan supports multi party processing
+1. Plan/Product details - Publically shareable generic details of plan e.g. procedures covered, limits etc. that are not specific to a subscriber.&#x20;
+2. Constraints (including pre-submission validations) - Key constraints on various plan elements. These may include:
+   1. Document checklist against procedure/package&#x20;
+   2. Informational/compliance messages against procedure/package&#x20;
+   3. Procedure specific questionnaires&#x20;
+   4. Requirements for Proof of identification and Proof of Presence
+   5. Inclusion/exclusion constraints.
+3. Routing information - Information of where to send claims related to the plan and details of various processing stages/entities if a plan supports multi party processing
 
-This version of the protocol is focused on digitally encoding the Insurance Plan (usually called Product) by the payers. In order to keep it consistent with rest of the domain specifications, protocol proposes to use a combination of FHIR resources and FHIR DSLs to express plans (#1 above) and most prevelant constraints (a large part of #2 above).
+This version of the protocol has focused on digitally encoding the Insurance Plan (usually called Product) by the payers. In order to keep it consistent with rest of the domain specifications, protocol proposes to use a combination of FHIR resources and FHIR DSLs to express plans (#1 above) and most prevalent constraints (a large part of #2 above).
 
 The policies that are derived from the products specific to the individual or a group, would be planned in the future versions. Insurance Plan information is expected to be avialable publicly as it is not specific to any subscriber or group.
 
@@ -33,3 +38,7 @@ The [FHIR InsurancePlan profile with some extensions](https://gist.github.com/go
 8. The routing information to determine the right recipient for a claim (Not covered in this version)&#x20;
 
 An [example](https://gist.github.com/gopi-vitraya/c55fafdd6f932e4fdbf00b79bda9f71a) InsurancePlan object is provided for reference. The digital encoding of policies and adjudication rules would be discussed in the later versions of the protocol.
+
+## Bill markup Language
+
+After analysis needs from the Bill Markup Language and further deliberation from phase 1 work, [Claims profile/eObject](domain-data-models.md#claim-request) adopted from HL7 FHIR financial module is considered good enough to hold the needed bill related information, thereby eliminating the need for a separate markup language.&#x20;
