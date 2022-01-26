@@ -37,7 +37,7 @@ The [FHIR InsurancePlan profile with some extensions](../FHIR%20Definitions/hcx.
 7. The inclusion and exclusion constraints against a particular benefit or a group of benefits (Not covered in this version)&#x20;
 8. The routing information to determine the right recipient for a claim (Not covered in this version)&#x20;
 
-An [example](https://gist.github.com/gopi-vitraya/c55fafdd6f932e4fdbf00b79bda9f71a) InsurancePlan object is provided for reference. The digital encoding of policies and adjudication rules would be discussed in the later versions of the protocol.
+An [example](../FHIR%20Definitions/examples/insurancePlan1.json) InsurancePlan object is provided for reference. The digital encoding of policies and adjudication rules would be discussed in the later versions of the protocol.
 
 ## Bill markup Language
 
