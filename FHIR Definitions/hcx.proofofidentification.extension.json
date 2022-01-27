@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXProofOfIdentificationExtension",
-    "url": "https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension",
+    "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html",
     "version": "0.1.0",
     "name": "HCXProofOfIdentificationExtension",
     "title": "HCX Proof Of Identification Extension",
@@ -198,7 +198,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension"
+          "fixedUri": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
         },
         {
           "id": "Extension.value[x]",
