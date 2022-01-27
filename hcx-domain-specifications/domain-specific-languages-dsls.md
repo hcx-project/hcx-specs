@@ -41,4 +41,4 @@ An [example](../FHIR%20Definitions/examples/insurancePlan1.json) InsurancePlan o
 
 ## Bill markup Language
 
-After analysis needs from the Bill Markup Language and further deliberation from phase 1 work, [Claims profile/eObject](domain-data-models.md#claim-request) adopted from HL7 FHIR financial module is considered good enough to hold the needed bill related information, thereby eliminating the need for a separate markup language.&#x20;
+After analysis needs from the Bill Markup Language and further deliberation from phase 1 work, [Claims profile/eObject](domain-data-models/#claim-request) adopted from HL7 FHIR financial module is considered good enough to hold the needed bill related information, thereby eliminating the need for a separate markup language.&#x20;
