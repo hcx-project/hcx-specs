@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXProofOfPresenceExtension",
-    "url": "https://hcx-base-url/StructureDefinition/HCXProofOfPresenceExtension",
+    "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html",
     "version": "0.1.0",
     "name": "HCXProofOfPresenceExtension",
     "title": "HCX Proof Of Presence Extension",
@@ -199,7 +199,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://hcx-base-url/StructureDefinition/HCXProofOfPresenceExtension"
+          "fixedUri": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
         },
         {
           "id": "Extension.value[x]",
