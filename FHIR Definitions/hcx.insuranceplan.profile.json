@@ -28,7 +28,7 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
       "valueCode" : "pa"
     }],
-    "url" : "http://hcx-base-url/StructureDefinition/InsurancePlan",
+    "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXInsurancePlan.html",
     "version" : "4.0.1",
     "name" : "HCXInsurancePlan",
     "status" : "draft",
@@ -89,7 +89,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "http://https://hcx-base-url/StructureDefinition/HCXProofOfIdentificationExtension"
+                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
                     ]
                 }
             ]
@@ -104,7 +104,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "http://https://hcx-base-url/StructureDefinition/HCXProofOfPresenceExtension"
+                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
                     ]
                 }
             ]
@@ -119,7 +119,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "http://https://hcx-base-url/StructureDefinition/HCXDiagnosticDocumentsExtension"
+                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
                     ]
                 }
             ]
@@ -134,7 +134,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "http://https://hcx-base-url/StructureDefinition/HCXInformationalMessagesExtension"
+                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXInformationalMessagesExtension.html"
                     ]
                 }
             ]
@@ -149,7 +149,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "http://https://hcx-base-url/StructureDefinition/HCXQuestionnairesExtension"
+                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXQuestionnairesExtension.html"
                     ]
                 }
             ]
