@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXDiagnosticDocumentsExtension",
-    "url": "https://hcx-base-url/StructureDefinition/HCXDiagnosticDocumentsExtension",
+    "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html",
     "version": "0.1.0",
     "name": "HCXDiagnosticDocumentsExtension",
     "title": "HCX Diagnostic Documents Extension",
@@ -198,7 +198,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://hcx-base-url/StructureDefinition/HCXDiagnosticDocumentsExtension"
+          "fixedUri": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
         },
         {
           "id": "Extension.value[x]",
