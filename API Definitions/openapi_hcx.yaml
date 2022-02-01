@@ -99,30 +99,21 @@ paths:
         description: Coverage Eligibility Response domain object
         url: https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-response
       description: >-
-        This API is for payors to send the response for a coverage eligibility request to the providers. In case of a successful scenario, this API payload should contain the eligibility and plan details of the beneficiary for whom the details are requested for.
-        
-        
-        Payors should send the following details as the request payload in the coverage eligibility response API:
-
-          1. A set of header attributes that provide transport, security, message integrity and summary information about the message being exchanged. This information is used by the HCX gateway for routing the request and auditing purposes.
+        This is a callback API is for payors/proessors to send the response for a coverage eligibility request from the providers/originator. In case of a successful scenario, this API payload should contain the eligibilitydetails (in the CoverageEligibilityResponse bundle) and plan url (in the domain header) of the beneficiary for whom the details are requested for.
+         
+        Payors/Processors should send the following details as the request payload in this callback API:
             
-          2. If the coverage eligibility request is successfully processed, payor should send a CoverageEligibilityResponse domain entity (eObject) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/hcx-specifications/hcx-domain-specifications/domain-data-specifications/domain-data-models/eobjects#coverage-eligibility-response). This needs to be encrypted so that HCX cannot read this and can be decrypted & processed only by the intended recipient.
-          
-          4. In case of errors, the Coverage Eligibility Response API request body should contain the error details. 
-        
-        
-        The request body (header attributes and the FHIR resources) should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) using the steps defined in [HCX specs](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
-        
-        
-        The response to this API could be one of the following:
-          1. A successful accepted response from the HCX gateway if the strucuture of the request payload is valid and the validation of open attributes (protocol headers) is successful. Upon successful validation, HCX gateway forwards the same request to the intended recipient asynchronously.
-          2. An error response if any of the validations fail.
+          1. In case there are any protocol related errors in processsing the corresponding Coverage Eligibility request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case coverage eligibility request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and CoverageEligibilityResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#coverage-eligibility-response). CoverageEligibilityResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html) for the resource. 
         
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -197,15 +188,21 @@ paths:
       tags:
         - Claims APIs
       description: >-
-        This is the callback API on HCX gateways and on Provider systems which will be called by Payor systems and HCX gateways to return the response for Pre-Determination requests. 
-        
-        
-        Payload for this API has to be created as per the [Claim Response Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        This is a callback API is for payors/proessors to send the response for a Pre-Determination request from the providers/originator.
+         
+        Payors/Processors should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding Pre-Determination request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case Pre-Determinationrequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -280,15 +277,21 @@ paths:
       tags:
         - Claims APIs
       description: >-
-        This is the callback API on HCX gateways and on Provider systems which will be called by Payor systems and HCX gateways to return the response for Pre-Authorization requests. 
-        
-        
-        Payload for this API has to be created as per the [Claim Response Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        This is a callback API is for payors/proessors to send the response for a Pre-Authorization request from the providers/originator.
+         
+        Payors/Processors should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding Pre-Authorization request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case Pre-Authorization request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -363,15 +366,21 @@ paths:
       tags:
         - Claims APIs
       description: >-
-        This is the callback API on HCX gateways and on Provider systems which will be called by Payor systems and HCX gateways to return the response for Claim requests. 
-        
-        
-        Payload for this API has to be created as per the [Claim Response Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        This is a callback API is for payors/proessors to send the response for a Claims request from the providers/originator.
+         
+        Payors/Processors should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding Claims request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case Claims request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -446,15 +455,21 @@ paths:
       tags:
         - Payment APIs
       description: >-
-        This is callback API for payment acknowledgement by the Providers. This API is available on HCX gateways and Payor systems. 
-        
-        
-        Payload for this API has to be created as per the [Payment Notice Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-PaymentNoticeDocument.html) defined in HCX Specifications and serialized as JWE json as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        This is a callback API is for service providers to send the response for a Payment notice request from the payor/processors.
+         
+        Service providers should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding PaymentNotice request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case Payment Notice request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#payment-notice). PaymentNotice resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PaymentNoticeDocument.html) for the resource.
+
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -532,15 +547,21 @@ paths:
       tags:
         - Communication APIs
       description: >-
-        This is the callback API on HCX gateways and on Payor systems which will be called by Provider systems and HCX gateways to return the response for Communication requests. 
-        
-        
-        Payload for this API has to be created as per the Communication defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        This is a callback API is for recievers of Communication request to send the Communication response.
+         
+        Responder should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding CommunicationRequest (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case CommunicationRequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and Communication  bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#communication). Communication resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Communication.html) for the resource.        
+
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -627,22 +648,23 @@ paths:
       tags:
         - Operational APIs
       description: >-
-        This is the callback API to return the response for status requests. 
-        
-        
-        The response for status API is also expressed as FHIR Task resource, where
-        
-        - Task.output carries the status result. The result is the status code reflecting the status of the corresponding request (CoverageEligibilityCheck, PreAuthorization, Claim, etc..). The valueSets for the status codes must be the same as specified in the corresponding response FHIR profiles.
-        
-        
-        The status API call is designed to be simple in nature with just a high level status returned as a single code in response. Complex status responses and bundling of status checks on multiple items would be considered in future versions of the protocol by the working groups.
-        
+        This is a callback API is for recievers of status request to send the processing status of requested resource.
+         
+        Responder should send the following details as the request payload in this callback API:
+            
+          1. In case there are any protocol related errors in processsing the corresponding Status request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
+
+          2. In case Status request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and Response bundle corresponding to the resource (e.g. a CoverageEligibilityResponse or a ClaimResponse etc.) indicated in the status request. It could be any of the Response resources as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models). Response resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/profiles.html) for the resource. 
+
+            In a way this callback behave similar to corresponding cycle's on_* callback, however, while those callbacks would usually carry the FHIR resource with "complete" or "error" outcome, this callback may also indicate a partially processed resource.   
         
       requestBody:
         content:
           application/json:
             schema:
-                $ref: '#/components/schemas/JWEPayload'
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ErrorHeader'
       responses:
         '202':
           description: Accepted
@@ -955,8 +977,43 @@ components:
         trace:
           type: string
           description: Long description supporting the Code 
+
+    ErrorHeader:
+      type: object
+      allOf:
+      - $ref: '#/components/schemas/ProtocolHeader'
+      properties:
+          protocol_err_code:
+            type: string
+            description: Protocol related error codes as defined in the Error Handling section of the specifications 
+            enum:
+              - ERR_ACCESS_DENIED
+              - ERR_INVALID_PAYLOAD
+              - ERR_INVALID_SENDER
+              - ERR_INVALID_RECIPIENT
+              - ERR_MANDATORY_HEADER_MISSING
+              - ERR_INVALID_API_CALL_ID
+              - ERR_INVALID_CORRELATION_ID
+              - ERR_INVALID_TIMESTAMP
+              - ERR_INVALID_REDIRECT_TO
+              - ERR_INVALID_STATUS
+              - ERR_INVALID_DEBUG_FLAG
+              - ERR_INVALID_ERROR_DETAILS
+              - ERR_INVALID_DEBUG_DETAILS
+              - ERR_RECIPIENT_NOT_AVAILABLE
+              - ERR_INVALID_WORKFLOW_ID
+              - ERR_SERVICE_UNAVAILABLE
+              - ERR_INVALID_ENCRYPTION
+              - ERR_INVALID_PAYLOAD
+              - ERR_WRONG_DOMAIN_PAYLOAD
+              - ERR_INVALID_DOMAIN_PAYLOAD
+              - ERR_SENDER_NOT_SUPPORTED
+              - ERR_SERVICE_UNAVAILABLE
+              - ERR_DOMAIN_PROCESSING
+
   securitySchemes:
     bearer_auth:
       type: http
       scheme: bearer
       bearerFormat: JWT
+      
