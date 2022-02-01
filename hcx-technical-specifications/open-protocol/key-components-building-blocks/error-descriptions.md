@@ -4,6 +4,10 @@ description: Types of protocol errors, list of error codes and their description
 
 # Error Handling
 
+This section provides details of handling protocol related errors, their categorisation, standard list of errors and how they need to be responded back in the asynchronous responses (specially when they are generated at the recipient end). For details on how to handle business processing related error please see [Handling Processing Errors](../../../hcx-domain-specifications/domain-data-models/handling-processing-errors.md) section.&#x20;
+
+### Categories and List of protocol errors
+
 HCX gateway and the participant systems (mainly, the recipient systems) need to validate for certain conditions and raise errors with appropriate error codes and details. Broadly, there are following two categories of errors:
 
 1. **HCX Gateway Error Scenarios** - Protocol header related checks that are validated by the HCX gateway and gateway processing related error scenarios. The gateway may send these error responses to the caller either synchronously in the HTTP response to the API call or in the asynchronous callback API.
@@ -43,3 +47,23 @@ HCX gateway and the participant systems (mainly, the recipient systems) need to 
 | **ERR\_SERVICE\_UNAVAILABLE**     | When the recipient is unable to service due to interval server or infrastructure issues like the database is unavailable, or issues with any of the internal components that prevent it from fulfilling the request.                                                                                                                                                                                                                                                                                              |
 | **ERR\_DOMAIN\_PROCESS**          | When the business processing of the request results in an error. The responder is expected to send back the corresponding domain response object with details of the error (using {response\_r_esource}.outcome and {response\__resource}.error.                                                                                                                                                                                                                                                                  |
 
+### Responding to Asynchronous Protocol Errors
+
+While protocol errors detected during call from request or callback originator can be responded using ErrorResponse schema during the synchronous API response, many of these checks will happen asynchronously for the request/calback originator. E.g. when a provider submits a claims request, payor may asynchronously find out that JWE payload was invalid, or the format of the FHIR object was invalid. In such cases, protocol requires the error to be reported back as HCX protocol error using following mechanism:
+
+1. System (HCX or Recipient of the the call) generates the protocol header as it would for any response (with correlation\_id, sender, recipient, timestamp etc.).&#x20;
+2. &#x20;**x-hcx-status** in the protocol header is set to "response.error".
+3. Error code in **x-hcx-errordetails** header needs to be set to one of the relevant error code as mentioned [above](error-descriptions.md#categories-and-list-of-protocol-errors).&#x20;
+4. Instead of the JWEPayload, this protocol header object is send as part of the body of the response callback (on\__request or on\_submit or on\_status etc.)._ This is achieved in OpenAPI 3.0 definition of the callback APIs using oneOf construct of [OpenAPI 3.0 Specification](https://swagger.io/specification/). Here's the snippet of how the requestBody defintion of the callback APIs:&#x20;
+
+```
+  requestBody:
+    content:
+      application/json:
+        schema:
+          oneOf:
+            - $ref: '#/components/schemas/JWEPayload'
+            - $ref: '#/components/schemas/ErrorHeader'
+```
+
+5\. The recipient of the callback can identify the outcome based on the type of the schema recieved in the callback body and take necessary measures for further processing.  __ &#x20;
