@@ -28,7 +28,7 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
       "valueCode" : "pc"
     }],
-    "url" : "http://hl7.org/fhir/StructureDefinition/HCXCommunicationRequest",
+    "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CommunicationRequest.html",
     "version" : "4.0.1",
     "name" : "CommunicationRequest",
     "status" : "draft",

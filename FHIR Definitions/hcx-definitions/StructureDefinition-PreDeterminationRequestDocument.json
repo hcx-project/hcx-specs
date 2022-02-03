@@ -30,7 +30,7 @@
       "valueCode": "sd"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXPreDeterminationRequestDocument",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PreDeterminationRequestDocument.html",
   "version": "4.0.1",
   "name": "PreDeterminationRequestDocument",
   "status": "draft",

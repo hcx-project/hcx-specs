@@ -30,7 +30,7 @@
       "valueCode": "pa"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXPractitioner",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Practitioner.html",
   "version": "4.0.1",
   "name": "Practitioner",
   "status": "draft",

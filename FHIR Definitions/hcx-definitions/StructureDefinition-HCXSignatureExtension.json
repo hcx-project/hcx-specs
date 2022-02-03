@@ -1,6 +1,6 @@
 {
     "resourceType" : "StructureDefinition",
-    "id" : "hcp-signature",
+    "id" : "HCXSignatureExtension",
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
       "valueCode" : "fhir"
@@ -9,9 +9,9 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 1
     }],
-    "url" : "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature",
+    "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXSignatureExtension.html",
     "version" : "4.0.1",
-    "name" : "HcpSignature",
+    "name" : "HCXSignatureExtension",
     "status" : "draft",
     "date" : "2021-08-20",
     "publisher" : "HL7",
@@ -31,16 +31,8 @@
     "kind" : "complex-type",
     "abstract" : false,
     "context" : [{
-      "type" : "element",
-      "expression" : "hcp"
-    },
-    {
-      "type" : "element",
-      "expression" : "hcp.item"
-    },
-    {
-      "type" : "element",
-      "expression" : "hcp.item.item"
+      "type": "element",
+      "expression": "ClaimRequestDocument.section.entry.signature"
     }],
     "type" : "Extension",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -167,7 +159,7 @@
           }],
           "code" : "http://hl7.org/fhirpath/System.String"
         }],
-        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature",
+        "fixedUri" : "SignatureURL",
         "isModifier" : false,
         "isSummary" : false,
         "mapping" : [{
@@ -223,7 +215,7 @@
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature"
+        "fixedUri" : "SignatureURL"
       },
       {
         "id" : "Extension.value[x]",

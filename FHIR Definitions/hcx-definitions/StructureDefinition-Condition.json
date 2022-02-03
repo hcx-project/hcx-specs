@@ -30,7 +30,7 @@
       "valueCode": "pc"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXCondition",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Condition.html",
   "version": "4.0.1",
   "name": "Condition",
   "status": "draft",

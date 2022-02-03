@@ -30,7 +30,7 @@
       "valueCode": "sd"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXPreAuthorizationRequestDocument",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PreAuthorizationRequestDocument.html",
   "version": "4.0.1",
   "name": "PreAuthorizationRequestDocument",
   "status": "draft",

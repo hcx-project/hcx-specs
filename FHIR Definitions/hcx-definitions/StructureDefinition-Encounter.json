@@ -30,7 +30,7 @@
       "valueCode": "pa"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXEncounter",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Encounter.html",
   "version": "4.0.1",
   "name": "Encounter",
   "status": "draft",

@@ -30,7 +30,7 @@
       "valueCode": "fm"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXPaymentNotice",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PaymentNotice.html",
   "version": "4.0.1",
   "name": "PaymentNotice",
   "status": "draft",

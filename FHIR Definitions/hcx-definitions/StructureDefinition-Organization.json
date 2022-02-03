@@ -30,7 +30,7 @@
       "valueCode": "pa"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXOrganization",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Organization.html",
   "version": "4.0.1",
   "name": "Organization",
   "status": "draft",

@@ -11,7 +11,7 @@
       "valueInteger": 1
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXOrganization-extension",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-organization-extension.html",
   "version": "4.0.1",
   "name": "HCX Organization Extension",
   "status": "draft",
@@ -42,14 +42,6 @@
     {
       "type": "element",
       "expression": "hcp"
-    },
-    {
-      "type": "element",
-      "expression": "hcp.item"
-    },
-    {
-      "type": "element",
-      "expression": "hcp.item.item"
     }
   ],
   "type": "Extension",

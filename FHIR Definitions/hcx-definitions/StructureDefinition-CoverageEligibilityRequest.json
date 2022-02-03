@@ -30,7 +30,7 @@
       "valueCode": "fm"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXCoverageEligibilityRequest",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CoverageEligibilityRequest.html",
   "version": "4.0.1",
   "name": "CoverageEligibilityRequest",
   "status": "draft",
