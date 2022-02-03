@@ -509,7 +509,7 @@ paths:
         A communication request can happen only within the context of a existing claim cycle (predetermination, preauth or the actual claim). The protocol header x-hcx-correlation_id should carry the correlation id of the original claim request for which the communication request is being raised. HCX gateway should validate that the correlation id is a valid identifier and the original claim request is still open.
         
         
-        Payload for this API has to be created as per the Communication Request Document defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Communication Request](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CommunicationRequest.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -553,7 +553,7 @@ paths:
             
           1. In case there are any protocol related errors in processsing the corresponding CommunicationRequest (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications), request payload shall send ErrorHeader (derived from ProtocolHeader).
 
-          2. In case CommunicationRequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and Communication  bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#communication). Communication resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Communication.html) for the resource.        
+          2. In case CommunicationRequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and [Communication bundle](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CommunicationDocument.html) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#communication). Communication resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Communication.html) for the resource.        
 
       requestBody:
         content:
