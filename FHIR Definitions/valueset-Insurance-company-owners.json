@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "valueset-insurance-company-owners",
+    "id": "insurance-company-owners",
     "version": "1",
     "name": "Insurance Company Owners",
     "status": "active",
@@ -10,7 +10,7 @@
     "expansion": {
       "timestamp": "2021-09-07T08:15:30+05:30",
       "contains": [
-        [
+        
           {
             "code": 1,
             "display": "Bajaj Allianz General Insurance Co. Ltd.",
@@ -266,7 +266,6 @@
             "display": "Edelweiss Tokio Life Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           }
-        ]
       ]
     }
   }
