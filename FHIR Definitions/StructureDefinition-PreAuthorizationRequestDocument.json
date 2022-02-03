@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "PreAuthorizationRequest",
+  "id": "PreAuthorizationRequestDocument",
   "meta": {
     "lastUpdated": "2021-08-14T17:23:00.000+05:30"
   },
@@ -30,9 +30,9 @@
       "valueCode": "sd"
     }
   ],
-  "url": "http://hl7.org/fhir/StructureDefinition/HCXPreAuthorizationRequest",
+  "url": "http://hl7.org/fhir/StructureDefinition/HCXPreAuthorizationRequestDocument",
   "version": "4.0.1",
-  "name": "PreAuthorizationRequest",
+  "name": "PreAuthorizationRequestDocument",
   "status": "draft",
   "date": "2021-08-14T17:23:00.000+05:30",
   "publisher": "Health Level Seven International (Structured Documents)",
