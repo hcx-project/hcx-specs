@@ -2334,7 +2334,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "description": "TODO - value set listing all HCX eObjects including Claim for this one.",
+          "description": "TODO - value set listing all HCX eObjects including PreDetermination, PreAuthorization and Claim for this one.",
           "valueSet": "http://hl7.org/fhir/ValueSet/doc-section-codes"
         },
         "mapping": [
@@ -2656,8 +2656,8 @@
         "id": "Composition.section.entry:Claim",
         "path": "Composition.section.entry",
         "sliceName": "claim",
-        "short": "A reference to the claim that the pre-auth request refers to.",
-        "definition": "A reference to the claim that the pre-auth request refers to.",
+        "short": "A reference to the claim that the pre-determination/pre-authorization/claim request refers to.",
+        "definition": "A reference to the claim that the pre-determination/pre-authorization/claim request refers to.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
         "min": 1,
         "max": "1",
@@ -2670,7 +2670,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Claim"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -2894,8 +2894,8 @@
         "id": "Composition.section.entry:Claim",
         "path": "Composition.section.entry",
         "sliceName": "claim",
-        "short": "A reference to the claim that the pre-auth request refers to.",
-        "definition": "A reference to the claim that the pre-auth request refers to.",
+        "short": "A reference to the claim that the pre-determination/pre-authorization/claim request refers to.",
+        "definition": "A reference to the claim that the pre-determination/pre-authorization/claim request refers to.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
         "min": 1,
         "max": "1",
@@ -2903,7 +2903,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Claim"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ]
@@ -2912,8 +2912,8 @@
         "id": "Composition.section.entry:Signature",
         "path": "Composition.section.entry",
         "sliceName": "signature",
-        "short": "A reference to the claim that the pre-auth request refers to.",
-        "definition": "A reference to the claim that the pre-auth request refers to.",
+        "short": "A reference to the signature in the pre-determination/pre-authorization/claim request refers to.",
+        "definition": "A reference to the signature in the pre-determination/pre-authorization/claim request refers to.",
         "comment": "If there are no entries in the list, an emptyReason SHOULD be provided.",
         "min": 0,
         "max": "*",
@@ -2921,7 +2921,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://raw.githubusercontent.com/Swasth-Digital-Health-Foundation/standards/69ce5ac4bc6e9fc5a015a53c82e3ebb7a379f348/FHIR%20Definitions/hcp.signature.extension.json"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXSignatureExtension.html"
             ]
           }
         ]
