@@ -2317,6 +2317,45 @@
         ]
       },
       {
+        "id": "CoverageEligibilityRequest.patient",
+        "path": "CoverageEligibilityRequest.patient",
+        "short": "Intended recipient of products and services",
+        "definition": "The party who is the beneficiary of the supplied coverage and for whom eligibility is sought.",
+        "comment": "1..1.",
+        "requirements": "Required to provide context and coverage validation.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.patient",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.subject"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.subject[x]"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.subject"
+          }
+        ]
+      },
+      {
         "id": "CoverageEligibilityRequest.enterer",
         "path": "CoverageEligibilityRequest.enterer",
         "short": "Author",
@@ -2328,8 +2367,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole"
             ]
           }
         ],
@@ -2353,8 +2392,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
@@ -2368,6 +2407,172 @@
             "map": "FiveWs.source"
           }
         ]
+      },
+      {
+        "id": "CoverageEligibilityRequest.insurer",
+        "path": "CoverageEligibilityRequest.insurer",
+        "short": "Coverage issuer",
+        "definition": "The Insurer who issued the coverage in question and is the recipient of the request.",
+        "requirements": "Need to identify the recipient.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.insurer",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.performer"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.who"
+          }
+        ]
+      },
+      {
+        "id": "CoverageEligibilityRequest.insurance.coverage",
+        "path": "CoverageEligibilityRequest.insurance.coverage",
+        "short": "Insurance information",
+        "definition": "Reference to the insurance card level information contained in the Coverage resource. The coverage issuing insurer will use these details to locate the patient's actual coverage within the insurer's information system.",
+        "requirements": "Required to allow the adjudicator to locate the correct policy and history within their information system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.insurance.coverage",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Coverage.html"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "CoverageEligibilityRequest.item.provider",
+        "path": "CoverageEligibilityRequest.item.provider",
+        "short": "Perfoming practitioner",
+        "definition": "The practitioner who is responsible for the product or service to be rendered to the patient.",
+        "requirements": "Needed to support the evaluation of the eligibility.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.item.provider",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.requester"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.source"
+          }
+        ]
+      },
+      {
+        "id": "CoverageEligibilityRequest.item.facility",
+        "path": "CoverageEligibilityRequest.item.facility",
+        "short": "Servicing facility",
+        "definition": "Facility where the services will be provided.",
+        "requirements": "Needed to support the evaluation of the eligibility.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.item.facility",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "CoverageEligibilityRequest.item.diagnosis.diagnosis[x]",
+        "path": "CoverageEligibilityRequest.item.diagnosis.diagnosis[x]",
+        "short": "Nature of illness or problem",
+        "definition": "The nature of illness or problem in a coded form or as a reference to an external defined Condition.",
+        "requirements": "Provides health context for the evaluation of the products and/or services.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.item.diagnosis.diagnosis[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Condition"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ICD10"
+            }
+          ],
+          "strength": "example",
+          "description": "ICD10 Diagnostic codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10"
+        }
       }
     ]
   }

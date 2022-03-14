@@ -174,20 +174,6 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/Condition",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Condition"
-        },
-        "name": "HCX Condition",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/Coverage",
             "valueString": "SearchParameter"
           }
@@ -196,20 +182,6 @@
           "reference": "StructureDefinition/Coverage"
         },
         "name": "HCX Coverage",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/Encounter",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Encounter"
-        },
-        "name": "HCX Encounter",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -238,34 +210,6 @@
           "reference": "StructureDefinition/CoverageEligibilityResponse"
         },
         "name": "HCX Coverage Eligibility Response",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/Organization",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Organization"
-        },
-        "name": "HCX Organization",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/Patient",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Patient"
-        },
-        "name": "HCX Patient",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -370,20 +314,6 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/Practitioner",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Practitioner"
-        },
-        "name": "HCX Practitioner",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/organization-extension",
             "valueString": "SearchParameter"
           }
@@ -420,20 +350,6 @@
           "reference": "StructureDefinition/Task"
         },
         "name": "HCX Task",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/PractitionerRole",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PractitionerRole"
-        },
-        "name": "HCX Practitioner Role",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -586,16 +502,6 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-Condition.html",
-              "title": "HCX Condition",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-Encounter.html",
-              "title": "HCX Encounter",
-              "generation": "generated"
-            },
-            {
               "nameUrl": "StructureDefinition-CoverageEligibilityRequest.html",
               "title": "HCX Coverage Eligibility Request",
               "generation": "generated"
@@ -651,16 +557,6 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-Organization.html",
-              "title": "HCX Organization",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-Patient.html",
-              "title": "HCX Patient",
-              "generation": "generated"
-            },
-            {
               "nameUrl": "StructureDefinition-PaymentNotice.html",
               "title": "HCX Payment Notice",
               "generation": "generated"
@@ -668,16 +564,6 @@
             {
               "nameUrl": "StructureDefinition-PaymentReconciliation.html",
               "title": "HCX Payment Reconciliation",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-Practitioner.html",
-              "title": "HCX Practitioner",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "StructureDefinition-PractitionerRole.html",
-              "title": "HCX Practitioner Role",
               "generation": "generated"
             },
             {
