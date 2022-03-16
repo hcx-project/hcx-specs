@@ -6197,6 +6197,95 @@
         ]
       },
       {
+        "id": "Claim.patient",
+        "path": "Claim.patient",
+        "short": "The recipient of the products and services",
+        "definition": "The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought.",
+        "requirements": "The patient must be supplied to the insurer so that confirmation of coverage and service history may be considered as part of the authorization and/or adjudiction.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.patient",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.subject"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.subject[x]"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.subject"
+          }
+        ]
+      },
+      {
+        "id": "Claim.enterer",
+        "path": "Claim.enterer",
+        "short": "Author of the claim",
+        "definition": "Individual who created the claim, predetermination or preauthorization.",
+        "requirements": "Some jurisdictions require the contact information for personnel completing claims.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.enterer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "w5",
+            "map": "FiveWs.author"
+          }
+        ]
+      },
+      {
         "id": "Claim.insurer",
         "path": "Claim.insurer",
         "short": "Target",
@@ -6212,7 +6301,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
@@ -6232,6 +6321,91 @@
           {
             "identity": "workflow",
             "map": "Request.performer"
+          }
+        ]
+      },
+      {
+        "id": "Claim.provider",
+        "path": "Claim.provider",
+        "short": "Party responsible for the claim",
+        "definition": "The provider which is responsible for the claim, predetermination or preauthorization.",
+        "comment": "Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.provider",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.requester"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.source"
+          }
+        ]
+      },
+      {
+        "id": "Claim.related.claim",
+        "path": "Claim.related.claim",
+        "short": "Reference to the related claim",
+        "definition": "Reference to a related claim.",
+        "requirements": "For workplace or other accidents it is common to relate separate claims arising from the same event.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.related.claim",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.replaces"
           }
         ]
       },
@@ -6291,10 +6465,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
@@ -6350,6 +6524,47 @@
         "isSummary": false
       },
       {
+        "id": "Claim.careTeam.provider",
+        "path": "Claim.careTeam.provider",
+        "short": "Practitioner or organization",
+        "definition": "Member of the team who provided the product or service.",
+        "requirements": "Often a regulatory requirement to specify the responsible provider.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.careTeam.provider",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "w5",
+            "map": "FiveWs.actor"
+          }
+        ]
+      },
+      {
         "id": "Claim.diagnosis.type",
         "path": "Claim.diagnosis.type",
         "short": "Timing or nature of the diagnosis",
@@ -6391,6 +6606,164 @@
           "description": "The type of the diagnosis: admitting, principal, discharge.",
           "valueSet": "http://hl7.org/fhir/ValueSet/ex-diagnosistype"
         }
+      },
+      {
+        "id": "Claim.diagnosis.diagnosis[x]",
+        "path": "Claim.diagnosis.diagnosis[x]",
+        "short": "Nature of illness or problem",
+        "definition": "The nature of illness or problem in a coded form or as a reference to an external defined Condition.",
+        "requirements": "Provides health context for the evaluation of the products and/or services.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.diagnosis.diagnosis[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Condition"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ICD10"
+            }
+          ],
+          "strength": "example",
+          "description": "Example ICD10 Diagnostic codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10"
+        }
+      },
+      {
+        "id": "Claim.insurance.coverage",
+        "path": "Claim.insurance.coverage",
+        "short": "Insurance information",
+        "definition": "Reference to the insurance card level information contained in the Coverage resource. The coverage issuing insurer will use these details to locate the patient's actual coverage within the insurer's information system.",
+        "requirements": "Required to allow the adjudicator to locate the correct policy and history within their information system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.insurance.coverage",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Coverage.html"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Claim.insurance.claimResponse",
+        "path": "Claim.insurance.claimResponse",
+        "short": "Adjudication results",
+        "definition": "The result of the adjudication of the line items for the Coverage specified in this insurance.",
+        "comment": "Must not be specified when 'focal=true' for this insurance.",
+        "requirements": "An insurer need the adjudication results from prior insurers to determine the outstanding balance remaining by item for the items in the curent claim.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.insurance.claimResponse",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimResponse.html"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
+      },
+      {
+        "id": "Claim.item.encounter",
+        "path": "Claim.item.encounter",
+        "short": "Encounters related to this billed item",
+        "definition": "The Encounters during which this Claim was created or to which the creation of this record is tightly associated.",
+        "comment": "This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.",
+        "requirements": "Used in some jurisdictions to link clinical events to claim items.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Claim.item.encounter",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition-Encounter.html"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "workflow",
+            "map": "Request.context"
+          }
+        ]
       }
     ]
   }
