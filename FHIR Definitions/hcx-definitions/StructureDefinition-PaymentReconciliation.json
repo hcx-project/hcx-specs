@@ -1818,91 +1818,6 @@
         ]
       },
       {
-        "id": "PaymentReconciliation.status",
-        "path": "PaymentReconciliation.status",
-        "short": "active | cancelled | draft | entered-in-error",
-        "definition": "The status of the resource instance.",
-        "comment": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
-        "requirements": "Need to track the status of the resource as \u0027draft\u0027 resources may undergo further edits while \u0027active\u0027 resources are immutable and may only have their status changed to \u0027cancelled\u0027.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isModifier": true,
-        "isModifierReason": "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "PaymentReconciliationStatus"
-            }
-          ],
-          "strength": "required",
-          "description": "A code specifying the state of the resource instance.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/fm-status|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.status"
-          },
-          {
-            "identity": "w5",
-            "map": "FiveWs.status"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.period",
-        "path": "PaymentReconciliation.period",
-        "short": "Period covered",
-        "definition": "The period of time for which payments have been gathered into this bulk payment for settlement.",
-        "requirements": "Needed to allow receivers to monitor and reconcile payment issuer schedules.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "w5",
-            "map": "FiveWs.done[x]"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.created",
-        "path": "PaymentReconciliation.created",
-        "short": "Creation date",
-        "definition": "The date when the resource was created.",
-        "requirements": "Need to record a timestamp for use by both the recipient and the issuer.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.occurrence[x]"
-          },
-          {
-            "identity": "w5",
-            "map": "FiveWs.recorded"
-          }
-        ]
-      },
-      {
         "id": "PaymentReconciliation.paymentIssuer",
         "path": "PaymentReconciliation.paymentIssuer",
         "short": "Party generating payment",
@@ -1915,7 +1830,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
@@ -1932,33 +1847,6 @@
         ]
       },
       {
-        "id": "PaymentReconciliation.request",
-        "path": "PaymentReconciliation.request",
-        "short": "Reference to requesting resource",
-        "definition": "Original request resource reference.",
-        "requirements": "Needed to allow the response to be linked to the request.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Task"
-            ]
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "w5",
-            "map": "FiveWs.why[x]"
-          },
-          {
-            "identity": "cdanetv4",
-            "map": "A02|G01"
-          }
-        ]
-      },
-      {
         "id": "PaymentReconciliation.requestor",
         "path": "PaymentReconciliation.requestor",
         "short": "Responsible practitioner",
@@ -1970,9 +1858,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
@@ -2014,56 +1902,6 @@
         }
       },
       {
-        "id": "PaymentReconciliation.disposition",
-        "path": "PaymentReconciliation.disposition",
-        "short": "Disposition message",
-        "definition": "A human readable description of the status of the request for the reconciliation.",
-        "requirements": "Provided for user display.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.note"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.paymentDate",
-        "path": "PaymentReconciliation.paymentDate",
-        "short": "When payment issued",
-        "definition": "The date of payment as indicated on the financial instrument.",
-        "requirements": "To advise the payee when payment can be expected.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "id": "PaymentReconciliation.paymentAmount",
-        "path": "PaymentReconciliation.paymentAmount",
-        "short": "Total amount of Payment",
-        "definition": "Total payment amount as indicated on the financial instrument.",
-        "requirements": "Needed to provide the actual payment amount.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Money"
-          }
-        ],
-        "isSummary": true
-      },
-      {
         "id": "PaymentReconciliation.paymentIdentifier",
         "path": "PaymentReconciliation.paymentIdentifier",
         "short": "Business identifier for the payment",
@@ -2079,97 +1917,6 @@
         ]
       },
       {
-        "id": "PaymentReconciliation.detail",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Details"
-          }
-        ],
-        "path": "PaymentReconciliation.detail",
-        "short": "Settlement particulars",
-        "definition": "Distribution of the payment amount for a previously acknowledged payable.",
-        "requirements": "Needed to show how the payment amount is distributed across the payables.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.identifier",
-        "path": "PaymentReconciliation.detail.identifier",
-        "short": "Business identifier of the payment detail",
-        "definition": "Unique identifier for the current payment item for the referenced payable.",
-        "requirements": "Needed for reconciliation of payments.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Identifier"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.predecessor",
-        "path": "PaymentReconciliation.detail.predecessor",
-        "short": "Business identifier of the prior payment detail",
-        "definition": "Unique identifier for the prior payment item for the referenced payable.",
-        "requirements": "Needed for reconciliation of payments.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Identifier"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.type",
-        "path": "PaymentReconciliation.detail.type",
-        "short": "Category of payment",
-        "definition": "Code to indicate the nature of the payment.",
-        "comment": "For example: payment, adjustment, funds advance, etc.",
-        "requirements": "Needed to provide context for the amount.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "PaymentType"
-            }
-          ],
-          "strength": "example",
-          "description": "The reason for the amount: payment, adjustment, advance.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/payment-type"
-        }
-      },
-      {
-        "id": "PaymentReconciliation.detail.request",
-        "path": "PaymentReconciliation.detail.request",
-        "short": "Request giving rise to the payment",
-        "definition": "A resource, such as a Claim, the evaluation of which could lead to payment.",
-        "requirements": "Needed to provide a linkage  to the original request.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
-            ]
-          }
-        ]
-      },
-      {
         "id": "PaymentReconciliation.detail.submitter",
         "path": "PaymentReconciliation.detail.submitter",
         "short": "Submitter of the request",
@@ -2181,41 +1928,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.response",
-        "path": "PaymentReconciliation.detail.response",
-        "short": "Response committing to a payment",
-        "definition": "A resource, such as a ClaimResponse, which contains a commitment to payment.",
-        "requirements": "Needed to provide a linkage to the payment commitment.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.date",
-        "path": "PaymentReconciliation.detail.date",
-        "short": "Date of commitment to pay",
-        "definition": "The date from the response resource containing a commitment to pay.",
-        "requirements": "Needed for audit and validation.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
           }
         ]
       },
@@ -2231,7 +1947,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole"
             ]
           }
         ]
@@ -2248,123 +1964,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.detail.amount",
-        "path": "PaymentReconciliation.detail.amount",
-        "short": "Amount allocated to this payable",
-        "definition": "The monetary amount allocated from the total payment to the payable.",
-        "requirements": "Needed to explain the distribution of the payment to the payables.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Money"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.formCode",
-        "path": "PaymentReconciliation.formCode",
-        "short": "Printed form identifier",
-        "definition": "A code for the form to be used for printing the content.",
-        "comment": "May be needed to identify specific jurisdictional forms.",
-        "requirements": "Needed to specify the specific form used for producing output for this response.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "Forms"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "example",
-          "description": "The forms codes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/forms"
-        }
-      },
-      {
-        "id": "PaymentReconciliation.processNote",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Notes"
-          }
-        ],
-        "path": "PaymentReconciliation.processNote",
-        "short": "Note concerning processing",
-        "definition": "A note that describes or explains the processing in a human readable form.",
-        "requirements": "Provides the specific textual explanations associated with the processing.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "PaymentReconciliation.processNote.type",
-        "path": "PaymentReconciliation.processNote.type",
-        "short": "display | print | printoper",
-        "definition": "The business purpose of the note text.",
-        "requirements": "To convey the expectation for when the text is used.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "NoteType"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "The presentation types of notes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/note-type|4.0.1"
-        }
-      },
-      {
-        "id": "PaymentReconciliation.processNote.text",
-        "path": "PaymentReconciliation.processNote.text",
-        "short": "Note explanatory text",
-        "definition": "The explanation or description associated with the processing.",
-        "requirements": "Required to provide human readable explanation.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "cdanetv4",
-            "map": "G32"
           }
         ]
       }
