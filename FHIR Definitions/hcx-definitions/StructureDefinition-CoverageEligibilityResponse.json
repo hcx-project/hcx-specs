@@ -2536,20 +2536,6 @@
   "differential": {
     "element": [
       {
-        "id": "CoverageEligibilityResponse",
-        "path": "CoverageEligibilityResponse",
-        "short": "CoverageEligibilityResponse resource",
-        "definition": "This resource provides eligibility and plan details from the processing of an CoverageEligibilityRequest resource.",
-        "min": 0,
-        "max": "*",
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event"
-          }
-        ]
-      },
-      {
         "id": "CoverageEligibilityResponse.identifier",
         "path": "CoverageEligibilityResponse.identifier",
         "short": "Business Identifier for coverage eligiblity request",
@@ -2574,77 +2560,6 @@
         ]
       },
       {
-        "id": "CoverageEligibilityResponse.status",
-        "path": "CoverageEligibilityResponse.status",
-        "short": "active | cancelled | draft | entered-in-error",
-        "definition": "The status of the resource instance.",
-        "comment": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
-        "requirements": "Need to track the status of the resource as 'draft' resources may undergo further edits while 'active' resources are immutable and may only have their status changed to 'cancelled'.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isModifier": true,
-        "isModifierReason": "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "EligibilityResponseStatus"
-            }
-          ],
-          "strength": "required",
-          "description": "A code specifying the state of the resource instance.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/fm-status|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.status"
-          },
-          {
-            "identity": "w5",
-            "map": "FiveWs.status"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.purpose",
-        "path": "CoverageEligibilityResponse.purpose",
-        "short": "auth-requirements | benefits | discovery | validation",
-        "definition": "Code to specify whether requesting: prior authorization requirements for some service categories or billing codes; benefits for coverages specified or discovered; discovery and return of coverages for the patient; and/or validation that the specified coverage is in-force at the date/period specified or 'now' if not specified.",
-        "requirements": "To indicate the processing actions requested.",
-        "min": 1,
-        "max": "*",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "EligibilityResponsePurpose"
-            }
-          ],
-          "strength": "required",
-          "description": "A code specifying the types of information being requested.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/eligibilityresponse-purpose|4.0.1"
-        },
-        "mapping": [
-          {
-            "identity": "w5",
-            "map": "FiveWs.class"
-          }
-        ]
-      },
-      {
         "id": "CoverageEligibilityResponse.patient",
         "path": "CoverageEligibilityResponse.patient",
         "short": "Intended recipient of products and services",
@@ -2656,7 +2571,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
             ]
           }
         ],
@@ -2681,54 +2596,6 @@
         ]
       },
       {
-        "id": "CoverageEligibilityResponse.serviced[x]",
-        "path": "CoverageEligibilityResponse.serviced[x]",
-        "short": "Estimated date or dates of service",
-        "definition": "The date or dates when the enclosed suite of services were performed or completed.",
-        "requirements": "Required to provide time context for the request.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "date"
-          },
-          {
-            "code": "Period"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "w5",
-            "map": "FiveWs.done[x]"
-          },
-          {
-            "identity": "cdanetv4",
-            "map": "F09"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.created",
-        "path": "CoverageEligibilityResponse.created",
-        "short": "Response creation date",
-        "definition": "The date this resource was created.",
-        "requirements": "Need to record a timestamp for use by both the recipient and the issuer.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "isSummary": true,
-        "mapping": [
-          {
-            "identity": "w5",
-            "map": "FiveWs.recorded"
-          }
-        ]
-      },
-      {
         "id": "CoverageEligibilityResponse.requestor",
         "path": "CoverageEligibilityResponse.requestor",
         "short": "Party responsible for the request",
@@ -2740,9 +2607,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
@@ -2769,7 +2635,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityRequest"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CoverageEligibilityRequest.html"
             ]
           }
         ],
@@ -2790,57 +2656,6 @@
         ]
       },
       {
-        "id": "CoverageEligibilityResponse.outcome",
-        "path": "CoverageEligibilityResponse.outcome",
-        "short": "queued | complete | error | partial",
-        "definition": "The outcome of the request processing.",
-        "comment": "The resource may be used to indicate that: the request has been held (queued) for processing; that it has been processed and errors found (error); that no errors were found and that some of the adjudication has been undertaken (partial) or that all of the adjudication has been undertaken (complete).",
-        "requirements": "To advise the requestor of an overall processing outcome.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "RemittanceOutcome"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "required",
-          "description": "The outcome of the processing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.disposition",
-        "path": "CoverageEligibilityResponse.disposition",
-        "short": "Disposition Message",
-        "definition": "A human readable description of the status of the adjudication.",
-        "requirements": "Provided for user display.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "workflow",
-            "map": "Event.note"
-          }
-        ]
-      },
-      {
         "id": "CoverageEligibilityResponse.insurer",
         "path": "CoverageEligibilityResponse.insurer",
         "short": "Coverage issuer",
@@ -2852,36 +2667,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
             ]
           }
         ],
         "isSummary": true
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
-            "valueString": "380;0"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Insurance"
-          }
-        ],
-        "path": "CoverageEligibilityResponse.insurance",
-        "short": "Patient insurance information",
-        "definition": "Financial instruments for reimbursement for the health care products and services.",
-        "comment": "All insurance coverages for the patient which may be applicable for reimbursement, of the products and services listed in the claim, are typically provided in the claim to allow insurers to confirm the ordering of the insurance coverages relative to local 'coordination of benefit' rules. One coverage (and only one) with 'focal=true' is to be used in the adjudication of this claim. Coverages appearing before the focal Coverage in the list, and where 'subrogation=false', should provide a reference to the ClaimResponse containing the adjudication results of the prior claim.",
-        "requirements": "There must be at least one coverage for which eligibility is requested.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
       },
       {
         "id": "CoverageEligibilityResponse.insurance.coverage",
@@ -2895,154 +2685,11 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Coverage"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Coverage.html"
             ]
           }
         ],
         "isSummary": true
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.inforce",
-        "path": "CoverageEligibilityResponse.insurance.inforce",
-        "short": "Coverage inforce indicator",
-        "definition": "Flag indicating if the coverage provided is inforce currently if no service date(s) specified or for the whole duration of the service dates.",
-        "requirements": "Needed to convey the answer to the eligibility validation request.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.benefitPeriod",
-        "path": "CoverageEligibilityResponse.insurance.benefitPeriod",
-        "short": "When the benefits are applicable",
-        "definition": "The term of the benefits documented in this response.",
-        "requirements": "Needed as coverages may be multi-year while benefits tend to be annual therefore a separate expression of the benefit period is needed.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
-            "valueString": "340;120"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Items"
-          }
-        ],
-        "path": "CoverageEligibilityResponse.insurance.item",
-        "short": "Benefits and authorization details",
-        "definition": "Benefits and optionally current balances, and authorization details by category or service.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ces-1",
-            "severity": "error",
-            "human": "SHALL contain a category or a billcode but not both.",
-            "expression": "category.exists() xor productOrService.exists()",
-            "xpath": "exists(f:category) or exists(f:productOrService)"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.category",
-        "path": "CoverageEligibilityResponse.insurance.item.category",
-        "short": "Benefit classification",
-        "definition": "Code to identify the general type of benefits under which products and services are provided.",
-        "comment": "Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.",
-        "requirements": "Needed to convey the category of service or product for which eligibility is sought.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "BenefitCategory"
-            }
-          ],
-          "strength": "example",
-          "description": "Benefit categories such as: oral, medical, vision etc.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/ex-benefitcategory"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.productOrService",
-        "path": "CoverageEligibilityResponse.insurance.item.productOrService",
-        "short": "Billing, service, product, or drug code",
-        "definition": "This contains the product, service, drug or other billing code for the item.",
-        "comment": "Code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI).",
-        "requirements": "Needed to convey the actual service or product for which eligibility is sought.",
-        "alias": [
-          "Drug Code",
-          "Bill Code",
-          "Service Code"
-        ],
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ServiceProduct"
-            }
-          ],
-          "strength": "example",
-          "description": "Allowable service and product codes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/service-uscls"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.modifier",
-        "path": "CoverageEligibilityResponse.insurance.item.modifier",
-        "short": "Product or service billing modifiers",
-        "definition": "Item typification or modifiers codes to convey additional context for the product or service.",
-        "comment": "For example in Oral whether the treatment is cosmetic or associated with TMJ, or for Medical whether the treatment was outside the clinic or out of office hours.",
-        "requirements": "To support provision of the item or to charge an elevated fee.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "Modifiers"
-            }
-          ],
-          "strength": "example",
-          "description": "Item type or modifiers codes, eg for Oral whether the treatment is cosmetic or associated with TMJ, or an appliance was lost or stolen.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/claim-modifiers"
-        }
       },
       {
         "id": "CoverageEligibilityResponse.insurance.item.provider",
@@ -3056,8 +2703,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole"
             ]
           }
         ],
@@ -3071,376 +2718,6 @@
             "map": "B01"
           }
         ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.excluded",
-        "path": "CoverageEligibilityResponse.insurance.item.excluded",
-        "short": "Excluded from the plan",
-        "definition": "True if the indicated class of service is excluded from the plan, missing or False indicates the product or service is included in the coverage.",
-        "requirements": "Needed to identify items that are specifically excluded from the coverage.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.name",
-        "path": "CoverageEligibilityResponse.insurance.item.name",
-        "short": "Short name for the benefit",
-        "definition": "A short name or tag for the benefit.",
-        "comment": "For example: MED01, or DENT2.",
-        "requirements": "Required to align with other plan names.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.description",
-        "path": "CoverageEligibilityResponse.insurance.item.description",
-        "short": "Description of the benefit or services covered",
-        "definition": "A richer description of the benefit or services covered.",
-        "comment": "For example 'DENT2 covers 100% of basic, 50% of major but excludes Ortho, Implants and Cosmetic services'.",
-        "requirements": "Needed for human readable reference.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.network",
-        "path": "CoverageEligibilityResponse.insurance.item.network",
-        "short": "In or out of network",
-        "definition": "Is a flag to indicate whether the benefits refer to in-network providers or out-of-network providers.",
-        "requirements": "Needed as in or out of network providers are treated differently under the coverage.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "BenefitNetwork"
-            }
-          ],
-          "strength": "example",
-          "description": "Code to classify in or out of network services.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-network"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.unit",
-        "path": "CoverageEligibilityResponse.insurance.item.unit",
-        "short": "Individual or family",
-        "definition": "Indicates if the benefits apply to an individual or to the family.",
-        "requirements": "Needed for the understanding of the benefits.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "BenefitUnit"
-            }
-          ],
-          "strength": "example",
-          "description": "Unit covered/serviced - individual or family.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-unit"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.term",
-        "path": "CoverageEligibilityResponse.insurance.item.term",
-        "short": "Annual or lifetime",
-        "definition": "The term or period of the values such as 'maximum lifetime benefit' or 'maximum annual visits'.",
-        "requirements": "Needed for the understanding of the benefits.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "BenefitTerm"
-            }
-          ],
-          "strength": "example",
-          "description": "Coverage unit - annual, lifetime.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-term"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.benefit",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
-            "valueString": "340;320"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Benefit"
-          }
-        ],
-        "path": "CoverageEligibilityResponse.insurance.item.benefit",
-        "short": "Benefit Summary",
-        "definition": "Benefits used to date.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.benefit.type",
-        "path": "CoverageEligibilityResponse.insurance.item.benefit.type",
-        "short": "Benefit classification",
-        "definition": "Classification of benefit being provided.",
-        "comment": "For example: deductible, visits, benefit amount.",
-        "requirements": "Needed to convey the nature of the benefit.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "BenefitType"
-            }
-          ],
-          "strength": "example",
-          "description": "Deductable, visits, co-pay, etc.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-type"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.benefit.allowed[x]",
-        "path": "CoverageEligibilityResponse.insurance.item.benefit.allowed[x]",
-        "short": "Benefits allowed",
-        "definition": "The quantity of the benefit which is permitted under the coverage.",
-        "requirements": "Needed to convey the benefits offered under the coverage.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "Money"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.benefit.used[x]",
-        "path": "CoverageEligibilityResponse.insurance.item.benefit.used[x]",
-        "short": "Benefits used",
-        "definition": "The quantity of the benefit which have been consumed to date.",
-        "requirements": "Needed to convey the benefits consumed to date.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "Money"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.authorizationRequired",
-        "path": "CoverageEligibilityResponse.insurance.item.authorizationRequired",
-        "short": "Authorization required flag",
-        "definition": "A boolean flag indicating whether a preauthorization is required prior to actual service delivery.",
-        "requirements": "Needed to convey that preauthorization is required.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.authorizationSupporting",
-        "path": "CoverageEligibilityResponse.insurance.item.authorizationSupporting",
-        "short": "Type of required supporting materials",
-        "definition": "Codes or comments regarding information or actions associated with the preauthorization.",
-        "requirements": "Needed to inform the provider of collateral materials or actions needed for preauthorization.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "AuthSupporting"
-            }
-          ],
-          "strength": "example",
-          "description": "Type of supporting information to provide with a preauthorization.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/coverageeligibilityresponse-ex-auth-support"
-        }
-      },
-      {
-        "id": "CoverageEligibilityResponse.insurance.item.authorizationUrl",
-        "path": "CoverageEligibilityResponse.insurance.item.authorizationUrl",
-        "short": "Preauthorization requirements endpoint",
-        "definition": "A web location for obtaining requirements or descriptive information regarding the preauthorization.",
-        "requirements": "Needed to enable insurers to advise providers of informative information.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.preAuthRef",
-        "path": "CoverageEligibilityResponse.preAuthRef",
-        "short": "Preauthorization reference",
-        "definition": "A reference from the Insurer to which these services pertain to be used on further communication and as proof that the request occurred.",
-        "requirements": "To provide any preauthorization reference for provider use.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "cdanetv4",
-            "map": "F03"
-          },
-          {
-            "identity": "rim",
-            "map": "23"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.form",
-        "path": "CoverageEligibilityResponse.form",
-        "short": "Printed form identifier",
-        "definition": "A code for the form to be used for printing the content.",
-        "comment": "May be needed to identify specific jurisdictional forms.",
-        "requirements": "Needed to specify the specific form used for producing output for this response.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "Forms"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "example",
-          "description": "The forms codes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/forms"
-        },
-        "mapping": [
-          {
-            "identity": "cdanetv4",
-            "map": "G42"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.error",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "Errors"
-          }
-        ],
-        "path": "CoverageEligibilityResponse.error",
-        "short": "Processing errors",
-        "definition": "Errors encountered during the processing of the request.",
-        "requirements": "Need to communicate processing issues to the requestor.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "CoverageEligibilityResponse.error.code",
-        "path": "CoverageEligibilityResponse.error.code",
-        "short": "Error code detailing processing issues",
-        "definition": "An error code,from a specified code system, which details why the eligibility check could not be performed.",
-        "requirements": "Required to convey processing errors.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "AdjudicationError"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "valueBoolean": true
-            }
-          ],
-          "strength": "example",
-          "description": "The error codes for adjudication processing.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/adjudication-error"
-        }
       }
     ]
   }
