@@ -2776,7 +2776,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Communication"
+              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Communication.html"
             ]
           }
         ]
