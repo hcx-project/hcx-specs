@@ -1,0 +1,31 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+<!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+<h3>Background</h3>
+<p>The National Health Policy 2017 has the stated objective of Universal Health Coverage. The government is already providing cover to nearly 40% of the population from lower economic segments with PM-JAY. This is expected to expand to cover about 70% of the population over time. The number of claims from Government sponsored schemes is expected to see a significant increase with both increase in awareness and wider coverage of the population.
+It is important that the adoption of an electronic claims system happens before the large scale usage of claims becomes a reality.
+</p>
+<p>The domain working group recommends the creation and adoption of a Health Claims Data Exchange Gateway and standardization of e-claims and other related documents to enable the ecosystem to move to a low cost paperless ecosystem that inherently allows for innovation. This will include adoption of open standards by all the actors in the Health Insurance Eco‐system.</p>
+<h3>Introduction</h3>
+<p>The FHIR Implementation Guide for Health Claims Data Exchange Specifications 1.0 is based on FHIR Version R4 and defines the minimum conformance requirements for exchanging claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers.</p>
+<h3>Purpose</h3>
+<p>The purpose of this implementation guide is to provide essential and minimum artefacts that can be captured and exchanged as per Health Claims Data Exchange Specifications 1.0.</p>
+<h3>How to read this Guide</h3>
+<p>This Guide is divided into several pages which are listed at the top of each page in the menu bar.</p>
+  <ul>
+    <li>
+<b>Home:</b> The home page provides the introduction, purpose, and scope of Health Claims Data Exchange Specifications 1.0.
+</li>
+<li>
+<b>Artifacts:</b> These pages provide detailed descriptions and formal definitions for all the FHIR objects defined in this guide.
+<ul>
+  <li>
+    <b>Profiles:</b>This page lists the set of Profile that are defined in this guide to exchange claims data.</li>
+  <li>
+    <b>Terminology:</b>This page lists the value sets defined for FHIR Implementation Guide for HCX profiles.</li>
+</ul>
+</li>
+<li>
+<b>Downloads:</b> This page provides links to downloadable artefacts.
+</li>
+</ul>
+</div>

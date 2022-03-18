@@ -1,0 +1,33 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+<!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+  <ul>
+    <li>
+<a href="ValueSet-claim-denial-codes.html">HCX Claim Denial Codes</a>
+</li>
+<li>
+<a href="ValueSet-claim-service-categories.html">HCX Claim Service Categories</a>
+    </li>
+
+<li>
+<a href="ValueSet-claim-service-codes.html">HCX Claim Service Codes</a>
+    </li>
+ <li>
+<a href="ValueSet-health-service-provider-role.html">HCX Health Service Provider Role</a>
+    </li>
+
+
+ <li>
+<a href="ValueSet-insurance-company-owners.html">HCX Insurance Company Owners</a>
+    </li>
+
+
+ <li>
+<a href="ValueSet-medical-speciality-type-provider.html">HCX Medical Speciality Provider</a>
+    </li>
+
+ <li>
+<a href="ValueSet-procedure-type-description.html">HCX Procedure Type Description</a>
+    </li>
+              
+  </ul>
+</div>
