@@ -19,7 +19,7 @@ The figure below shows a simple depiction of a health claims network facilitated
 2. Facilitate insurance innovation
    1. Highly personalized policies
    2. Short duration, low premium policies
-   3. Auto adjudication, better fraud, and abuse prevention
+   3. Auto adjudication, better fraud and abuse prevention
 3. Simplify and bring efficiency to claims processing
    1. Standardized claims process, less operational overheads
    2. Increase trust among payers and providers through a transparent, rule-based mechanism
