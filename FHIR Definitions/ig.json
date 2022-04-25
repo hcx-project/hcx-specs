@@ -6,8 +6,8 @@
   },
   "id": "hl7.fhir.in.core",
   "version": "0.0.1",
-  "url": "https://fhir-ig-demo/ImplementationGuide/ig",
-  "name": "HCX Core",
+  "url": "https://fhir-ig-demo/ImplementationGuide/hl7.fhir.in.core",
+  "name": "HCXCore",
   "title": "FHIR Implementation Guide for HCX",
   "packageId": "ig",
   "status": "draft",
@@ -439,6 +439,7 @@
       }
     ],
     "page": {
+      "title": "HCX FHIR Implementation Guide",
       "nameUrl": "index.html",
       "generation": "html",
       "page": [

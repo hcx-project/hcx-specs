@@ -5905,24 +5905,21 @@
   "differential": {
     "element": [
       {
-        "id": "ClaimResponse.insurer",
-        "path": "ClaimResponse.insurer",
-        "short": "Party responsible for reimbursement",
-        "definition": "The party responsible for authorization, adjudication and reimbursement.",
-        "requirements": "To be a valid claim, preauthorization or predetermination there must be a party who is responsible for adjudicating the contents against a policy which provides benefits for the patient.",
+        "id": "ClaimResponse.identifier",
+        "path": "ClaimResponse.identifier",
+        "short": "Business Identifier for a claim response",
+        "definition": "A unique identifier assigned to this claim response.",
+        "requirements": "Allows claim responses to be distinguished and referenced.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "ClaimResponse.insurer",
-          "min": 1,
-          "max": "1"
+          "path": "ClaimResponse.identifier",
+          "min": 0,
+          "max": "*"
         },
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
-            ]
+            "code": "Identifier"
           }
         ],
         "constraint": [
@@ -5936,11 +5933,15 @@
           }
         ],
         "isModifier": false,
-        "isSummary": true,
+        "isSummary": false,
         "mapping": [
           {
             "identity": "workflow",
-            "map": "Event.performer"
+            "map": "Event.identifier"
+          },
+          {
+            "identity": "w5",
+            "map": "FiveWs.identifier"
           }
         ]
       },
@@ -5989,21 +5990,24 @@
         ]
       },
       {
-        "id": "ClaimResponse.identifier",
-        "path": "ClaimResponse.identifier",
-        "short": "Business Identifier for a claim response",
-        "definition": "A unique identifier assigned to this claim response.",
-        "requirements": "Allows claim responses to be distinguished and referenced.",
+        "id": "ClaimResponse.insurer",
+        "path": "ClaimResponse.insurer",
+        "short": "Party responsible for reimbursement",
+        "definition": "The party responsible for authorization, adjudication and reimbursement.",
+        "requirements": "To be a valid claim, preauthorization or predetermination there must be a party who is responsible for adjudicating the contents against a policy which provides benefits for the patient.",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "ClaimResponse.identifier",
-          "min": 0,
-          "max": "*"
+          "path": "ClaimResponse.insurer",
+          "min": 1,
+          "max": "1"
         },
         "type": [
           {
-            "code": "Identifier"
+            "code": "Reference",
+            "targetProfile": [
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization"
+            ]
           }
         ],
         "constraint": [
@@ -6017,15 +6021,11 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "workflow",
-            "map": "Event.identifier"
-          },
-          {
-            "identity": "w5",
-            "map": "FiveWs.identifier"
+            "map": "Event.performer"
           }
         ]
       },

@@ -71,7 +71,7 @@
     "kind" : "resource",
     "abstract" : false,
     "type" : "Task",
-    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DomainResource",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
     "derivation" : "specialization",
     "snapshot" : {
       "element" : [{

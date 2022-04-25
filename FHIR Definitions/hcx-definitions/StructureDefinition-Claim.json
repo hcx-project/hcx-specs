@@ -6565,49 +6565,6 @@
         ]
       },
       {
-        "id": "Claim.diagnosis.type",
-        "path": "Claim.diagnosis.type",
-        "short": "Timing or nature of the diagnosis",
-        "definition": "When the condition was observed or the relative ranking.",
-        "comment": "For example: admitting, primary, secondary, discharge.",
-        "requirements": "Often required to capture a particular diagnosis, for example: primary or discharge.",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Claim.diagnosis.type",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DiagnosisType"
-            }
-          ],
-          "strength": "example",
-          "description": "The type of the diagnosis: admitting, principal, discharge.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/ex-diagnosistype"
-        }
-      },
-      {
         "id": "Claim.diagnosis.diagnosis[x]",
         "path": "Claim.diagnosis.diagnosis[x]",
         "short": "Nature of illness or problem",
@@ -6653,6 +6610,49 @@
           "strength": "example",
           "description": "Example ICD10 Diagnostic codes.",
           "valueSet": "http://hl7.org/fhir/ValueSet/icd-10"
+        }
+      },
+      {
+        "id": "Claim.diagnosis.type",
+        "path": "Claim.diagnosis.type",
+        "short": "Timing or nature of the diagnosis",
+        "definition": "When the condition was observed or the relative ranking.",
+        "comment": "For example: admitting, primary, secondary, discharge.",
+        "requirements": "Often required to capture a particular diagnosis, for example: primary or discharge.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Claim.diagnosis.type",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosisType"
+            }
+          ],
+          "strength": "example",
+          "description": "The type of the diagnosis: admitting, principal, discharge.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ex-diagnosistype"
         }
       },
       {

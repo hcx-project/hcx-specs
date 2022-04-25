@@ -2,7 +2,7 @@
     "resourceType": "ValueSet",
     "id": "insurance-company-owners",
     "version": "1",
-    "name": "Insurance Company Owners",
+    "name": "InsuranceCompanyOwners",
     "status": "active",
     "date": "2021-09-07",
     "publisher": "Health Claims Exchange",
@@ -10,259 +10,258 @@
     "expansion": {
       "timestamp": "2021-09-07T08:15:30+05:30",
       "contains": [
-        
           {
-            "code": 1,
+            "code": "1",
             "display": "Bajaj Allianz General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 2,
+            "code": "2",
             "display": "ICICI Lombard General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 3,
+            "code": "3",
             "display": "IFFCO Tokio General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 4,
+            "code": "4",
             "display": "National Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 5,
+            "code": "5",
             "display": "The New India Assurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 6,
+            "code": "6",
             "display": "The Oriental Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 7,
+            "code": "7",
             "display": "United India Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 8,
+            "code": "8",
             "display": "Reliance General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 9,
+            "code": "9",
             "display": "Royal Sundaram Alliance Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 10,
+            "code": "10",
             "display": "Tata AIG General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 11,
+            "code": "11",
             "display": "Cholamandalam MS General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 12,
+            "code": "12",
             "display": "HDFC ERGO General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 13,
+            "code": "13",
             "display": "Export Credit Guarantee Corporation of India Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 14,
+            "code": "14",
             "display": "Agriculture Insurance Co. of India Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 15,
+            "code": "15",
             "display": "Star Health and Allied Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 16,
+            "code": "16",
             "display": "Apollo Munich Health Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 17,
+            "code": "17",
             "display": "Universal Sompo General Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 18,
+            "code": "18",
             "display": "Future Generali India Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 19,
+            "code": "19",
             "display": "Shriram General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 20,
+            "code": "20",
             "display": "Bharti AXA General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 21,
+            "code": "21",
             "display": "Raheja QBE General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 22,
+            "code": "22",
             "display": "SBI General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 23,
+            "code": "23",
             "display": "Max Bupa Health Insurance Company Ltd.2nd Floor, Salcon Rasvilas,",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 24,
+            "code": "24",
             "display": "L&T General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 25,
+            "code": "25",
             "display": "Religare Health Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 26,
+            "code": "26",
             "display": "Magma HDI General Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 27,
+            "code": "27",
             "display": "Liberty Videocon General Insurance Company Limited,",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 28,
+            "code": "28",
             "display": "Bajaj Allianz Life Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 29,
+            "code": "29",
             "display": "Birla Sun Life Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 30,
+            "code": "30",
             "display": "HDFC Standard Life Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 31,
+            "code": "31",
             "display": "ICICI Prudential Life Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 32,
+            "code": "32",
             "display": "ING Vysya Life Insurance Company Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 33,
+            "code": "33",
             "display": "Life Insurance Corporation of India",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 34,
+            "code": "34",
             "display": "Max Life Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 35,
+            "code": "35",
             "display": "PNB Metlife India Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 36,
+            "code": "36",
             "display": "Kotak Mahindra Old Mutual Life Insurance Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 37,
+            "code": "37",
             "display": "SBI Life Insurance Co. Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 38,
+            "code": "38",
             "display": "Tata AIA Life Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 39,
+            "code": "39",
             "display": "Reliance Life Insurance Company Limited.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 40,
+            "code": "40",
             "display": "Aviva Life Insurance Company India Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 41,
+            "code": "41",
             "display": "Sahara India Life Insurance Co, Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 42,
+            "code": "42",
             "display": "Shriram Life Insurance Co, Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 43,
+            "code": "43",
             "display": "Bharti AXA Life Insurance Company Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 44,
+            "code": "44",
             "display": "Future Generali India Life Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 45,
+            "code": "45",
             "display": "IDBI Federal Life Insurance Company Ltd",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 46,
+            "code": "46",
             "display": "Canara HSBC Oriental Bank of Commerce Life Insurance Company Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 47,
+            "code": "47",
             "display": "AEGON Religare Life Insurance Company Limited.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 48,
+            "code": "48",
             "display": "DLF Pramerica Life Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 49,
+            "code": "49",
             "display": "Star Union Dai-ichi Life Insurance Co.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 50,
+            "code": "50",
             "display": "IndiaFirst Life Insurance Company Limited",
             "system": "http://hcp.org/codes/insurance-company-owners"
           },
           {
-            "code": 51,
+            "code": "51",
             "display": "Edelweiss Tokio Life Insurance Co. Ltd.",
             "system": "http://hcp.org/codes/insurance-company-owners"
           }

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "health-service-provider-role",
   "version": "1",
-  "name": "Health Service Provider Role",
+  "name": "HealthServiceProviderRoles",
   "status": "active",
   "date": "2021-09-07",
   "publisher": "Health Claims Exchange",
@@ -11,67 +11,67 @@
     "timestamp": "2021-09-07T08:15:30+05:30",
     "contains": [
       {
-        "code": 1,
+        "code": "1",
         "display": "Primary Care Provider Referring Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 2,
+        "code": "2",
         "display": "Referring Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 3,
+        "code": "3",
         "display": "Treating Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 4,
+        "code": "4",
         "display": "Attending Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 5,
+        "code": "5",
         "display": "Admitting Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 6,
+        "code": "6",
         "display": "Consulting Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 7,
+        "code": "7",
         "display": "Ordering Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 8,
+        "code": "8",
         "display": "Dispensing Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 9,
+        "code": "9",
         "display": "Discharge Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 10,
+        "code": "10",
         "display": "Secondary Care Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 11,
+        "code": "11",
         "display": "Tertiary Care Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 12,
+        "code": "12",
         "display": "Transfusion Provider.",
         "system": "http://hcp.org/codes/health-service-provider"
       },
       {
-        "code": 13,
+        "code": "13",
         "display": "Others.",
         "system": "http://hcp.org/codes/health-service-provider"
       }
