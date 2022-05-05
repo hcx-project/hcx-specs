@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "claim-denial-codes",
   "version": "1",
-  "name": "Claim Denial Codes",
+  "name": "ClaimDenialCodes",
   "status": "active",
   "date": "2021-08-15",
   "publisher": "Health Claims Exchange",

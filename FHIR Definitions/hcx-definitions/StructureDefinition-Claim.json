@@ -6742,7 +6742,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://nrces.in/ndhm/fhir/r4/StructureDefinition-Encounter.html"
+              "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Encounter"
             ]
           }
         ],

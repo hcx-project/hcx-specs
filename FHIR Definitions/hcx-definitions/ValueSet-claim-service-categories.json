@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
   "version": "1",
-  "name": "Claim Service Categories",
+  "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",
   "publisher": "Health Claims Exchange",

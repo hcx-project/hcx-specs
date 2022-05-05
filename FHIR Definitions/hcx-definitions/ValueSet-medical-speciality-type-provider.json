@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "medical-speciality-type-provider",
   "version": "1",
-  "name": "Medical Speciality Type Provider",
+  "name": "MedicalSpecialityTypeProvider",
   "status": "active",
   "date": "2021-09-07",
   "publisher": "Health Claims Exchange",
