@@ -2,6 +2,7 @@
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
   "version": "1",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-service-categories.html",
   "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",

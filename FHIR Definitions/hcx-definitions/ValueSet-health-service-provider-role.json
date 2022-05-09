@@ -2,6 +2,7 @@
   "resourceType": "ValueSet",
   "id": "health-service-provider-role",
   "version": "1",
+  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-health-service-provider-role.html",
   "name": "HealthServiceProviderRoles",
   "status": "active",
   "date": "2021-09-07",
