@@ -30,7 +30,7 @@
       "valueCode": "fm"
     }
   ],
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PaymentNotice.html",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-PaymentNotice.html",
   "version": "0.7.0",
   "name": "PaymentNotice",
   "status": "draft",
@@ -1159,7 +1159,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PaymentReconciliation.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-PaymentReconciliation.html"
             ]
           }
         ],

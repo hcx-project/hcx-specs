@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "medical-speciality-type-provider",
-  "version": "1",
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-medical-speciality-type-provider.html",
+  "version": "0.7.0",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-medical-speciality-type-provider.html",
   "name": "MedicalSpecialityTypeProvider",
   "status": "active",
   "date": "2021-09-07",
@@ -25,432 +25,432 @@
       {
         "code": "general_medicine",
         "display": "General Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "dental_surgery",
         "display": "Dental surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "nursing",
         "display": "Nursing",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pharmacy",
         "display": "Pharmacy",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "nursing_midwifery",
         "display": "Nursing Midwifery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "military_surgeons",
         "display": "Military surgeons",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "cardio_thoracic_and_vascular_surgery",
         "display": "Cardio Thoracic and Vascular Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "cardiology",
         "display": "Cardiology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "allergy",
         "display": "Allergy",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "chest_medicine",
         "display": "Chest Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "clinical_psychology",
         "display": "Clinical Psychology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "cosmetic_dentistry",
         "display": "Cosmetic Dentistry",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "cosmetic_surgery",
         "display": "Cosmetic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "endodontics",
         "display": "Endodontics",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "ent",
         "display": "ENT",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "critical_care",
         "display": "Critical Care",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "dental_implants_and_cosmetic_dentistry",
         "display": "Dental Implants & Cosmetic Dentistry",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "dermatology_venereology_and_leprology",
         "display": "Dermatology Venereology and Leprology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "dermatology",
         "display": "Dermatology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "facial_plastic_surgery",
         "display": "Facial Plastic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "diabetology",
         "display": "Diabetology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "endocrinology",
         "display": "Endocrinology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "diet_and_nutrition",
         "display": "Diet and Nutrition",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "diabetology_and_internal_medicine",
         "display": "Diabetology & Internal Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "gastrosurgery",
         "display": "Gastrosurgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "gastroenterology",
         "display": "Gastroenterology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "general_surgery",
         "display": "General Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "general_surgery_and_laparoscopic_surgery",
         "display": "General Surgery & Laparoscopic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "gynecology_and_ultrasonology",
         "display": "Gynecology & Ultrasonology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "head_and_neck_surgery",
         "display": "Head & Neck Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "head_and_neck_surgical_oncology",
         "display": "Head & Neck Surgical Oncology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "hepato_pancreato_biliary_surgery",
         "display": "Hepato Pancreato Biliary Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "infectious_disease_medicine",
         "display": "Infectious Disease medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "internal_medicine",
         "display": "Internal Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "neuro_surgery",
         "display": "Neuro Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "resident_physicians",
         "display": "Resident Physicians",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "respiratory_allergy_and_sleep_medicine",
         "display": "Respiratory Allergy And Sleep Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "rheumatology",
         "display": "Rheumatology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "sexual_medicine",
         "display": "Sexual Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "spine_surgery",
         "display": "Spine Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "sports_medicine",
         "display": "Sports Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "surgical_gastroenterology",
         "display": "Surgical Gastroenterology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "surgical_oncology",
         "display": "Surgical Oncology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "urology",
         "display": "Urology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "physiotherapy",
         "display": "Physiotherapy",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "physiotherapy_and_rehabilitation",
         "display": "Physiotherapy & Rehabilitation",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "plastic_and_cosmetic_surgery",
         "display": "Plastic and Cosmetic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "plastic_surgery",
         "display": "Plastic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "podiatry",
         "display": "Podiatry",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "prosthodontics_and_implants",
         "display": "Prosthodontics & Implants",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "psychiatry",
         "display": "Psychiatry",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pulmonology",
         "display": "Pulmonology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "radiation_oncology",
         "display": "Radiation Oncology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "radiology",
         "display": "Radiology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "laparoscopic_and_robotic_surgery",
         "display": "Laparoscopic and Robotic Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "medical_gastroenterology",
         "display": "Medical Gastroenterology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "medical_oncology",
         "display": "Medical Oncology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "nephrology",
         "display": "Nephrology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "neurology",
         "display": "Neurology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "neurology_and_neuro_surgery",
         "display": "Neurology & Neuro Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "neuropsychiatry",
         "display": "Neuropsychiatry",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "obstetrics_and_gynecology",
         "display": "Obstetrics & Gynecology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "oncology",
         "display": "Oncology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "ophthalmology",
         "display": "Ophthalmology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "oral_and_maxillofacial_surgery",
         "display": "Oral & Maxillofacial Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "ortho_dontia",
         "display": "Ortho Dontia",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "orthopedic_surgeon",
         "display": "Orthopedic Surgeon",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "orthopedics",
         "display": "Orthopedics",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "orthopedics_and_sports_medicine",
         "display": "Orthopedics & Sports Medicine",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "orthopedics_and_spine_surgery",
         "display": "Orthopedics And Spine Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "orthopedics_and_upper_limb_surgery",
         "display": "Orthopedics And Upper Limb Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pediatric_endocrinology",
         "display": "Pediatric Endocrinology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pediatric_ophthalmology_and_squint",
         "display": "Pediatric Ophthalmology And Squint",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "paediatrics",
         "display": "Paediatrics",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "paediatrics_and_neonatology",
         "display": "Paediatrics & Neonatology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "paediatrics_nephrology",
         "display": "Paediatrics - Nephrology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "paediatrics_neurology",
         "display": "Paediatrics - Neurology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "paediatrics_surgery",
         "display": "Paediatrics - Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pathology",
         "display": "Pathology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "peadodontology_child_dentistry",
         "display": "Peadodontology (Child Dentistry)",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "pediatric_pulmonology",
         "display": "Pediatric Pulmonology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "periodontia",
         "display": "Periodontia",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "periodontology_and_implantology",
         "display": "Periodontology and Implantology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "peripheral_vascular_surgery",
         "display": "Peripheral Vascular Surgery",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "physical_medicine_and_rehabilitation",
         "display": "Physical Medicine & Rehabilitation",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       },
       {
         "code": "physician_and_diabetology",
         "display": "Physician & Diabetology",
-        "system": "http://hcp.org/codes/medical-specility-type-provider"
+        "system": "http://hcxprotocol.io/codes/medical-specility-type-provider"
       }
     ]
   }

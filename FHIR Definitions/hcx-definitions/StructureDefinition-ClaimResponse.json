@@ -30,7 +30,7 @@
       "valueCode": "fm"
     }
   ],
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimResponse.html",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponse.html",
   "version": "0.7.0",
   "name": "ClaimResponse",
   "status": "draft",
@@ -1733,7 +1733,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6080,7 +6080,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -6147,7 +6147,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6247,7 +6247,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Coverage.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -6282,7 +6282,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimResponse.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponse.html"
             ]
           }
         ],

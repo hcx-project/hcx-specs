@@ -28,7 +28,7 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
       "valueCode" : "pa"
     }],
-    "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXInsurancePlan.html",
+    "url" : "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXInsurancePlan.html",
     "version": "0.7.0",
     "name" : "HCXInsurancePlan",
     "status" : "draft",
@@ -87,7 +87,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
+                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
                     ]
                 }
             ]
@@ -102,7 +102,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
+                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
                     ]
                 }
             ]
@@ -117,7 +117,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
+                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
                     ]
                 }
             ]
@@ -132,7 +132,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXInformationalMessagesExtension.html"
+                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXInformationalMessagesExtension.html"
                     ]
                 }
             ]
@@ -147,7 +147,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXQuestionnairesExtension.html"
+                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXQuestionnairesExtension.html"
                     ]
                 }
             ]

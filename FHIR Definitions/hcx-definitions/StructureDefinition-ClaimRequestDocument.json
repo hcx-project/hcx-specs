@@ -30,7 +30,7 @@
       "valueCode": "sd"
     }
   ],
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimRequestDocument.html",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimRequestDocument.html",
   "version": "0.7.0",
   "name": "ClaimRequestDocument",
   "status": "draft",
@@ -2663,7 +2663,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -2879,7 +2879,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Claim.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ]

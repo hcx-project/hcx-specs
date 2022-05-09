@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
-  "version": "1",
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-service-categories.html",
+  "version": "0.7.0",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-service-categories.html",
   "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",
@@ -25,47 +25,47 @@
       {
         "code": "100000",
         "display": "Room & Nursing Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "200000",
         "display": "ICU Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "300000",
         "display": "OT Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "400000",
         "display": "Medicine & Consumables Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "500000",
         "display": "Professional Fees Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "600000",
         "display": "Investigation Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "700000",
         "display": "Ambulance Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "800000",
         "display": "Miscellaneous Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       },
       {
         "code": "900000",
         "display": "Package Charges",
-        "system": "http://hcp.org/codes/service-category"
+        "system": "http://hcxprotocol.io/codes/service-category"
       }
     ]
   }

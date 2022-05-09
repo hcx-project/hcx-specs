@@ -30,7 +30,7 @@
       "valueCode": "sd"
     }
   ],
-  "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimResponseDocument.html",
+  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponseDocument.html",
   "version": "0.7.0",
   "name": "ClaimResponseDocument",
   "status": "draft",
@@ -2771,7 +2771,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-ClaimResponse.html"
+              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponse.html"
             ]
           }
         ]
