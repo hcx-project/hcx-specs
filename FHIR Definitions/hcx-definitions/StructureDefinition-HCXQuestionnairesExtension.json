@@ -2,21 +2,19 @@
     "resourceType": "StructureDefinition",
     "id": "HCXQuestionnairesExtension",
     "url": "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXQuestionnairesExtension.html",
-    "version": "0.1.0",
+    "version": "0.7.0",
     "name": "HCXQuestionnairesExtension",
     "title": "HCX Questionnaires Extension",
     "status": "active",
     "date": "2021-12-27",
-    "publisher": "HCX Working Group",
+    "publisher": "HCX Open Community",
     "contact": [
       {
-        "name": "HCX Working Group",
+        "name": "HCX Open Community",
         "telecom": [
           {
-            "system": "email",
-            "value": "tbd@hcx.org.in",
-            "use": "work",
-            "rank": 1
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
           }
         ]
       }

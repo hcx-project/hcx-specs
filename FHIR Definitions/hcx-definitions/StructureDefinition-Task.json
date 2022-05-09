@@ -18,7 +18,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger" : 2
+      "valueInteger" : 0
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
@@ -29,23 +29,22 @@
       "valueCode" : "oo"
     }],
     "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Task.html",
-    "version" : "4.0.1",
+    "version": "0.7.0",
     "name" : "Task",
     "status" : "draft",
     "date" : "2019-11-01T09:29:23+11:00",
-    "publisher" : "Health Level Seven International (Orders and Observations)",
-    "contact" : [{
-      "telecom" : [{
-        "system" : "url",
-        "value" : "http://hl7.org/fhir"
-      }]
-    },
-    {
-      "telecom" : [{
-        "system" : "url",
-        "value" : "http://www.hl7.org/Special/committees/orders/index.cfm"
-      }]
-    }],
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
+          }
+        ]
+      }
+    ],
     "description" : "A task to be performed.",
     "fhirVersion" : "4.0.1",
     "mapping" : [{

@@ -5,7 +5,18 @@
   "name": "MedicalSpecialityTypeProvider",
   "status": "active",
   "date": "2021-09-07",
-  "publisher": "Health Claims Exchange",
+  "publisher": "HCX Open Community",
+  "contact": [
+    {
+      "name": "HCX Open Community",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hcxprotocol.io/"
+        }
+      ]
+    }
+  ],
   "description": "This is the value set that includes the codes to identify the medical specialty provider",
   "expansion": {
     "timestamp": "2021-09-07T08:15:30+05:30",

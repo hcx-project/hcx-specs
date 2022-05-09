@@ -29,23 +29,21 @@
       "valueCode" : "pa"
     }],
     "url" : "https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-HCXInsurancePlan.html",
-    "version" : "4.0.1",
+    "version": "0.7.0",
     "name" : "HCXInsurancePlan",
     "status" : "draft",
     "date" : "2021-12-28",
-    "publisher" : "HCX Working Group",
-    "contact" : [
-        {
-            "name": "HCX Working Group",
-            "telecom": [
-              {
-                "system": "email",
-                "value": "tbd@hcx.org.in",
-                "use": "work",
-                "rank": 1
-              }
-            ]
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
           }
+        ]
+      }
     ],
     "description" : "Details of a Health Insurance product/plan provided by an organization.",
     "fhirVersion" : "4.0.1",
