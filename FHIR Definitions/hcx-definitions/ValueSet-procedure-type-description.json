@@ -2,7 +2,7 @@
     "resourceType": "ValueSet",
     "id": "procedure-type-description",
     "version": "0.7.0",
-    "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-procedure-type-description.html",
+    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-procedure-type-description.html",
     "name": "ProcedureTypeDescriptions",
     "status": "active",
     "date": "2021-09-07",

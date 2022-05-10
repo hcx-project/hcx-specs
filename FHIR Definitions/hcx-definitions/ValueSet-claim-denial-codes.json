@@ -3,7 +3,7 @@
   "id": "claim-denial-codes",
   "version": "0.7.0",
   "name": "ClaimDenialCodes",
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-denial-codes.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html",
   "status": "active",
   "date": "2021-08-15",
   "publisher": "HCX Open Community",

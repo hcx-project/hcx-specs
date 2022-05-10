@@ -24,13 +24,9 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "not-classified"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "sd"
     }
   ],
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html",
   "version": "0.7.0",
   "name": "CovereageEligibilityResponseDocument",
   "status": "draft",
@@ -2769,7 +2765,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-CoverageEligibilityResponse.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponse.html"
             ]
           }
         ]

@@ -2,7 +2,7 @@
     "resourceType": "ValueSet",
     "id": "insurance-company-owners",
     "version": "0.7.0",
-    "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-insurance-company-owners.html",
+    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-insurance-company-owners.html",
     "name": "InsuranceCompanyOwners",
     "status": "active",
     "date": "2021-09-07",

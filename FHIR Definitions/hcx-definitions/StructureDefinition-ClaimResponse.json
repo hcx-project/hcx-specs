@@ -24,13 +24,9 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fm"
     }
   ],
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponse.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html",
   "version": "0.7.0",
   "name": "ClaimResponse",
   "status": "draft",
@@ -1733,7 +1729,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6080,7 +6076,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Claim.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -6147,7 +6143,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6247,7 +6243,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -6282,7 +6278,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-ClaimResponse.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html"
             ]
           }
         ],

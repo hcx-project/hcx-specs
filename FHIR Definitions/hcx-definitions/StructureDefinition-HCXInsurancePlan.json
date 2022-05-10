@@ -23,12 +23,8 @@
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode" : "business"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode" : "pa"
     }],
-    "url" : "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXInsurancePlan.html",
+    "url" : "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXInsurancePlan.html",
     "version": "0.7.0",
     "name" : "HCXInsurancePlan",
     "status" : "draft",
@@ -87,7 +83,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
+                        "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
                     ]
                 }
             ]
@@ -102,7 +98,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
+                        "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
                     ]
                 }
             ]
@@ -117,7 +113,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
+                        "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
                     ]
                 }
             ]
@@ -132,7 +128,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXInformationalMessagesExtension.html"
+                        "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXInformationalMessagesExtension.html"
                     ]
                 }
             ]
@@ -147,7 +143,7 @@
                 {
                     "code": "Extension",
                     "profile":  [
-                        "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXQuestionnairesExtension.html"
+                        "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXQuestionnairesExtension.html"
                     ]
                 }
             ]

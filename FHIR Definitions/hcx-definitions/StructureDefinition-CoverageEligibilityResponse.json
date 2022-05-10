@@ -24,13 +24,9 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fm"
     }
   ],
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-CoverageEligibilityResponse.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponse.html",
   "version": "0.7.0",
   "name": "CoverageEligibilityResponse",
   "status": "draft",
@@ -2628,7 +2624,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-CoverageEligibilityRequest.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityRequest.html"
             ]
           }
         ],
@@ -2678,7 +2674,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html"
             ]
           }
         ],

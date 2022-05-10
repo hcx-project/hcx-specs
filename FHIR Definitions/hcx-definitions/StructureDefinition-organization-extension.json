@@ -3,15 +3,11 @@
   "id": "organization-extension",
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fhir"
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger": 0
     }
   ],
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-organization-extension.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-organization-extension.html",
   "version": "0.7.0",
   "name": "HCX Organization Extension",
   "status": "draft",

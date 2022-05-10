@@ -24,13 +24,9 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fm"
     }
   ],
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-PaymentNotice.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentNotice.html",
   "version": "0.7.0",
   "name": "PaymentNotice",
   "status": "draft",
@@ -1159,7 +1155,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-PaymentReconciliation.html"
+              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentReconciliation.html"
             ]
           }
         ],

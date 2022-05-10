@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXProofOfPresenceExtension",
-    "url": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html",
+    "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html",
     "version": "0.7.0",
     "name": "HCXProofOfPresenceExtension",
     "title": "HCX Proof Of Presence Extension",
@@ -197,7 +197,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://hcx-project.github.io/hcx-specs/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
+          "fixedUri": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
         },
         {
           "id": "Extension.value[x]",

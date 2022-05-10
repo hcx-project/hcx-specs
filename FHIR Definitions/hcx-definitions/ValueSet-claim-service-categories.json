@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
   "version": "0.7.0",
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-claim-service-categories.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html",
   "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",

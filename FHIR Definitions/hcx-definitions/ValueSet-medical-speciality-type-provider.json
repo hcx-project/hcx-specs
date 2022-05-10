@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "medical-speciality-type-provider",
   "version": "0.7.0",
-  "url": "https://hcx-project.github.io/hcx-specs/v0.7/ValueSet-medical-speciality-type-provider.html",
+  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-medical-speciality-type-provider.html",
   "name": "MedicalSpecialityTypeProvider",
   "status": "active",
   "date": "2021-09-07",
