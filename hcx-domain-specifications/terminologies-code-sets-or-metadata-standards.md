@@ -22,14 +22,14 @@ The table below lists the code systems/value sets proposed by current domain wor
 
 | **Terminology name**                                                       | **FHIR Value Set link**                                                                                                  | **Proposed Binding Strength** |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| <p>Insurance Company Owners</p><p>(coverageeligibilityrequest.insurer)</p> | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-insurance-company-owners.html)         | Preferred                     |
-| <p>Procedure Type</p><p>(claim.procedure.type)</p>                         | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-procedure-type-description.html)       | Example                       |
+| <p>Insurance Company Owners</p><p>(coverageeligibilityrequest.insurer)</p> | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-insurance-company-owners.html)         | Preferred                     |
+| <p>Procedure Type</p><p>(claim.procedure.type)</p>                         | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-procedure-type-description.html)       | Example                       |
 | <p>Procedure Code</p><p>(claim.procedure.procedureCode)</p>                | [link](https://icd.who.int/browse10/2010/en)                                                                             | Example                       |
-| Denial Codes (claimresponse.item.adjudication.reason)                      | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-denial-codes.html)               | Preferred                     |
+| Denial Codes (claimresponse.item.adjudication.reason)                      | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html)               | Preferred                     |
 | <p>Procedure Modifiers</p><p>(claim.item.modifier)</p>                     | TODO                                                                                                                     | Example                       |
-| <p>Service Categories</p><p>(claim.item.category)</p>                      | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-claim-service-categories.html)         | Example                       |
+| <p>Service Categories</p><p>(claim.item.category)</p>                      | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html)         | Example                       |
 | <p>Service Codes</p><p>(claim.item.productOrService)</p>                   | TODO                                                                                                                     | Preferred                     |
-| <p>Medical Speciality Type</p><p>(practitionerRole.speciality)</p>         | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-medical-speciality-type-provider.html) | Preferred                     |
-| <p>Health Service Provider role</p><p>(claim.careTeam.role)</p>            | [link](https://swasth-digital-health-foundation.github.io/standards/v0.7/ValueSet-health-service-provider-role.html)     | Example                       |
+| <p>Medical Speciality Type</p><p>(practitionerRole.speciality)</p>         | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-medical-speciality-type-provider.html) | Preferred                     |
+| <p>Health Service Provider role</p><p>(claim.careTeam.role)</p>            | [link](https://ig.hcxprotocol.io/v0.7/ValueSet-health-service-provider-role.html)     | Example                       |
 
 HCX or a neutral protocol supporting organisation will host domain specific FHIR Terminology Services which the ecosystem can leverage to retrieve information and use, and validate resources as defined by the IG.
