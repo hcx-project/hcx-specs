@@ -118,7 +118,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "http://www.hl7.org/fhir/valueset-issue-severity.html"
+            "valueSet": "http://hl7.org/fhir/ValueSet/issue-severity"
           }
         },
         {

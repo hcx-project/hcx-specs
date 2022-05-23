@@ -107,7 +107,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Coverage Eligibility request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case coverage eligibility request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and CoverageEligibilityResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#coverage-eligibility-response). CoverageEligibilityResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html) for the resource. 
+          2. In case coverage eligibility request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and CoverageEligibilityResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#coverage-eligibility-response). CoverageEligibilityResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html) for the resource. 
         
       requestBody:
         content:
@@ -152,7 +152,7 @@ paths:
         This API is for providers to submit pre-determination requests (and resubmit updated request) to HCX gateway and for HCX gateway to route the same request to payors. 
         
         
-        Payload for this API has to be created as per the [Claim Request Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Claim Request Document](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -198,7 +198,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Pre-Determination request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case Pre-Determinationrequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+          2. In case Pre-Determinationrequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponseDocument.html) for the resource.         
 
       requestBody:
         content:
@@ -243,7 +243,7 @@ paths:
         This API is for providers to submit pre-authorization requests (and resubmit updated request) to HCX gateway and for HCX gateway to route the same request to payors. 
         
         
-        Payload for this API has to be created as per the [Claim Request Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Claim Request Document](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -289,7 +289,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Pre-Authorization request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case Pre-Authorization request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+          2. In case Pre-Authorization request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponseDocument.html) for the resource.         
 
       requestBody:
         content:
@@ -334,7 +334,7 @@ paths:
         This API is for providers to submit claim requests (and resubmit updated request) to HCX gateway and for HCX gateway to route the same request to payors. 
         
         
-        Payload for this API has to be created as per the [Claim Request Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specification and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Claim Request Document](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimRequestDocument.html) defined in HCX Specification and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -380,7 +380,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Claims request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case Claims request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-ClaimResponseDocument.html) for the resource.         
+          2. In case Claims request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#claim-response). ClaimResponse resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponseDocument.html) for the resource.         
 
       requestBody:
         content:
@@ -425,7 +425,7 @@ paths:
         This API is for Payors to send Payment notification/reconciliation objects to Providers via the HCX gateway. This API is available on HCX gateways and Provider systems. 
         
         
-        Payload for this API has to be created as per the [Payment Notice Document](https://swasth-digital-health-foundation.github.io/standards/output/StructureDefinition-PaymentNoticeDocument.html) defined in HCX Specifications and serialized as JWE json as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Payment Notice Document](https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentNoticeDocument.html) defined in HCX Specifications and serialized as JWE json as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -471,7 +471,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Payment Notice request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case Payment Notice request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#payment-notice). PaymentNotice resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-PaymentNoticeDocument.html) for the resource.
+          2. In case Payment Notice request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and ClaimResponse bundle as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#payment-notice). PaymentNotice resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentNoticeDocument.html) for the resource.
 
       requestBody:
         content:
@@ -519,7 +519,7 @@ paths:
         A communication request can happen only within the context of a existing claim cycle (predetermination, preauth or the actual claim). The protocol header x-hcx-correlation_id should carry the correlation id of the original claim request for which the communication request is being raised. HCX gateway should validate that the correlation id is a valid identifier and the original claim request is still open.
         
         
-        Payload for this API has to be created as per the [Communication Request](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CommunicationRequest.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
+        Payload for this API has to be created as per the [Communication Request](https://ig.hcxprotocol.io/v0.7/StructureDefinition-CommunicationRequest.html) defined in HCX Specifications and serialized as per the [guidelines](https://docs.swasth.app/hcx-specifications/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity) in HCX Specifications.
       requestBody:
         content:
           application/json:
@@ -565,7 +565,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding CommunicationRequest (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case CommunicationRequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and [Communication bundle](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-CommunicationDocument.html) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#communication). Communication resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/StructureDefinition-Communication.html) for the resource.        
+          2. In case CommunicationRequest could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and [Communication bundle](https://ig.hcxprotocol.io/v0.7/StructureDefinition-CommunicationDocument.html) as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models#communication). Communication resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/StructureDefinition-Communication.html) for the resource.        
 
       requestBody:
         content:
@@ -668,7 +668,7 @@ paths:
               - if there are any protocol related errors in processing the corresponding Status request (see [error handling section](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
               - if the responder wants to send a redirection instruction to the original sender (see [redirection flow](https://docs.swasth.app/v0.7-draft/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#redirect) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.redirect**" and the _x-hcx-redirect_to_ header must have a value while sending a redirection instruction.
 
-          2. In case Status request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and Response bundle corresponding to the resource (e.g. a CoverageEligibilityResponse or a ClaimResponse etc.) indicated in the status request. It could be any of the Response resources as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models). Response resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://swasth-digital-health-foundation.github.io/standards/v0.7/profiles.html) for the resource. 
+          2. In case Status request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and Response bundle corresponding to the resource (e.g. a CoverageEligibilityResponse or a ClaimResponse etc.) indicated in the status request. It could be any of the Response resources as prescribed for the use case by the [domain specifications](https://docs.swasth.app/v0.7-draft/hcx-domain-specifications/domain-data-models). Response resource inside the bundle would contain details about the domain/business processing outcome as follows as per [FHIR specifications](https://ig.hcxprotocol.io/v0.7/profiles.html) for the resource. 
 
             In a way this callback behaves similar to corresponding cycle's on_* callback, however, while those callbacks would usually carry the FHIR resource with "complete" or "error" outcome, this callback may also indicate a partially processed resource.   
         
