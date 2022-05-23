@@ -8,4 +8,4 @@ To assist implementers in the ecosystem to create flow specific payload defined 
 
 Such a publication can be used to validate content against the implementation guide as a whole.
 
-The extended profiles and structures of the FHIR bundles and resources to be used in HCX are available [here](https://swasth-digital-health-foundation.github.io/standards/v0.7/index.html).
+The extended profiles and structures of the FHIR bundles and resources to be used in HCX are available [here](https://ig.hcxprotocol.io/v0.7/index.html).
