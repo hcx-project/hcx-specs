@@ -1,7 +1,5 @@
 ---
-description: >-
-  aka healthcare operations policies - Healthcare sector specific operations
-  policies for business processes on HCX
+description: Operating policy guidelines for key business processes on HCX
 ---
 
 # Business Policy Specifications
@@ -25,11 +23,11 @@ The success of the data exchange will depend on trust and willing participation 
 3. Rules of participation and disqualification should be transparently laid out
 4. They should follow the principle of minimalism and be evolved over a period of time
 
-Keeping these guidelines in mind, the following key policies guidelines are included in this version.&#x20;
+Keeping these guidelines in mind, the following key policies guidelines are included in this version.
 
 1. Access control (Roles)
 2. Participant onboarding/deboarding
 3. Grievance redressal
 4. Event Audit
 
-These policies are further being discussed in the current business policy working groups, and more robust guidelines are expected in upcoming versions of the protocol.  Apart from these, business policy working groups are also working on other aspects as mentioned in [key specifications](../open-specifications/key-specifications.md#business-policy-specifications), including the guidelines for operating rules for an HCX instance.&#x20;
+These policies are further being discussed in the current Policy Guidelines working group, and more robust guidelines are expected in upcoming versions of the protocol. Apart from these, business policy working groups are also working on other aspects as mentioned in [key specifications](../open-specifications/key-specifications.md#business-policy-specifications), including the guidelines for operating rules for an HCX instance.
