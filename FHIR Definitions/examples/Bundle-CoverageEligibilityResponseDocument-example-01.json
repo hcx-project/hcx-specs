@@ -1,0 +1,462 @@
+{
+    "resourceType": "Bundle",
+    "id": "CoverageEligibilityResponseDocument-example-01",
+    "meta": {
+      "lastUpdated": "2021-12-22T15:32:26.605+05:30"
+    },
+    "timestamp": "2021-12-22T15:32:26.605+05:30",
+    "identifier": {
+      "system": "https://www.tmh.in/bundle",
+      "value": "CoverageEligibilityResponseDocument-example-01"
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Coverage Eligibility Response document example</div>"
+    },
+    "type": "document",
+    "entry": [{
+      "fullUrl": "Composition/42ff4a07-3e36-402f-a99e-29f16c0c9eee",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "42ff4a07-3e36-402f-a99e-29f16c0c9eee",
+        "date": "2021-12-22T15:32:26.605+05:30",
+        "identifier": {
+          "system": "https://www.tmh.in/hcx-documents",
+          "value": "42ff4a07-3e36-402f-a99e-29f16c0c9eee"
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Coverage Eligibility Response document example</div>"
+        },
+        "status": "final",
+        "type": {
+          "coding": [{
+            "system": "https://hcx.org/document-types",
+            "code": "HCXCoverageElibilityResponse",
+            "display": "Coverage Eligibility Response"
+          }]
+        },
+        "subject": {
+          "reference": "Patient/RVH1003"
+        },
+        "author": [{
+          "reference": "Practitioner/1"
+        }],
+        "title": "Coverage Eligibility Response",
+        "section": [{
+          "title": "Coverage Eligibility Response",
+          "code": {
+            "text": "CoverageEligibilityResponse",
+            "coding": [{
+              "system": "https://www.hl7.org/fhir/valueset-resource-types",
+              "code": "CoverageEligibilityResponse",
+              "display": "Coverage Eligibility Response"
+            }]
+          },
+          "entry": [{
+            "reference": "CoverageEligibilityResponse/res-id-1"
+          }]
+        }]
+      }
+    },
+      {
+        "fullUrl": "CoverageEligibilityResponse/res-id-1",
+        "resource": {
+          "id": "res-id-1",
+          "resourceType": "CoverageEligibilityResponse",
+          "created": "2021-12-22",
+          "identifier": [{
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuiad:581da6a9"
+          }],
+          "status": "active",
+          "patient": {
+            "reference": "Patient/1",
+            "display": "Hina Patel"
+          },
+          "servicedPeriod": {
+            "start": "2021-12-22",
+            "end": "2021-12-25"
+          },
+          "purpose": [
+            "discovery",
+            "benefits"
+          ],
+          "insurance": [
+            {
+              "coverage": {
+                "reference": "Coverage/9876B1"
+              },
+              "inforce": true,
+              "item": [
+                {
+                  "category": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+                        "code": "30",
+                        "display": "Health Benefit Plan Coverage"
+                      }
+                    ]
+                  },
+                  "network": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-network",
+                        "code": "in"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-unit",
+                        "code": "individual"
+                      }
+                    ]
+                  },
+                  "term": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-term",
+                        "code": "annual"
+                      }
+                    ]
+                  },
+                  "benefit": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "benefit"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 500000,
+                        "currency": "INR"
+                      }
+                    },
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "copay-maximum"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 100,
+                        "currency": "INR"
+                      }
+                    },
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "copay-percent"
+                          }
+                        ]
+                      },
+                      "allowedUnsignedInt": 20
+                    }
+                  ]
+                },
+                {
+                  "category": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+                        "code": "69",
+                        "display": "Maternity"
+                      }
+                    ]
+                  },
+                  "network": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-network",
+                        "code": "in"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-unit",
+                        "code": "individual"
+                      }
+                    ]
+                  },
+                  "term": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-term",
+                        "code": "annual"
+                      }
+                    ]
+                  },
+                  "benefit": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "benefit"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 15000,
+                        "currency": "INR"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "category": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+                        "code": "F3",
+                        "display": "Dental Coverage"
+                      }
+                    ]
+                  },
+                  "network": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-network",
+                        "code": "in"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-unit",
+                        "code": "individual"
+                      }
+                    ]
+                  },
+                  "term": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-term",
+                        "code": "annual"
+                      }
+                    ]
+                  },
+                  "benefit": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "benefit"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 2000,
+                        "currency": "INR"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "category": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+                        "code": "F6",
+                        "display": "Vision Coverage"
+                      }
+                    ]
+                  },
+                  "network": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-network",
+                        "code": "in"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-unit",
+                        "code": "individual"
+                      }
+                    ]
+                  },
+                  "term": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-term",
+                        "code": "annual"
+                      }
+                    ]
+                  },
+                  "benefit": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "benefit"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 400,
+                        "currency": "INR"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "category": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-benefitcategory",
+                        "code": "49",
+                        "display": "Hospital Room and Board"
+                      }
+                    ]
+                  },
+                  "network": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-network",
+                        "code": "in"
+                      }
+                    ]
+                  },
+                  "unit": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-unit",
+                        "code": "individual"
+                      }
+                    ]
+                  },
+                  "term": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/benefit-term",
+                        "code": "day"
+                      }
+                    ]
+                  },
+                  "benefit": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "room"
+                          }
+                        ]
+                      },
+                      "allowedString": "shared"
+                    },
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "benefit"
+                          }
+                        ]
+                      },
+                      "allowedMoney": {
+                        "value": 600,
+                        "currency": "INR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "Patient/1",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "1",
+          "name": [{
+            "use": "official",
+            "family": "Patel",
+            "given": [
+              "Hina"
+            ]
+          }],
+          "identifier": [{
+            "type": {
+              "coding": [{
+                "system": "http://ndhm.gov.in/ValueSet/identifier-type",
+                "code": "PHRADDR"
+              }]
+            },
+            "system": "http://ndhm.gov.in/healthId",
+            "value": "654321"
+          },
+            {
+              "type": {
+                "coding": [{
+                  "system": "http://ndhm.gov.in/ValueSet/identifier-type",
+                  "code": "PMJAYID"
+                }]
+              },
+              "system": "http://ndhm.gov.in/pmjay",
+              "value": "QWRT12345"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1974-12-25"
+        }
+      },
+      {
+        "fullUrl": "Organization/MaxSaket01",
+        "resource": {
+          "resourceType": "Organization",
+          "id": "MaxSaket01",
+          "name": "Max Super Speciality Hospital, Saket",
+          "identifier": [{
+            "system": "https://ndhm.gov.in/hfr",
+            "value": "HFR-10000005"
+          }]
+        }
+      },
+      {
+        "fullUrl": "Organization/2",
+        "resource": {
+          "resourceType": "Organization",
+          "id": "2",
+          "name": "PMJAY, MoHFW, Govt Of India",
+          "identifier": [{
+            "system": "https://hcx.org/orgs",
+            "value": "PMJAY"
+          }]
+        }
+      },
+      {
+        "fullUrl": "Practitioner/1",
+        "resource": {
+          "resourceType": "Practitioner",
+          "id": "1",
+          "identifier": [{
+            "system": "https://ndhm.gov.in/npr",
+            "value": "NPR-6897"
+          }],
+          "name": [{
+            "text": "Sudhir Naik (PMJAY Gujrat)",
+            "prefix": [
+              "Dr"
+            ],
+            "suffix": [
+              "MD"
+            ]
+          }]
+        }
+      }
+    ]
+  }

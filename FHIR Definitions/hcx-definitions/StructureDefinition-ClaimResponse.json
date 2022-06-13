@@ -19,7 +19,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 0
+      "valueInteger": 1
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
