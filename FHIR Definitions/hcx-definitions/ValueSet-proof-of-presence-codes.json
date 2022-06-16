@@ -1,0 +1,37 @@
+{
+    "resourceType": "ValueSet",
+    "id": "proof-of-presence-codes",
+    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-presence-codes.html",
+    "name": "ProofOfPresenceCodes",
+    "status": "active",
+    "date": "2022-06-01",
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
+          }
+        ]
+      }
+    ],
+    "description": "This is the value set listing the Proof of Presence codes",
+    "expansion": {
+      "timestamp": "2022-06-01T08:15:30+05:30",
+      "contains": [
+        {
+          "code": "PoPr.locationPhoto",
+          "display": "Photo of the location with subject",
+          "system": "http://hcxprotocol.io/codes/proof-of-presence-codes"
+        },
+        {
+            "code": "PoPr.deviceLocation",
+            "display": "Real time geolocation from certified devices",
+            "system": "http://hcxprotocol.io/codes/proof-of-presence-codes"
+          }
+      ]
+    }
+  }

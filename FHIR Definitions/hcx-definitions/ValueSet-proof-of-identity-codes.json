@@ -1,0 +1,142 @@
+{
+    "resourceType": "ValueSet",
+    "id": "proof-of-identity-codes",
+    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-identity-codes.html",
+    "name": "ProofOfIdentityCodes",
+    "status": "active",
+    "date": "2022-06-01",
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
+          }
+        ]
+      }
+    ],
+    "description": "This is the value set listing the Proof of Identification codes",
+    "expansion": {
+      "timestamp": "2022-06-01T08:15:30+05:30",
+      "contains": [
+        {
+          "code": "POI-1",
+          "display": "Aadhar Identity Card",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-2",
+          "display": "Passport",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-3",
+          "display": "Driving License",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-4",
+          "display": "Election Commision's Voter ID card",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-5",
+          "display": "Income Tax PAN Card",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-6",
+          "display": "Photo Credit Card/ Debit card (with Photo)",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-7",
+          "display": "ECHS / CGHS Card having photo",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-8",
+          "display": "Domicile Certificate / Caste Certificate with photograph",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-9",
+          "display": "Current passbook of Post Office / Govt. /PSU Bank/private banks",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-10",
+          "display": "Student ID card of the Govt. recognized educational institutions with photograph on it.",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-11",
+          "display": "Ration Card with photograph & address. (Issued from Maharashtra state not valid )",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-12",
+          "display": "Smart Card issued by CSD, Defence / Paramilitary Forces",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-13",
+          "display": "Arms License",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-14",
+          "display": "Senior Citizen Card having photo issued by the Govt.",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-15",
+          "display": "Pensioners Card having photo issued by the Govt.",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-16",
+          "display": "ID Card issued to Tibetan (Refugees) Citizens by State Govt. / Central Govt. of India having photo",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-17",
+          "display": "Defence Personnel - Armed Forces ;Certificate from Competent Unit Authority",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-18",
+          "display": "Certificate of Address having Photo, issued by MP/ MLA / Group A Gazetted Officer on letter head with seal",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-19",
+          "display": "Certificate of address with photo from Govt. recognized educational institution (for students only)",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-20",
+          "display": "Certificate of Address having Photo, issued by Head of Village / Gram Panchayat or its equivalent Authority. (for Rural Areas)",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-21",
+          "display": "Address Card with Photo issued by Dept. of Posts",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-23",
+          "display": "Freedom fighter card with photo",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        },
+        {
+          "code": "POI-24",
+          "display": "Kissan Passbook with photo",
+          "system": "http://hcxprotocol.io/codes/proof-of-identity-codes"
+        }
+      ]
+    }
+  }

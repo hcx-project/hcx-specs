@@ -81,7 +81,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://hcx-valuesets/proofOfIdentificationDocumentCodes"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-identity-codes.html"
           }
         },
         {

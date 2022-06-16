@@ -81,7 +81,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://hcx-valuesets/clinicalDiagnosticsDocumentCodes"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-clinical-diagnostics-document-codes.html"
           }
         },
         {

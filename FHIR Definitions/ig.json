@@ -507,6 +507,62 @@
         "name": "HCX insurance-company-owners",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/clinical-diagnostics-document-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/clinical-diagnostics-document-codes"
+        },
+        "name": "HCX clinical-diagnostics-document-codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/informational-messages-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/informational-messages-codes"
+        },
+        "name": "HCX informational-messages-codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/proof-of-identity-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/proof-of-identity-codes"
+        },
+        "name": "HCX proof-of-identity-codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/proof-of-presence-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/proof-of-presence-codes"
+        },
+        "name": "HCX proof-of-presence-codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -675,6 +731,26 @@
             {
               "nameUrl": "ValueSet-insurance-company-owners.html",
               "title": "HCX insurance company owners",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-clinical-diagnostics-document-codes",
+              "title": "HCX Clinical Diagnostics Document Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-informational-messages-codes",
+              "title": "HCX Informational Messages Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-proof-of-identity-codes",
+              "title": "HCX Proof of Identity Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-proof-of-presence-codes",
+              "title": "HCX Proof of Presence Codes",
               "generation": "generated"
             }
           ]

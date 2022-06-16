@@ -89,7 +89,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://hcx-valuesets/InformationalMessagesCodes"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-informational-messages-codes.html"
           }
         },
         {

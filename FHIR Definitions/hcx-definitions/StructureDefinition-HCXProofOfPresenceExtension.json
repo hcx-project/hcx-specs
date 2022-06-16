@@ -82,7 +82,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://hcx-valuesets/proofOfPresenceDocumentCodes"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-presence-codes.html"
           }
         },
         {
