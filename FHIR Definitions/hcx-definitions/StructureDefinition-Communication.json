@@ -1402,18 +1402,7 @@
       }]
     },
     "differential" : {
-      "element" : [{
-        "id" : "Communication",
-        "path" : "Communication",
-        "short" : "A record of information transmitted from a sender to a receiver",
-        "definition" : "An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency that was notified about a reportable condition.",
-        "min" : 0,
-        "max" : "*",
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event"
-        }]
-      },
+      "element" : [
       {
         "id" : "Communication.identifier",
         "path" : "Communication.identifier",
@@ -1421,7 +1410,7 @@
         "definition" : "Business identifiers assigned to this communication by the performer or other systems which remain constant as the resource is updated and propagates from server to server.",
         "comment" : "This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.",
         "requirements" : "Allows identification of the communication as it is known by various participating systems and in a way that remains consistent across servers.",
-        "min" : 0,
+        "min" : 1,
         "max" : "*",
         "type" : [{
           "code" : "Identifier"
@@ -1437,89 +1426,6 @@
         }]
       },
       {
-        "id" : "Communication.instantiatesCanonical",
-        "path" : "Communication.instantiatesCanonical",
-        "short" : "Instantiates FHIR protocol or definition",
-        "definition" : "The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "canonical",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-          "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Measure",
-          "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
-          "http://hl7.org/fhir/StructureDefinition/Questionnaire"]
-        }],
-        "isSummary" : true,
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.instantiatesCanonical"
-        },
-        {
-          "identity" : "rim",
-          "map" : ".outboundRelationship[typeCode=DEFN].target"
-        }]
-      },
-      {
-        "id" : "Communication.instantiatesUri",
-        "path" : "Communication.instantiatesUri",
-        "short" : "Instantiates external protocol or definition",
-        "definition" : "The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication.",
-        "comment" : "This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "uri"
-        }],
-        "isSummary" : true,
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.instantiatesUri"
-        },
-        {
-          "identity" : "rim",
-          "map" : ".outboundRelationship[typeCode=DEFN].target"
-        }]
-      },
-      {
-        "id" : "Communication.basedOn",
-        "path" : "Communication.basedOn",
-        "short" : "Request fulfilled by this communication",
-        "definition" : "An order, proposal or plan fulfilled in whole or in part by this Communication.",
-        "comment" : "This must point to some sort of a 'Request' resource, such as CarePlan, CommunicationRequest, ServiceRequest, MedicationRequest, etc.",
-        "alias" : ["fulfills"],
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
-        }],
-        "isSummary" : true,
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.basedOn"
-        }]
-      },
-      {
-        "id" : "Communication.partOf",
-        "path" : "Communication.partOf",
-        "short" : "Part of this action",
-        "definition" : "Part of this action.",
-        "alias" : ["container"],
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
-        }],
-        "isSummary" : true,
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.partOf"
-        }]
-      },
-      {
         "id" : "Communication.inResponseTo",
         "path" : "Communication.inResponseTo",
         "short" : "Reply to",
@@ -1528,140 +1434,8 @@
         "max" : "*",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Communication"]
+          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7/StructureDefinition-Communication.html"]
         }]
-      },
-      {
-        "id" : "Communication.status",
-        "path" : "Communication.status",
-        "short" : "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown",
-        "definition" : "The status of the transmission.",
-        "comment" : "This element is labeled as a modifier because the status contains the codes aborted and entered-in-error that mark the communication as not currently valid.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [{
-          "code" : "code"
-        }],
-        "isModifier" : true,
-        "isModifierReason" : "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
-        "isSummary" : true,
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationStatus"
-          }],
-          "strength" : "required",
-          "description" : "The status of the communication.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/event-status|4.0.1"
-        },
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.status"
-        },
-        {
-          "identity" : "w5",
-          "map" : "FiveWs.status"
-        }]
-      },
-      {
-        "id" : "Communication.statusReason",
-        "path" : "Communication.statusReason",
-        "short" : "Reason for current status",
-        "definition" : "Captures the reason for the current state of the Communication.",
-        "comment" : "This is generally only used for \"exception\" statuses such as \"not-done\", \"suspended\" or \"aborted\". The reason for performing the event at all is captured in reasonCode, not here.",
-        "alias" : ["Suspended Reason",
-        "Cancelled Reason"],
-        "min" : 0,
-        "max" : "1",
-        "type" : [{
-          "code" : "CodeableConcept"
-        }],
-        "isSummary" : true,
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationNotDoneReason"
-          }],
-          "strength" : "example",
-          "description" : "Codes for the reason why a communication did not happen.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/communication-not-done-reason"
-        },
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.statusReason"
-        }]
-      },
-      {
-        "id" : "Communication.category",
-        "path" : "Communication.category",
-        "short" : "Message category",
-        "definition" : "The type of message conveyed such as alert, notification, reminder, instruction, etc.",
-        "comment" : "There may be multiple axes of categorization and one communication may serve multiple purposes.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "CodeableConcept"
-        }],
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationCategory"
-          }],
-          "strength" : "example",
-          "description" : "Codes for general categories of communications such as alerts, instructions, etc.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/communication-category"
-        },
-        "mapping" : [{
-          "identity" : "w5",
-          "map" : "FiveWs.class"
-        }]
-      },
-      {
-        "id" : "Communication.priority",
-        "path" : "Communication.priority",
-        "short" : "routine | urgent | asap | stat",
-        "definition" : "Characterizes how quickly the planned or in progress communication must be addressed. Includes concepts such as stat, urgent, routine.",
-        "comment" : "Used to prioritize workflow (such as which communication to read first) when the communication is planned or in progress.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [{
-          "code" : "code"
-        }],
-        "meaningWhenMissing" : "If missing, this communication should be treated with normal priority",
-        "isSummary" : true,
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationPriority"
-          }],
-          "strength" : "required",
-          "description" : "Codes indicating the relative importance of a communication.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/request-priority|4.0.1"
-        },
-        "mapping" : [{
-          "identity" : "w5",
-          "map" : "FiveWs.grade"
-        }]
-      },
-      {
-        "id" : "Communication.medium",
-        "path" : "Communication.medium",
-        "short" : "A channel of communication",
-        "definition" : "A channel that was used for this communication (e.g. email, fax).",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "CodeableConcept"
-        }],
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationMedium"
-          }],
-          "strength" : "example",
-          "description" : "Codes for communication mediums such as phone, fax, email, in person, etc.",
-          "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ParticipationMode"
-        }
       },
       {
         "id" : "Communication.subject",
@@ -1673,7 +1447,7 @@
         "max" : "1",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+          "targetProfile" : ["https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient",
           "http://hl7.org/fhir/StructureDefinition/Group"]
         }],
         "isSummary" : true,
@@ -1691,48 +1465,6 @@
         }]
       },
       {
-        "id" : "Communication.topic",
-        "path" : "Communication.topic",
-        "short" : "Description of the purpose/content",
-        "definition" : "Description of the purpose/content, similar to a subject line in an email.",
-        "comment" : "Communication.topic.text can be used without any codings.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [{
-          "code" : "CodeableConcept"
-        }],
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationTopic"
-          }],
-          "strength" : "example",
-          "description" : "Codes describing the purpose or content of the communication.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/communication-topic"
-        },
-        "mapping" : [{
-          "identity" : "w5",
-          "map" : "FiveWs.context"
-        }]
-      },
-      {
-        "id" : "Communication.about",
-        "path" : "Communication.about",
-        "short" : "Resources that pertain to this communication",
-        "definition" : "Other resources that pertain to this communication and to which this communication should be associated.",
-        "comment" : "Don't use Communication.about element when a more specific element exists, such as basedOn or reasonReference.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
-        }],
-        "mapping" : [{
-          "identity" : "w5",
-          "map" : "FiveWs.context"
-        }]
-      },
-      {
         "id" : "Communication.encounter",
         "path" : "Communication.encounter",
         "short" : "Encounter created as part of",
@@ -1742,7 +1474,7 @@
         "max" : "1",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+          "targetProfile" : ["https://nrces.in/ndhm/fhir/r4/StructureDefinition/Encounter"]
         }],
         "isSummary" : true,
         "mapping" : [{
@@ -1755,44 +1487,6 @@
         }]
       },
       {
-        "id" : "Communication.sent",
-        "path" : "Communication.sent",
-        "short" : "When sent",
-        "definition" : "The time when this communication was sent.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [{
-          "code" : "dateTime"
-        }],
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.occurrence[x] {Invariant: maps to period.start}"
-        },
-        {
-          "identity" : "w5",
-          "map" : "FiveWs.done[x]"
-        }]
-      },
-      {
-        "id" : "Communication.received",
-        "path" : "Communication.received",
-        "short" : "When received",
-        "definition" : "The time when this communication arrived at the destination.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [{
-          "code" : "dateTime"
-        }],
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.occurrence[x] {Invariant: maps to period.end}"
-        },
-        {
-          "identity" : "w5",
-          "map" : "FiveWs.done[x]"
-        }]
-      },
-      {
         "id" : "Communication.recipient",
         "path" : "Communication.recipient",
         "short" : "Message recipient",
@@ -1802,10 +1496,10 @@
         "type" : [{
           "code" : "Reference",
           "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
           "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
           "http://hl7.org/fhir/StructureDefinition/Group",
           "http://hl7.org/fhir/StructureDefinition/CareTeam",
@@ -1830,10 +1524,10 @@
         "type" : [{
           "code" : "Reference",
           "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-          "http://hl7.org/fhir/StructureDefinition/Organization",
-          "http://hl7.org/fhir/StructureDefinition/Patient",
-          "http://hl7.org/fhir/StructureDefinition/Practitioner",
-          "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Organization",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Practitioner",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/PractitionerRole",
           "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
           "http://hl7.org/fhir/StructureDefinition/HealthcareService"]
         }],
@@ -1847,40 +1541,6 @@
         }]
       },
       {
-        "id" : "Communication.reasonCode",
-        "path" : "Communication.reasonCode",
-        "short" : "Indication for message",
-        "definition" : "The reason or justification for the communication.",
-        "comment" : "Textual reasons can be captured using reasonCode.text.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "CodeableConcept"
-        }],
-        "isSummary" : true,
-        "binding" : {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-            "valueString" : "CommunicationReason"
-          }],
-          "strength" : "example",
-          "description" : "Codes for describing reasons for the occurrence of a communication.",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/clinical-findings"
-        },
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.reasonCode"
-        },
-        {
-          "identity" : "w5",
-          "map" : "FiveWs.why[x]"
-        },
-        {
-          "identity" : "rim",
-          "map" : ".reasonCode"
-        }]
-      },
-      {
         "id" : "Communication.reasonReference",
         "path" : "Communication.reasonReference",
         "short" : "Why was communication done?",
@@ -1889,10 +1549,10 @@
         "max" : "*",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
-          "http://hl7.org/fhir/StructureDefinition/Observation",
+          "targetProfile" : ["https://nrces.in/ndhm/fhir/r4/StructureDefinition/Condition",
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Observation",
           "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-          "http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+          "https://nrces.in/ndhm/fhir/r4/StructureDefinition/DocumentReference"]
         }],
         "isSummary" : true,
         "mapping" : [{
@@ -1906,50 +1566,6 @@
         {
           "identity" : "rim",
           "map" : ".outboundRelationship[typeCode=RSON].target"
-        }]
-      },
-      {
-        "id" : "Communication.payload",
-        "path" : "Communication.payload",
-        "short" : "Message payload",
-        "definition" : "Text, attachment(s), or resource(s) that was communicated to the recipient.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "BackboneElement"
-        }]
-      },
-      {
-        "id" : "Communication.payload.content[x]",
-        "path" : "Communication.payload.content[x]",
-        "short" : "Message part content",
-        "definition" : "A communicated content (or for multi-part communications, one portion of the communication).",
-        "min" : 1,
-        "max" : "1",
-        "type" : [{
-          "code" : "string"
-        },
-        {
-          "code" : "Attachment"
-        },
-        {
-          "code" : "Reference",
-          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
-        }]
-      },
-      {
-        "id" : "Communication.note",
-        "path" : "Communication.note",
-        "short" : "Comments made about the communication",
-        "definition" : "Additional notes or commentary about the communication by the sender, receiver or other interested parties.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [{
-          "code" : "Annotation"
-        }],
-        "mapping" : [{
-          "identity" : "workflow",
-          "map" : "Event.note"
         }]
       }]
     }
