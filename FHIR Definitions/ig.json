@@ -83,7 +83,7 @@
         "reference": {
           "reference": "StructureDefinition/Communication"
         },
-        "name": "HCX CoverageEligibility Communication",
+        "name": "HCX Communication",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -97,7 +97,7 @@
         "reference": {
           "reference": "StructureDefinition/CommunicationRequest"
         },
-        "name": "HCX CoverageEligibility CommunicationRequest",
+        "name": "HCX CommunicationRequest",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -734,22 +734,22 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "ValueSet-clinical-diagnostics-document-codes",
+              "nameUrl": "ValueSet-clinical-diagnostics-document-codes.html",
               "title": "HCX Clinical Diagnostics Document Codes",
               "generation": "generated"
             },
             {
-              "nameUrl": "ValueSet-informational-messages-codes",
+              "nameUrl": "ValueSet-informational-messages-codes.html",
               "title": "HCX Informational Messages Codes",
               "generation": "generated"
             },
             {
-              "nameUrl": "ValueSet-proof-of-identity-codes",
+              "nameUrl": "ValueSet-proof-of-identity-codes.html",
               "title": "HCX Proof of Identity Codes",
               "generation": "generated"
             },
             {
-              "nameUrl": "ValueSet-proof-of-presence-codes",
+              "nameUrl": "ValueSet-proof-of-presence-codes.html",
               "title": "HCX Proof of Presence Codes",
               "generation": "generated"
             }

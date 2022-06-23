@@ -28,6 +28,22 @@
  <li>
 <a href="ValueSet-procedure-type-description.html">HCX Procedure Type Description</a>
     </li>
+
+  <li>
+<a href="ValueSet-clinical-diagnostics-document-codes.html">HCX Clinical Diagnostics Document Codes</a>
+    </li>
+
+  <li>
+<a href="ValueSet-informational-messages-codes.html">HCX Informational Messages Codes</a>
+    </li>
+
+  <li>
+<a href="ValueSet-proof-of-identity-codes.html">HCX Proof of Identity Codes</a>
+    </li>
+
+  <li>
+<a href="ValueSet-proof-of-presence-codes.html">HCX Proof of Presence Codes</a>
+    </li>
               
   </ul>
 </div>
