@@ -35,3 +35,5 @@
   * [Guidelines for Event audits](healthcare-operations-policies/guidelines-for-event-audits.md)
   * [Guidelines for Beneficiary Authentication by Providers/Payors](healthcare-operations-policies/guidelines-for-beneficiary-authentication-by-providers-payors.md)
 * [Contributing to the specifications](how-to-submit-responses.md)
+* [Import](import/README.md)
+  * [Notification Specs Proposal (Internal)](import/notification-specs-proposal-internal.md)
