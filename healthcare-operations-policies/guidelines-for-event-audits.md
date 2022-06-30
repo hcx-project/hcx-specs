@@ -6,4 +6,4 @@ The HCX needs to persist the logs for a configurable (as prescribed by the law o
 
 #### Next Steps
 
-This section proposes a high-level approach that can be adopted for event audit policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for event audit policy formulation as well as a model policy for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.&#x20;
+This section proposes a high-level approach that can be adopted for event audit policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for event audit policy formulation as well as a model policy for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.

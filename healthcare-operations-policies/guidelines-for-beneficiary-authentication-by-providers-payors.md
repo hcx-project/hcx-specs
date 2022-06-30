@@ -30,4 +30,4 @@ The payer authenticates the customer by directly interacting with him. For examp
 
 #### Next Steps
 
-This section proposes a high-level approach that can be adopted for beneficiary authentication policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for beneficiary authentication guidelines for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.&#x20;
+This section proposes a high-level approach that can be adopted for beneficiary authentication policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for beneficiary authentication guidelines for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.
