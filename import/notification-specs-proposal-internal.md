@@ -53,7 +53,7 @@ As part of the overall HCX specifications, the Notification delivery specificati
 
 Categorisation of notifications is important from the point of view of data security/privacy and reducing information load on the receivers. It is proposed to classify the HCX Notifications based on the **subject of the notification** as follows:
 
-![](<../.gitbook/assets/0 (1)>)
+![](../.gitbook/assets/0)
 
 **Network notifications**
 
@@ -69,7 +69,7 @@ These notifications are expected to carry information about the activities in th
 4. Change in network policies like terms of services, SLAs, grievance policies, etc.
 5. Switch/Network maintenance and downtime related notifications
 
-![](../.gitbook/assets/1)
+![](<../.gitbook/assets/1 (1)>)
 
 Such notifications will be triggered by the HCX switch operator and will be broadcasted to all participating entities on the network. In the initial version of the protocol, it is proposed that participants will be auto-subscribed to these notifications at the time of onboarding and are not given a facility to block or unsubscribe from such notifications.
 
@@ -81,7 +81,7 @@ In addition, there's a special category of network notifications that would be t
 2. Encryption key expiration
 3. SLA threshold breach, etc.
 
-![](<../.gitbook/assets/2 (1)>)
+![](../.gitbook/assets/2)
 
 Thes notifications will be triggered by the HCX switch operator and will be directed to the concerned entities on the network. In the initial version of the protocol, it is proposed that participants will be auto-subscribed to these notifications at the time of onboarding and will not be given a facility to block or unsubscribe from such notifications.
 
@@ -99,7 +99,7 @@ These notifications are expected to carry participant system related public info
    4. New insurance plans/products, end of support for existing products/plans
 3. Policy Compliance changes - terms of services, SLAs, grievance policy etc.
 
-![](../.gitbook/assets/3)
+![](<../.gitbook/assets/3 (1)>)
 
 Such notifications will be triggered by the network participants and would be expected to be broadcasted to all entities on the network. HCX operators may choose to by default subscribe all onboarding entities to such notifications and provide the facility to unsubscribe from such notifications.
 
@@ -118,7 +118,7 @@ Key use cases for these kind of notifications would be:
 1. Updates about initiation, closure or change in status of claims cycle: Regulators like IIB needing the information about processed claims at the completion of a claim cycle or; a state or private sponsor needing to know the initiation and closure of claims, etc.
 2. Updates about claims for a particular disease type: Surveillance notification to indicate workflow related to a particular clinical type.
 
-![](../.gitbook/assets/4)
+![](<../.gitbook/assets/4 (1)>)
 
 Such notifications would be expected to be explicitly subscribed to, and may or may not be granted access based on the network’s policy. Subscription to such notifications will depend on the role of the participating entity and approval/acceptance from the intended sender participant but do not require explicit consent from the patient as they will not be carrying any PII of the patients.
 
@@ -140,7 +140,7 @@ Key use cases for these kind of notifications would be:
 
 Subscription to such notifications will depend on the role of the participating entity and will require explicit consent from the patient. Given the nature of data expected to be carried, it is proposed that such scenarios are instead treated as usual data exchange scenarios on the exchange and hence leverage the same protocol APIs. Keeping this constraint in mind, protocol proposes following flow for such notifications:
 
-![](../.gitbook/assets/5)
+![](<../.gitbook/assets/5 (1)>)
 
 **Subscription Mechanism :**
 
