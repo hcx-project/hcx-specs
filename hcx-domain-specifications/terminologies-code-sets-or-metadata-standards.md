@@ -16,7 +16,7 @@ In various HL7 standards (including FHIR), these are expressed as Concepts and c
   * ValueSet may be created derived from existing sets, either composed/included from the base or expanded.
 * For insurance claim domain specific element attributes (e.g. Claim.type) - the domain may define and establish value sets, as suitable in India’s context.
 
-For the broader ABDM interoperability and conformance, HCX would align/inherit domain specific guidelines published by NRCeS.
+For the broader ABDM interoperability and conformance, HCX would align with domain specific guidelines published by NRCeS.
 
 The code systems/valuesets proposed by the HCX working groups are published as part of the [HCX FHIR Implementation Guide](https://ig.hcxprotocol.io/v0.7/valuesets.html). The IG and the code systems/valuesets are versioned and published independently of the HCX protocol.
 
