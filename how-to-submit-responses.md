@@ -38,6 +38,6 @@ We aim to make hcx-specifications one of the best open community projects with y
 
 If for some reason, you cannot raise issues using github, you can also send them via email to [contact@hcxprotocol.io](mailto:contact@hcxprotocol.io).
 
-However, to get the best assistance from the community, get timely responses and benefit everyone from the observations, we strongly encourage everyone to use the github forum. Please use [these instructions](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to sign up for a free github account, if you dont already have one. You can then write to us at [hcx@swasthapp.org](mailto:hcx@swasthapp.org) with your github id to include you as a part of the github community for the hcx-specifications.
+However, to get the best assistance from the community, get timely responses and benefit everyone from the observations, we strongly encourage everyone to use the github forum. Please use [these instructions](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) to sign up for a free github account, if you dont already have one. You can then write to us at [contact@hcxprotocol.io](mailto:contact@hcxprotocol.io) with your github id to include you as a part of the github community for the hcx-specifications.
 
 > This specification document can also be downloaded as a PDF for offline consumption. Instructions to download specifications as a PDF are available [here](https://docs.gitbook.com/features/pdf-export#export-entire-space).
