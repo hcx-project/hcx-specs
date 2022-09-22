@@ -49,4 +49,4 @@ The claims network will consist of the following key building blocks:
 
 The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
-HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](broken-reference)). What challenges do you foresee in both scenarios - single HCX for all stakeholders v/s multiple connected HCXs? What would be your criteria to choose one scenario over the other?
+HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](https://docs.hcxprotocol.io/hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol#relay)).
