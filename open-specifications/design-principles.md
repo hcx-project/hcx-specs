@@ -14,9 +14,17 @@ Specifications must be designed to be open to support technology and promote ven
 
 They must be designed to be evolvable over a period of time thereby helping adapt to changing needs. By being extendable they provide ecosystems with the capability to leverage these specifications for their context while maintaining interoperability.
 
+#### **Interoperability**
+
+Given that the key role of HCX specifications is to create and enhance interoperability between diverse ecosystem participants, any feature added to the specification must ensure that it increases interoperability between implementations.
+
 #### Minimalistic and Inclusive
 
-Minimalism is crucial to ensuring that specifications enable and do not restrict innovation or inclusion.
+Minimalism is crucial to ensuring that specifications enable and do not restrict innovation or inclusion. In order to be inclusive while maintaining minimalism, before including any new feature/enhancements in the specification, proposers and reviewers should ask the following questions: _1. Do we need it?_ and, _2. Do we need it now?_ If the answer to both these questions is “_**Yes**_” then that feature may be included in the specification.
+
+#### **Unification over standardisation**
+
+There would be situations when not all the features or requirements of the specifications may be standardised (at least in near term), and may vary with context and ground realities. In such cases, the goal of specification should be to prioritise and harmonize those requirements/features such that there is an integrated set of requirements/features all stakeholders can agree with or at least accept. For example, insurance product-and-services value-set may be defined differently for different contexts (social vs private), then the specification should allow for the ecosystem to use any of these definitions based on context, and allow for the standardisation to happen as a natural consequence of ecosystem adoption rather than a forced adoption.
 
 #### Balance data privacy and security with data empowerment
 
