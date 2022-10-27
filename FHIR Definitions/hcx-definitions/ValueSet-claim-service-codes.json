@@ -25,23 +25,6 @@
       {
         "code": "500000",
         "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes"
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
         "system": "http://hcxprotocol.io/codes/service-codes",
         "contains": [
           {
@@ -53,66 +36,19 @@
                 "code": "501001",
                 "display": "Consultation charges",
                 "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
+              },
               {
                 "code": "501002",
                 "display": "Medical Supervision Charges",
                 "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
+              },
               {
                 "code": "501003",
                 "display": "Professional fees",
                 "system": "http://hcxprotocol.io/codes/service-codes"
               }
             ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "502000",
-            "display": "Surgery charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
+          },
           {
             "code": "502000",
             "display": "Surgery charges",
@@ -122,47 +58,14 @@
                 "code": "502001",
                 "display": "Surgeons Charges",
                 "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "502000",
-            "display": "Surgery charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
+              },
               {
                 "code": "502002",
                 "display": "Assistant Surgeons Fee",
                 "system": "http://hcxprotocol.io/codes/service-codes"
               }
             ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "503000",
-            "display": "Anaesthetists Fee",
-            "system": "http://hcxprotocol.io/codes/service-codes"
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
+          },
           {
             "code": "503000",
             "display": "Anaesthetists Fee",
@@ -172,104 +75,38 @@
                 "code": "503001",
                 "display": "Anaesthetists fee",
                 "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "503000",
-            "display": "Anaesthetists Fee",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
+              },
               {
                 "code": "503002",
                 "display": "OT standby charges",
                 "system": "http://hcxprotocol.io/codes/service-codes"
               }
             ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
+          },
           {
             "code": "504000",
             "display": "Intensivist charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "504000",
-            "display": "Procedure charges",
             "system": "http://hcxprotocol.io/codes/service-codes",
             "contains": [
               {
                 "code": "504001",
                 "display": "Beside procedures",
                 "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "504000",
-            "display": "Procedure charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
+              },
               {
                 "code": "504002",
                 "display": "Suture charges",
                 "system": "http://hcxprotocol.io/codes/service-codes"
               }
             ]
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
-          {
-            "code": "505000",
-            "display": "Physiotherapy",
-            "system": "http://hcxprotocol.io/codes/service-codes"
-          }
-        ]
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
-        "contains": [
+          },
           {
             "code": "505000",
             "display": "Technician charges",
             "system": "http://hcxprotocol.io/codes/service-codes",
             "contains": [
               {
-                "code": "505000",
+                "code": "505001",
                 "display": "OT/Cath Lab Technician",
                 "system": "http://hcxprotocol.io/codes/service-codes"
               }
