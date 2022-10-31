@@ -60,11 +60,10 @@ paths:
     post:
       tags:
         - Registry APIs
-      description: >-
-        This API is to search for participants in the registry. API returns list of participants matching the input criteria.
+      description: |
+        This API is to search for participants in the registry. API returns list of participants matching the input criteria. Search filter supports all the fields.
 
-
-        Search filter supports all the fields apart from the nested fields.
+        **Limit** and **Offset** are optional fields. The limit option allows you to limit the number of rows should be returned in the response, while offset allows you to omit a specified number of rows before the beginning of the result set.
 
 
         Following are the operations supported by search filter:
@@ -98,6 +97,50 @@ paths:
         * gte(">=")
 
         * lte("<=")
+
+
+        Following are few example of search filter usage:
+
+        1. Filters to fetch the list of participants with role **provider** and status is **Created**. Search response will return only 10 participants as the limit is 10.
+
+        ```
+        {
+          "filters": {
+            "roles": { "eq": "provider" },
+            "status": { "eq": "Created" }
+          },
+          "limit": 10,
+          "offset": 0
+        }
+        ```
+
+        2. Filters to fetch the list of participants with role **provider** and **payor**.
+        ```
+        {
+          "filters": {
+            "roles": { "or": ["provider","payor"] }
+          }
+        }
+        ```
+
+        3. Filters to fetch the list of participants with participant name containing **Hospital**.
+        ```
+        {
+          "filters": {
+            "participant_name": { "contains": "Hospital" }
+          }
+        }
+        ```
+
+        4. Filters with nested fields, the below filter will return list of participants with the given ifsc code.
+        ```
+        {
+          "filters": {
+            "payment_details.ifsc_code": { "eq": "BANK0001234" }
+          }
+        }
+        ```
+
 
       security:
         - bearer_auth: []
@@ -321,7 +364,14 @@ components:
           type: object
           description: Filter conditions should be provider in filters.
           example: {"participant_code": { "eq": "pcpt01@HCX01" } }
-
+        limit:
+          type: Number
+          description: Size of the search result should return in the response.
+          example: 10
+        offset:
+          type: Number
+          description: Offset is used to omit a specified number of rows before the beginning of the result set.
+          example: 0
 
     ParticipantUpdateRequest:
       type: object
