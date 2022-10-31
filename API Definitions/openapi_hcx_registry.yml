@@ -61,7 +61,9 @@ paths:
       tags:
         - Registry APIs
       description: |
-        This API is to search for participants in the registry. API returns list of participants matching the input criteria. Search filter supports all the fields.
+        This API is to search for participants in the registry. API returns list of participants matching the input criteria.
+
+        Search filter supports all the fields. If multiple filter conditions are provided, they are processed by applying AND operation.
 
         **Limit** and **Offset** are optional fields. The limit option allows you to limit the number of rows should be returned in the response, while offset allows you to omit a specified number of rows before the beginning of the result set.
 
