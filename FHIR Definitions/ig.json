@@ -553,20 +553,6 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/ValueSet/insurance-company-owners",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/insurance-company-owners"
-        },
-        "name": "HCX insurance-company-owners",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
             "url": "http://hl7.org/fhir/tools/ValueSet/clinical-diagnostics-document-codes",
             "valueString": "SearchParameter"
           }
@@ -802,11 +788,6 @@
             {
               "nameUrl": "ValueSet-health-service-provider-role.html",
               "title": "HCX health service provider role",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "ValueSet-insurance-company-owners.html",
-              "title": "HCX insurance company owners",
               "generation": "generated"
             },
             {
