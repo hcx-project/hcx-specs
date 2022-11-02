@@ -15,6 +15,21 @@
 <a href="ValueSet-health-service-provider-role.html">HCX Health Service Provider Role</a>
     </li>
 
+<li>
+<a href="ValueSet-billing-subgroup-categories.html">HCX Billing Subgroup Categories</a>
+    </li>
+
+<li>
+<a href="ValueSet-claim-error-codes.html">HCX Claim Error Codes</a>
+    </li>
+
+<li>
+<a href="ValueSet-claim-supporting-info-categories.html">HCX Claim Supporting Info Categories</a>
+    </li>
+
+<li>
+<a href="ValueSet-claim-supporting-info-codes.html">HCX Claim Supporting Info Codes</a>
+    </li>
 
  <li>
 <a href="ValueSet-insurance-company-owners.html">HCX Insurance Company Owners</a>

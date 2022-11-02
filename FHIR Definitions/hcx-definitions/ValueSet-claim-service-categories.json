@@ -64,7 +64,17 @@
       },
       {
         "code": "900000",
-        "display": "Package Charges",
+        "display": "Provider Package Charges",
+        "system": "http://hcxprotocol.io/codes/service-category"
+      },
+      {
+        "code": "HBP",
+        "display": "NHA Package Charges",
+        "system": "http://hcxprotocol.io/codes/service-category"
+      },
+      {
+        "code": "MJPJAY",
+        "display": "Mahatma Jyotibha Phule PMJAY Package Charges",
         "system": "http://hcxprotocol.io/codes/service-category"
       }
     ]

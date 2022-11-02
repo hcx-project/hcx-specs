@@ -2516,6 +2516,49 @@
         "isSummary": false
       },
       {
+        "id": "CoverageEligibilityRequest.item.category",
+        "path": "CoverageEligibilityRequest.item.category",
+        "short": "Benefit classification",
+        "definition": "Code to identify the general type of benefits under which products and services are provided.",
+        "comment": "Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.",
+        "requirements": "Needed to convey the category of service or product for which eligibility is sought.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityRequest.item.category",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BenefitCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "Benefit categories such as: oral, medical, vision etc.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html"
+        }
+      },
+      {
         "id": "CoverageEligibilityRequest.item.diagnosis.diagnosis[x]",
         "path": "CoverageEligibilityRequest.item.diagnosis.diagnosis[x]",
         "short": "Nature of illness or problem",

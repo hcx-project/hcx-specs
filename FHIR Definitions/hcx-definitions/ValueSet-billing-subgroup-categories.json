@@ -1,0 +1,617 @@
+{
+    "resourceType": "ValueSet",
+    "id": "billing-subgroup-categories",
+    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-billing-subgroup-categories.html",
+    "name": "BillingSubgroupCategories",
+    "status": "active",
+    "date": "2022-08-01",
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
+          }
+        ]
+      }
+    ],
+    "description": "This is the value set for the the billing subcategory codes which is the second level of nesting the billing items under the billing groups.",
+    "expansion": {
+      "timestamp": "2022-08-01T08:15:30+05:30",
+      "contains": [
+        {
+          "code": 101000,
+          "display": "Room Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 102000,
+          "display": "Nursing charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 103000,
+          "display": "Duty Doctor fee",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 104000,
+          "display": "Monitor charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 201000,
+          "display": "ICU Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 202000,
+          "display": "ICU Nursing charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 203000,
+          "display": "Monitor charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 204000,
+          "display": "ICU Supplies & equipment",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 301000,
+          "display": "OT rent",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 302000,
+          "display": "OT Equipment charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 303000,
+          "display": "OT Drugs & Consumables",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 304000,
+          "display": "OT Sterilization",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 401000,
+          "display": "Medicine &\nConsumables charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 501000,
+          "display": "Visit charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 502000,
+          "display": "Surgery Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 503000,
+          "display": "Anaesthetists fee",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 504000,
+          "display": "Intensivist Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 505000,
+          "display": "Technician Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 506000,
+          "display": "Physiotherapy",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 507000,
+          "display": "Procedure charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 601000,
+          "display": "Bio Chemistry",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 602000,
+          "display": "Cardiology charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 603000,
+          "display": "Haemotology charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 604000,
+          "display": "Microbiology charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 605000,
+          "display": "Neurology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 606000,
+          "display": "Nuclear medicine",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 607000,
+          "display": "Pathology charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 608000,
+          "display": "Radiology services",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 609000,
+          "display": "Serology charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 610000,
+          "display": "Medical Genetics",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 611000,
+          "display": "Profiles",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 701000,
+          "display": "Ambulance Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 801000,
+          "display": "Admission charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 802000,
+          "display": "Attendant food charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 803000,
+          "display": "Patient food charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 804000,
+          "display": "Registration charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 805000,
+          "display": "MRD Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 806000,
+          "display": "Documentation charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 807000,
+          "display": "Telephone charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 808000,
+          "display": "Bio Medical Waste Charges",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 809000,
+          "display": "Taxes",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 901000,
+          "display": "Cardiac Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 902000,
+          "display": "CardiologyPackage s",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 903000,
+          "display": "Cath Lab",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 904000,
+          "display": "Dental Procedures",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 905000,
+          "display": "ENT",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 906000,
+          "display": "Gastroenterology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 907000,
+          "display": "General Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 908000,
+          "display": "Gynaecology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 909000,
+          "display": "Nephrology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 910000,
+          "display": "Neuro Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 911000,
+          "display": "Oncology Procedures",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 912000,
+          "display": "Opthalmology\nprocedures",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 913000,
+          "display": "Orthopaedic Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 914000,
+          "display": "Plastic Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 915000,
+          "display": "Pulmonology Packages",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 916000,
+          "display": "Urology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": 917000,
+          "display": "Vascular Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "BM",
+          "display": "Burns Management",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "ER",
+          "display": "Emergency",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "ID",
+          "display": "Infectious Diseases",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "IN",
+          "display": "Interventional Neuroradiology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MC",
+          "display": "Cardiology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MG",
+          "display": "General Medicine",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MM",
+          "display": "Mental Disorders",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MN",
+          "display": "Neo - natal Care",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MO",
+          "display": "Medical Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MP",
+          "display": "Pediatric Medical Management",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "MR",
+          "display": "Radiation Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "OT",
+          "display": "Organ and Tissue Transplant",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SB",
+          "display": "Orthopedics",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SC",
+          "display": "Surgical Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SE",
+          "display": "Ophthalmology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SG",
+          "display": "General Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SL",
+          "display": "ENT",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SM",
+          "display": "Oral & Maxillofacial Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SN",
+          "display": "Neurosurgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SO",
+          "display": "Obstetrics & Gynecology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SP",
+          "display": "Plastic & Reconstructive Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SS",
+          "display": "Pediatric Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "ST",
+          "display": "Polytrauma, Orthopedics, Neurosurgery, General Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SU",
+          "display": "Urology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "SV",
+          "display": "CTVS",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "US",
+          "display": "Unspecified Surgical Package",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M1",
+          "display": "Medical Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M10",
+          "display": "Pulmonology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M11",
+          "display": "Dermatology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M12",
+          "display": "Rheumatology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M13",
+          "display": "Endocrinology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M14",
+          "display": "Gastroenterology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M15",
+          "display": "Interventional Radiology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M16",
+          "display": "GENERAL MEDICINE",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M17",
+          "display": "Mental Disorders Packages",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M18",
+          "display": "Hematology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M2",
+          "display": "Radiation Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M3",
+          "display": "Critical Care",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M5",
+          "display": "Infectious Diseases",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M6",
+          "display": "Pediatrics Medical Management",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M7",
+          "display": "Cardiology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M8",
+          "display": "Nephrology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "M9",
+          "display": "Neurology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S10",
+          "display": "Neurosurgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S11",
+          "display": "Surgical Oncology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S1",
+          "display": "General Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S12",
+          "display": "Plastic Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S13",
+          "display": "Burns",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S14",
+          "display": "Poly Trauma",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S15",
+          "display": "Prostheses",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S20",
+          "display": "Oral & Maxillofacial Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S21",
+          "display": "Pediatric Cancer",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S2",
+          "display": "ENT Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S3",
+          "display": "Ophthalmology Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S4",
+          "display": "Gynaecology And Obstetrics Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S5",
+          "display": "Orthopedic Surgery And Procedures",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S6",
+          "display": "Surgical Gastro Enterology",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S7",
+          "display": "Cardiac And Cardiothoracic Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S8",
+          "display": "Pediatric Surgery",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        },
+        {
+          "code": "S9",
+          "display": "Genitourinary System",
+          "system": "http://hcxprotocol.io/codes/billing-subgroup-category"
+        }
+      ]
+    }
+  }

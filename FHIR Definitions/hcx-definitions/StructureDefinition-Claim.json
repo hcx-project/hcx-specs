@@ -6753,6 +6753,262 @@
             "map": "Request.context"
           }
         ]
+      },
+      {
+        "id": "Claim.item.category",
+        "path": "Claim.item.category",
+        "short": "Benefit classification",
+        "definition": "Code to identify the general type of benefits under which products and services are provided.",
+        "comment": "Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.",
+        "requirements": "Needed in the processing of institutional claims as this allows the insurer to determine whether a facial X-Ray is for dental, orthopedic, or facial surgery purposes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.item.category",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BenefitCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "Benefit categories such as: oral-basic, major, glasses.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html"
+        }
+      },
+      {
+        "id": "Claim.supportingInfo.category",
+        "path": "Claim.supportingInfo.category",
+        "short": "Classification of the supplied information",
+        "definition": "The general class of the information supplied: information; exception; accident, employment; onset, etc.",
+        "comment": "This may contain a category for the local bill type codes.",
+        "requirements": "Required to group or associate information items with common characteristics. For example: admission information or prior treatments.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.supportingInfo.category",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InformationCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "The valuset used for additional information category codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-supporting-info-categories.html"
+        }
+      },
+      {
+        "id": "Claim.supportingInfo.code",
+        "path": "Claim.supportingInfo.code",
+        "short": "Type of information",
+        "definition": "System and code pertaining to the specific information regarding special conditions relating to the setting, treatment or patient  for which care is sought.",
+        "requirements": "Required to identify the kind of additional information.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.supportingInfo.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InformationCode"
+            }
+          ],
+          "strength": "example",
+          "description": "The valuset used for additional information codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-supporting-info-codes.html"
+        }
+      },
+      {
+        "id": "Claim.item.detail.category",
+        "path": "Claim.item.detail.category",
+        "short": "Benefit classification",
+        "definition": "Code to identify the general type of benefits under which products and services are provided.",
+        "comment": "Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.",
+        "requirements": "Needed in the processing of institutional claims as this allows the insurer to determine whether a facial X-Ray is for dental, orthopedic, or facial surgery purposes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.item.detail.category",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BenefitCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "Benefit categories such as: oral-basic, major, glasses.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-billing-subgroup-categories.html"
+        }
+      },
+      {
+        "id": "Claim.careTeam.role",
+        "path": "Claim.careTeam.role",
+        "short": "Function within the team",
+        "definition": "The lead, assisting or supervising practitioner and their discipline if a multidisciplinary team.",
+        "comment": "Role might not be required when there is only a single provider listed.",
+        "requirements": "When multiple parties are present it is required to distinguish the roles performed by each member.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.careTeam.role",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CareTeamRole"
+            }
+          ],
+          "strength": "example",
+          "description": "The role codes for the care team members.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-health-service-provider-role.html"
+        }
+      },
+      {
+        "id": "Claim.careTeam.qualification",
+        "path": "Claim.careTeam.qualification",
+        "short": "Practitioner credential or specialization",
+        "definition": "The qualification of the practitioner which is applicable for this service.",
+        "requirements": "Need to specify which qualification a provider is delivering the product or service under.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.careTeam.qualification",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProviderQualification"
+            }
+          ],
+          "strength": "example",
+          "description": "Provider professional qualifications.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-medical-speciality-type-provider.html"
+        }
       }
     ]
   }

@@ -1,0 +1,1172 @@
+{
+  "resourceType": "ValueSet",
+  "id": "claim-supporting-info-codes",
+  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-supporting-info-codes.html",
+  "name": "ClaimSupportingInfoCodes",
+  "status": "active",
+  "date": "2022-08-01",
+  "publisher": "HCX Open Community",
+  "contact": [
+    {
+      "name": "HCX Open Community",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hcxprotocol.io/"
+        }
+      ]
+    }
+  ],
+  "description": "This is the value set for the codes of different supporting information that can be shared along with the submission of a claim",
+  "expansion": {
+    "timestamp": "2022-08-01T08:15:30+05:30",
+    "contains": [
+      {
+        "code": "POI-1",
+        "display": "Aadhar Identity Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-2",
+        "display": "Passport",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-3",
+        "display": "Driving License",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-4",
+        "display": "Election Commision's Voter ID card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-5",
+        "display": "Income Tax PAN Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-6",
+        "display": "Photo Credit Card/ Debit card (with Photo)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-7",
+        "display": "ECHS / CGHS Card having photo",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-8",
+        "display": "Domicile Certificate / Caste Certificate with photograph",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-9",
+        "display": "Current passbook of Post Office / Govt. /PSU Bank/private banks",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-10",
+        "display": "Student ID card of the Govt. recognized educational institutions with photograph on it.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-11",
+        "display": "Ration Card with photograph & address. (Issued from Maharashtra state not valid )",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-12",
+        "display": "Smart Card issued by CSD, Defence / Paramilitary Forces",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-13",
+        "display": "Arms License",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-14",
+        "display": "Senior Citizen Card having photo issued by the Govt.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-15",
+        "display": "Pensioners Card having photo issued by the Govt.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-16",
+        "display": "ID Card issued to Tibetan (Refugees) Citizens by State Govt. / Central Govt. of India having photo",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-17",
+        "display": "Defence Personnel - Armed Forces ;Certificate from Competent Unit Authority",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-18",
+        "display": "Certificate of Address having Photo, issued by MP/ MLA / Group A Gazetted Officer on letter head with seal",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-19",
+        "display": "Certificate of address with photo from Govt. recognized educational institution (for students only)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-20",
+        "display": "Certificate of Address having Photo, issued by Head of Village / Gram Panchayat or its equivalent Authority. (for Rural Areas)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-21",
+        "display": "Address Card with Photo issued by Dept. of Posts",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-23",
+        "display": "Freedom fighter card with photo",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POI-24",
+        "display": "Kissan Passbook with photo",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-1",
+        "display": "Aadhaar Identity Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-2",
+        "display": "Attachment",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-3",
+        "display": "Passport",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-4",
+        "display": "Driving License (Issued from Maharashtra state not valid )",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-5",
+        "display": "Election Commission’s Voter ID Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-6",
+        "display": "Vehicle Registration Certificate / Smart card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-7",
+        "display": "Water Bill with address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-8",
+        "display": "Electricity Bill of Govt./private company (not older than 3 months)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-9",
+        "display": "Telephone Bill of a fixed line. (Any Service Provider)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-10",
+        "display": "Registered Sale/Lease (Rent) Agreement",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-11",
+        "display": "Credit card statement with address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-12",
+        "display": "Ration Card with photograph. (Issued from Maharashtra state not valid )",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-13",
+        "display": "Certificate of address with photo from Govt. recognized educational institution (for students only)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-14",
+        "display": "Current passbook of Post Office / Govt./PSU/private banks with complete address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-15",
+        "display": "IT Assessment Order",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-16",
+        "display": "ECHS / CGHS Card having photo & address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-17",
+        "display": "Domicile Certificate / Caste Certificate with photograph & address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-18",
+        "display": "Arms License",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-19",
+        "display": "Senior Citizen Card having photo & address issued by the Govt.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-20",
+        "display": "Pensioners Card having photo & address issued by the Govt.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-21",
+        "display": "ID Card issued to Tibetan (Refugees) Citizens by State Govt. / Central Govt. of India having photo & address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-22",
+        "display": "Defence Personnel – Armed Forces ;Certificate from Competent Unit Authority",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-23",
+        "display": "Certificate of Address having Photo, issued by MP/ MLA / Group A Gazetted Officer on letter head with seal",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-24",
+        "display": "Certificate of Address having Photo, issued by Head of Village / Gram Panchayat or its equivalent Authority. (for Rural Areas)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-25",
+        "display": "Address Card with Photo issued by Dept. of Posts",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-26",
+        "display": "Freedom fighter card with photo & address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-27",
+        "display": "Kissan Passbook with photo & address",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POA-28",
+        "display": "Surrender ID Card (BLT etc.) issued by Govt. of India & signed by IGP of the state",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-1",
+        "display": "PDS Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-2",
+        "display": "MNREGA Job Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-3",
+        "display": "CGHS/ State Government/ ECHS/ ESIC Medical card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-4",
+        "display": "Pension Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-5",
+        "display": "Army Canteen Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-6",
+        "display": "Passport",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-7",
+        "display": "Birth Certificate issued by Registrar of Birth, Municipal Corporation and other notified local government bodies like Taluk, Tehsil etc.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-8",
+        "display": "Any other Central/ State government issued family entitlement document",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-9",
+        "display": "Marriage Certificate issued by the government",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-10",
+        "display": "Address card having name and photo issued by Department of Posts",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-11",
+        "display": "Bhamashah Card/Jan-Aadhaar card issued by Govt. of Rajasthan",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-12",
+        "display": "Discharge card/ slip issued by Government hospitals for birth of a child",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-13",
+        "display": "Certificate of Identity having photo issued by MP or MLA or MLC or Municipal Councillor or Gazetted Officer on UIDAI standard certificate format",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "POR-14",
+        "display": "Certificate of Identity having photo and relationship with HoF issued by Village Panchayat Head or Mukhiya or its equivalent authority (for rural areas)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-1",
+        "display": "Birth Certificate issued by Registrar of Birth, Municipal Corporation and other notified local government bodies like Taluk, Tehsil etc.",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-2",
+        "display": "SSLC Book/ Certificate",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-3",
+        "display": "Passport",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-4",
+        "display": "Certificate of Date of Birth issued by Group A Gazetted Officer on UIDAI standard certificate format",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-5",
+        "display": "A certificate (on UIDAI standard certificate format for enrolment/ update) or ID Card having photo and Date of Birth (DOB) duly signed and issued by a Government authority",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-6",
+        "display": "Photo ID card having Date of Birth, issued by Recognized Educational Institution",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-7",
+        "display": "PAN Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-8",
+        "display": "Marksheet issued by any Government Board or University",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-9",
+        "display": "Government Photo ID Card/ Photo Identity Card issued by PSU containing DOB",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-10",
+        "display": "Central/ State Pension Payment Order",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-11",
+        "display": "Central Government Health Service Scheme Photo Card or Ex-Servicemen Contributory Health Scheme Photo card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-12",
+        "display": "School Leaving Certificate (SLC)/ School Transfer Certificate (TC), containing Name and Date of Birth",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-13",
+        "display": "Extract of School Records issued by Head of School containing Name, Date of Birth and Photograph",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-14",
+        "display": "Certificate of Identity containing Name, DOB and Photo issued by Recognized Educational Institution signed by Head of Institute on UIDAI standard certificate format",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DOB-15",
+        "display": "Certificate of identity containing Name, DOB and Photograph issued by Employees’ Provident Fund Organisation (EPFO) on UIDAI standard certificate format",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PHT-1",
+        "display": "Photograph of self",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PHT-2",
+        "display": "Photograph of family",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PHT-3",
+        "display": "Photograph of dead person",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PHT-4",
+        "display": "Photograph (any other required for claims adjudication)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "BVC-1",
+        "display": "PMJAY Beneficiary Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "BVC-2",
+        "display": "Insurance Card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "BVC-3",
+        "display": "Employment ID card (for corporate cases)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "BVC-4",
+        "display": "ESHS/ESI card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "BVC-5",
+        "display": "Bhamashah Card or any other Insurance scheme card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEF-1",
+        "display": "Self signed declaration form",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEF-2",
+        "display": "Hospital stamped and signed hospital declaration form",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEF-3",
+        "display": "Any other consent form or miscellaneous declaration form",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "SIG-1",
+        "display": "self signature (wet signature) scanned copy",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "SIG-2",
+        "display": "hospital signature and stamp (scanned copy)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "FCF-1",
+        "display": "duly signed filled Preauthorization form (scan)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "FCF-2",
+        "display": "duly signed filled Claim form (scan)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CER",
+        "display": "Medical Certificate",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-1",
+        "display": "Final Bill",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-2",
+        "display": "Interim Bill",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-3",
+        "display": "Estimate Bill",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIA-1",
+        "display": "Lab Investigation Report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIA-2",
+        "display": "Radiology Report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIA-3",
+        "display": "Imaging Report with studies",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIA-4",
+        "display": "Genetic Assessment Report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "HDS-1",
+        "display": "Discharge Summary  Report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "HDS-2",
+        "display": "Death Summary Report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "HDS-3",
+        "display": "Discharge Summary with LAMA/DAMA",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-1",
+        "display": "CGHS Refferal Letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-2",
+        "display": "ECHS/ESI Doctor Referral Letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-3",
+        "display": "Doctor Referral letter (to specialist)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-4",
+        "display": "Upward Referral Letter (referral from HWC, SC, PHC,CHC to District Hospital)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-5",
+        "display": "Downward Referral Letter (referral from higher facility to the original referee facility)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-6",
+        "display": "Inter Hospital Referral Letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REF-7",
+        "display": "Doctor Referral letter (to hospital)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEL-1",
+        "display": "Doctor signed treatment extension letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEL-2",
+        "display": "Doctor signed discharge extension letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DEL-3",
+        "display": "post discharge readmission request letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-1",
+        "display": "Doctor Prescription",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-2",
+        "display": "Consultation Summary Note",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-3",
+        "display": "Daily progress note",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-4",
+        "display": "Nursing notes",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-5",
+        "display": "OT Surgery Notes",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-6",
+        "display": "Flowsheet",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-7",
+        "display": "ICU monitoring reports with notes",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-8",
+        "display": "Medication Diapensation Notes",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-9",
+        "display": "CarePlan",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-10",
+        "display": "Emergency Treatment Notes",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-11",
+        "display": "Bedside monitoring report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CD-12",
+        "display": "Point of care testing report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EID-1",
+        "display": "Employment ID card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EID-2",
+        "display": "CGHS card or Pension document",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EID-3",
+        "display": "ECHS service card",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "FIR-1",
+        "display": "FIR report",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CIL-1",
+        "display": "Preauthorization approval letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CIL-2",
+        "display": "Claim approval letter",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CIL- 3",
+        "display": "Treatment Authorization latter from employer(for  public and private sector employees,CGHS, ECHS employees)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-1",
+        "display": "LAMA",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-2",
+        "display": "DAMA",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-3",
+        "display": "Normal Discharge",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-4",
+        "display": "Death",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-5",
+        "display": "DischargeToHome (Discharge disposition status)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-6",
+        "display": "DischargetoMortuary(death disposition)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-7",
+        "display": "DischargeToUnknownLocation",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-8",
+        "display": "DischargeToDifferentState",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "DIS-9",
+        "display": "DischargeToDifferentCountry",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-1",
+        "display": "Admission date -Discharge date",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-2",
+        "display": "Discharge start-discharge end time",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-3",
+        "display": "PatientNormalRoom (start datetime- enddatetime)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-4",
+        "display": "PatientEmergencyRoom(start datetime-enddatetime)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-5",
+        "display": "PatientSurgeryPerformed(startdatetime-enddatetime)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "ONS-6",
+        "display": "PatientICUStay (startdatetime-enddatetime)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-1",
+        "display": "ProcedurePerformedDetail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-2",
+        "display": "ProcedurePerformedDateTime",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-3",
+        "display": "ServiceRenderedDetail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-4",
+        "display": "ServiceRenderedDateTime",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-5",
+        "display": "InvestigationPerformedDetail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "REL-6",
+        "display": "InvestigationPerformedDetailDateTime",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EXC-1",
+        "display": "InsurancePolicyExclusions",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EXC-2",
+        "display": "CostlyProcedureNotCoveredInPolicy",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EXC-3",
+        "display": "ExpensiveMedicinesNotCoveredinPackage",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EXC-4",
+        "display": "ConsummablesAndDisposiblesNotcoveredinPolicy",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "EMP-1",
+        "display": "EmploymentDetail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-1",
+        "display": "Cause of Injury or Accident",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-2",
+        "display": "Patient Condition at time of admission after injury",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-3",
+        "display": "Vehicle Acident detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-4",
+        "display": "Fire Burns detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-5",
+        "display": "Snake Bite detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-6",
+        "display": "Electric Shock detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI -7",
+        "display": "Consumption of Poisonous substance detail(FIR Registered or not)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-8",
+        "display": "Attack on human body detail (FIR Registered or not)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-9",
+        "display": "ImmediateTreatmentProvidedToPatientAfterAccident",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-10",
+        "display": "AnyPreviousClaimsDueToAccident (previous claim details)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-11",
+        "display": "Date of Accident or Injury",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "COI-12",
+        "display": "Date-Time of Hospitalization Due to Accident",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "VRE-1",
+        "display": "EncounterDateTime",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "VRE-2",
+        "display": "EncounterType",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "VRE-3",
+        "display": "ReasonCodes (encounter reason)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "VRE-4",
+        "display": "EncounterOutcome",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CRD-1",
+        "display": "Claim received date time",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CRD-2",
+        "display": "document details (submitted with claims)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "CRD-3",
+        "display": "courier number of claim reciept",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-1",
+        "display": "MLC Case (Boolean Y/N)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-2",
+        "display": "MultiPayorClaim (Boolean Y/N)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-3",
+        "display": "Primary and Secondary Payor Details (in case of Multi Payor claims)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-4",
+        "display": "PrimaryorSecondaryClaim",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-5",
+        "display": "Details of claim settled by primary payor (in case of secondary claims - attachment)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-6",
+        "display": "PMJAYInsurancePortabilityCase (Y/N) (treatment received in a different state)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-7",
+        "display": "PrimarySHADetails (SHA/TPA detail of state where PMJAY benefeciary belongs to)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-8",
+        "display": "SecondarySHADetails (SHA/TPA detail of state where benefeciary received treatment)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-9",
+        "display": "EmploymentImpacted (Y/N) for long disabilities)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-10",
+        "display": "Employment impacted period (start date - end date)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "IND-11",
+        "display": "HospitalizedIndicator (if patient was hospitalized or not - Y/N)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MAT-1",
+        "display": "Materials Forwarded",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "NMI-1",
+        "display": "Claim query detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-1",
+        "display": "Treatment detail",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-1",
+        "display": "additional info related to claim ( conveying additional situation and condition information.)",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-2",
+        "display": "Family Physician Name",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-3",
+        "display": "Family Physician Contact",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-4",
+        "display": "Family Physician Number",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-5",
+        "display": "Insurance Number",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-6",
+        "display": "Insurance Company",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-7",
+        "display": "Employee ID",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-8",
+        "display": "Employer Name",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-9",
+        "display": "Hospital Name",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-10",
+        "display": "Rohini ID",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-11",
+        "display": "Email",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-11",
+        "display": "Name of Insurance Company",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-12",
+        "display": "Name of TPA",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-13",
+        "display": "Proposer Name",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-14",
+        "display": "Patient's Member ID",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-15",
+        "display": "Relation with Proposer",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-16",
+        "display": "Expected Date of Admission",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-17",
+        "display": "Policy Number",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-18",
+        "display": "Expected Date of Discharge",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-19",
+        "display": "Room category",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-20",
+        "display": "Eligible Room Category as per T&C of Policy Contract",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-21",
+        "display": "Provisional Diagnosis",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-22",
+        "display": "Proposed line of treatment",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-23",
+        "display": "Estimated Length of stay",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-2",
+        "display": "Medical Management",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-3",
+        "display": "Surgical Management",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-4",
+        "display": "Intensive Care",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-5",
+        "display": "Investigation",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "TRD-6",
+        "display": "Non allopathic treatment",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-24",
+        "display": "Name of treating Doctor",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-25",
+        "display": "Qualitifcation",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "INF-26",
+        "display": "Registation Number",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PoPr.locationPhoto",
+        "display": "Photo of the location with subject",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "PoPr.deviceLocation",
+        "display": "Real time geolocation from certified devices",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      }
+    ]
+  }
+}
