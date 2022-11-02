@@ -76,7 +76,7 @@
   "abstract": false,
   "type": "PaymentNotice",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PaymentNotice",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

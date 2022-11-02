@@ -62,7 +62,7 @@
     "abstract" : false,
     "type" : "CommunicationRequest",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
-    "derivation" : "specialization",
+    "derivation" : "constraint",
     "snapshot" : {
       "element" : [{
         "id" : "CommunicationRequest",

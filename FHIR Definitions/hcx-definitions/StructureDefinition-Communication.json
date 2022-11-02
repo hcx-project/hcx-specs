@@ -64,7 +64,7 @@
     "abstract" : false,
     "type" : "Communication",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Communication",
-    "derivation" : "specialization",
+    "derivation" : "constraint",
     "snapshot" : {
       "element" : [{
         "id" : "Communication",

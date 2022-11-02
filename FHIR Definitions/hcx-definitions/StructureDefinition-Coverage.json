@@ -82,7 +82,7 @@
   "abstract": false,
   "type": "Coverage",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

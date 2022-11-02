@@ -67,7 +67,7 @@
     "abstract" : false,
     "type" : "Task",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
-    "derivation" : "specialization",
+    "derivation" : "constraint",
     "snapshot" : {
       "element" : [{
         "id" : "Task",

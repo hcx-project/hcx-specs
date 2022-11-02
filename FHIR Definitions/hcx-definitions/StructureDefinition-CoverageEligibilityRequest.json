@@ -71,7 +71,7 @@
   "abstract": false,
   "type": "CoverageEligibilityRequest",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityRequest",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

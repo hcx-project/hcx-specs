@@ -71,7 +71,7 @@
   "abstract": false,
   "type": "PaymentReconciliation",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

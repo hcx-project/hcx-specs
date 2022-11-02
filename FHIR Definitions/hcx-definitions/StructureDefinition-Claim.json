@@ -67,7 +67,7 @@
   "abstract": false,
   "type": "Claim",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Claim",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
