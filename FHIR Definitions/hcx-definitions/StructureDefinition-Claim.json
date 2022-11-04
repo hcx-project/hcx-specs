@@ -6965,15 +6965,15 @@
           ],
           "strength": "example",
           "description": "The role codes for the care team members.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-health-service-provider-role.html"
+          "valueSet": "https://nrces.in/ndhm/fhir/r4/ValueSet-ndhm-practitioner-role.html"
         }
       },
       {
         "id": "Claim.careTeam.qualification",
         "path": "Claim.careTeam.qualification",
         "short": "Practitioner credential or specialization",
-        "definition": "The qualification of the practitioner which is applicable for this service.",
-        "requirements": "Need to specify which qualification a provider is delivering the product or service under.",
+        "definition": "The specialization of the practitioner or provider which is applicable for this service. The use case for the speciality here is to validate the diagnosis and procedure and check its relevance.",
+        "requirements": "Need to specify which specialization a practitioner or provider acting under when delivering the product or service.",
         "min": 0,
         "max": "1",
         "base": {

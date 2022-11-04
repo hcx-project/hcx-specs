@@ -11,9 +11,6 @@
 <li>
 <a href="ValueSet-claim-service-codes.html">HCX Claim Service Codes</a>
     </li>
- <li>
-<a href="ValueSet-health-service-provider-role.html">HCX Health Service Provider Role</a>
-    </li>
 
 <li>
 <a href="ValueSet-billing-subgroup-categories.html">HCX Billing Subgroup Categories</a>
@@ -29,10 +26,6 @@
 
 <li>
 <a href="ValueSet-claim-supporting-info-codes.html">HCX Claim Supporting Info Codes</a>
-    </li>
-
- <li>
-<a href="ValueSet-medical-speciality-type-provider.html">HCX Medical Speciality Provider</a>
     </li>
 
  <li>
