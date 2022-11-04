@@ -2750,6 +2750,54 @@
           "description": "Benefit categories such as: oral, medical, vision etc.",
           "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html"
         }
+      },
+      {
+        "id": "CoverageEligibilityResponse.insurance.item.productOrService",
+        "path": "CoverageEligibilityResponse.insurance.item.productOrService",
+        "short": "Billing, service, product, or drug code",
+        "definition": "This contains the product, service, drug or other billing code for the item.",
+        "comment": "Code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI).",
+        "requirements": "Needed to convey the actual service or product for which eligibility is sought.",
+        "alias": [
+          "Drug Code",
+          "Bill Code",
+          "Service Code"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityResponse.insurance.item.productOrService",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ServiceProduct"
+            }
+          ],
+          "strength": "example",
+          "description": "Allowable service and product codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-codes.html"
+        }
       }
     ]
   }

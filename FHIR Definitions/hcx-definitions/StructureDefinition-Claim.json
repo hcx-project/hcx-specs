@@ -6798,6 +6798,54 @@
         }
       },
       {
+        "id": "Claim.item.productOrService",
+        "path": "Claim.item.productOrService",
+        "short": "Billing, service, product, or drug code",
+        "definition": "When the value is a group code then this item collects a set of related claim details, otherwise this contains the product, service, drug or other billing code for the item.",
+        "comment": "If this is an actual service or product line, i.e. not a Group, then use code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI). If a grouping item then use a group code to indicate the type of thing being grouped e.g. 'glasses' or 'compound'.",
+        "requirements": "Necessary to state what was provided or done.",
+        "alias": [
+          "Drug Code",
+          "Bill Code",
+          "Service Code"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.item.productOrService",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ServiceProduct"
+            }
+          ],
+          "strength": "example",
+          "description": "Allowable service and product codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-codes.html"
+        }
+      },
+      {
         "id": "Claim.supportingInfo.category",
         "path": "Claim.supportingInfo.category",
         "short": "Classification of the supplied information",
@@ -7006,8 +7054,56 @@
             }
           ],
           "strength": "example",
-          "description": "Provider professional qualifications.",
+          "description": "Provider specialization.",
           "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-medical-speciality-type-provider.html"
+        }
+      },
+      {
+        "id": "Claim.procedure.procedure[x]",
+        "path": "Claim.procedure.procedure[x]",
+        "short": "Specific clinical procedure",
+        "definition": "The code or reference to a Procedure resource which identifies the clinical intervention performed.",
+        "requirements": "This identifies the actual clinical procedure.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.procedure.procedure[x]",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ICD10_Procedures"
+            }
+          ],
+          "strength": "example",
+          "description": "Sample Procedure codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-procedure-type-description.html"
         }
       }
     ]

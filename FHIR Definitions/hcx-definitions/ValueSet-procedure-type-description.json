@@ -18,7 +18,7 @@
         ]
       }
     ],
-    "description": "This is the value set that includes the codes to identify the procedure type description and services are provided",
+    "description": "This value set includes sample procedure codes. Depending on the context, other codes like ICD-10 procedure codes or HBP procedure codes (NHA) may need to be used.",
     "expansion": {
       "timestamp": "2021-09-07T08:15:30+05:30",
       "contains": [

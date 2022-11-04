@@ -25,57 +25,57 @@
       {
         "code": "100000",
         "display": "Room & Nursing Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "200000",
         "display": "ICU Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "300000",
         "display": "OT Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "400000",
         "display": "Medicine & Consumables Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "500000",
         "display": "Professional Fees Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "600000",
         "display": "Investigation Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "700000",
         "display": "Ambulance Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "800000",
         "display": "Miscellaneous Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "900000",
         "display": "Provider Package Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "HBP",
         "display": "NHA Package Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://pmjay.gov.in/benefit-billing-group-code"
       },
       {
         "code": "MJPJAY",
         "display": "Mahatma Jyotibha Phule PMJAY Package Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://mjpjay.gov.in/benefit-billing-group-code"
       }
     ]
   }
