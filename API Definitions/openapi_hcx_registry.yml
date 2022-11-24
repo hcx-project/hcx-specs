@@ -367,11 +367,11 @@ components:
           description: Filter conditions should be provider in filters.
           example: {"participant_code": { "eq": "pcpt01@HCX01" } }
         limit:
-          type: Number
+          type: number
           description: Size of the search result should return in the response.
           example: 10
         offset:
-          type: Number
+          type: number
           description: Offset is used to omit a specified number of rows before the beginning of the result set.
           example: 0
 
