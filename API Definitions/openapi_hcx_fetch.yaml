@@ -1,0 +1,428 @@
+openapi: 3.0.1
+info:
+  title: HCX Fetch APIs
+  description: >-
+    The Health Claims Exchange (HCX) is a digital infrastructure designed to
+    enable automated, data-driven management of health insurance claims in an
+    open ecosystem. These API specifications enable authorised actors to fetch information about a claim workflow.
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 0.8.0
+externalDocs:
+  description: HCX Specifications
+  url: >-
+    https://docs.swasth.app/hcx-specifications/
+tags:
+  - name: Fetch APIs
+    description: >-
+      APIs for sending an information fetch request and receiving the requested information.
+      
+paths:
+  /eob/fetch:
+    post:
+      tags:
+        - Fetch APIs
+      description: >-
+        This API is for the authorised participants in the network to request information about a claim workflow. The request body (header attributes and the FHIR document) should be sent in the form of a JWE token ([RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)) created as per the steps defined in [HCX specs](https://docs.hcxprotocol.io/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption).
+        
+        
+        The JWE payload (request body) primarily should contain the following:
+          1. A set of header attributes that provide transport, security, message integrity and summary information about the message being exchanged. This information is used by the HCX gateway for routing the request and auditing purposes.
+          2. Domain payload containing the Task entity (eObject) as prescribed for the use case by the [domain specifications](https://docs.hcxprotocol.io/hcx-domain-specifications/domain-data-models#task). This needs to be encrypted so that HCX cannot read this and can be decrypted & processed only by the intended recipient.
+        
+      
+        The domain payload is expressed using Task resource, where
+        
+        - Task.code specifies the purpose of information of fetch request, e.g.: "EOB-15C" by IIB
+        
+        - Task.input carries identifiers of the claim workflow for which the information is being requested for, e.g.: "correlation-id-xyz"
+        
+        
+        The response to this API could be one of the following:
+          1. A successful accepted response from the HCX gateway if the strucuture of the request is valid and the validation of open attributes (protocol headers) is successful. Upon successful validation, HCX gateway forwards the same request to the intended recipient asynchronously.
+          2. An error response if any of the validations fail.
+          
+        If the request is successfully accepted by the HCX gateway and forwarded to the recipient, the sender of the request (who made the Fetch API call) should expect the response via a call back to On Fetch API asynchronously. The response API payload may either contain the requested claim workflow details or error details in case of any errors during  processing.
+       
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JWEPayload'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
+  /eob/on_fetch:
+    post:
+      tags:
+        - Fetch APIs
+      description: >-
+        This is the callback API for payors to send the response for a EOB fetch request from the originator. In case of a successful scenario, this API payload should contain the claim workflow details (represented using **ExplanationOfBenefit** FHIR resource).
+        
+        
+        Payors should send the following details as the request payload in this callback API:
+            
+          1. The responder shall send a ProtocolResponse object (derived from ProtocolHeader) as the request payload if there are any protocol related errors in processing the corresponding EOB Fetch request (see [error handling section](https://docs.hcxprotocol.io/hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions) in the HCX specifications). The _x-hcx-status_ header value in the ProtocolResponse must be "**response.error**" while responding with an error.
+
+          2. In case the EOB fetch request could be processed, responder should send a JWEPayload derived from protected ProtocolHeader and **ExplanationOfBenefit** resources as prescribed for the use case by the domain specifications. ExplanationOfBenefit resource inside the payload would contain details about the claim workflow for which a fetch request is sent. 
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: '#/components/schemas/JWEPayload'
+                - $ref: '#/components/schemas/ProtocolResponse'
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+        '400':
+          description: Request Validation failed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Requested resource was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+      - bearer_auth: []
+      
+components:
+  schemas:
+    JWEPayload:
+      required:
+        - payload
+      type: object
+      format: byte
+      description: This object is used as payload in the HCX protocol APIs that require the request body to sent in JWE format (as defined in [RFC-7516](https://datatracker.ietf.org/doc/html/rfc7516)). 
+      
+      properties:
+        payload:
+          type: object
+          format: string
+          description: The paylod should be a JWE token containing the following elements.
+          
+            1. Protected headers (**protected**) - A set of attributes that provide transport, security, message integrity and summary information about the message being exchanged.
+        
+            2. JWE element (**encrypted_key**) - Content Encryption Key.
+        
+            3. JWE element (**iv**) - Initialisation Vector for the algorithm.
+        
+            4. Encrypted Payload (**ciphertext**) - Payload containing the relevant domain entity (eObject) as prescribed for the use case by the domain specifications. This needs to be encrypted so that HCX cannot read this.
+        
+            5. Authentication tag (**authentication_tag**) - Digital signature on the protected header and the payload of the message to ensure its integrity.
+            
+            
+            The final payload should be serialzed using JWE compact serialization as defined in the RFC-7516 - 
+            
+            
+            **protected || '.' || encrypted_key || '.' || iv || '.' || ciphertext || '.' || authentication_tag**
+            
+            
+            Detailed steps on how to construct the JWE token are provided in this [section](https://docs.hcxprotocol.io/hcx-technical-specifications/open-protocol/data-security-and-privacy/message-security-and-integrity#message-encryption) of the HCX specifications.
+          example: "eyJlbmMiOiJBMjU2R0NNIiwKImFsZyI6IlJTQS1PQUVQIiwKIngtaGN4LXNlbmRlcl9jb2RlIjoiMS00ZGMzZTA4OC1hMzEzLTQ0YWItYWZhMS0wMjIyOTU5Y2I3NWIiLAoieC1oY3gtcmVjaXBpZW50X2NvZGUiOiIxLTkzZjkwOGJhLWI1NzktNDUzZS04YjJhLTU2MDIyYWZhZDI3NSIsCiJ4LWhjeC1yZXF1ZXN0X2lkIjoiMjZiMTA2MGMtMWU4My00NjAwLTk2MTItZWEzMWUwY2E1MDkxIiwKIngtaGN4LWNvcnJlbGF0aW9uX2lkIjoiNWU5MzRmOTAtMTExZC00ZjBiLWIwMTYtYzIyZDgyMDY3NGUxIiwKIngtaGN4LXRpbWVzdGFtcCI6IjIwMjEtMTAtMjdUMjA6MzU6NTIuNjM2KzA1MzAiLAoieC1oY3gtc3RhdHVzIjoicmVxdWVzdC5pbml0aWF0ZSIsCiJ4LWhjeC13b3JrZmxvd19pZCI6IjVlOTM0ZjkwLTExMWQtNGYwYi1iMDE2LWMyMmQ4MjA2NzRlMiIsCiJ4LWhjeC1kZWJ1Z19mbGFnIjoiSW5mbyIsCiJ4LWhjeC1lcnJvcl9kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCAidHJhY2UiOiAiIn0sCiJ4LWhjeC1kZWJ1Z19kZXRhaWxzIjp7ImVycm9yLmNvZGUiOiAiYmFkLmlucHV0IiwgImVycm9yLm1lc3NhZ2UiOiAiUHJvdmlkZXIgY29kZSBub3QgZm91bmQiLCJ0cmFjZSI6IiJ9LAoiandzX2hlYWRlciI6eyJ0eXAiOiJKV1QiLCAiYWxnIjoiUlMyNTYifSwKImp3ZV9oZWFkZXIiOnsiYWxnIjoiUlNBLU9BRVAiLCJlbmMiOiJBMjU2R0NNIn0KfQ==.6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY.Mz-VPPyU4RlcuYv1IwIvzw"
+          properties:
+            protected:
+              type: object
+              format: string
+              description: Protected headers contain information that helps HCX gateway to identify senders, receivers of the message, perform integrity checks, audits and routing functionality. Header values are posted in clear and must never contain any Personally Identifiable Information (PII) about the patient or any person. HCX protocol uses JWE protected headers for such information to ensure these are not tampered with by the intermediate gateways. Protected Headers for HCX will be the union of the following three header categories.
+          
+                1. JOSE Headers - JSON Web encryption header as per [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516#section-4). For HCX V1, this is proposed to be fixed to {"alg":"RSA-OAEP","enc":"A256GCM"}.
+            
+                2. HCX Protocol Headers - Private headers as per [RFC7516 section 4.3](https://datatracker.ietf.org/doc/html/rfc7516#section-4.3). List of header values that are allowed in HCX APIs and their details are defined in this [section](https://docs.hcxprotocol.io/hcx-technical-specifications/open-protocol/key-components-building-blocks/message-structure#hcx-protocol-headers) of HCX Specifications.
+            
+                3. HCX Domain Headers - JSON object containing a map of domain-specific header values as proposed in domain data specifications for each entity. E.g. For claims use cases, domain specs may decide to populate the total claimed amount, list of diagnostics/procedures. Please note that all such parameter names must follow the naming convention _x-hcx-<use_case_name>-<parameter_name>_.
+            
+            
+                  Overall, the protected headers should be created as - 
+                  
+                  
+                  JWE Protected Header = BASE64URL(UTF8( (JOSE headers) + (HCX Protocol Headers) + (HCX Domain Headers) ))
+              allOf:
+                - $ref: '#/components/schemas/JOSEHeader'
+                - $ref: '#/components/schemas/ProtocolHeader'
+                - $ref: '#/components/schemas/DomainHeaders'
+              example: "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2In0"
+              
+            encrypted_key:
+              type: string
+              description: The JWE encrypted key should be generated using the following process
+            
+                1. A random content encryption key (CEK) has to be generated by the sender. 
+            
+                2. Encrypt the CEK with the recipient's public key using the RSAES-OAEP algorithm to produce the JWE Encrypted Key.
+            
+                3. Base64url-encode the JWE Encrypted Key.
+          
+            
+                The encrypted & base64 encoded key should be set as the encrypted_key in the JWE token and also used for encrypting the domain payload (i.e. the FHIR resource) to be sent in the request. The recipient shall decrypt the content encryption key using their private key (corresponding to the public key used by the sender) and use the decrypted CEK for decrypting the domain payload. 
+              
+              example: "6KB707dM9YTIgHtLvtgWQ8mKwboJW3of9locizkDTHzBC2IlrT1oOQ"
+            
+            iv:
+              type: string
+              description: Initialization vector (_iv_) is needed in the encryption process of the payload and for the recipient (along with the encrypted_key and aad) to subsequently decrypt the payload. The "iv" should be created by generating a random JWE initialization vector and Base64url-encoding the JWE initialization vector. 
+              example: "AxY8DCtDaGlsbGljb3RoZQ"
+              
+            ciphertext:
+              type: string
+              description: _ciphertext_ contains the domain payload (that has to  be sent to the recipient) in encrypted form. Usecase specific   JSON payload defined in the [eObjects](https://docs.hcxprotocol.io/hcx-domain-specifications/domain-data-models#eobjects) section of the HCX specifications (i.e. the FHIR resource defined for the use case, e.g. CoverageEligibilityRequest document for coverage eligibility request API) should be encrypted as per JWE specification and sent as the _ciphertext_ in the request.
+          
+          
+                Steps to create the ciphertext element - 
+            
+                1. Create the JSON payload for the API request as per the [eObjects specification](https://docs.hcxprotocol.io/hcx-domain-specifications/domain-data-models#eobjects).
+            
+                2. Perform authenticated encryption on the JSON payload with the AES GCM algorithm using the CEK as the encryption key (_encrypted_key_), the JWE Initialization Vector (_iv_)), and the Additional Authenticated Data value (_aad_), requesting a 128-bit Authentication Tag output. This step outputs a ciphertext and an authentication tag (_tag_).
+            
+                3. Base64url-encode the ciphertext output from the previous step and set it as the _ciphertext_ element in the request body.
+              example: "KDlTtXchhZTGufMYmOYGS4HffxPSUrfmqCHXaI9wOGY"
+              
+            authentication_tag:
+              type: string
+              description: The authentication tag generated as an output of the payload encryption algorithm (used for creating the _ciphertext_) should be sent as the _tag_ element in the request body. This tag is required for decrypting the encrypted payload.
+              example: "Mz-VPPyU4RlcuYv1IwIvzw"
+    
+    JOSEHeader:
+      required:
+        - alg
+        - enc
+      type: object
+      description: JSON Web Encryption header as per RFC7516. For the current version, this is proposed to be fixed to {"alg":"RSA-OAEP","enc":"A256GCM"}
+      properties:
+        alg:
+          type: string
+          enum: ["RSA-OAEP"]
+        enc:
+          type: string
+          enum: ["A256GCM"]
+      additionalProperties: false
+      
+    ProtocolHeader:
+      required:
+        - x-hcx-sender_code
+        - x-hcx-recipient_code
+        - x-hcx-api_call_id
+        - x-hcx-correlation_id
+        - x-hcx-timestamp
+      type: object
+      properties:
+        x-hcx-sender_code:
+          type: string
+          description: Registry code of the sender (e.g. provider or payer)
+          example: "PROVIDER01@HCX01"
+        x-hcx-recipient_code:
+          type: string
+          description: Registry code of the recipient (e.g. provider or payer)
+          example: "PAYOR01@HCX01"
+        x-hcx-api_call_id:
+          type: string
+          description: Sender generated unique id for each originating request. All senders (providers & payors) must generate and set a unique value to the x-hcx-api_call_id protocol header in all the API calls to the HCX gateway.
+          format: uuid
+        x-hcx-correlation_id:
+          type: string
+          description: Unique id for all messages (requests & responses) that are involved in processing of one cycle (like coverage eligibility, pre-auth, claim, or payment notice cycle).
+          
+          
+            The participant system sending the originating request of the cycle must set the x-hcx-correlation_id in the initial API call and the HCX gateway shall forward the same correlation id to the recipient of the request. The recipient must set the same correlation id in the response API call and in other API calls related to the original request (e.g. communication request, forward/redirect requests). And the same correlation id must be sent in all subsequent API calls (related to the same cycle).
+            
+            
+            In case of status API call, this header should have the correlation id of the request for which the status is being requested for.
+          format: uuid
+        x-hcx-workflow_id:
+          type: string
+          description: Unique id for one complete workflow that spans over a series of cycles and message exchanges within the context of an admission/case.
+            
+            
+            This is an optional header that can be set by providers to the same value for all requests (coverage eligibility check, preauth, claim, etc) related to a single admission/case. And when the workflow_id is sent by the originating provider, all other participant systems (payors) must set the same workflow id in all API calls (responses, forwards/redirects, payment notices, etc) related to the workflow.
+          format: uuid
+        x-hcx-timestamp:
+          type: string
+          description: Unix timestamp when the request is sent.
+          example: "1629057611000"
+        x-hcx-debug_flag:
+          type: string
+          description: Request to the server to include debug information. Useful in the time of integration testing and prod debugging. However server(s) may choose to ignore this flag based on their policy.
+          enum: ["Error", "Info", "Debug"]
+        x-hcx-status:
+          type: string
+          description: Operational status of the message. Depending on the leg of the message, it would be one of the defined values in the enum.
+          enum: ["request.queued", "request.dispatched", "response.complete", "response.error", "response.partial", "response.redirect"]
+        x-hcx-redirect_to:
+          type: string
+          description: Expected to be set when the x-hcx-status value is "response.redirect". The value should be the registry code of the recipient to whom the request has to be redirected to
+        x-hcx-error_details:
+          type: object
+          description: Expected to be used for providing details of the status. Will be specially useful in scenarios where operational status indicates irrecoverable error.
+          required:
+            - code
+            - message
+          properties:
+            code:
+              type: string
+              description: error code from the system - expected to be namespaced for better readability
+            message:
+              type: string
+              description: Short description of the detail
+            trace:
+              type: string
+              description: Long description supporting the Code 
+          additionalProperties: false
+        x-hcx-debug_details:
+          type: object
+          description: Expected to be used for providing details of the status. Will be specially useful in debugging scenarios.
+          properties:
+            code:
+              type: string
+              description: info or debug code from the system - expected to be namespaced for better readability
+            message:
+              type: string
+              description: Short description of the detail
+            trace:
+              type: string
+              description: Long description supporting the Code 
+          additionalProperties: false
+    
+    DomainHeaders:
+      type: object
+      description: JSON object containing a map of domain-specific header values as proposed in domain data specifications. E.g. For claims use cases, domain specs may decide to populate the total claimed amount, list of diagnostics/procedures.
+      additionalProperties: true
+    
+    ErrorResponse:
+      required:
+        - error
+        - timestamp
+        - api_call_id
+        - correlation_id
+      type: object
+      properties:
+        timestamp:
+          type: string
+          description: Unix timestamp when the response is sent.
+          example: "1629057611000"
+        api_call_id:
+          type: string
+          description: >-
+            The transaction identifier that was sent in the request is echoed
+            back to the requester.
+          format: uuid
+        correlation_id:
+          type: string
+          description: >-
+            The transaction identifier that was sent in the request is echoed
+            back to the requester.
+          format: uuid
+        error:
+          $ref: '#/components/schemas/Error'
+      description: This is a response to the ClaimForm API call
+    SuccessResponse:
+      required:
+        - timestamp
+        - api_call_id
+        - correlation_id
+      type: object
+      properties:
+        timestamp:
+          type: string
+          description: Unix timestamp when the response is sent.
+          example: "1629057611000"
+        api_call_id:
+          type: string
+          description: >-
+            That is present in the transport header of the request.
+          format: uuid
+        correlation_id:
+          type: string
+          description: >-
+            That is present in the transport header of the request.
+          format: uuid
+          
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: error code from the system - expected to be namespaced for better readability
+          enum:
+              - ERR_ACCESS_DENIED
+              - ERR_INVALID_PAYLOAD
+              - ERR_INVALID_SENDER
+              - ERR_INVALID_RECIPIENT
+              - ERR_MANDATORY_HEADER_MISSING
+              - ERR_INVALID_API_CALL_ID
+              - ERR_INVALID_CORRELATION_ID
+              - ERR_INVALID_TIMESTAMP
+              - ERR_INVALID_REDIRECT_TO
+              - ERR_INVALID_STATUS
+              - ERR_INVALID_DEBUG_FLAG
+              - ERR_INVALID_ERROR_DETAILS
+              - ERR_INVALID_DEBUG_DETAILS
+              - ERR_RECIPIENT_NOT_AVAILABLE
+              - ERR_INVALID_WORKFLOW_ID
+              - ERR_SERVICE_UNAVAILABLE
+              - ERR_INVALID_ENCRYPTION
+              - ERR_INVALID_PAYLOAD
+              - ERR_WRONG_DOMAIN_PAYLOAD
+              - ERR_INVALID_DOMAIN_PAYLOAD
+              - ERR_SENDER_NOT_SUPPORTED
+              - ERR_SERVICE_UNAVAILABLE
+              - ERR_DOMAIN_PROCESSING
+        message:
+          type: string
+          description: Short description of the error
+        trace:
+          type: string
+          description: Long description supporting the Code 
+
+    ProtocolResponse:
+      type: object
+      description: Object to be returned as payload of the callback API (on_* APIs) in case there are any protocol related errors while processing the request or send a redirection instruction to the original sender of the request.
+      allOf:
+      - $ref: '#/components/schemas/ProtocolHeader'
+
+
+  securitySchemes:
+    bearer_auth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
