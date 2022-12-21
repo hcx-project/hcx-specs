@@ -8,6 +8,9 @@ The structure definitions of document bundles that are passed as payload in the 
   </p>
 <ul>
   <li>
+    <a href="StructureDefinition-CoverageEligibilityRequestBundle.html">HCX Coverage Eligibility Request Bundle</a>
+  </li>
+  <li>
     <a href="StructureDefinition-CoverageEligibilityRequestDocument.html">HCX Coverage Eligibility Request Document</a>
   </li>
   <li>

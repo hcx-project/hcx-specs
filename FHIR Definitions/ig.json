@@ -115,7 +115,20 @@
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
-      
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/CoverageEligibilityRequestBundle",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CoverageEligibilityRequestBundle"
+        },
+        "name": "HCX CoverageEligibility Request Bundle",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
@@ -661,6 +674,11 @@
             {
               "nameUrl": "StructureDefinition-HCXSignatureExtension.html",
               "title": "HCX Signature Extension",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-CoverageEligibilityRequestBundle.html",
+              "title": "HCX Coverage Eligibility Request Bundle",
               "generation": "generated"
             },
             {
