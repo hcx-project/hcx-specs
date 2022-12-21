@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentNotice.html",
-  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-PaymentNotice.html",
+  "version": "0.7.1",
   "name": "PaymentNotice",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -1155,7 +1155,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentReconciliation.html"
+              "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-PaymentReconciliation.html"
             ]
           }
         ],

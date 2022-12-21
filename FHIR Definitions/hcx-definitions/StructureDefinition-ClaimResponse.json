@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html",
-  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-ClaimResponse.html",
+  "version": "0.7.1",
   "name": "ClaimResponse",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -1729,7 +1729,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6076,7 +6076,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Claim.html"
+              "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -6143,7 +6143,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6243,7 +6243,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -6278,7 +6278,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html"
+              "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-ClaimResponse.html"
             ]
           }
         ],
@@ -6334,7 +6334,7 @@
           ],
           "strength": "example",
           "description": "The adjudication error codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-error-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-claim-error-codes.html"
         }
       }
     ]

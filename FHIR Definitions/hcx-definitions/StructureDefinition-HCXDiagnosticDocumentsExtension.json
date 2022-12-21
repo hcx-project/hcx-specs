@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXDiagnosticDocumentsExtension",
-    "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html",
-    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-HCXDiagnosticDocumentsExtension.html",
+    "version": "0.7.1",
     "name": "HCXDiagnosticDocumentsExtension",
     "title": "HCX Diagnostic Documents Extension",
     "status": "active",
@@ -81,7 +81,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-clinical-diagnostics-document-codes.html"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-clinical-diagnostics-document-codes.html"
           }
         },
         {
@@ -196,7 +196,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
+          "fixedUri": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-HCXDiagnosticDocumentsExtension.html"
         },
         {
           "id": "Extension.value[x]",

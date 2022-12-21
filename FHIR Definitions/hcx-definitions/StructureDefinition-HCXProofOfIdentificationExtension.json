@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXProofOfIdentificationExtension",
-    "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html",
-    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-HCXProofOfIdentificationExtension.html",
+    "version": "0.7.1",
     "name": "HCXProofOfIdentificationExtension",
     "title": "HCX Proof Of Identification Extension",
     "status": "active",
@@ -81,7 +81,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-identity-codes.html"
+            "valueSet": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-proof-of-identity-codes.html"
           }
         },
         {
@@ -196,7 +196,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfIdentificationExtension.html"
+          "fixedUri": "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-HCXProofOfIdentificationExtension.html"
         },
         {
           "id": "Extension.value[x]",

@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
     "id": "proof-of-identity-codes",
-    "version": "0.7.0",
-    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-identity-codes.html",
+    "version": "0.7.1",
+    "url": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-proof-of-identity-codes.html",
     "name": "ProofOfIdentityCodes",
     "status": "active",
     "date": "2022-06-01",

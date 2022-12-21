@@ -24,8 +24,8 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode" : "patient"
     }],
-    "url" : "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CommunicationRequest.html",
-    "version": "0.7.0",
+    "url" : "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-CommunicationRequest.html",
+    "version": "0.7.1",
     "name" : "CommunicationRequest",
     "status" : "draft",
     "date" : "2019-11-01T09:29:23+11:00",
@@ -1443,7 +1443,7 @@
         "max" : "*",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7/StructureDefinition-CommunicationRequest.html"]
+          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-CommunicationRequest.html"]
         }],
         "isSummary" : true,
         "mapping" : [{

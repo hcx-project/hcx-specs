@@ -26,8 +26,8 @@
         "valueCode" : "patient"
       }
     ],
-    "url" : "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Communication.html",
-    "version": "0.7.0",
+    "url" : "https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-Communication.html",
+    "version": "0.7.1",
     "name" : "Communication",
     "status" : "draft",
     "date" : "2019-11-01T09:29:23+11:00",
@@ -1434,7 +1434,7 @@
         "max" : "*",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7/StructureDefinition-Communication.html"]
+          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7.1/StructureDefinition-Communication.html"]
         }]
       },
       {

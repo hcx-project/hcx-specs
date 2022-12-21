@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
     "id": "billing-subgroup-categories",
-    "version": "0.7.0",
-    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-billing-subgroup-categories.html",
+    "version": "0.7.1",
+    "url": "https://ig.hcxprotocol.io/v0.7.1/ValueSet-billing-subgroup-categories.html",
     "name": "BillingSubgroupCategories",
     "status": "active",
     "date": "2022-08-01",
