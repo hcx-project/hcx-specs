@@ -5,7 +5,7 @@
 It is important that the adoption of an electronic claims system happens before the large scale usage of claims becomes a reality.
 </p>
 <p>The <a href="https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report_11-09-19.pdf" target="_blank">joint working group of NHA and IRDAI (2019)</a> recommends the creation and adoption of a Health Claims Data Exchange Gateway and standardization of e-claims and other related documents to enable the ecosystem to move to a low cost paperless ecosystem that inherently allows for innovation. This will include adoption of open standards by all the actors in the Health Insurance Eco‐system.</p>
-<p>Based on the recommendations from NHA & IRDAI, the HCX working groups have created a open specification for enabling health claims exchange. The detailed specifications are available <a href="https://docs.swasth.app/hcx-specifications/" target="_blank">here</a>.</p>
+<p>Based on the recommendations from NHA & IRDAI, the HCX working groups have created a open specification for enabling health claims exchange. The detailed specifications are available <a href="https://docs.hcxprotocol.io" target="_blank">here</a>.</p>
 <h3>Introduction</h3>
 <p>The FHIR Implementation Guide for Health Claims Data Exchange Specifications is based on FHIR Version R4 and defines the minimum conformance requirements for exchanging claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers.</p>
 <h3>Purpose</h3>
