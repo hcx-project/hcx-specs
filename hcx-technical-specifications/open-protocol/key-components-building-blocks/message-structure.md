@@ -63,7 +63,7 @@ Protected Headers = (Registered JOSE headers) U (HCX Protocol Headers) U (HCX Do
 
 ### **Payload**
 
-Use case-specific base64 encoded, encrypted payload as defined in [Domain Data specifications](../hcx-domain-specifications/domain-data-models). This can be thought of as a private claim in JWT terminology. JSON web encryption as defined in [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516) to be used for encrypting the payload with “alg” and “enc” as defined in the JOSE header above.
+Use case-specific base64 encoded, encrypted payload as defined in [Domain Data specifications](hcx-domain-specifications/domain-data-models). This can be thought of as a private claim in JWT terminology. JSON web encryption as defined in [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516) to be used for encrypting the payload with “alg” and “enc” as defined in the JOSE header above.
 
 E.g. In the current cashless claims scenario, domain working groups have decided the payload to be an FHIR bundle of the appropriate type. Therefore the payload will be an encrypted FHIR bundle as defined in the domain data specs.
 
