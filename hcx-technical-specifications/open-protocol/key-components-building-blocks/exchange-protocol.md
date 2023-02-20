@@ -106,4 +106,3 @@ The cross gateway communication will be required in the following scenarios –
 3. For top-up cases, the providers and payers are registered in different gateway instances and in such scenarios primary insurance is handled by one payer in one gateway instance but the secondary insurance is handled by another payer registered in a different gateway instance.
 
 \
-\
