@@ -60,44 +60,44 @@ As indicated in the [**overall message flow diagram**](exchange-protocol.md#over
 
 ## Alternate Flows
 
-### Redirect&#x20;
+### Redirect
 
 After the original message is received and acknowledged by the initial receiver, the receiver may choose to completely hand over the processing of the request to another entity (new receiver). The receiver can achieve this by informing the sender to send (i.e. redirect) the request to the new receiver.
 
-Redirect flow would have the following steps:&#x20;
+Redirect flow would have the following steps:
 
-1. Current Recipient \[R] reads the message from Sender \[S] and identifies that the request needs to be redirected to another entity \[R1] for processing.&#x20;
-2. \[R] response to the original request with a redirection response (using the status parameter in the header) \[S]. Redirection response includes the next recipient’s \[R1] details (participant id on the hcx platform).&#x20;
-3. \[S] sends a new request to \[R1] by re-encrypting the request using the \[R1] key and marking the appropriate participant id to HCX.&#x20;
+1. Current Recipient \[R] reads the message from Sender \[S] and identifies that the request needs to be redirected to another entity \[R1] for processing.
+2. \[R] response to the original request with a redirection response (using the status parameter in the header) \[S]. Redirection response includes the next recipient’s \[R1] details (participant id on the hcx platform).
+3. \[S] sends a new request to \[R1] by re-encrypting the request using the \[R1] key and marking the appropriate participant id to HCX.
 4. HCX forwards the new request to \[R1]. Further processing of the request is handled by the recipient \[R1].
 
 ![](../../../.gitbook/assets/mermaid-diagram-20220120125442.png)
 
-### Forward&#x20;
+### Forward
 
 After the original message is received and acknowledged by the receiver, the receiver may forward the request to multiple parties for processing and get their responses before finally responding to the original requestor (sender).
 
-A forward flow would have the following steps:&#x20;
+A forward flow would have the following steps:
 
-1. Current Recipient \[R] reads the message from sender \[S] and identifies that it requires help from other parties for processing.&#x20;
-2. Recipient \[R] creates the message to be forwarded to the next Recipient \[R1].&#x20;
+1. Current Recipient \[R] reads the message from sender \[S] and identifies that it requires help from other parties for processing.
+2. Recipient \[R] creates the message to be forwarded to the next Recipient \[R1].
 3. \[R] sends across the message to \[R1] by marking appropriate recipient details to HCX. The message needs to carry the same correlation\_id as included by the sender \[S] in step 1.
-4. HCX checks the validity of correlation\_id (that it is initiated by a sender and is open for processing) and forwards the message to the \[R1].&#x20;
-5. \[R1] responds to \[R]&#x20;
-6. \[R] may repeat steps 2-4 for multiple next recipients (\[R2], \[R3], …) in parallel or sequentially and receive responses.&#x20;
+4. HCX checks the validity of correlation\_id (that it is initiated by a sender and is open for processing) and forwards the message to the \[R1].
+5. \[R1] responds to \[R]
+6. \[R] may repeat steps 2-4 for multiple next recipients (\[R2], \[R3], …) in parallel or sequentially and receive responses.
 7. \[R] processes responses from all forwarded requests and respond with the final response to \[S]
 
 ![](../../../.gitbook/assets/mermaid-diagram-20220120133416.png)
 
-### Intra Cycle communication (Ask for supplementary Information)&#x20;
+### Intra Cycle communication (Ask for supplementary Information)
 
 ![](../../../.gitbook/assets/mermaid-diagram-20220120132852.png)
 
 ### Relay
 
-&#x20;In case Sender and receiver are listed/registered on different HCX instances, there may be request/response relays between the HCXs. Steps 2, 5, 8 and 11 in the below diagram may involve such relays. The diagram below provides an example of a provider-payor use case with a relay between two HCXs.
+In case Sender and receiver are listed/registered on different HCX instances, there may be request/response relays between the HCXs. Steps 2, 5, 8 and 11 in the below diagram may involve such relays. The diagram below provides an example of a provider-payor use case with a relay between two HCXs.
 
-![Example of relay between two HCX](https://docs.swasth.app/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MitSEyU3xYjwWrLQ5\_1%2Fuploads%2Fgit-blob-c85399ad4959f8ef82504a8df6ad15990b9d7d16%2F1.png?alt=media)
+<figure><img src="../../../.gitbook/assets/spaces%2Fw4WetjICCAxQyk59la9F%2Fuploads%2Fgit-blob-c85399ad4959f8ef82504a8df6ad15990b9d7d16%2F1.webp" alt=""><figcaption><p>Example of relay between two HCX instances</p></figcaption></figure>
 
 The cross gateway communication will be required in the following scenarios –
 

@@ -10,16 +10,11 @@ We look forward to further strengthening the collaboration with border participa
 
 ### Key resources
 
-Key resources for this version (v0.7) are available as follows:
+Key resources for this version (v0.7.1) are available as follows:
 
 * [This GitBook documentation](./) is the reader friendly published documentation for the current version.
 * Source code for documentation and specifications is available in this [GitHub repo](https://github.com/hcx-project/hcx-specs).
 * Discussions and consultation questions are listed in the github repo’s [discussion forum here](https://github.com/hcx-project/hcx-specs/discussions).
-
-> This release of the specification (v0.7) is the latest stable release. If you are looking for the baseline version (v0.6) for some reason, please
->
-> * Read the documentation [here](https://docs.hcxprotocol.io/v/v0.6/).
-> * The source repository is available [here](https://github.com/hcx-project/hcx-specs/tree/v0.6).
 
 ### Contributing to the specs
 
