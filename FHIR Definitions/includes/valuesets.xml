@@ -5,6 +5,12 @@
 <a href="ValueSet-claim-denial-codes.html">HCX Claim Denial Codes</a>
 </li>
 <li>
+<a href="ValueSet-hcx-admission-types.html">HCX Admission Types</a>
+</li>
+<li>
+<a href="ValueSet-hcx-procedure-categories.html">HCX Procedure Categories</a>
+</li>
+<li>
 <a href="ValueSet-claim-service-categories.html">HCX Claim Service Categories</a>
     </li>
 

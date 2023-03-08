@@ -6186,6 +6186,55 @@
         ]
       },
       {
+        "id": "Claim.subType",
+        "path": "Claim.subType",
+        "short": "More granular claim type",
+        "definition": "A finer grained suite of claim type codes which may convey additional information such as Inpatient vs Outpatient and/or a specialty service.",
+        "comment": "This may contain the local bill type codes, for example the US UB-04 bill type code or the CMS bill type.",
+        "requirements": "Some jurisdictions need a finer grained claim type for routing and adjudication.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Claim.subType",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ClaimSubType"
+            }
+          ],
+          "strength": "example",
+          "description": "A more granular claim typecode.",
+          "valueSet": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-admission-types"
+        },
+        "mapping": [
+          {
+            "identity": "w5",
+            "map": "FiveWs.class"
+          }
+        ]
+      },
+      {
         "id": "Claim.patient",
         "path": "Claim.patient",
         "short": "The recipient of the products and services",
@@ -7013,7 +7062,7 @@
           ],
           "strength": "example",
           "description": "The role codes for the care team members.",
-          "valueSet": "https://nrces.in/ndhm/fhir/r4/ValueSet-ndhm-practitioner-role.html"
+          "valueSet": "https://nrces.in/ndhm/fhir/r4/ValueSet/ndhm-practitioner-role"
         }
       },
       {

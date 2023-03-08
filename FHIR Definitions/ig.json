@@ -422,6 +422,34 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/ValueSet/hcx-admission-types",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hcx-admission-types"
+        },
+        "name": "HCX Admission Types",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/hcx-procedure-categories",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hcx-procedure-categories"
+        },
+        "name": "HCX Procedure Categories",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
             "url": "http://hl7.org/fhir/tools/ValueSet/claim-service-categories",
             "valueString": "SearchParameter"
           }
@@ -696,6 +724,16 @@
             {
               "nameUrl": "ValueSet-claim-denial-codes.html",
               "title": "HCX Claim Denial Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-hcx-admission-types.html",
+              "title": "HCX Admission Types",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-hcx-procedure-categories.html",
+              "title": "HCX Procedure Categories",
               "generation": "generated"
             },
             {
