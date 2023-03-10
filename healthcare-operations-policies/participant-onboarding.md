@@ -23,6 +23,8 @@ Diagrams below depicts the key steps in onboarding process across these two phas
 
 <figure><img src="https://lh6.googleusercontent.com/xa8Y0i1jVYqAgiYbWVjO6WhzY0wB-h9-8g1_JV3QN27FfK7ogVSLgeelqU3AKQJ2TC_3biTUqQz98gKP0HlV6CuWPimhFhQ09WClIIytNvuDxqrYXXr_1U3CXkChFNyvefYnuBr5ie08-Mn_8wZXpHG6-32f5cWoHUH7CaeoGBTrtUMjZmmVTETAWw" alt=""><figcaption><p>Proposed onbaording process flow</p></figcaption></figure>
 
+Sections below provide high level description for each of these steps:
+
 ### Phase 1 - Sandbox Process <a href="#phase-1-sandbox-process" id="phase-1-sandbox-process"></a>
 
 The key goal of the sandbox is to help the participants test their software against the HCX protocol, and get certified to ensure interoperability and gain required trust by the other network participants.
