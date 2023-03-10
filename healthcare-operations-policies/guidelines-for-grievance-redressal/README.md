@@ -21,16 +21,28 @@ Final operational policies for grievance redressal are expected to be drafted by
 
 ## Proposed Approach for Policy Formulation
 
-Drafting and evolving an efficient and truly implementable policy for grievance resolution would need active participation from the HCX ecosystem. Keeping this in mind, the following high level approach is proposed in line with the overall [Approach for Open Specifications](../open-specifications/governance.md):
+Drafting and evolving an efficient and truly implementable policy for grievance resolution would need active participation from the HCX ecosystem. Keeping this in mind, the following high level approach is proposed in line with the overall [Approach for Open Specifications](../../open-specifications/governance.md):
 
 1. Like with the specifications so far, constitute a new working group for Dispute Resolution policies.
-2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](<../README (1).md>) for the dispute resolution context.
+2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](<../../README (1).md>) for the dispute resolution context.
 3. The working group drafts a model policy in accordance with the above principles and in line with the detailed approach from step 2 above.
 4. The principles, detailed approach and model dispute resolution policy draft is versioned and released for public consultation.
 5. The domain working group deliberates the feedback and enhances principles/model policy as needed.
 6. HCX Operators adopt the model policy according to the needs of their network
 7. Further enhancements, e.g. for new use cases, changes in approach, improvements in model policy due to on-ground observations undergo steps 3-6 and result in a newer version of the artefacts (principles, approach or model policy).
 
-#### Next Steps
+Based on the key design considerations and aproach listed above, policy guidelines working group had setup an explicit workstream that worked on the first version of the Multi Party dispute resolution process. To ensure prinsiples of minimalism, applicability and easy adoption of the guidelines working group defined the scope of guidelines in this version to include:
 
-This section proposes a high-level approach that can be adopted for grievance redressal policies for an HCX ecosystem. More deliberation is needed to arrive at model policies that can then be readily extended to be adopted by the ecosystem. Domain working groups will continue to work on developing a detailed approach for grievance redressal policy formulation as well as a model policy for easy adoption. These documents will be released for public consultation in time for an initial pilot of the HCX ecosystem.
+* Non Government Commercial Insurance (Group + Retail)&#x20;
+* For insurance claims regarding In-patient procedures only&#x20;
+* Disputes related to claims transmission&#x20;
+
+{% hint style="info" %}
+Please note that following topics were explicitly kept out of scope for the current guidelines:&#x20;
+
+* Government Schemes&#x20;
+* Payor rates agreed with the provider network&#x20;
+* Quality and Compliance of policy adjudication
+{% endhint %}
+
+Following sub sections details the key aspects of the proposed Multi PartyDispute resolution process:
