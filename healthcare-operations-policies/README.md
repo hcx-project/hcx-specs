@@ -14,6 +14,16 @@ A thriving data exchange requires clear rules of engagement on various activitie
 6. Charges and fees - These would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
 7. Service rating policies - What would be the parameters and mechanisms to rate each type of actor on the data exchange.
 
+<mark style="color:green;">HCX networks will be a crucial element in India’s health system and as such will need to enable health system objectives/goals, for example-</mark>&#x20;
+
+* <mark style="color:green;">Universal health coverage,</mark>&#x20;
+* <mark style="color:green;">Improved health outcomes (levels & equity),</mark>&#x20;
+* <mark style="color:green;">Make the system responsive to individuals, families, and communities,</mark>&#x20;
+* <mark style="color:green;">Deliver social & financial protection</mark>&#x20;
+* <mark style="color:green;">Efficiency</mark>&#x20;
+
+<mark style="color:green;">(adapted from World Health Report 2000: Health Systems : Improving Performance)</mark>
+
 The success of the data exchange will depend on trust and willing participation from its ecosystem players. Therefore, to ensure the success of the claims data exchange, its governing policies need to focus on enabling the ecosystem and gaining its trust. To ensure this, the following key policy design guidelines are recommended:
 
 ## Key Design Considerations
