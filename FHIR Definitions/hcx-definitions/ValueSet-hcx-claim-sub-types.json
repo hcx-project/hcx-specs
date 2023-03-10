@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hcx-claim-sub-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes for claim subtypes, which may also be referred to as admission types in certain terminologies.</p></div>"
+  },
+  "url": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-claim-sub-types",
+  "version": "0.7.1",
+  "name": "HCXClaimSubTypes",
+  "status": "draft",
+  "date": "2023-03-06",
+  "publisher": "HCX Open Community",
+  "contact": [
+    {
+      "name": "HCX Open Community",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hcxprotocol.io/"
+        }
+      ]
+    }
+  ],
+  "description": "This is the value set listing the claim sub type codes, which may also be referred to as admission types in certain terminologies",
+  "expansion": {
+    "timestamp": "2023-03-06T08:15:30+05:30",
+    "contains": [
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "EM",
+        "display": "Emergency"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "PL",
+        "display": "Planned"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "NC",
+        "display": "Natural Catastrophe"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "MA",
+        "display": "Maternity"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "UR",
+        "display": "Urgent"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "EL",
+        "display": "Elective"
+      },
+      {
+        "system": "https://staging-hcx.swasth.app/hapi-fhir/fhir/CodeSystem/hcx-claim-sub-types",
+        "code": "NB",
+        "display": "Newborn"
+      }
+    ]
+  }
+}
