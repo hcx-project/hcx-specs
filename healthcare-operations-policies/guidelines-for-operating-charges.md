@@ -58,6 +58,4 @@ An infrastructure service may choose to estimate infrastructure costs and per tr
 2. Per transaction price, can also be aggregated into transaction volume slabs
 3. Per claim price, where transactions per claim can be estimated/averaged out and aggregated into claim volume slabs
 4. A subscription charge based on estimated transaction volumes
-5. Other factors that may evolve with ecosystem usage
-
-It is recommended that an HCX operator takes in&#x20;
+5. Other factors that may evolve with ecosystem usage&#x20;
