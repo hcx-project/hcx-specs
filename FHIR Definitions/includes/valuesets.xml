@@ -5,24 +5,33 @@
 <a href="ValueSet-claim-denial-codes.html">HCX Claim Denial Codes</a>
 </li>
 <li>
+<a href="ValueSet-hcx-claim-sub-types.html">HCX Claim Sub Types</a>
+</li>
+<li>
+<a href="ValueSet-hcx-procedure-categories.html">HCX Procedure Categories</a>
+</li>
+<li>
 <a href="ValueSet-claim-service-categories.html">HCX Claim Service Categories</a>
     </li>
 
 <li>
 <a href="ValueSet-claim-service-codes.html">HCX Claim Service Codes</a>
     </li>
- <li>
-<a href="ValueSet-health-service-provider-role.html">HCX Health Service Provider Role</a>
+
+<li>
+<a href="ValueSet-billing-subgroup-categories.html">HCX Billing Subgroup Categories</a>
     </li>
 
-
- <li>
-<a href="ValueSet-insurance-company-owners.html">HCX Insurance Company Owners</a>
+<li>
+<a href="ValueSet-claim-error-codes.html">HCX Claim Error Codes</a>
     </li>
 
+<li>
+<a href="ValueSet-claim-supporting-info-categories.html">HCX Claim Supporting Info Categories</a>
+    </li>
 
- <li>
-<a href="ValueSet-medical-speciality-type-provider.html">HCX Medical Speciality Provider</a>
+<li>
+<a href="ValueSet-claim-supporting-info-codes.html">HCX Claim Supporting Info Codes</a>
     </li>
 
  <li>

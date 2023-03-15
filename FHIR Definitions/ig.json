@@ -5,7 +5,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>USCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core</pre><div><p>The US Core Implementation Guide is based on FHIR Version R4 and defines the minimum conformance requirements for accessing patient data. The Argonaut pilot implementations, ONC 2015 Edition Common Clinical Data Set (CCDS), and ONC U.S. Core Data for Interoperability (USCDI) v1 provided the requirements for this guide. The prior Argonaut search and vocabulary requirements, based on FHIR DSTU2, are updated in this guide to support FHIR Version R4. This guide was used as the basis for further testing and guidance by the Argonaut Project Team to provide additional content and guidance specific to Data Query Access for purpose of ONC Certification testing. These profiles are the foundation for future US Realm FHIR implementation guides. In addition to Argonaut, they are used by DAF-Research, QI-Core, and CIMI. Under the guidance of HL7 and the HL7 US Realm Steering Committee, the content will expand in future versions to meet the needs specific to the US Realm.\nThese requirements were originally developed, balloted, and published in FHIR DSTU2 as part of the Office of the National Coordinator for Health Information Technology (ONC) sponsored Data Access Framework (DAF) project. For more information on how DAF became US Core see the US Core change notes.</p>\n</div></div>"
   },
   "id": "hcxprotocol.io",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "url": "https://hcxprotocol.io/fhir/r4/ImplementationGuide/hcxprotocol.io",
   "name": "HCXFHIRImplementationGuide",
   "title": "FHIR Implementation Guide for HCX",
@@ -37,28 +37,6 @@
   "description": "The US Core Implementation Guide is based on FHIR Version R4 and defines the minimum conformance requirements for accessing patient data. The Argonaut pilot implementations, ONC 2015 Edition Common Clinical Data Set (CCDS), and ONC U.S. Core Data for Interoperability (USCDI) v1 provided the requirements for this guide. The prior Argonaut search and vocabulary requirements, based on FHIR DSTU2, are updated in this guide to support FHIR Version R4. This guide was used as the basis for further testing and guidance by the Argonaut Project Team to provide additional content and guidance specific to Data Query Access for purpose of ONC Certification testing. These profiles are the foundation for future US Realm FHIR implementation guides. In addition to Argonaut, they are used by DAF-Research, QI-Core, and CIMI. Under the guidance of HL7 and the HL7 US Realm Steering Committee, the content will expand in future versions to meet the needs specific to the US Realm.\nThese requirements were originally developed, balloted, and published in FHIR DSTU2 as part of the Office of the National Coordinator for Health Information Technology (ONC) sponsored Data Access Framework (DAF) project. For more information on how DAF became US Core see the US Core change notes.",
   "definition": {
     "resource": [
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/CoverageEligibilityResponseDocument",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CoverageEligibilityResponseDocument"
-        },
-        "name": "HCX CoverageEligibility Response Document",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/CoverageEligibilityResponseDocument-example-01"
-        },
-        "name": "HCX Coverage Eligibility Response Document example",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponseDocument.html"
-      },
       {
         "extension": [
           {
@@ -115,72 +93,75 @@
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
-      
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/CoverageEligibilityRequestDocument",
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/CoverageEligibilityRequestBundle",
             "valueString": "SearchParameter"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/CoverageEligibilityRequestDocument"
+          "reference": "StructureDefinition/CoverageEligibilityRequestBundle"
         },
-        "name": "HCX CoverageEligibility Request Document",
+        "name": "HCX CoverageEligibility Request Bundle",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/CoverageEligibilityRequestDocument-example-01"
-        },
-        "name": "HCX Coverage Eligibility Request Document example",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityRequestDocument.html"
       },
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/ClaimResponseDocument",
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/CoverageEligibilityResponseBundle",
             "valueString": "SearchParameter"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ClaimResponseDocument"
+          "reference": "StructureDefinition/CoverageEligibilityResponseBundle"
         },
-        "name": "HCX Claim Response Document",
+        "name": "HCX CoverageEligibility Response Bundle",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Bundle/ClaimResponseDocument-example-01"
-        },
-        "name": "HCX Claim Response Document example",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponseDocument.html"
       },
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/ClaimRequestDocument",
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/ClaimRequestBundle",
             "valueString": "SearchParameter"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ClaimRequestDocument"
+          "reference": "StructureDefinition/ClaimRequestBundle"
         },
-        "name": "HCX Claim Request Document",
+        "name": "HCX Claim Request Bundle",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
       {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/ClaimResponseBundle",
+            "valueString": "SearchParameter"
+          }
+        ],
         "reference": {
-          "reference": "Bundle/ClaimRequestDocument-example-01"
+          "reference": "StructureDefinition/ClaimResponseBundle"
         },
-        "name": "HCX Claim Request Document example",
+        "name": "HCX Claim Response Bundle",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimRequestDocument.html"
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/CommunicationBundle",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CommunicationBundle"
+        },
+        "name": "HCX Communication Bundle",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -202,7 +183,7 @@
         },
         "name": "HCX Claim Response example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"
       },
       {
         "extension": [
@@ -224,7 +205,7 @@
         },
         "name": "HCX Claim example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Claim.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Claim.html"
       },
       {
         "extension": [
@@ -260,7 +241,7 @@
         },
         "name": "HCX Coverage Eligibility Request example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityRequest.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequest.html"
       },
       {
         "extension": [
@@ -282,7 +263,7 @@
         },
         "name": "HCX Coverage Eligibility Response example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponse.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityResponse.html"
       },
       {
         "extension": [
@@ -385,20 +366,6 @@
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/CommunicationDocument",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/CommunicationDocument"
-        },
-        "name": "HCX Communication Document",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/Task",
             "valueString": "SearchParameter"
           }
@@ -407,20 +374,6 @@
           "reference": "StructureDefinition/Task"
         },
         "name": "HCX Task",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/ValueSet/medical-speciality-type-provider",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/medical-speciality-type-provider"
-        },
-        "name": "HCX Medical Speciality Provider",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -441,6 +394,20 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/ValueSet/medical-speciality-type-provider",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medical-speciality-type-provider"
+        },
+        "name": "HCX Medical Speciality Provider",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
             "url": "http://hl7.org/fhir/tools/ValueSet/claim-denial-codes",
             "valueString": "SearchParameter"
           }
@@ -449,6 +416,34 @@
           "reference": "ValueSet/claim-denial-codes"
         },
         "name": "HCX Claim Denial Codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/hcx-claim-sub-types",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hcx-claim-sub-types"
+        },
+        "name": "HCX Claim Sub Types",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/hcx-procedure-categories",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hcx-procedure-categories"
+        },
+        "name": "HCX Procedure Categories",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -469,6 +464,62 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/ValueSet/billing-subgroup-categories",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/billing-subgroup-categories"
+        },
+        "name": "HCX Billing Subgroup Categories",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/claim-error-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/claim-error-codes"
+        },
+        "name": "HCX Claim Error Codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/claim-supporting-info-categories",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/claim-supporting-info-categories"
+        },
+        "name": "HCX Claim Supporting Info Categories",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/ValueSet/claim-supporting-info-codes",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/claim-supporting-info-codes"
+        },
+        "name": "HCX Claim Supporting Info Codes",
+        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
             "url": "http://hl7.org/fhir/tools/ValueSet/claim-service-codes",
             "valueString": "SearchParameter"
           }
@@ -477,34 +528,6 @@
           "reference": "ValueSet/claim-service-codes"
         },
         "name": "HCX Claim Service Codes",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/ValueSet/health-service-provider-role",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/health-service-provider-role"
-        },
-        "name": "HCX valueset health service provider role",
-        "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/ValueSet/insurance-company-owners",
-            "valueString": "SearchParameter"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/insurance-company-owners"
-        },
-        "name": "HCX insurance-company-owners",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
         "exampleBoolean": false
       },
@@ -636,23 +659,28 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-CoverageEligibilityRequestDocument.html",
-              "title": "HCX Coverage Eligibility Request Document",
+              "nameUrl": "StructureDefinition-CoverageEligibilityRequestBundle.html",
+              "title": "HCX Coverage Eligibility Request Bundle",
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-CoverageEligibilityResponseDocument.html",
-              "title": "HCX Coverage Eligibility Response Document",
+              "nameUrl": "StructureDefinition-CoverageEligibilityResponseBundle.html",
+              "title": "HCX Coverage Eligibility Response Bundle",
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-ClaimResponseDocument.html",
-              "title": "HCX Claim Response Document",
+              "nameUrl": "StructureDefinition-ClaimRequestBundle.html",
+              "title": "HCX Claim Request Bundle",
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-ClaimRequestDocument.html",
-              "title": "HCX Claim Request Document",
+              "nameUrl": "StructureDefinition-ClaimResponseBundle.html",
+              "title": "HCX Claim Response Bundle",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-CommunicationBundle.html",
+              "title": "HCX Communication Bundle",
               "generation": "generated"
             },
             {
@@ -681,11 +709,6 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-CommunicationDocument.html",
-              "title": "HCX Communication Document",
-              "generation": "generated"
-            },
-            {
               "nameUrl": "StructureDefinition-Task.html",
               "title": "HCX Task",
               "generation": "generated"
@@ -704,8 +727,38 @@
               "generation": "generated"
             },
             {
+              "nameUrl": "ValueSet-hcx-claim-sub-types.html",
+              "title": "HCX Admission Types",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-hcx-procedure-categories.html",
+              "title": "HCX Procedure Categories",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "ValueSet-claim-service-categories.html",
               "title": "HCX Claim Service Categories",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-billing-subgroup-categories.html",
+              "title": "HCX Billing Subgroup Categories",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-claim-error-codes.html",
+              "title": "HCX Claim Error Codes",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-claim-supporting-info-categories.html",
+              "title": "HCX Claim Supporting Info Categories",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "ValueSet-claim-supporting-info-codes.html",
+              "title": "HCX Claim Supporting Info Codes",
               "generation": "generated"
             },
             {
@@ -721,16 +774,6 @@
             {
               "nameUrl": "ValueSet-procedure-type-description.html",
               "title": "HCX Procedure Type Description",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "ValueSet-health-service-provider-role.html",
-              "title": "HCX health service provider role",
-              "generation": "generated"
-            },
-            {
-              "nameUrl": "ValueSet-insurance-company-owners.html",
-              "title": "HCX insurance company owners",
               "generation": "generated"
             },
             {

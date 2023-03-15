@@ -24,8 +24,8 @@
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode" : "not-classified"
     }],
-    "url" : "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Task.html",
-    "version": "0.7.0",
+    "url" : "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Task.html",
+    "version": "0.8.0",
     "name" : "Task",
     "status" : "draft",
     "date" : "2019-11-01T09:29:23+11:00",
@@ -67,7 +67,7 @@
     "abstract" : false,
     "type" : "Task",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Task",
-    "derivation" : "specialization",
+    "derivation" : "constraint",
     "snapshot" : {
       "element" : [{
         "id" : "Task",
@@ -2651,8 +2651,8 @@
         "max" : "*",
         "type" : [{
           "code" : "Reference",
-          "targetProfile" : ["https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html",
-          "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html"]
+          "targetProfile" : ["https://ig.hcxprotocol.io/v0.8/StructureDefinition-Coverage.html",
+          "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"]
         }],
         "mapping" : [{
           "identity" : "workflow",

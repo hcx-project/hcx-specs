@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "HCXProofOfPresenceExtension",
-    "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html",
-    "version": "0.7.0",
+    "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-HCXProofOfPresenceExtension.html",
+    "version": "0.8.0",
     "name": "HCXProofOfPresenceExtension",
     "title": "HCX Proof Of Presence Extension",
     "status": "active",
@@ -82,7 +82,7 @@
           ],
           "binding": {
             "strength": "extensible",
-            "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-proof-of-presence-codes.html"
+            "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-proof-of-presence-codes.html"
           }
         },
         {
@@ -197,7 +197,7 @@
         {
           "id": "Extension.url",
           "path": "Extension.url",
-          "fixedUri": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-HCXProofOfPresenceExtension.html"
+          "fixedUri": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-HCXProofOfPresenceExtension.html"
         },
         {
           "id": "Extension.value[x]",

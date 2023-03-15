@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-service-codes",
-  "version": "0.7.0",
-  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-codes.html",
+  "version": "0.8.0",
+  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-codes.html",
   "name": "ClaimServiceCodes",
   "status": "active",
   "date": "2021-08-15",
@@ -18,262 +18,298 @@
       ]
     }
   ],
-  "description": "This is the value set that includes the codes to identify the general type of benefits under which products and services are provided",
+  "description": "This value set includes sample codes for products and services provided by PMJAY",
   "expansion": {
     "timestamp": "2021-08-15T08:15:30+05:30",
     "contains": [
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes"
-      },
-      {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "BM001",
+        "display": "Thermal burns",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
+            "code": "BM001A",
+            "display": "% Total Body Surface Area Burns (TBSA) - any %(not requiring admission). Needs at least 5-6 dressing",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM001B",
+            "display": "% Total Body Surface Area Burns (TBSA): Upto 40 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM001C",
+            "display": "% Total Body Surface Area Burns (TBSA): 40% - 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM001D",
+            "display": "% Total Body Surface Area Burns (TBSA): > 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "BM002",
+        "display": "Scald burns",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "501001",
-                "display": "Consultation charges",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "BM002A",
+            "display": "% Total Body Surface Area Burns (TBSA) - any %(not requiring admission). Needs at least 5-6 dressing",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM002B",
+            "display": "% Total Body Surface Area Burns (TBSA): Upto 40 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM002C",
+            "display": "% Total Body Surface Area Burns (TBSA): 40% - 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM002D",
+            "display": "% Total Body Surface Area Burns (TBSA): > 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "BM003",
+        "display": "Flame burns",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "501002",
-                "display": "Medical Supervision Charges",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "BM003A",
+            "display": "% Total Body Surface Area Burns (TBSA) - any %(not requiring admission). Needs at least 5-6 dressing",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM003B",
+            "display": "% Total Body Surface Area Burns (TBSA): Upto 40 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM003C",
+            "display": "% Total Body Surface Area Burns (TBSA): 40% - 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "BM003D",
+            "display": "% Total Body Surface Area Burns (TBSA): > 60 %; Includes % TBSA skin grafted, flap cover, follow-up dressings etc. as deemed necessary; Surgical procedures are required for deep burns that are not amenable to heal with dressings alone.",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "ER001",
+        "display": "Laceration - Suturing / Dressing",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "501000",
-            "display": "Visit charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "501003",
-                "display": "Professional fees",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "ER001A",
+            "display": "Laceration - Suturing / Dressing",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "ER002",
+        "display": "Cardiopulmonary emergency",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "502000",
-            "display": "Surgery charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
+            "code": "ER002A",
+            "display": "Emergency with stable cardiopulmonary status",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "ER002B",
+            "display": "Emergency with unstable cardiopulmonary status with resuccitation",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "ER003",
+        "display": "Animal bites (Excluding Snake Bite)",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "502000",
-            "display": "Surgery charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "502001",
-                "display": "Surgeons Charges",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "ER003A",
+            "display": "Animal bites (Excluding Snake Bite)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "ID001",
+        "display": "Laboratory Tests for COVID- 19 Infection (PCR) (Reimbursement level for this package will be as per the ICMR guidelines, issued from time to time)",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "502000",
-            "display": "Surgery charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "502002",
-                "display": "Assistant Surgeons Fee",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "ID001A",
+            "display": "Laboratory Tests for COVID- 19 Infection (PCR) (Reimbursement level for this package will be as per the ICMR guidelines, issued from time to time)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "ID003",
+        "display": "Treatment of COVID-19 Infection",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "503000",
-            "display": "Anaesthetists Fee",
-            "system": "http://hcxprotocol.io/codes/service-codes"
+            "code": "ID003A",
+            "display": "Treatment of COVID-19 Infection",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN001",
+        "display": "Dural AVMs / AVFs",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "503000",
-            "display": "Anaesthetists Fee",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "503001",
-                "display": "Anaesthetists fee",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "IN001A",
+            "display": "Dural AVMs (per sitting) with glue",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "IN001B",
+            "display": "Dural AVFs (per sitting) with glue",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "IN001C",
+            "display": "Dural AVMs (per sitting) with onyx",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "IN001D",
+            "display": "Dural AVFs (per sitting) with onyx",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN002",
+        "display": "Cerebral & Spinal AVM embolization - Using Histoacryl (per sitting)",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "503000",
-            "display": "Anaesthetists Fee",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "503002",
-                "display": "OT standby charges",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "IN002A",
+            "display": "Cerebral AVM embolization - Using Histoacryl (per sitting)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "IN002B",
+            "display": "Spinal AVM embolization - Using Histoacryl (per sitting)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN003",
+        "display": "Coil embolization for aneurysms (includes cost of first 3 coils + balloon and / or stent if used)",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "504000",
-            "display": "Intensivist charges",
-            "system": "http://hcxprotocol.io/codes/service-codes"
+            "code": "IN003A",
+            "display": "Coil embolization for aneurysms (includes cost of first 3 coils + balloon and / or stent if used)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN004",
+        "display": "Carotico-cavernous Fistula (CCF) embolization",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "504000",
-            "display": "Procedure charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "504001",
-                "display": "Beside procedures",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "IN004A",
+            "display": "Carotico-cavernous Fistula (CCF) embolization with coils. [includes 5 coils, guide catheter, micro-catheter, micro- guidewire, general items]",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          },
+          {
+            "code": "IN004B",
+            "display": "Carotid-cavernous Fistula (CCF) embolization with balloon (includes one balloon, guide catheter, micro-catheter, micro- guidewire, general items)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN005",
+        "display": "Pre-operative tumour embolization (per session)",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "504000",
-            "display": "Procedure charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "504002",
-                "display": "Suture charges",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "IN005A",
+            "display": "Pre-operative tumour embolization (per session)",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN006",
+        "display": "Intracranial balloon angioplasty with stenting",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "505000",
-            "display": "Physiotherapy",
-            "system": "http://hcxprotocol.io/codes/service-codes"
+            "code": "IN006A",
+            "display": "Intracranial balloon angioplasty with stenting",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       },
       {
-        "code": "500000",
-        "display": "Professional fees charges",
-        "system": "http://hcxprotocol.io/codes/service-codes",
+        "code": "IN007",
+        "display": "Intracranial thrombolysis / clot retrieval",
+        "system": "https://pmjay.gov.in/hbp-package-code",
         "contains": [
           {
-            "code": "505000",
-            "display": "Technician charges",
-            "system": "http://hcxprotocol.io/codes/service-codes",
-            "contains": [
-              {
-                "code": "505000",
-                "display": "OT/Cath Lab Technician",
-                "system": "http://hcxprotocol.io/codes/service-codes"
-              }
-            ]
+            "code": "IN007A",
+            "display": "Intracranial thrombolysis / clot retrieval",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          }
+        ]
+      },
+      {
+        "code": "IN008",
+        "display": "Balloon test occlusion",
+        "system": "https://pmjay.gov.in/hbp-package-code",
+        "contains": [
+          {
+            "code": "IN008A",
+            "display": "Balloon test occlusion",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          }
+        ]
+      },
+      {
+        "code": "IN009",
+        "display": "Parent vessel occlusion - Basic",
+        "system": "https://pmjay.gov.in/hbp-package-code",
+        "contains": [
+          {
+            "code": "IN009A",
+            "display": "Parent vessel occlusion - Basic",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
+          }
+        ]
+      },
+      {
+        "code": "IN010",
+        "display": "Vertebroplasty",
+        "system": "https://pmjay.gov.in/hbp-package-code",
+        "contains": [
+          {
+            "code": "IN010A",
+            "display": "Vertebroplasty",
+            "system": "https://pmjay.gov.in/hbp-procedure-code"
           }
         ]
       }

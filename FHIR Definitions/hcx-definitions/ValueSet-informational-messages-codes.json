@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
     "id": "informational-messages-codes",
-    "version": "0.7.0",
-    "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-informational-messages-codes.html",
+    "version": "0.8.0",
+    "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-informational-messages-codes.html",
     "name": "InformationalMessagesCodes",
     "status": "active",
     "date": "2022-06-01",
@@ -33,23 +33,8 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MG072B",
-          "display": "Package cost of one session",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MG075A",
           "display": "Rs. 5000 is the upper limit.\nCan be booked at a lower rate also.\nIn fact the SHA should examine this package and  confirm wheter the package has been booked at the usual market rate.\nCan be booked for a pt. already admitted under any medical package.",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MG076A",
-          "display": "Rs. 5000 is the upper limit.\nCan be booked at a lower rate also.\nIn fact the SHA should examine this package and  confirm wheter the package has been booked at the usual market rate.\nCan be booked for a pt. already admitted under any medical package.",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO013A",
-          "display": "Stage II and III anal Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -58,87 +43,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO015B",
-          "display": "Upper esophageal  neoadjuvant and  with RT as adjuvant",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO062A",
+          "code": "MO062A1",
           "display": "ACUTE LYMPHOBLASTIC LEUKEMIA",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO062B",
-          "display": "ACUTE LYMPHOBLASTIC LEUKEMIA",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO062C",
-          "display": "ACUTE LYMPHOBLASTIC LEUKEMIA",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO068C",
-          "display": "NON-HODGKINS LYMPHOMA",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
           "code": "MR001A",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR001B",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR001C",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR004A",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR004B",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR004C",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR006A",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR006B",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR006C",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR009A",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR009B",
-          "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MR009C",
           "display": "The Procedure will cover ALL, Hodgkin's Lymphoma, Wilm's Tumour, NHL, Retinoblastoma & certain Bone Tumours`",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -153,27 +63,7 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "SB032B",
-          "display": "Surgical Management for Type III & IV Rockwood to be decided by the surgeon on case to case basis\nType V & VI to be taken up for Surgery straight away\nIn case Type I or II is booked a Pop Up to be shown \"For Rockwood Type I & II - AC Joint injury, experts recommend Medical Management, are you sure you want to do Surgical Correction in this case ?\" \nFor Hospitals booking Surgical Correction in Type I & Type II cases, Medical Audit will be conducted.",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "SB032C",
-          "display": "Surgical Management for Type III & IV Rockwood to be decided by the surgeon on case to case basis\nType V & VI to be taken up for Surgery straight away",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "SB032D",
-          "display": "Surgical Management for Type III & IV Rockwood to be decided by the surgeon on case to case basis\nType V & VI to be taken up for Surgery straight away",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "SB032E",
-          "display": "Surgical Management for Type III & IV Rockwood to be decided by the surgeon on case to case basis\nType V & VI to be taken up for Surgery straight away",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "SB032F",
           "display": "Surgical Management for Type III & IV Rockwood to be decided by the surgeon on case to case basis\nType V & VI to be taken up for Surgery straight away",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -313,16 +203,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO001J",
-          "display": "Adjuvant or neoadjuvant therapy breast cancer\nmetastatic breast cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO001K",
-          "display": "Adjuvant or neoadjuvant therapy breast cancer\nmetastatic breast cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO001L",
           "display": "Adjuvant therapy in breast cancer\nMetstatic breast cancer\n(should not have received the same regimen or EC earlier)",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -358,31 +238,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO003C",
-          "display": "Metastatic ovarian adenocarcinoma second line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO003D",
-          "display": "Metastatic ovarian adenocarcinoma second line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO003E",
-          "display": "Metastatic ovarian adenocarcinoma second line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO003F",
-          "display": "Neoadjuvant, adjuvant and metastatic ovarian adenocarcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO003G",
-          "display": "Neoadjuvant, adjuvant and metastatic ovarian adenocarcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO004A",
           "display": "Testicular Seminoma, Adjuvant",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -393,37 +248,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO004C",
-          "display": "Germ cell tumour of any site for Neoadjuvant, adjuvant or metastatic first line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO004D",
           "display": "Germ cell tumour second line therapy",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO004E",
-          "display": "Germ cell tumour second line therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO004F",
-          "display": "Germ cell tumour second line therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO004G",
-          "display": "Germ cell tumour second line therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO005A",
-          "display": "First line therapy for high - risk Gestational Trophoblastic Neoplasia\nSecond line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO005B",
           "display": "First line therapy for high - risk Gestational Trophoblastic Neoplasia\nSecond line",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -503,32 +333,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO012B",
-          "display": "Metastatic Melanoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO013A",
           "display": "Stage II and III anal Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO013B",
-          "display": "Stage II and III anal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO013C",
-          "display": "Metastatic Anal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO013D",
-          "display": "Metastatic Anal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO013E",
           "display": "Metastatic Anal Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -540,31 +350,6 @@
         {
           "code": "MO014B",
           "display": "Metastatic Colorectal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO014C",
-          "display": "Adjuvant and Metastatic Colorectal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO014D",
-          "display": "Metastatic Colorectal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO014E",
-          "display": "Adjuvant and Metastatic Colorectal Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO014F",
-          "display": "Till completion of RT\nNeoadjuvant and adjuvant rectal cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO014G",
-          "display": "Adjuvant and Metastatic Colorectal Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -583,11 +368,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO015C",
-          "display": "Upper esophageal  neoadjuvant and  with RT as adjuvant",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO015D",
           "display": "With RT in definitive non-metastatic",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -595,11 +375,6 @@
         {
           "code": "MO015E",
           "display": "Metastatic without RT",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO016A",
-          "display": "Neoadjuvant, adjuvant and metastatic stomach and lower esophageal cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -628,21 +403,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO016G",
-          "display": "Neoadjuvant, adjuvant and metastatic stomach and lower esophageal (adenocarcinoma) cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO016H",
-          "display": "Neoadjuvant, adjuvant and metastatic stomach and lower esophageal cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO016I",
-          "display": "Neoadjuvant, adjuvant and metastatic stomach and lower esophageal cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO016J",
           "display": "Metatstaic lower esophageal and stomach Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -668,11 +428,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO018A",
-          "display": "Neoadjuvant, adjuvant and metastatic pancreatic cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO018B",
           "display": "Metastatic pancreatic cancer - first line",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -680,11 +435,6 @@
         {
           "code": "MO018C",
           "display": "Neoadjuvant and adjuvant locally advanced pancreatic cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO018D",
-          "display": "Neoadjuvant, adjuvant and metastatic pancreatic cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -723,21 +473,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO019F",
-          "display": "Neoadjuvant, adjuvant and metastatic pancreatic cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO019G",
-          "display": "Metastatic gall bladder and cholngiocarcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO019H",
-          "display": "Metastatic gall bladder and cholngiocarcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO020A",
           "display": "Neoadjuvant, adjuvant and metastatic GIST",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -753,11 +488,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO021B",
-          "display": "Till RT ends\nDefinitive therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO022A",
           "display": "Metastatic mesothelioma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -768,17 +498,7 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO022C",
-          "display": "Neoadjuvant,adjuvant and metastatic mesothelioma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO023A",
-          "display": "Neoadjuvant Chemotherapy and metastatic thymic carcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO023B",
           "display": "Neoadjuvant Chemotherapy and metastatic thymic carcinoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -818,26 +538,6 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO024H",
-          "display": "Neoadjuvant, adjuvant and metastatic esthesioneuroblastoma and Neuroendocrine carcinoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024I",
-          "display": "Metastatic squamous cell head and neck cancer, nasopharyngeal cancer, salivary gland cancers",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024J",
-          "display": "Metastatic squamous cell head and neck cancer, nasopharyngeal cancer, salivary gland cancers",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024K",
-          "display": "Metastatic squamous cell head and neck cancer, nasopharyngeal cancer, salivary gland cancers",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO024L",
           "display": "Metastatic squamous cell head and neck cancer, salivary gland cancers, nasopharyngeal carcinoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
@@ -845,21 +545,6 @@
         {
           "code": "MO024M",
           "display": "Metastatic squamous cell head and neck cancer, salivary gland cancers",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024N",
-          "display": "Metastatic squamous cell head and neck cancer, nasopharyngeal cancer, salivary gland cancers",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024O",
-          "display": "Definitive therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO024P",
-          "display": "Definitive therapy",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -878,47 +563,7 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO026C",
-          "display": "Neoadjuvant, Adjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026D",
-          "display": "Neoadjuvant, Adjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026E",
-          "display": "Neoadjuvant, Adjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO026F",
-          "display": "Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026G",
-          "display": "Neoadjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026H",
-          "display": "Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026I",
-          "display": "Neoadjuvant, Adjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026J",
-          "display": "Neoadjuvant, Adjuvant, Metastatic urothelial cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO026K",
           "display": "Metastatic urothelial cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -928,72 +573,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO027B",
-          "display": "Neoadjuvant, Adjuvant, Metastatic penile cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO027C",
           "display": "Metastatic Penile Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO027D",
-          "display": "Neoadjuvant, Adjuvant, Metastatic penile cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO027E",
-          "display": "Metastatic Penile Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO027F",
-          "display": "Metastatic Penile Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO027G",
-          "display": "Metastatic Penile Cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO028A",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028B",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028C",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028D",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028E",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028F",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028G",
-          "display": "Metastatic prostate cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO028H",
           "display": "Metastatic prostate cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -1028,32 +613,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO055B",
-          "display": "Low Grade Glioma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO056A",
           "display": "Medulloblastoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO056B",
-          "display": "Medulloblastoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO057A",
-          "display": "Neuroblastoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO057B",
-          "display": "Neuroblastoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO057C",
           "display": "Neuroblastoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -1068,22 +633,12 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO059B",
-          "display": "Rhabdomyosarcoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO060A",
           "display": "Relapsed Rhabdomyosarcoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
           "code": "MO062A",
-          "display": "Phase II, CNS Therapy Reinduction",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO063A",
           "display": "Phase II, CNS Therapy Reinduction",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
@@ -1098,58 +653,13 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO067A",
-          "display": "Relapsed Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO067B",
-          "display": "Relapsed Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO067C",
-          "display": "Relapsed Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO068A",
-          "display": "Non - Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO068B",
-          "display": "Non - Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO068C",
-          "display": "Non - Hodgkins Lymphoma",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO068D",
           "display": "Non - Hodgkins Lymphoma",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
           "code": "MO071A",
           "display": "Metstatic non small cell lung cancer - second line",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071B",
-          "display": "Metastatic non small cell lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071C",
-          "display": "Metastatic non small cell lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071D",
-          "display": "Metastatic Non Small cell lung cancer - first line",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -1173,43 +683,13 @@
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO071I",
-          "display": "Neoadjuvant, concurrent with radiation and metastaic small cell lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071J",
-          "display": "Metastatic non small cell lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO071K",
           "display": "Neoadjuvant and Metastatic Non Small Cell Lung cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
-          "code": "MO071L",
-          "display": "Neoadjuvant and Metastatic Non Small Cell Lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071M",
-          "display": "Metastatic Non Small Cell Lung Cancer - in patients unfit for combination therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071N",
-          "display": "Metastatic Non Small Cell Lung Cancer - in patients unfit for combination therapy",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
           "code": "MO071O",
           "display": "Concurrent chemoradiation in Non Small Cell lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071P",
-          "display": "Neoadjuvant, Adjuvant and Metastatic Non Small Cell Lung Cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         },
         {
@@ -1220,16 +700,6 @@
         {
           "code": "MO071R",
           "display": "Metastatic non small cell lung cancer (adenocarcinoma) as maintenance after\nCarboplatin + Pemetrexed and\nCisplatin + Pemetrexed 4 -6 cycles",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071S",
-          "display": "Neoadjuvant and Metastatic Non Small Cell Lung cancer",
-          "system": "http://hcxprotocol.io/codes/informational-messages-codes"
-        },
-        {
-          "code": "MO071T",
-          "display": "Neoadjuvant and Metastatic Non Small Cell Lung cancer",
           "system": "http://hcxprotocol.io/codes/informational-messages-codes"
         }
       ]

@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html",
-  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html",
+  "version": "0.8.0",
   "name": "ClaimResponse",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -66,7 +66,7 @@
   "abstract": false,
   "type": "ClaimResponse",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClaimResponse",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -1729,7 +1729,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -5935,6 +5935,55 @@
         ]
       },
       {
+        "id": "ClaimResponse.subType",
+        "path": "ClaimResponse.subType",
+        "short": "More granular claim type",
+        "definition": "A finer grained suite of claim type codes which may convey additional information such as Inpatient vs Outpatient and/or a specialty service.",
+        "comment": "This may contain the local bill type codes, for example the US UB-04 bill type code or the CMS bill type.",
+        "requirements": "Some jurisdictions need a finer grained claim type for routing and adjudication.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ClaimResponse.subType",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ClaimSubType"
+            }
+          ],
+          "strength": "example",
+          "description": "A more granular claim typecode.",
+          "valueSet": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-claim-sub-types"
+        },
+        "mapping": [
+          {
+            "identity": "w5",
+            "map": "FiveWs.class"
+          }
+        ]
+      },
+      {
         "id": "ClaimResponse.patient",
         "path": "ClaimResponse.patient",
         "short": "The recipient of the products and services",
@@ -6076,7 +6125,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Claim.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -6143,7 +6192,7 @@
           ],
           "strength": "example",
           "description": "The adjudication reason codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-denial-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-denial-codes.html"
         }
       },
       {
@@ -6243,7 +6292,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -6278,7 +6327,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-ClaimResponse.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"
             ]
           }
         ],
@@ -6294,6 +6343,48 @@
         ],
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "ClaimResponse.error.code",
+        "path": "ClaimResponse.error.code",
+        "short": "Error code detailing processing issues",
+        "definition": "An error code, from a specified code system, which details why the claim could not be adjudicated.",
+        "requirements": "Required to convey processing errors.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ClaimResponse.error.code",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdjudicationError"
+            }
+          ],
+          "strength": "example",
+          "description": "The adjudication error codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-error-codes.html"
+        }
       }
     ]
   }

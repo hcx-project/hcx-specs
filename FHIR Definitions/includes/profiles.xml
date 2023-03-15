@@ -8,20 +8,20 @@ The structure definitions of document bundles that are passed as payload in the 
   </p>
 <ul>
   <li>
-    <a href="StructureDefinition-CoverageEligibilityRequestDocument.html">HCX Coverage Eligibility Request Document</a>
+    <a href="StructureDefinition-CoverageEligibilityRequestBundle.html">HCX Coverage Eligibility Request Bundle</a>
   </li>
   <li>
-<a href="StructureDefinition-CoverageEligibilityResponseDocument.html">HCX Coverage Eligibility Response Document</a>
+    <a href="StructureDefinition-CoverageEligibilityResponseBundle.html">HCX Coverage Eligibility Response Bundle</a>
   </li>
   <li>
-    <a href="StructureDefinition-ClaimRequestDocument.html">HCX Claim Request Document</a>
+    <a href="StructureDefinition-ClaimRequestBundle.html">HCX Claim Request Bundle</a>
   </li>
   <li>
-    <a href="StructureDefinition-ClaimResponseDocument.html">HCX Claim Response Document</a>
+    <a href="StructureDefinition-ClaimResponseBundle.html">HCX Claim Response Bundle</a>
   </li>
-<li>
-  <a href="StructureDefinition-CommunicationDocument.html">HCX Communication Document</a>
-</li>
+  <li>
+    <a href="StructureDefinition-CommunicationBundle.html">HCX Communication Bundle</a>
+  </li>
 </ul>
 <h3>Resource Profiles</h3>
   <p>

@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityResponse.html",
-  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityResponse.html",
+  "version": "0.8.0",
   "name": "CoverageEligibilityResponse",
   "status": "draft",
   "date": "2021-08-16T09:29:23+11:00",
@@ -71,7 +71,7 @@
   "abstract": false,
   "type": "CoverageEligibilityResponse",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CoverageEligibilityResponse",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -2624,7 +2624,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-CoverageEligibilityRequest.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequest.html"
             ]
           }
         ],
@@ -2674,7 +2674,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -2707,6 +2707,97 @@
             "map": "B01"
           }
         ]
+      },
+      {
+        "id": "CoverageEligibilityResponse.insurance.item.category",
+        "path": "CoverageEligibilityResponse.insurance.item.category",
+        "short": "Benefit classification",
+        "definition": "Code to identify the general type of benefits under which products and services are provided.",
+        "comment": "Examples include Medical Care, Periodontics, Renal Dialysis, Vision Coverage.",
+        "requirements": "Needed to convey the category of service or product for which eligibility is sought.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityResponse.insurance.item.category",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BenefitCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "Benefit categories such as: oral, medical, vision etc.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-categories.html"
+        }
+      },
+      {
+        "id": "CoverageEligibilityResponse.insurance.item.productOrService",
+        "path": "CoverageEligibilityResponse.insurance.item.productOrService",
+        "short": "Billing, service, product, or drug code",
+        "definition": "This contains the product, service, drug or other billing code for the item.",
+        "comment": "Code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI).",
+        "requirements": "Needed to convey the actual service or product for which eligibility is sought.",
+        "alias": [
+          "Drug Code",
+          "Bill Code",
+          "Service Code"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CoverageEligibilityResponse.insurance.item.productOrService",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ServiceProduct"
+            }
+          ],
+          "strength": "example",
+          "description": "Allowable service and product codes.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-codes.html"
+        }
       }
     ]
   }

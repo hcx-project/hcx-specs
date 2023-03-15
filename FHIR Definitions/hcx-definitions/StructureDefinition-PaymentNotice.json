@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentNotice.html",
-  "version": "0.7.0",
+  "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-PaymentNotice.html",
+  "version": "0.8.0",
   "name": "PaymentNotice",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -76,7 +76,7 @@
   "abstract": false,
   "type": "PaymentNotice",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PaymentNotice",
-  "derivation": "specialization",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -1155,7 +1155,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.7/StructureDefinition-PaymentReconciliation.html"
+              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-PaymentReconciliation.html"
             ]
           }
         ],

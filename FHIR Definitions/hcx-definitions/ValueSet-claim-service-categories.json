@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
-  "version": "0.7.0",
-  "url": "https://ig.hcxprotocol.io/v0.7/ValueSet-claim-service-categories.html",
+  "version": "0.8.0",
+  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-categories.html",
   "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",
@@ -25,47 +25,57 @@
       {
         "code": "100000",
         "display": "Room & Nursing Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "200000",
         "display": "ICU Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "300000",
         "display": "OT Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "400000",
         "display": "Medicine & Consumables Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "500000",
         "display": "Professional Fees Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "600000",
         "display": "Investigation Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "700000",
         "display": "Ambulance Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "800000",
         "display": "Miscellaneous Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
       },
       {
         "code": "900000",
-        "display": "Package Charges",
-        "system": "http://hcxprotocol.io/codes/service-category"
+        "display": "Provider Package Charges",
+        "system": "https://irdai.gov.in/benefit-billing-group-code"
+      },
+      {
+        "code": "HBP",
+        "display": "NHA Package Charges",
+        "system": "https://pmjay.gov.in/benefit-billing-group-code"
+      },
+      {
+        "code": "MJPJAY",
+        "display": "Mahatma Jyotibha Phule PMJAY Package Charges",
+        "system": "https://mjpjay.gov.in/benefit-billing-group-code"
       }
     ]
   }
