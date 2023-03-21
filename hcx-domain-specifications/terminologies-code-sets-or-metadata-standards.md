@@ -18,6 +18,6 @@ In various HL7 standards (including FHIR), these are expressed as Concepts and c
 
 For the broader NDHM interoperability and conformance, HCX would align with domain specific guidelines published by NRCeS.
 
-The code systems/valuesets proposed by the HCX working groups are published as part of the [HCX FHIR Implementation Guide](https://ig.hcxprotocol.io/v0.7/valuesets.html). The IG and the code systems/valuesets are versioned and published independently of the HCX protocol.
+The code systems/valuesets proposed by the HCX working groups are published as part of the [HCX FHIR Implementation Guide](https://ig.hcxprotocol.io/v0.8/valuesets.html). The IG and the code systems/valuesets are versioned and published independently of the HCX protocol.
 
 HCX or a neutral protocol supporting organisation will host domain specific FHIR Terminology Services which the ecosystem can leverage to retrieve information and use, and validate resources as defined by the IG.

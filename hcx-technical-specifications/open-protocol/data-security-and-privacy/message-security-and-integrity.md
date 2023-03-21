@@ -17,14 +17,11 @@ The high-level steps to encrypt the payload using the public key of the final re
 5. Base64url-encode the JWE Encrypted Key.
 6. Generate a random JWE Initialization Vector.
 7. Base64url-encode the JWE Initialization Vector.
-8. Let the Additional Authenticated Data encryption parameter be
-
-ASCII(BASE64URL(UTF8(JWE Protected Header))).
-
-1. Perform authenticated encryption on the plaintext with the AES GCM algorithm using the CEK as the encryption key, the JWE Initialization Vector, and the Additional Authenticated Data value, requesting a 128-bit Authentication Tag output.
-2. Base64url-encode the ciphertext.
-3. Base64url-encode the Authentication Tag
-4. Assemble the final representation in flattened JSON serialization (Section 7.2.2 of [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516)):
+8. Let the Additional Authenticated Data encryption parameter be: ASCII(BASE64URL(UTF8(JWE Protected Header))).
+9. Perform authenticated encryption on the plaintext with the AES GCM algorithm using the CEK as the encryption key, the JWE Initialization Vector, and the Additional Authenticated Data value, requesting a 128-bit Authentication Tag output.
+10. Base64url-encode the ciphertext.
+11. Base64url-encode the Authentication Tag
+12. Assemble the final representation in flattened JSON serialization (Section 7.2.2 of [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516#section-7.2.2)):
 
 ```
 {

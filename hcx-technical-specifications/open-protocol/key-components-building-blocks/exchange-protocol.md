@@ -97,7 +97,7 @@ A forward flow would have the following steps:
 
 In case Sender and receiver are listed/registered on different HCX instances, there may be request/response relays between the HCXs. Steps 2, 5, 8 and 11 in the below diagram may involve such relays. The diagram below provides an example of a provider-payor use case with a relay between two HCXs.
 
-<figure><img src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/.gitbook/assets/1.png" alt=""><figcaption><p>Example of relay between two HCX instances</p></figcaption></figure>
 
 The cross gateway communication will be required in the following scenarios –
 
