@@ -11,7 +11,7 @@ tags:
   - name: Registry APIs
     description: HCX participant registry APIs
 paths:
-  
+
   /participant/create:
     post:
       tags:
@@ -37,7 +37,7 @@ paths:
                     type: string
                     description: Machine generated/readable unique identifier of the participant on the HCX instance.
                     example: "pcpt01@HCX01"
-                    
+
         '400':
           description: Client Error
           content:
@@ -93,7 +93,90 @@ paths:
     post:
       tags:
         - Registry APIs
-      description: This API is to search for participants in the registry. API returns list of participants matching the input criteria.
+      description: |
+        This API is to search for participants in the registry. API returns list of participants matching the input criteria.
+
+        Search filter supports all the fields. If multiple filter conditions are provided, they are processed by applying AND operation.
+
+        **Limit** and **Offset** are optional fields. The limit option allows you to limit the number of rows should be returned in the response, while offset allows you to omit a specified number of rows before the beginning of the result set.
+
+
+        Following are the operations supported by search filter:
+
+        * contains("contains")
+
+        * eq("=")
+
+        * neq("!=")
+
+        * between("range")
+
+        * or("or")
+
+        * startsWith("startsWith")
+
+        * endsWith("endsWith")
+
+        * notContains("notContains")
+
+        * notStartsWith("notStartsWith")
+
+        * notEndsWith("notEndsWith")
+
+        * queryString("queryString")
+
+        * gt(">")
+
+        * lt("<")
+
+        * gte(">=")
+
+        * lte("<=")
+
+
+        Following are few example of search filter usage:
+
+        1. Filters to fetch the list of participants with role **provider** and status is **Created**. Search response will return only 10 participants as the limit is 10.
+
+        ```
+        {
+          "filters": {
+            "roles": { "eq": "provider" },
+            "status": { "eq": "Created" }
+          },
+          "limit": 10,
+          "offset": 0
+        }
+        ```
+
+        2. Filters to fetch the list of participants with role **provider** and **payor**.
+        ```
+        {
+          "filters": {
+            "roles": { "or": ["provider","payor"] }
+          }
+        }
+        ```
+
+        3. Filters to fetch the list of participants with participant name containing **Hospital**.
+        ```
+        {
+          "filters": {
+            "participant_name": { "contains": "Hospital" }
+          }
+        }
+        ```
+
+        4. Filters with nested fields, the below filter will return list of participants with the given ifsc code.
+        ```
+        {
+          "filters": {
+            "payment_details.ifsc_code": { "eq": "BANK0001234" }
+          }
+        }
+        ```
+
+
       security:
         - bearer_auth: []
       requestBody:
@@ -102,7 +185,7 @@ paths:
             schema:
               allOf:
                 - $ref: '#/components/schemas/ParticipantSearchRequest'
-                  
+
       responses:
         '200':
           description: OK
@@ -119,7 +202,7 @@ paths:
                         type: array
                         description: List of participants matching with the input search criteria
                         items:
-                          $ref: '#/components/schemas/ParticipantSearchRequest'
+                          $ref: '#/components/schemas/ParticipantUpdateRequest'
         '400':
           description: Client Error
           content:
@@ -173,7 +256,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
   /participant/delete:
-    post:  
+    post:
       tags:
         - Registry APIs
       description: This API is to delete a participant from the registry. API only does a soft delete of the participant.
@@ -192,7 +275,7 @@ paths:
                       type: string
                       description: Unique identifier of the participant on the HCX instance
                       example: "pcpt01@HCX01"
-                      
+
       responses:
         '200':
           description: OK
@@ -214,10 +297,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-  
+
 components:
   schemas:
-    
+
     ParticipantCreateRequest:
       required:
         - participate_name
@@ -230,7 +313,7 @@ components:
       properties:
         linked_registry_codes:
           type: array
-          items: 
+          items:
             type: string
             pattern: '^.+@[a-z]+$'
           description: Identifier of the participant in other registries. Each identifier shall be in a “normalised” notation having the structure “identifier@registry”, where registry is a unique code for the registry system and identifier is the unique id of the participant in that registry system. e.g. - facility001@hfr, to link the provider record to HFR record.
@@ -274,23 +357,23 @@ components:
         primaryMobile:
           type: string
           example: "9899912323"
-          description: Primary mobile number for claims related communication. 
+          description: Primary mobile number for claims related communication.
         additionalMobile:
           type: array
           items:
             type: string
           example: ["9100091000", "9899912323"]
           maxItems: 3
-          description: Additional/alternate mobile numbers of the participant. 
+          description: Additional/alternate mobile numbers of the participant.
         status:
           type: array
           items:
             type: string
             enum:
-            - Created
-            - Active
-            - InActive
-            - Blocked
+              - Created
+              - Active
+              - InActive
+              - Blocked
             default: Created
           description: Current status of the participant on the instance
         signing_cert_path:
@@ -307,95 +390,24 @@ components:
           type: object
           description: Default payment details (UPI or A/C Number + IFSC Code)
           additionalProperties: true
-          
+
     ParticipantSearchRequest:
       type: object
       additionalProperties: false
       properties:
-        participant_code:
-          type: string
-          description: Unique identifier of the participant on the HCX instance
-          example: "pcpt01@HCX01"
-        linked_registry_codes:
-          type: array
-          items: 
-            type: string
-            pattern: '^.+@[a-z]+$'
-          description: Identifier of the participant in other registries. Each identifier shall be in a “normalised” notation having the structure “identifier@registry”, where registry is a unique code for the registry system and identifier is the unique id of the participant in that registry system. e.g. - facility001@hfr, to link the provider record to HFR record.
-            The list of supported registry codes (e.g. hfr, rohini, etc) should be a configuration at the HCX instance level.
-        participant_name:
-          type: string
-          description: Human readable name for the participant
-        scheme_code:
-          type: string
-          default: "default"
-          description: name/code of the scheme provided by the payor. scheme_code is mandatory for all participants with role “payer”. If the payer wishes to use a single entry for all its schemes, the scheme_code value should be set to “default”.
-        roles:
-          type: array
-          items:
-            type: string
-            enum: ["provider", "payer", "agency.tpa", "agency.regulator", "research", "member.isnp", "agency.sponsor", "HIE/HIO.HCX"]
-          example: payer
-          description: Roles assigned to the participant as per the definition in the domain specifications. This will be used for access control.
-        address:
+        filters:
           type: object
-          description: Physical address of the facility including its geolocation
-          additionalProperties: true
-        primaryEmail:
-          type: string
-          format: email
-          description: Primary email id for claims related communication.
-        additionalEmail:
-          type: array
-          items:
-            type: string
-            format: email
-          maxItems: 3
-          description: Additional/alternative email ids of the participant. Maximum of 3 email addresses are allowed.
-        phone:
-          type: array
-          items:
-            type: string
-          example: ["080 40004000"]
-          maxItems: 3
-          description: Landline numbers of the provider. Maximum of 3 landline numbers are allowed.
-        primaryMobile:
-          type: string
-          example: "9899912323"
-          description: Primary mobile number for claims related communication. 
-        additionalMobile:
-          type: array
-          items:
-            type: string
-          example: ["9100091000", "9899912323"]
-          maxItems: 3
-          description: Additional/alternate mobile numbers of the participant. 
-        status:
-          type: array
-          items:
-            type: string
-            enum:
-            - Created
-            - Active
-            - InActive
-            - Blocked
-            default: Created
-          description: Current status of the participant on the instance
-        signing_cert_path:
-          type: string
-          description: uri/file path to signing certificate
-        encryption_cert:
-          type: string
-          description: uri/file path to encryption certificate
-        endpoint_url:
-          type: string
-          description: Default endpoint to make API calls
-          format: uri
-        payment_details:
-          type: object
-          description: Default payment details (UPI or A/C Number + IFSC Code)
-          additionalProperties: true
-    
+          description: Filter conditions should be provider in filters.
+          example: {"participant_code": { "eq": "pcpt01@HCX01" } }
+        limit:
+          type: number
+          description: Size of the search result should return in the response.
+          example: 10
+        offset:
+          type: number
+          description: Offset is used to omit a specified number of rows before the beginning of the result set.
+          example: 0
+
     ParticipantUpdateRequest:
       type: object
       required:
@@ -408,7 +420,7 @@ components:
           example: "pcpt01@HCX01"
         linked_registry_codes:
           type: array
-          items: 
+          items:
             type: string
             pattern: '^.+@[a-z]+$'
           description: Identifier of the participant in other registries. Each identifier shall be in a “normalised” notation having the structure “identifier@registry”, where registry is a unique code for the registry system and identifier is the unique id of the participant in that registry system. e.g. - facility001@hfr, to link the provider record to HFR record.
@@ -452,23 +464,23 @@ components:
         primaryMobile:
           type: string
           example: "9899912323"
-          description: Primary mobile number for claims related communication. 
+          description: Primary mobile number for claims related communication.
         additionalMobile:
           type: array
           items:
             type: string
           example: ["9100091000", "9899912323"]
           maxItems: 3
-          description: Additional/alternate mobile numbers of the participant. 
+          description: Additional/alternate mobile numbers of the participant.
         status:
           type: array
           items:
             type: string
             enum:
-            - Created
-            - Active
-            - InActive
-            - Blocked
+              - Created
+              - Active
+              - InActive
+              - Blocked
             default: Created
           description: Current status of the participant on the instance
         signing_cert_path:
@@ -485,7 +497,7 @@ components:
           type: object
           description: Default payment details (UPI or A/C Number + IFSC Code)
           additionalProperties: true
-          
+
     ResponseEnvelope:
       required:
         - timestamp
@@ -495,7 +507,7 @@ components:
           type: string
           description: Unix timestamp when the request is sent
           example: "1629057611000"
-    
+
     ErrorResponse:
       required:
         - error
@@ -520,8 +532,8 @@ components:
           description: Short description of the error
         trace:
           type: string
-          description: Long description supporting the Code 
-    
+          description: Long description supporting the Code
+
   securitySchemes:
     bearer_auth:
       type: http
