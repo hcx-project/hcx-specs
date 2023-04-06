@@ -60,7 +60,7 @@ paths:
     get:
       parameters:
         - in: path
-          name: participant_code   # Note the name is the same as in the path
+          name: participant_code
           required: true
           schema:
             type: string
