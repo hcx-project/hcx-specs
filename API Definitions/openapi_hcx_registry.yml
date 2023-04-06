@@ -70,16 +70,7 @@ paths:
             application/json:
               schema:
                 allOf:
-                  - $ref: '#/components/schemas/ResponseEnvelope'
-                  - type: object
-                    required:
-                      - participants
-                    properties:
-                      participant:
-                        type: array
-                        description: List of participants matching with the input search criteria
-                        items:
-                          $ref: '#/components/schemas/ParticipantSearchRequest'
+                  - $ref: '#/components/schemas/ParticipantSearchRequest'
         '400':
           description: Client Error
           content:
