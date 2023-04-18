@@ -58,6 +58,13 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
   /participant/read/{participant_code}:
     get:
+      parameters:
+        - in: path
+          name: participant_code
+          required: true
+          schema:
+            type: string
+          description: Unique identifier of the participant/scheme on the HCX instance   
       tags:
         - Registry APIs
       description: This API is to retrieve details of a single participant from the registry, using their participant code.
@@ -70,7 +77,7 @@ paths:
             application/json:
               schema:
                 allOf:
-                  - $ref: '#/components/schemas/ParticipantSearchRequest'
+                  - $ref: '#/components/schemas/ParticipantReadResponse'
         '400':
           description: Client Error
           content:
@@ -409,6 +416,96 @@ components:
           example: 0
 
     ParticipantUpdateRequest:
+      type: object
+      required:
+        - participant_code
+      additionalProperties: false
+      properties:
+        participant_code:
+          type: string
+          description: Unique identifier of the participant/scheme on the HCX instance
+          example: "pcpt01@HCX01"
+        linked_registry_codes:
+          type: array
+          items:
+            type: string
+            pattern: '^.+@[a-z]+$'
+          description: Identifier of the participant in other registries. Each identifier shall be in a “normalised” notation having the structure “identifier@registry”, where registry is a unique code for the registry system and identifier is the unique id of the participant in that registry system. e.g. - facility001@hfr, to link the provider record to HFR record.
+            The list of supported registry codes (e.g. hfr, rohini, etc) should be a configuration at the HCX instance level.
+        participant_name:
+          type: string
+          description: Human readable name for the participant
+        scheme_code:
+          type: string
+          default: "default"
+          description: name/code of the scheme provided by the payor. scheme_code is mandatory for all participants with role “payer”. If the payer wishes to use a single entry for all its schemes, the scheme_code value should be set to “default”.
+        roles:
+          type: array
+          items:
+            type: string
+            enum: ["provider", "payer", "agency.tpa", "agency.regulator", "research", "member.isnp", "agency.sponsor", "HIE/HIO.HCX"]
+          example: payer
+          description: Roles assigned to the participant as per the definition in the domain specifications. This will be used for access control.
+        address:
+          type: object
+          description: Physical address of the facility including its geolocation
+          additionalProperties: true
+        primaryEmail:
+          type: string
+          format: email
+          description: Primary email id for claims related communication.
+        additionalEmail:
+          type: array
+          items:
+            type: string
+            format: email
+          maxItems: 3
+          description: Additional/alternative email ids of the participant. Maximum of 3 email addresses are allowed.
+        phone:
+          type: array
+          items:
+            type: string
+          example: ["080 40004000"]
+          maxItems: 3
+          description: Landline numbers of the provider. Maximum of 3 landline numbers are allowed.
+        primaryMobile:
+          type: string
+          example: "9899912323"
+          description: Primary mobile number for claims related communication.
+        additionalMobile:
+          type: array
+          items:
+            type: string
+          example: ["9100091000", "9899912323"]
+          maxItems: 3
+          description: Additional/alternate mobile numbers of the participant.
+        status:
+          type: array
+          items:
+            type: string
+            enum:
+              - Created
+              - Active
+              - InActive
+              - Blocked
+            default: Created
+          description: Current status of the participant on the instance
+        signing_cert_path:
+          type: string
+          description: uri/file path to signing certificate
+        encryption_cert:
+          type: string
+          description: uri/file path to encryption certificate
+        endpoint_url:
+          type: string
+          description: Default endpoint to make API calls
+          format: uri
+        payment_details:
+          type: object
+          description: Default payment details (UPI or A/C Number + IFSC Code)
+          additionalProperties: true
+
+    ParticipantReadResponse:
       type: object
       required:
         - participant_code
