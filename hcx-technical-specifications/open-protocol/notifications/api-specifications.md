@@ -34,7 +34,7 @@ Get the list of notification types supported by the network along with their cla
 
 As evident sanctity of the master list of notification is important for effective notification service on the network, hence it is recommended that master list of the notification is given the same treatment as an operator would give to its code for the switch.
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/topic/list" method="post" %}
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/list" method="post" %}
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
@@ -59,12 +59,6 @@ Input would be the topic\_code and payloads containing use case related details 
 /notification/subscribe&#x20;
 
 {% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscribe" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
-{% endswagger %}
-
-/notification/on\_subscribe
-
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/on_subscribe" method="post" %}
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
