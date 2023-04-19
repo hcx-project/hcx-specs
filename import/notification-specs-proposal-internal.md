@@ -16,7 +16,7 @@ Key benefits of such a notification infrastructure would be:
 4. Better user experience
 5. Improved support and risk mitigation
 
-This RFC describes such needs and proposed enhancements to facilitate such information exchange in the network.
+This section of the specification describes such needs and proposed enhancements to facilitate such information exchange in the network.
 
 ### Abstract <a href="#_lz5afctazyhj" id="_lz5afctazyhj"></a>
 
