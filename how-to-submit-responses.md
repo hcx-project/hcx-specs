@@ -14,7 +14,7 @@ Key resources for this version (v0.8) are available as follows:
 
 * [This GitBook documentation](./) is the reader friendly published documentation for the current version.
 * Source code for documentation and specifications is available in [this GitHub repo](https://github.com/hcx-project/hcx-specs/tree/v0.8).
-* Discussions and consultation questions are listed in the github repo’s [discussion forum here](https://github.com/hcx-project/hcx-specs/discussions).
+* Discussions about the specifications are in the github repo’s [discussion forum](https://github.com/hcx-project/hcx-specs/discussions) and on the [discord server](https://discord.gg/jxMTMh5RYw).
 
 ### Contributing to the specs
 
@@ -27,7 +27,7 @@ Please use the github discussion forum to ask questions, make suggestions, and r
 Issues can be raised to bring attention to any shortcoming in the specifications ( e.g. API specifications, Domain Data specifications - eObjects, Documents, Value Sets, Implementation Guide etc.) using one of the following mechanisms:
 
 1. A confirmed issue can be raised as a github issue against the repo [here](https://github.com/hcx-project/hcx-specs/issues).
-2. If unsure about the issue, it can be raised as a [discussion](https://github.com/hcx-project/hcx-specs/discussions) with the community and can be converted to an issue on confirmation.
+2. If unsure about the issue, it can be raised as a discussion in GitHub or Discord with the community and can be converted to an issue on confirmation.
 
 We aim to make hcx-specifications one of the best open community projects with your help. In order to achieve this, we expect the participants to follow [GitHub's community Guidelines](https://docs.github.com/en/github/site-policy/github-community-guidelines) and adhere to the [GitHub Community Forum Code of Conduct](https://docs.github.com/en/github/site-policy/github-community-forum-code-of-conduct) while participating in the forum.
 
