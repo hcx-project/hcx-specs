@@ -84,3 +84,4 @@ The payload of response to a fetch request should contain all information relate
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_fetch.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_fetch.yaml)
 {% endswagger %}
 
+Full API specifications in OpenAPI 3.0 format are available [here](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi\_hcx\_fetch.yaml).
