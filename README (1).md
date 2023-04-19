@@ -34,7 +34,7 @@ This results in:
 * Poor scalability
 * Poor patient experience
 
-Inspired by the [recommendations of the Joint Working Group of NHA and IRDAI (2019)](https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report\_11-09-19.pdf), these specifications have been developed over the last 12 months by 50+ volunteers from across the healthcare ecosystem (including Insurers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth.
+Inspired by the [recommendations of the Joint Working Group of NHA and IRDAI (2019)](https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report\_11-09-19.pdf), these specifications have been developed over the last two years by 100+ volunteers from across the healthcare ecosystem (including Insurers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth.
 
 The goal is to create an open, widely agreed Health Claims data Exchange Specifications as a public good that can be adopted. Specifications in this context refer to the blueprint of each aspect of the envisioned claims network and are fundamental to the working of the network. They have been carefully designed to be open to support technology and vendor neutrality, evolvable over a period of time thereby helping adapt to changing needs, enable and not restrict innovation or inclusion. These Health Claims Exchange Specifications for Cashless Insurance are now being published for public consultation and we seek your feedback for the same.
 
