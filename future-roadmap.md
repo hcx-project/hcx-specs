@@ -4,18 +4,15 @@ description: Details of key enhancements planned in future releases
 
 # Future Roadmap
 
-{% hint style="danger" %}
-NOTE: This section will be revisited for v0.8
-{% endhint %}
+Following are the list of key enhancements planned by the working groups in the upcoming releases of the protocol:
 
-Following are the list of key enhancements planned in the future releases of the protocol:
-
-* Notification facility to enable notifications to interested participants during different stages of processing cycles
+* Mapping of new use cases - Reimbursement, OPD, Pharmacy, Diagnostics etc.&#x20;
+* Detailed approach on handling attchements/supporting information&#x20;
+* Improvement in semantic interoperability&#x20;
+  * Defining higher confidence, harmonised valuesets based on ecosystem input
+  * Valueset discoverabiility through terminology registry and services&#x20;
 * Further detailing of the domain objects - descriptions, examples, etc.
-* Revised approach on Search APIs to allow discovery of claims related information and related access control rules
-* Model business policies in various operational areas
-* Guidelines on Technical Operations of the HCX network as indicated in key specifications.
-* Finalisation of search APIs
-* Enhancements to digital encoding of policies
-* Support for the reimbursement use case
+* Examples of typical use cases
+* Guidelines on Technical Operations of the HCX swicth(es)/network
+* Enhancements to digital encoding of insurance plans
 * Enhancements in model business policies in various operational areas
