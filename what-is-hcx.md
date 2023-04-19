@@ -27,15 +27,16 @@ The figure below shows a simple depiction of a health claims network facilitated
 
 ### Key Use cases/Workflows
 
-In its initial version, HCN is focused on facilitating message exchange for the cashless claims process and envisions to facilitate the following information flows:
+In its current version, specifications are focused on facilitating message exchange for the cashless claims process and envisions to facilitate the following information flows:
 
 1. Get provider/payor details
 2. Eligibility check
-3. Pre auth request flow
-4. Claims request flow
+3. Preauthorization request flow
+4. Claims request flow (including Enhancements, Discharge and Settlement)
 5. Payment notification
 6. Payment acknowledgement
-7. Search/fetch claims data for status checks, regulatory compliance, etc.
+7. Status check&#x20;
+8. Fetch data for regulatory compliance, etc.
 
 ### Key constituents
 
@@ -44,9 +45,9 @@ The claims network will consist of the following key building blocks:
 1. **Specifications** - this layer defines the blueprint for different aspects of the claims network. These include communication protocols, data packet specifications, Taxonomies, privacy and security specifications, network policies (onboarding and deboarding rules), business rules, operational specifications, etc. Please note that the document intentionally calls these artifacts as specifications to indicate that they become standards only after a “de jure” or “de facto” adoption by the ecosystem.
 2. **Reference Health Claims Exchange (aka switch) software** - A reference gateway implementation build as per the standards defined above. The main goal here will be to provide fundamental software building blocks of the network to enable faster adoption by the ecosystem.
 3. **Compliance sandbox** - Implemented using the above reference software, the key goal of the sandbox will be to help the ecosystem test its specific components against the network standards defined above and get certified to become part of the network.
-4. **Health Claim Platform runtime(s)** - Operating instances of the health claims platform that enable real-world claims interactions on the network. Like with the internet and email example, there can be multiple such running instances that are expected to be interoperable by adhering to the standards defined as in #1 above.
-5. **Participating platforms** - These are digital systems of the network participants (Payors, Providers, Regulators, Observers, etc) that sit on the edges of the claims network and initiate/receive the communication happening through the network. These would be analogous to client/servers in the internet analogy and various email service providers in the email analogy.
+4. **Health Claim Exchange runtime(s)** - Operating instances of the health claims platform that enable real-world claims interactions on the network. Like with the internet and email example, there can be multiple such running instances that are expected to be interoperable by adhering to the standards defined as in #1 above.
+5. **Participating systems** - These are digital systems of the network participants (Payors, Providers, Regulators, Observers, etc) that sit on the edges of the claims network and initiate/receive the communication happening through the network. These would be analogous to client/servers in the internet analogy and various email service providers in the email analogy.
 
 The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
-HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](broken-reference)). What challenges do you foresee in both scenarios - single HCX for all stakeholders v/s multiple connected HCXs? What would be your criteria to choose one scenario over the other?
+HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol.md#relay)).&#x20;
