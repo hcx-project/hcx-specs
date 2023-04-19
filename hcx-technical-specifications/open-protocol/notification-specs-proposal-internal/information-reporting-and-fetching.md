@@ -19,9 +19,9 @@ Such information can be made available to the interested parties in either of th
 
 ### Information Reporting
 
-Information reporting can be enabled by leveraging the [notifications](../import/notification-specs-proposal-internal.md) capability of the protocol. Since the information to be reported may contain PII information of the patients & other sensitive information, the “PII carrying workflow notification” category of notifications should be used for this purpose.
+Information reporting can be enabled by leveraging the [notifications](../../../import/notification-specs-proposal-internal.md) capability of the protocol. Since the information to be reported may contain PII information of the patients & other sensitive information, the “PII carrying workflow notification” category of notifications should be used for this purpose.
 
-The steps and process for PII carrying workflow notifications are detailed in the [Notification specifications](open-protocol/notifications/categories.md#workflow-notification).
+The steps and process for PII carrying workflow notifications are detailed in the [Notification specifications](../notifications/categories.md#workflow-notification).
 
 ### Fetching Information
 
@@ -33,7 +33,7 @@ Following two APIs will be enabled for claim information fetching using EOB reso
 * _**eob/on\_fetch**_: This is the callback API via which the requested information is sent back to the third party via the HCX switch.
 
 **Request Payload**\
-Similar to [Status API](open-protocol/key-components-building-blocks/api-structure.md#operational-apis) where a [Task](../hcx-domain-specifications/domain-data-models/#task) FHIR resource is used as the payload to request for status of a specific API call, the Fetch API shall also use Task resource to request for information about a specific claim workflow. The Task resource shall contain details about the claim workflow for which the information is being requested and optionally the purpose of the fetch request.
+Similar to [Status API](../key-components-building-blocks/api-structure.md#operational-apis) where a [Task](../../../hcx-domain-specifications/domain-data-models/#task) FHIR resource is used as the payload to request for status of a specific API call, the Fetch API shall also use Task resource to request for information about a specific claim workflow. The Task resource shall contain details about the claim workflow for which the information is being requested and optionally the purpose of the fetch request.
 
 Sample Task resource as Fetch API request payload:
 
