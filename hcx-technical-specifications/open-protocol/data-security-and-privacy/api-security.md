@@ -14,24 +14,26 @@ All participant systems (e.g.: providers, payers) should obtain an API key from 
 
 ### **Steps to obtain the API key:**
 
-After a successful verification and onboarding of a participant system onto the participant registry, the HCX instance managing the registry shall share the following details via email, SMS, or both with the participant system:
+After a successful verification and onboarding of a participant system onto the participant registry, use the following details to generate a API key:
 
-* _client\_id_: this is the identifier of the participant in the participant registry.
-* _client\_secret_: a unique secret is generated for the participant by the HCX instance. The client\_secret value shall be stored in the participant registry in an encrypted format and shall not be sent in the registry APIs.
+* _username_: This is the primary email address of the participant in the registry.
+* _password_: This is the password that is set during the onboarding onto the registry.  
 
-The participant system can call ‘_/token/generate_’ API along with the client\_id and client\_secret they have received to obtain the API key.
+The participant system can call ‘_/auth/realms/{realm-name}/protocol/openid-connect/token_’ API along with the username and password to obtain the API key.
 
 ```
-POST /token/generate
-Content-Type: application/json
+POST /auth/realms/{realm-name}/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
 Request-Body:
  {
-   "client_id": "client_id received by the participant",
-   "client_secret": "client_secret received by the participant"
+   "client_id": "", // The client id of the authentication provider.
+   "username": "", // This is the primary email of the participant who is attempting to authenticate.
+   "password": "", // This is the password of the participant.
+   "grant_type": "password", // This field specifies the grant type that is being used to obtain the token.
  }
 ```
 
-HCX instance would respond with the API token upon successful validation of the client\_id and client\_secret values:
+HCX instance would respond with the API token upon successful validation of the username and password values:
 
 ```
 HTTP/1.1 200 OK
@@ -39,10 +41,14 @@ Content-Type: application/json
 Cache-Control: no-cache, no-store
 Response-Body:
  {
-   "access_token": "the API key, a JWT access token",
-   "issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
-   "token_type": "Bearer",
-   "expires_in": 300
+   "access_token": "", // This is the token that the client can use to access protected resources on the server. The token is a JSON Web Token (JWT) that contains claims about the user and the client
+   "expires_in": 6000, // The number of seconds until the access token expires. After this time, the client must obtain a new access token.
+   "refresh_expires_in": 300, // The number of seconds until the refresh token expires. After this time, the client must obtain a new refresh token. 
+   "refresh_token": "", // A token that the client can use to obtain a new access token after the current access token expires. The refresh token is also a JWT that contains claims about the user and the client. 
+   "token_type": "Bearer", // The type of token, which is usually "bearer".
+   "not-before-policy": 1607576887, // The time before which the token is not valid.
+   "session_state": "a1415249-c4eb-49e1-97ea-42c7c91db874", // A unique identifier for the user's session.
+   "scope": "profile email" // The scopes that the client has requested access to.
  }
 ```
 
@@ -55,21 +61,21 @@ API keys are expected to be in JWT format and signed as per JSON web signature (
 ```
 {
   "typ":"JWT",
-  "alg":"HS256"
+  "alg":"RS256"
 }
 ```
 
 * JWS Payload should be a claim set containing the mandatory claims _**jti**_, _**iss**_, _**sub**_, _**iat**_ and _**exp**_.
   * jti - unique identifier for the JWT
   * iss - HCX instance identifier
-  * sub - client\_id of the participant
+  * sub - authentication provider id of the participant in the registry.
   * iat - unix timestamp at which the JWT is issued
   * exp - the expiration time after which the JWT must not be accepted for processing
-* JWS Signature must be computed in the manner defined for HS256 algorithm over the input ASCII(BASE64URL(UTF8(JOSE Header)) || '.' || BASE64URL(JWS Payload)) using the client\_secret value of the participant.
+* JWS Signature must be computed in the manner defined for RS256 algorithm over the input ASCII(BASE64URL(UTF8(JOSE Header)) || '.' || BASE64URL(JWS Payload)) using the private key of the authentication provider.
 
 ### **Revoking API Keys**
 
-HCX instances can revoke the API key of a participant by generating a new client\_secret and updating it in the participant registry. The participant system has to generate a new API key by calling the ‘/token/generate’ API with the new client\_secret value.
+HCX instances can revoke the API key of a participant by updating a new password in the participant registry. The participant system has to generate a new API key by calling the ‘auth/realms/swasth-health-claim-exchange/protocol/openid-connect/token’ API with the new password value.
 
 ## **Securing Participant System APIs**
 
