@@ -24,9 +24,9 @@ As evident, creating functional specifications will require a robust process and
 
 Hence, the development and maintenance of standards must follow an open and consultative process with widely inclusive, committed groups that can bring together necessary skills, viewpoints, and networks.
 
-Swasth proposes to maintain and enhance specifications using an inclusive, open, and consultative process. The broad outline of the process would be:
+​The HCX community proposes to maintain and improve specifications through an inclusive, open, and consultative process. The broad outline of the process would be:
 
-1. Swasth will form a governance council for specifications with representation from across the healthcare ecosystem (insurance, TPA, patient groups, provider representatives, small provider associations, academic institutions/experts in the area, the regulator, and relevant public bodies)
+1. ​A governance council would be established with representation from across the healthcare ecosystem (insurance, TPA, patient groups, provider representatives, small provider associations, academic institutions/experts in the area, the regulator, and relevant public bodies)
 2. The governance council will facilitate the formation of topic-specific working groups
 3. Working groups will create clear criteria for the evaluation of a proposal
 4. Ideas for new specifications/enhancement is proposed by one of the group members
@@ -40,7 +40,3 @@ Swasth proposes to maintain and enhance specifications using an inclusive, open,
 12. Specifications are made available through most permissible licenses like MIT or Creative Commons
 13. Swasth will also create a fully independent ethics and conflicts committee to act as an appellate authority for all our work, including stewardship of specifications
 14. All deliberations, minutes, and documents produced by the ethics and conflicts committee, specifications governance council, and working groups will be made publicly available
-
-## Proposed Governance Approach for Specifications at iSPIRT
-
-Post one year of finalizing the first version of these specifications, iSPIRT Foundation proposes to govern all the health claims specifications and develop additional specifications including Health Claims Protocol and associated protocols related to multi-party dispute resolution system, fraud registry, regulatory supervision, HCX gateway, and Policy markup language. Further APIs and Standards for other claim artefacts will be developed by iSPIRT as and when required for use cases. iSPIRT will organize a governance group with Swasth as one of the members to govern the development of the specifications.
