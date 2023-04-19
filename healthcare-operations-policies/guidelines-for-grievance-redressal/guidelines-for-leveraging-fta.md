@@ -52,7 +52,7 @@ Fast Track Arbitration is a type of arbitration wherein no oral hearings are con
 
 #### **For Contracts between an HCX Operator and its participants**
 
-The “Terms and Conditions” of listing and participation on the HCX exchange constitute the contract between the HCX Operator and the Participant. **** This contract must be made Fast Track Arbitration friendly. To do so:&#x20;
+The “Terms and Conditions” of listing and participation on the HCX exchange constitute the contract between the HCX Operator and the Participant. This contract must be made Fast Track Arbitration friendly. To do so:&#x20;
 
 1. The contract must anticipate the kinds of disputes, specify the evidence to be provided for each and must specify a formula to calculate damages&#x20;
 2. The contract must enforce Fast Track Arbitration, include an automatic arbitrator appointment process, and specify an arbitration institution

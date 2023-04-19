@@ -1,5 +1,5 @@
 ---
-description: Key terminologies used in notifications specification
+description: Key terminologies used in notifications
 ---
 
 # Terminology
