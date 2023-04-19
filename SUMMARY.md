@@ -26,7 +26,7 @@
       * [API specifications](hcx-technical-specifications/open-protocol/notifications/api-specifications.md)
       * [List of key topics](hcx-technical-specifications/open-protocol/notifications/list-of-key-topics.md)
       * [Future considerations](hcx-technical-specifications/open-protocol/notifications/future-considerations.md)
-  * [Third party Information sharing](hcx-technical-specifications/open-protocol/notification-specs-proposal-internal/information-reporting-and-fetching.md)
+    * [Third party Information sharing](hcx-technical-specifications/open-protocol/information-reporting-and-fetching.md)
   * [Digital Network Policies](hcx-technical-specifications/digital-network-policies.md)
 * [Domain Specifications](hcx-domain-specifications/README.md)
   * [Domain Data Models](hcx-domain-specifications/domain-data-models/README.md)

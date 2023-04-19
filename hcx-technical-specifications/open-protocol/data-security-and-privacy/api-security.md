@@ -17,9 +17,11 @@ All participant systems (e.g.: providers, payers) should obtain an API key from 
 After a successful verification and onboarding of a participant system onto the participant registry, use the following details to generate a API key:
 
 * _username_: This is the primary email address of the participant in the registry.
-* _password_: This is the password that is set during the onboarding onto the registry.  
+* _password_: This is the password that is set during the onboarding onto the registry.
 
 The participant system can call ‘_/auth/realms/{realm-name}/protocol/openid-connect/token_’ API along with the username and password to obtain the API key.
+
+> {realm-name} is the security realm name used by the HCX Gateway insteance. Recommended name for the realm is "hcx", but gateway instances are free to use a different name.
 
 ```
 POST /auth/realms/{realm-name}/protocol/openid-connect/token
@@ -75,7 +77,7 @@ API keys are expected to be in JWT format and signed as per JSON web signature (
 
 ### **Revoking API Keys**
 
-HCX instances can revoke the API key of a participant by updating a new password in the participant registry. The participant system has to generate a new API key by calling the ‘auth/realms/swasth-health-claim-exchange/protocol/openid-connect/token’ API with the new password value.
+HCX instances can revoke the API key of a participant by updating a new password in the participant registry. The participant system has to generate a new API key by calling the ‘auth/realms/{realm-name}/protocol/openid-connect/token’ API with the new password value.
 
 ## **Securing Participant System APIs**
 
