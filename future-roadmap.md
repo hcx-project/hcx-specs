@@ -1,10 +1,10 @@
 ---
-description: Details of key enhancements planned in future releases
+description: Key enhancements planned in future releases
 ---
 
 # Future Roadmap
 
-Following are the list of key enhancements planned by the working groups in the upcoming releases of the protocol:
+Following are the list of key enhancements planned by the working groups in the future releases of the protocol:
 
 * Mapping of new use cases - Reimbursement, OPD, Pharmacy, Diagnostics etc.&#x20;
 * Detailed approach on handling attchements/supporting information&#x20;
