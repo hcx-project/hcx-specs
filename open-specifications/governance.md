@@ -26,7 +26,7 @@ Hence, the development and maintenance of standards must follow an open and cons
 
 ​The HCX community proposes to maintain and improve specifications through an inclusive, open, and consultative process. The broad outline of the process would be:
 
-1. ​A governance council would be established with representation from across the healthcare ecosystem (insurance, TPA, patient groups, provider representatives, small provider associations, academic institutions/experts in the area, the regulator, and relevant public bodies)
+1. ​[Swasth](https://swasthalliance.org) would establish a governance council with representation from across the healthcare ecosystem (insurance, TPA, patient groups, provider representatives, small provider associations, academic institutions/experts in the area, the regulator, and relevant public bodies)
 2. The governance council will facilitate the formation of topic-specific working groups
 3. Working groups will create clear criteria for the evaluation of a proposal
 4. Ideas for new specifications/enhancement is proposed by one of the group members
