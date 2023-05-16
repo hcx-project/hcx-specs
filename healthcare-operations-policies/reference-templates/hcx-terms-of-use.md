@@ -24,5 +24,8 @@ In keeping with the endeavour to ensure rapid dispute resolution between all ent
 
 The aim is to create terms of use and privacy policy drafts that are documents that are model templates that any prospective HCX Operator can adopt as-is, though the Operator would, of course, be free to make modifications, or to adopt completely different terms. However, since these documents will have been vetted by the entire health claims ecosystem, it is unlikely that an operator would adopt entirely different terms.
 
-### Template - HCX Terms of use
+### Template - [HCX Terms of use](https://docs.google.com/document/d/1Hwqln\_lGPCayoxYLzXtmcwkPPG3IIADcOxwDdQ\_rnEk/edit)
 
+{% embed url="https://docs.google.com/document/d/1Hwqln_lGPCayoxYLzXtmcwkPPG3IIADcOxwDdQ_rnEk/edit" %}
+Template - HCX terms of use
+{% endembed %}
