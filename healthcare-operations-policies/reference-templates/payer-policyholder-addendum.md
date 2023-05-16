@@ -58,12 +58,10 @@ In the event the amount paid is less than the claim, though the policyholder did
 
 However, the arbitration clause itself needs to be modified to be FTA friendly.
 
-### Template - [Addendum Payer-Policyholder contract](https://docs.google.com/document/d/11XI-jNGQrVWDNSAEMgU-p1h2FI-i3gXThbXOv3bo-Yc/edit)
+### Template - [Addendum Payer-Policyholder contract](https://docs.google.com/document/d/1qyB5zHe98kXyL23Wr67MFygpZsdLOEq5wWKD6SKDD28/edit?usp=sharing)
 
 {% hint style="info" %}
 Payers may execute addendums in the case of existing contracts. For new contracts, Payers may simply incorporate the clauses mentioned in the addendum into their drafts.
 {% endhint %}
 
-{% embed url="https://docs.google.com/document/d/11XI-jNGQrVWDNSAEMgU-p1h2FI-i3gXThbXOv3bo-Yc/edit" %}
-Template - Payer-Policyholder contract
-{% endembed %}
+{% embed url="https://docs.google.com/document/d/1qyB5zHe98kXyL23Wr67MFygpZsdLOEq5wWKD6SKDD28/edit?usp=sharing" %}

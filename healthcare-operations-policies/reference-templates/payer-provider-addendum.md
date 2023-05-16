@@ -26,12 +26,10 @@ In addition, the temaplte addendum also contains suggestions for modification of
 
 In addition to the guidelines metioned in this document (specially the guidance for grievance redressal) the template is based on the [following sample agreement](https://docs.google.com/document/d/1QZdEANQ\_hAHqTJ9GAMkGDk1OpqLRzU0s50M5wftHKAA/edit) between a Payor and a Provider. The clauses referred to in the addendum have been taken from the sample agreement.&#x20;
 
-### Template - [Addendum to Payer-Provider contract](https://docs.google.com/document/d/11MC1rLDW4NN54RKPgz3VINJKz3zHH6RyFj2QAKvIdbw/edit)
+### Template - [Addendum to Payer-Provider contract](https://docs.google.com/document/d/13-NcL-TFSj2ownxDKc7X1GXU2wvwyk13\_F8GJNrux9Q/edit?usp=sharing)
 
 {% hint style="info" %}
 Payers may execute addendums in the case of existing contracts. For new contracts, Payers may simply incorporate the clauses mentioned in the addendum into their drafts.
 {% endhint %}
 
-{% embed url="https://docs.google.com/document/d/11MC1rLDW4NN54RKPgz3VINJKz3zHH6RyFj2QAKvIdbw/edit" %}
-Template - Payer-Provider contract
-{% endembed %}
+{% embed url="https://docs.google.com/document/d/13-NcL-TFSj2ownxDKc7X1GXU2wvwyk13_F8GJNrux9Q/edit?usp=sharing" %}

@@ -6,7 +6,7 @@ description: >-
 
 # Guidelines for leveraging FTA
 
-<mark style="color:orange;">This section presents key aspects of simplifying the resolution process and leveraging Fast track arbritation as enablers of faster dispute resolution and better ecosystem experience in the HCX network enabled ecosystem.</mark>&#x20;
+This section presents key aspects of simplifying the resolution process and leveraging Fast track arbritation as enablers of faster dispute resolution and better ecosystem experience in the HCX network enabled ecosystem.&#x20;
 
 #### **Formation of Dispute Resolution Facilitation Council (DRFC) at HCX**
 
@@ -28,7 +28,7 @@ However, the parties can choose to not go to the IRDAI Ombudsman and instead cho
 
 To enable this step, the template contracts recommended by HCX must contain arbitration clauses and must be fast track arbitration friendly. The following section details how HCX can use these template contracts to facilitate rapid and inexpensive dispute resolution for all parties. However, the arbitration clauses can not be binding for any case where a dispute resolution method or jurisdiction is specified by the law governing the insurance sector.
 
-<mark style="color:orange;">Leveraging FTA will involve:</mark>
+Leveraging FTA will involve:
 
 ### **HCX Operator facilitation of dispute resolution- Types of Contracts and facilitation**
 
@@ -57,7 +57,7 @@ The “Terms and Conditions” of listing and participation on the HCX exchange 
 1. The contract must anticipate the kinds of disputes, specify the evidence to be provided for each and must specify a formula to calculate damages&#x20;
 2. The contract must enforce Fast Track Arbitration, include an automatic arbitrator appointment process, and specify an arbitration institution
 
-Current specifications have tried to facilitate this process for all by creating reference template contract [here](broken-reference). The fact that an HCX operator has adopted an FTA template, greatly increases its credibility and trust for all participants and will create a strong incentive for HCX operators to ensure SLAs and good governance.
+Current specifications have tried to facilitate this process for all by creating reference template contract [here](../reference-templates/). The fact that an HCX operator has adopted an FTA template, greatly increases its credibility and trust for all participants and will create a strong incentive for HCX operators to ensure SLAs and good governance.
 
 In addition, HCX operator may facilitate this further by specifying a panel of three to ten Arbitration Institutions/Dispute Resolution Platforms for any party to choose from.
 
@@ -67,8 +67,8 @@ HCX can play an important role to play in facilitating Rapid Dispute Resolution 
 
 In this regard, policy guidelines working group has worked on “model addendums” for the different types of contracts between the participants. At this time there are reference model addendums are provided for two key relationships:
 
-1. [Payer-Provider addendum template](broken-reference)
-2. [Payer-Policyholder addendum template](broken-reference)
+1. [Payer-Provider addendum template](../reference-templates/payer-provider-addendum.md)
+2. [Payer-Policyholder addendum template](../reference-templates/payer-policyholder-addendum.md)
 
 The HCX specifications encourages the HCX netwrok participants to adopt these model contract addendums. The promise of rapid dispute resolution is a fundamentally important service standard and will aid the  competitive in service provisioning standards.&#x20;
 
