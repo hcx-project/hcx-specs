@@ -33,10 +33,15 @@ paths:
               schema:
                 type: object
                 properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
                   user_id:
                     type: string
                     description: Machine generated/readable unique identifier of the user on the HCX instance.
                     example: "user01@HCX01"
+
 
         '400':
           description: Client Error
@@ -232,6 +237,20 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  user_id:
+                    type: string
+                    description: Machine generated/readable unique identifier of the user on the HCX instance.
+                    example: "user01@HCX01"
+
         '400':
           description: Client Error
           content:
@@ -274,6 +293,20 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  user_id:
+                    type: string
+                    description: Machine generated/readable unique identifier of the user on the HCX instance.
+                    example: "user01@HCX01"
+
         '400':
           description: Client Error
           content:
@@ -293,13 +326,58 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
+  /user/update/tenant_roles:
+    post:
+      tags:
+        - Registry APIs
+      description: This API is to update a tenant roles for the user.
+      security:
+        - bearer_auth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - type: object
+                  required:
+                    - user_id
+                  properties:
+                    user_id:
+                      type: string
+                      description: Unique identifier of the user on the HCX instance
+                      example: "user01@HCX01"
+                    tenant_roles:
+                      type: array
+                      items:
+                        type: object
+                      description: Base tenant of the admin user and roles
+                      example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  user_id:
+                    type: string
+                    description: Machine generated/readable unique identifier of the user on the HCX instance.
+                    example: "user01@HCX01"
+
+
+
+
 components:
   schemas:
 
     UserCreateRequest:
       required:
         - user_name
-        - tenant_roles
         - created_by
       type: object
       properties:
@@ -322,12 +400,6 @@ components:
         linked_user_id:
           type: string
           description: User ID in the source system
-        tenant_roles:
-          type: array
-          items:
-            type: object
-          description: Base tenant of the admin user
-          example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
         created_by:
           description: participant_code or user_id  of the created_by user
           type: string
@@ -381,12 +453,6 @@ components:
         linked_user_id:
           type: string
           description: User ID in the source system
-        tenant_roles:
-          type: array
-          items:
-            type: object
-          description: Base tenant of the admin user and roles
-          example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
         created_by:
           description: participant_code or user id  of the created user
           type: string
