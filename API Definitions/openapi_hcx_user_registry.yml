@@ -11,7 +11,6 @@ tags:
   - name: Registry APIs
     description: HCX user registry APIs
 paths:
-
   /user/create:
     post:
       tags:
@@ -202,7 +201,7 @@ paths:
                         type: array
                         description: List of users matching with the input search criteria
                         items:
-                          $ref: '#/components/schemas/UserUpdateRequest'
+                          $ref: '#/components/schemas/UserReadResponse'
         '400':
           description: Client Error
           content:
@@ -330,7 +329,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  /user/add:
+  participant/user/add:
     post:
       tags:
         - Registry APIs
@@ -356,7 +355,7 @@ paths:
                       items:
                         type: object
                       description: List of the users to be added to a participant.
-                      example: [{"user_id": "user01", "roles": "viewer"},{"user_id": "user02", "roles": "config-manager"}]
+                      example: [{"user_id": "user01", "role": "viewer"},{"user_id": "user02", "role": "config-manager"}]
       responses:
         '200':
           description: OK
@@ -392,7 +391,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  /user/remove:
+  participant/user/remove:
     post:
       tags:
         - Registry APIs
@@ -482,6 +481,12 @@ components:
         linked_user_id:
           type: string
           description: User ID in the source system
+        tenant_roles:
+          type: array
+          items:
+            type: object
+          description: Base tenant of the admin user
+          example: [{"participant_code":"pcpt@hcx","role":"admin"}]  
         created_by:
           description: participant_code or user_id  of the created_by user
           type: string
@@ -574,7 +579,7 @@ components:
           items:
             type: object
           description: Base tenant of the admin user
-          example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
+          example: [{"participant_code":"pcpt@hcx","role":"admin"}]
         created_by:
           description: participant_code or user id  of the created user
           type: string
