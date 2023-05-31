@@ -19,9 +19,9 @@ Such information can be made available to the interested parties in either of th
 
 ### Information Reporting
 
-Information reporting can be enabled by leveraging the [notifications](../../import/notification-specs-proposal-internal.md) capability of the protocol. Since the information to be reported may contain PII information of the patients & other sensitive information, the “PII carrying workflow notification” category of notifications should be used for this purpose.
+Information reporting can be enabled by leveraging the [notifications](notification-specs-proposal/) capability of the protocol. Since the information to be reported may contain PII information of the patients & other sensitive information, the “PII carrying workflow notification” category of notifications should be used for this purpose.
 
-The steps and process for PII carrying workflow notifications are detailed in the [Notification specifications](notifications/categories.md#workflow-notification).
+The steps and process for PII carrying workflow notifications are detailed in the [Notification specifications](notification-specs-proposal/categories.md#workflow-notification).
 
 ### Fetching Information
 
