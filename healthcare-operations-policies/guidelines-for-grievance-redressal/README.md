@@ -24,7 +24,7 @@ Final operational policies for grievance redressal are expected to be drafted by
 Drafting and evolving an efficient and truly implementable policy for grievance resolution would need active participation from the HCX ecosystem. Keeping this in mind, the following high level approach is proposed in line with the overall [Approach for Open Specifications](../../open-specifications/governance.md):
 
 1. Like with the specifications so far, constitute a new working group for Dispute Resolution policies.
-2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](<../../README (1).md>) for the dispute resolution context.
+2. The working group contextualises and adopts the open specifications **design principles** and **high level approach** as detailed in [HCX - Cover note](../../readme-1.md) for the dispute resolution context.
 3. The working group drafts a model policy in accordance with the above principles and in line with the detailed approach from step 2 above.
 4. The principles, detailed approach and model dispute resolution policy draft is versioned and released for public consultation.
 5. The domain working group deliberates the feedback and enhances principles/model policy as needed.

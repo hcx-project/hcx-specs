@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Summary](README.md)
-* [Context](<README (1).md>)
+* [Context](readme-1.md)
 * [Introduction to HCX](what-is-hcx.md)
 * [Approach](open-specifications/README.md)
   * [Design Principles](open-specifications/design-principles.md)

@@ -31,7 +31,7 @@ It may help to unbundle different aspects of the pricing strategy to allow neede
 3. Facilitating compliance reporting of the claims data, e.g.&#x20;
    1. Operating entity may run and maintain schedules against which it can search the data from the payors and forward to IIB, thereby easing the process for the payor)
 4. Open data streams on the agreed data (data in protocol/domain headers)
-5. Other innovating offerings <mark style="color:green;"></mark>&#x20;
+5. Other innovating offerings&#x20;
 
 **Who may get charged for each of these offerings**
 

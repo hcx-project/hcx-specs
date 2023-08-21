@@ -6,7 +6,7 @@ description: >-
 
 # Domain Specifications
 
-This section focuses on **domain** **specifications** needed to realize the health claims data exchange. As detailed in the [key specification](../open-specifications/key-specifications.md) section, the most significant aspect of domain specification would be agreement on formats for data exchange (data models and any domain specific languages to assist standardisation) and terminologies (taxonomies) being used in those data models. &#x20;
+This section focuses on **domain** **specifications** needed to realize the health claims data exchange. As detailed in the [key specification](../open-specifications/key-specifications.md) section, the most significant aspect of domain specification would be agreement on formats for data exchange (data models and any domain specific languages to assist standardisation) and terminologies (taxonomies) being used in those data models.
 
 In order to achieve this, in line with the key design principles detailed in [Health Claims Data Exchange - Open Specifications](../open-specifications/design-principles.md), the following key design guidelines are proposed for domain specifications:
 
@@ -26,12 +26,10 @@ In order to achieve this, in line with the key design principles detailed in [He
    * Data specifications should allow for namespacing in field names to indicate the source/reason/category of the extended fields.
 5. It is recommended that all timestamps be captured in ISO-8601 format e.g. 2020-08-15T17:02:53.495+05:30. APIs may define display format property to indicate the human-readable format most suitable for display.
 
-
-
 Based on these principles and design considerations, subsections below define the following key elements of the proposed domain specifications:
 
 1. Domain Data Models
 2. Terminologies (Code sets and Metadata standards)
 3. Domain Specific Languages (DSLs)
 
-Details of Open Protocol and TechOps policies are covered in the [previous section](../hcx-technical-specifications/), and the details of Business Policy Specifications are covered in the subsequent section.&#x20;
+Details of Open Protocol and TechOps policies are covered in the [previous section](../hcx-technical-specifications/), and the details of Business Policy Specifications are covered in the subsequent section.

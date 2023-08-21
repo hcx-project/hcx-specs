@@ -8,7 +8,7 @@ description: Categories of notifications in HCX
 
 Categorisation of notifications is important from the point of view of data security/privacy and reducing information load on the receivers. It is proposed to classify the HCX Notifications based on the **subject of the notification** as follows:
 
-![](../../../.gitbook/assets/0)
+![](<../../../.gitbook/assets/0 (1)>)
 
 #### **Network notifications**
 
@@ -36,7 +36,7 @@ In addition, there's a special category of network notifications that would be t
 2. Encryption key expiration
 3. SLA threshold breach, etc.
 
-![](../../../.gitbook/assets/2)
+![](<../../../.gitbook/assets/2 (1)>)
 
 Thes notifications will be triggered by the HCX switch operator and will be directed to the concerned entities on the network. In the initial version of the protocol, it is proposed that participants will be auto-subscribed to these notifications at the time of onboarding and will not be given a facility to block or unsubscribe from such notifications.
 

@@ -13,4 +13,4 @@ Specifications here refer to the blueprint of each aspect of the envisioned clai
 * Define and meet the necessary regulations/policies
 * Allow participants the choice of technology/solutions
 
-In order to foster collaborative work while still maintaining consistency, envisioned specifications following subsections detail the strategy and approach to facilitate the creation and maintenance of Open Specifications.&#x20;
+In order to foster collaborative work while still maintaining consistency, envisioned specifications following subsections detail the strategy and approach to facilitate the creation and maintenance of Open Specifications.
