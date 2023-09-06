@@ -6,9 +6,9 @@ description: >-
 
 # Domain Specifications
 
-This section focuses on **domain** **specifications** needed to realize the health claims data exchange. As detailed in the [key specification](broken-reference) section, the most significant aspect of domain specification would be agreement on formats for data exchange (data models and any domain specific languages to assist standardisation) and terminologies (taxonomies) being used in those data models.
+This section focuses on **domain** **specifications** needed to realize the health claims data exchange. As detailed in the [key specification](../what-is-hcx.md#key-specifications) section, the most significant aspect of domain specification would be agreement on formats for data exchange (data models and any domain specific languages to assist standardisation) and terminologies (taxonomies) being used in those data models.
 
-In order to achieve this, in line with the key design principles detailed in [Health Claims Data Exchange - Open Specifications](broken-reference), the following key design guidelines are proposed for domain specifications:
+In order to achieve this, in line with the key design principles detailed [here](https://hcxprotocol.io/governance/), the following key design guidelines are proposed for domain specifications:
 
 ## Key Design Considerations
 

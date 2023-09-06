@@ -4,7 +4,7 @@ description: Technology backbone for the Health Claims Data Exchange
 
 # Open Protocol
 
-As described in Key Specifications, Open protocol defines the technology backbone for the Health Claims Data Exchange. In order to fulfil architectural principles listed in [Health Claims Data Exchange - Open Specifications](broken-reference), the protocol needs to consider the following key design elements:
+As described in Key Specifications, Open protocol defines the technology backbone for the Health Claims Data Exchange. In order to fulfil architectural principles listed [here](https://hcxprotocol.io/governance/), the protocol needs to consider the following key design elements:
 
 ## Key Design Considerations
 

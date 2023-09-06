@@ -29,5 +29,5 @@ Event driven notification can enable valuable near real time information for the
 5. Notify APIs
 6. Guidelines for policies related to notification capabilities
 
-As part of the overall HCX specifications, the Notification delivery specifications are designed keeping in mind the [overall HCX design principles](broken-reference).
+As part of the overall HCX specifications, the Notification delivery specifications are designed keeping in mind the HCX design principles listed [here](https://hcxprotocol.io/governance/).
 
