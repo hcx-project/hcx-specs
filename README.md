@@ -1,7 +1,5 @@
 ---
-description: >-
-  Current status, enhancements from previous version and anticipated future
-  roadmap
+description: Current status and enhancements from previous version
 ---
 
 # Summary
@@ -10,7 +8,24 @@ Inspired by the recommendations of the Joint Working Group of NHA and IRDAI (201
 
 The HCXs can be thought of as routing switches or email gateways that facilitate communication with the desired level of consistency, security, privacy, and durability. However, unlike the internet or email, this protocol is defined for a specialized use case of exchanging health claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers, etc.
 
-### Current Status
+### Current Version
+
+Version - 0.9 | Release date - September, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9)
+
+#### Summary of changes:
+
+* Relocated the design principles and proposed governance approach from the specification documentation to the protocol [website](https://hcxprotocol.io/governance/).
+* Introduced additional methods for managing attachments using Document Management Systems (DMS).
+* Updates to the registry schema definitions, allowing for distinct user roles within a tenant.
+* Introduced "Use Cases" section to list various use cases and their mapping with the HCX protocol.
+* In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol modifications have been incorporated:
+  * Enhanced the value set for communication reason codes valueset to facilitate the sharing of patient consent and account information in reimbursement claims.
+  * Added new codes to the Claim Supporting Info Codes valueset for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
+  * Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
+
+Please note that this version contains cumulative documentation and can be used by itself.
+
+### Previous Versions
 
 The following table provides a summary of the existing specification versions and links to the respective documentation.
 
@@ -20,5 +35,3 @@ The following table provides a summary of the existing specification versions an
 | Version - 0.7 (Draft) \| Release date - January, 2022 \| Published documentation [link](https://docs.hcxprotocol.io/v/v0.7-draft/) \| Github [link](https://github.com/Swasth-Digital-Health-Foundation/hcx-specs/tree/v0.7)                                                                                                                | <p>Based on feedback from various ecosystem players on the baseline version and rigorous feasibility analysis with the NHA team on the adoption of the specifications in public scheme use cases, this version includes the following key enhancements over the baseline version:</p><ul><li>Multi-party processing support through REDIRECT and FORWARD constructs</li><li>Initial support for digital encoding of policies using InsurancePlan FHIR profile</li><li>New APIs to support pre-determination cycle</li><li>Introduction of communication APIs to support additional information exchange during various claim cycles - pre-determination, pre-auth, or claims.</li><li>Introduction of status API to support fetching of the status of a submitted request</li><li>Search API definition deferred to future version to allow further deliberation</li><li>Simplification of Protocol Headers - identifiers and status</li><li>Standardisation of protocol errors</li><li>Restructuring, examples, and language modifications to enhance readability</li></ul> |
 | Version - 0.7.1 \| Release date - February, 2023 \| Published documentation [link](https://docs.hcxprotocol.io/v/v0.7.1/) \| Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.7.1)                                                                                                                                            | <p>After consulting with NRCes, the FHIR community, and the HCX community, this version of specification incorporates a significant simplification by changing the bundle type from "document" to "collection." This new structure effectively reduces the overhead associated with the "document" bundle type and supports cycle-specific constraints on the bundles, making the integration process much more straightforward for integrators.</p><p></p><p>Some of the significant advantages of using the "collection" bundle type include simplifying programming for bundle parsing and verification, eliminating extraneous details such as the signature, and reducing the payload size.</p><p></p><p>In summary, this new bundle type significantly streamlines the integration process and reduces unnecessary complexities, ultimately improving the overall experience for all parties involved.</p>                                                                                                                                                             |
 | Version - 0.8 \| Release date - April, 2023 \| Published documentation [link](https://docs.hcxprotocol.io/v/v0.8-draft/) \| Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.8)                                                                                                                                               | <p></p><p>The 0.8 version of HCX specifications has been developed based on inputs and feedback from the HCX community and in accordance with the planned roadmap. This version includes several key enhancements:</p><ul><li>Notifications capability which allows for the sharing of important updates regarding the network, participants, and workflows with various entities.</li><li>Information Fetch API has been introduced to facilitate the sharing of information with authorized third parties.</li><li>API security enhancements have been made, which will allow for the generation of password-based API tokens.</li><li>Based on the business policy working group's recommendations, following enhancements have been made in the business policy specifications: improvements in onboarding and grievance redressal, as well as the inclusion of guidelines on SLAs, participant satisfaction, and operating charges.</li><li>Access control roles have been redefined to support the specification improvements and new use cases.</li></ul>             |
-
-Please note that this version contains cumulative documentation and can be used by itself.
