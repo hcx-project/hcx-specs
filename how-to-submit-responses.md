@@ -10,7 +10,7 @@ We look forward to further strengthening the collaboration with border participa
 
 ### Key resources
 
-Key resources for this version (v0.8) are available as follows:
+Key resources for this version (v0.9) are available as follows:
 
 * [This GitBook documentation](./) is the reader friendly published documentation for the current version.
 * Source code for documentation and specifications is available in [this GitHub repo](https://github.com/hcx-project/hcx-specs/tree/v0.8).
@@ -21,6 +21,10 @@ Key resources for this version (v0.8) are available as follows:
 #### Enhancement requests/ideas/suggestions/questions
 
 Please use the github discussion forum to ask questions, make suggestions, and raise enhancement requests. You can also participate in the existing discussion by appropriately commenting on the discussions of your interest.
+
+#### Use cases
+
+Please evaluate HCX protocol for newer use cases in health claims and recommend enhancements/changes to the protocol, if required, to enable the use case through HCX. For use cases evaluation, define the typical workflows of the use case and how they can be mapped through HCX protocol similar to the cashless and reimbursement usecases detials in this [section](how-to-submit-responses.md#use-cases).
 
 #### Raising issues
 
