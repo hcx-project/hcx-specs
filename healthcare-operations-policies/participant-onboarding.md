@@ -4,6 +4,12 @@ description: Process of onboarding network participants
 
 # Guidelines for Participant Onboarding
 
+
+
+{% hint style="danger" %}
+This section needs to be enhanced to incldue the new roles and access information as per the discussion hapepning in the work streams.
+{% endhint %}
+
 While the actual onboarding/deboarding process for an HCX ecosystem would be drafted by its operator and agreed upon by its participants, this section outlines key design guidelines and an overall approach to arrive at such a policy.
 
 ### Key design considerations  <a href="#key-design-considerations" id="key-design-considerations"></a>

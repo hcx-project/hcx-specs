@@ -1,8 +1,12 @@
 ---
-description: Roles on Health Claims Exchange
+description: Roles and access control policies on Health Claims Exchange
 ---
 
 # Access Control (Roles)
+
+{% hint style="danger" %}
+This section needs to be enhanced to incldue the new roles and access information as per the discussion hapepning in the work streams.
+{% endhint %}
 
 Participating systems in the Claims information exchange ecosystem may possess one or more of the following roles. These roles are based on the base set of organisation roles defined in hl7 specifications [here](https://www.hl7.org/fhir/valueset-organization-role.html). Namespaced coding is used to further qualify the role in the context of the claims exchange process.
 

@@ -28,7 +28,7 @@
   * [Domain Data Models](hcx-domain-specifications/domain-data-models/README.md)
     * [Handling Attachments](hcx-domain-specifications/domain-data-models/handling-attachments.md)
     * [Handling Processing Errors](hcx-domain-specifications/domain-data-models/handling-processing-errors.md)
-  * [Terminologies (Code sets or Metadata standards)](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md)
+  * [Terminologies](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md)
   * [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-specific-languages-dsls.md)
   * [FHIR Implementation Guide](hcx-domain-specifications/implementation-guide.md)
 * [Business Policy Specifications](healthcare-operations-policies/README.md)
