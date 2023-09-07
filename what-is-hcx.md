@@ -101,3 +101,5 @@ A thriving data exchange will also require clear rules of engagement to ensure t
 7. Onboarding
 8. Defaulting/deboarding policies
 9. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
+
+The next sections detail the protocol specifications under these three key areas (Technical, Domain and Business Policy).
