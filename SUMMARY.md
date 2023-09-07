@@ -59,7 +59,6 @@
       * [OPD](use-cases/cashless/mapping-to-the-hcx-protocol/opd.md)
       * [Implementation Considerations](use-cases/cashless/mapping-to-the-hcx-protocol/implementation-considerations.md)
   * [Reimbursement](use-cases/reimbursement/README.md)
-    * [Summary/Intro](use-cases/reimbursement/summary-intro.md)
     * [Typical workflows](use-cases/reimbursement/typical-workflows/README.md)
       * [IPD](use-cases/reimbursement/typical-workflows/ipd.md)
       * [OPD](use-cases/reimbursement/typical-workflows/opd.md)
