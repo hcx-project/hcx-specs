@@ -65,6 +65,6 @@
     * [Mapping to the HCX protocol](use-cases/reimbursement/mapping-to-the-hcx-protocol/README.md)
       * [IPD](use-cases/reimbursement/mapping-to-the-hcx-protocol/ipd.md)
       * [OPD](use-cases/reimbursement/mapping-to-the-hcx-protocol/opd.md)
-    * [Things to consider](use-cases/reimbursement/things-to-consider.md)
+    * [Key implementation considerations](use-cases/reimbursement/key-implementation-considerations.md)
 * [Contributing to the specifications](how-to-submit-responses.md)
 * [Future Roadmap](future-roadmap.md)

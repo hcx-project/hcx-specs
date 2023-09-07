@@ -4,8 +4,6 @@ description: Beneficiary led Health Claims process
 
 # Reimbursement
 
-imbursement changes from Ajit
-
 Reimbursement claims in healthcare refer to the process through which policyholders  request payment from insurance companies or government healthcare programs for the medical services/benefits they have received. This process plays a crucial role in the healthcare industry, as it ensures that policyholders receive compensation for the expenses incurred.&#x20;
 
 In the Reimbursement scenario, the onus is on the patient to duly submit all the necessary documents and share the information with the insurer as required for processing the claim.
