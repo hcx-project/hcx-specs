@@ -14,11 +14,13 @@ Version - 0.9 | Release date - September, 2023 | Published documentation [link](
 
 #### Summary of changes:
 
-* Relocated the design principles and proposed governance approach from the specification documentation to the protocol [website](https://hcxprotocol.io/governance/).
+* Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
 * Introduced additional methods for managing attachments using Document Management Systems (DMS).
 * Updates to the registry schema definitions, allowing for distinct user roles within a tenant.
 * Introduced "Use Cases" section to list various use cases and their mapping with the HCX protocol.
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol modifications have been incorporated:
+  * Additional access control roles are added to enable appropriate access control levels.
+  * Communication request/response flow is recommended to be used for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
   * Enhanced the value set for communication reason codes valueset to facilitate the sharing of patient consent and account information in reimbursement claims.
   * Added new codes to the Claim Supporting Info Codes valueset for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
   * Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
