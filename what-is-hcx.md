@@ -57,9 +57,11 @@ HCX specifications could enable the existence of multiple HCX instances and rela
 
 ### Key Specifications
 
-#### Open protocol for claims data exchange - Health Claims Transfer Protocol
+This section lists key types of specification needed for Health Claims data exchange.&#x20;
 
-Like HTTP or SMTP, open protocol for claims exchange will define the following key aspects:
+#### Technical Specifications&#x20;
+
+Like HTTP or SMTP, open protocol (Health Claims data Transfer Protocol) for claims exchange will define the following key aspects:
 
 1. Authentication (Payor, Provider, Regulator, Observer, ...)
 2. Request/response message syntax - header and header attributes, optional body, mandatory vs optional, transport constraint on the messages, etc.
@@ -71,18 +73,12 @@ Like HTTP or SMTP, open protocol for claims exchange will define the following k
    2. Message signing protocol for verifiability and non-repudiation
 7. Sequence of interactions
 
-#### Tech Ops Policy Specifications
+In addtion, Technical specifications may include the following types of technical operations policies: &#x20;
 
-These will include the following policies for participation in the health claims data exchange:
-
-1. Onboarding policies - How does any entity get on board on the data exchange? Adherence to protocol, the process for a compliance review, frequency of compliance review, etc
-2. Deboarding policies: What makes an entity to be blocked or ejected from the data exchange. Things like adherence to technical SLAs, non-compliance with expected protocol versions, message security or privacy violations, etc.
-3. Access control policies - Role-based, need for consent to access APIs, data attributes, etc.
-4. Exchange operation policies
-   1. Key rotation requirements
-   2. Segregation of duties and responsibilities within various teams of exchange operators
-   3. Operational reports and dashboards
-   4. Audit checklist and frequency
+1. Key rotation requirements
+2. Segregation of duties and responsibilities within various teams of exchange operators
+3. Operational reports and dashboards
+4. Audit checklist and frequency
 
 #### Domain Specifications
 
@@ -96,10 +92,12 @@ Specifications about format and definition of domain specific elements. A lot of
 
 A thriving data exchange will also require clear rules of engagement to ensure trust from all actors. These specifications will involve guidelines around:
 
-1. Data sharing policies (implemented through Access control) - which actor plays what role and gets to see which parts of the data. These policies will then affect the visibility and access to domain-specific attributes that will typically travel in the body of the data structures defined by the data exchange.
-2. Business SLAs
-3. Charges/Fees - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
-4. Dispute resolution policies
-5. Onboarding
-6. Defaulting/deboarding policies
-7. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
+1. Onboarding policies - How does any entity get on board on the data exchange? Adherence to protocol, the process for a compliance review, frequency of compliance review, etc
+2. Deboarding policies: What makes an entity to be blocked or ejected from the data exchange. Things like adherence to technical SLAs, non-compliance with expected protocol versions, message security or privacy violations, etc.
+3. Access control policies (Data sharing policies) -  which actor plays what role and gets to see which parts of the data. These policies will then affect the visibility and access to domain-specific attributes that will typically travel in the body of the data structures defined by the data exchange. Role-based, need for consent to access APIs, data attributes, etc.
+4. Business SLAs
+5. Charges/Fees - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
+6. Dispute resolution policies
+7. Onboarding
+8. Defaulting/deboarding policies
+9. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
