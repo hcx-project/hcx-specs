@@ -19,13 +19,14 @@ Please note that this is a tentative list and that the community may revise and 
 3. Enabling multi payer - multi policy claim adjudication
 4. Analyse and expand for other OPD categories: Exploring other categories within the OPD use case, understanding their unique challenges, and enhancing the workflow to address specific nuances.&#x20;
 5. Analysing/enhancing the protocol for non-insurance benefits - Corporate wellness, health CSR, community/cooperatives benefits
-6. Enhancing CommunicationRequest cycle to allow structured Queries: Enabling hospitals/payers to raise structured queries on the Healthcare Exchange (HCX) platform to payers/hospitals, improving communication and speeding up resolution for reimbursement-related inquiries.
-7. Enhancement in Insurance Plan object: The existing profile only allows to declare limits at benefit level, but we cannot add conditions/rules of eligibility. Also, the values of limits could be expressions, not just values/constants always.&#x20;
-8. Multiple claims submission : Analysis the feasibility of allowing multiple claims submissions against a single pre-authorization.&#x20;
-9. Detailed approach on handling attchements/supporting information&#x20;
-10. Further detailing of the domain objects - descriptions, examples, etc.
-11. Examples of typical use cases
-12. Guidelines on Technical Operations of the HCX swicth(es)/network
+6. Claim initiation using QR Code: Allowing consumers to initiate claims or pre-authorization flows conveniently by using QR codes, simplifying the initiation process. Next steps on this.
+7. Enhancing CommunicationRequest cycle to allow structured Queries: Enabling hospitals/payers to raise structured queries on the Healthcare Exchange (HCX) platform to payers/hospitals, improving communication and speeding up resolution for reimbursement-related inquiries.
+8. Enhancement in Insurance Plan object: The existing profile only allows to declare limits at benefit level, but we cannot add conditions/rules of eligibility. Also, the values of limits could be expressions, not just values/constants always.&#x20;
+9. Multiple claims submission : Analysis the feasibility of allowing multiple claims submissions against a single pre-authorization.&#x20;
+10. Detailed approach on handling attchements/supporting information&#x20;
+11. Further detailing of the domain objects - descriptions, examples, etc.
+12. Examples of typical use cases
+13. Guidelines on Technical Operations of the HCX swicth(es)/network
 
 #### Policy related
 
