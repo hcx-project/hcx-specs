@@ -6,16 +6,16 @@ In the OPD, healthcare professionals offer diagnosis, treatment, consultation, a
 
 Typical/existing workflow for OPD service delivery and cashless insurance claim :&#x20;
 
-<figure><img src="https://lh4.googleusercontent.com/ZpEiRUhW2rlOWRDXxw7XsE6TZvrhG_XqpnEUFIRbARBI0tB2fTD_o2SsRprqeTebuGaRYugOLtLo7sLETnos93tEx276WC2MhDiRmOUz_ptzPOlUrXOwhUJrYNjt3zqhhd612-Mh8e3hSiX5aWFj-N0" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OPD cashless as is.png" alt=""><figcaption></figcaption></figure>
 
 **Workflow details :**&#x20;
 
-1. An individual schedules an appointment or arrives as a walk-in (emergency) at the healthcare provider's facility
-2. The individual/patient provides necessary details including insurance details, which may involve filling out a form or scanning a QR code to share relevant information.
+1. An individual/Beneficiary schedules an appointment or arrives as a walk-in (emergency) at the healthcare provider's facility
+2. The individual/Beneficiary provides necessary details including insurance details, which may involve filling out a form or scanning a QR code to share relevant information.
 3. **(Optional)** The Healthcare Provider initiates a coverage verification process by contacting the Payer to confirm the high-level service coverage, aiming to determine if the expected services are covered under the Individual's insurance plan.
 4. **(Optional)** The payer responds back with coverage eligibility details of the plan.
-5. The Healthcare Provider confirms the admission  for the individual.
-6. The individual proceeds with the check-in, registration, and finalisation of required service(s) based on their needs and preferences.
+5. The Healthcare Provider confirms the admission  for the individual/beneficiary.
+6. The individual/beneficiary proceeds with the check-in, registration, and finalisation of required service(s) based on their needs and preferences.
 7. **(Optional)** The Healthcare Provider further engages with the payer to verify treatment coverage, seeking preauthorization for the proposed treatment/service plan and involved cost details as required by the insurance policy. Wherever applicable, this step may be repeated multiple times to signal change in treatment/service plan.&#x20;
 8. The payer responds back with the preauthorization response for each request alongwith the pre-authorized amount for each procedure, product, service, etc.&#x20;
 9. The healthcare provider provides the necessary services to the Individual, which may include a range of medical procedures, tests, administration of drugs, products, therapy sessions, or any other relevant treatments.

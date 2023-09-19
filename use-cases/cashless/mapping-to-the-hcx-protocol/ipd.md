@@ -10,6 +10,6 @@ Ref: [Typical IPD cashless claims workflow](../typical-workflows/ipd.md)
 
 Reimagined IPD cashless claims workflow using HCX :&#x20;
 
-<figure><img src="https://lh5.googleusercontent.com/YbdftmCbHT3ah1zxFblIB1UU_dHwUgyKprAMuhHIPvJenNWIJxffz_KkUaD7YKpfgkp_JhyAZVL4TXgIdUmX038p3QMahO3kYYgVGyiFGnjZw-GBTl0Fl_oENQ3DpFfRUMbBpZ4VuuD-XMfvkmE6MT8" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IPD cashless using HCX.png" alt=""><figcaption></figcaption></figure>
 
 Following section, provides insights OPD claims workflow leveraging HCX protocol.

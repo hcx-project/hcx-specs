@@ -4,14 +4,14 @@ description: Provider led Health Claims process
 
 # Cashless
 
-Cashless health insurance allows policyholders to receive medical treatment without having to pay upfront to the providers for the medical services/treatment. It covers both outpatient department (OPD) and inpatient department (IPD) expenses, providing financial relief to the policyholders.
+Cashless health insurance allows policyholders/beneficiaries to receive medical treatment without having to pay upfront to the providers for the medical services/treatment. It covers both outpatient department (OPD) and inpatient department (IPD) expenses, providing financial relief to the beneficiaries.
 
 **Advantages of cashless claims :**&#x20;
 
-1. Improves patient experience : Cashless insurance enhances the overall patient experience by streamlining the healthcare process. It reduces the administrative hassles of reimbursement claims and paperwork submission.
-2. Financial relief : By covering medical expenses directly, cashless insurance reduces the financial burden on policyholders during times of illness or emergencies.
+1. Improves patient experience : Cashless insurance enhances the overall beneficiary experience by streamlining the healthcare process. It reduces the administrative hassles of reimbursement claims and paperwork submission.
+2. Financial relief : By covering medical expenses directly, cashless insurance reduces the financial burden on policyholders/beneficiaries during times of illness or emergencies.
 3. Access to quality care : Cashless insurance often partners with a network of hospitals and healthcare providers, ensuring access to quality medical facilities and specialists for policyholders.
-4. Prompt treatment : Policyholders can plan prompt medical treatment, without having to worry about arranging funds before getting the necessary care.
+4. Prompt treatment : Beneficiaries can plan prompt medical treatment, without having to worry about arranging funds before getting the necessary care.
 
 **Challenges:**
 

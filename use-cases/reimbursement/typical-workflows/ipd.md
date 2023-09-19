@@ -8,17 +8,19 @@ IPD (In-patient department) is a specialised section within a healthcare facilit
 
 **Typical/existing workflow :** For IPD service delivery and reimbursement insurance claim submission :&#x20;
 
-<figure><img src="https://lh6.googleusercontent.com/oi6x_nGjtXEfWgYMfLFWBE4XveJ_4yGY6be_Lsp9DmfIHpLLvxbFK182s301ahv43F5D45vHitoRhALM_khlsICxctW56-trcFdLsDZnBvYdqyGIRqU7-q4PLjesbZ7d-Bn7T_w1rpEJkld4OsEQxIo" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/IPD reimbursement as is.png" alt=""><figcaption></figcaption></figure>
 
 **Workflow details :**&#x20;
 
-1. Patient presents with a healthcare concern and reached out to the healthcare facility for treatment.
-2. Patient is presented with a diagnosis and treatment plan.
-3. Patient gets admitted to the healthcare facility for treatment. The patient is given the necessary treatment including tests, procedures and drugs). Post the completion of the treatment, the healthcare provider generates the bills and the same are shared with the beneficiary / patient
-4. The beneficiary pays the healthcare provider the bill amount.
-5. The patient sends intimation to the payer(insurance company) about the treatment availed and requests for a claim to be initiated.
-6. Payer accepts the claim submission and shares a claim number with the policyholder to track claim status.
-7. Payor reviews the claim information and documentation shared by the policyholder.
+1. Individual/Beneficiary presents with a healthcare concern and reached out to the healthcare facility for treatment.
+2. Individual/Beneficiary is presented with a diagnosis and treatment plan.
+3. Individual/Beneficiary gets admitted to the healthcare facility for treatment. The patient is given the necessary treatment including tests, procedures and drugs). Post the completion of the treatment, the healthcare provider generates the bills and the same are shared with the beneficiary / patient
+4. The Individual/Beneficiary pays the healthcare provider the bill amount.
+5. The Individual/Beneficiary sends intimation to the payer(insurance company) about the treatment availed and requests for a claim to be initiated.
+6. Payer accepts the claim submission and shares a claim number with the beneficiary to track claim status.
+7. Payor reviews the claim information and documentation shared by the beneficiary.
 
 **(Optional)** Additional info/docs required to process the claim&#x20;
 
@@ -41,12 +43,12 @@ IPD (In-patient department) is a specialised section within a healthcare facilit
 
 **Reimagined workflow by the community to streamline claim submission :**&#x20;
 
-<figure><img src="https://lh5.googleusercontent.com/7AUg_Fg5TWgZLrZauFYnpE9ee4-rhZ6FYuRloOTOHoL7mNPJIohKuN_wUQ4SeNR8uNVDPdAG5_PiZyI-kss8ekAKR8oGu5eNyHOj6s2YltCh1dmCkakUSGyChLbEb2s9g9owASKGY_lRNECOtm_ZIJs" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/IPD reimbursement reimagined workflow.png" alt=""><figcaption></figcaption></figure>
 
 **Workflow details :**&#x20;
 
-1. Patient reaches the hospital and presents a healthcare concern to the practitioner.
-2. Provider gives the diagnosis and the treatment plan to the patient.
+1. Individual/Beneficiary reaches the hospital and presents a healthcare concern to the practitioner.
+2. Provider gives the diagnosis and the treatment plan to the individual.
 
 **(Optional)** Intimation to the payor prior to admission.
 

@@ -10,7 +10,7 @@ In the OPD, healthcare professionals offer diagnosis, treatment, consultation, a
 
 Typical/existing workflow for OPD service delivery and reimbursement insurance claim :
 
-<figure><img src="https://lh4.googleusercontent.com/3jFEp-_zCwJQSSwKD82ZwxhXcnyGsTnYHYp4WNzznmIFgRP3h-_NmXAg7eeP0DdsPkIvaqF0q2ag-EMztmc9yyhTD09Xk2MLXc8Ikg5oTXJkkz6gR1a2GZ5wFVGOAIoBuT4XUcXBxxNV_9lB4SztoeU" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OPD reimbursement as is.png" alt=""><figcaption></figcaption></figure>
 
 **Workflow details :**&#x20;
 
