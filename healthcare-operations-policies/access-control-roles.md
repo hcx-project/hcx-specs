@@ -7,7 +7,7 @@ description: Roles and access control policies on Health Claims Exchange
 Participating organisations in the the Health Claims information exchange ecosystem may possess one or more of the roles mentioned below. These roles are based on the base set of organisation roles defined in hl7 specifications [here](https://www.hl7.org/fhir/valueset-organization-role.html). Namespaced coding is used to further qualify the role in the context of the claims exchange process.
 
 {% hint style="info" %}
-This section has undergone significant enhancements to accommodate the requirements of OPD and Reimbursement use cases, and streamlining action categories for clarity. The key changes include:&#x20;
+This section has undergone significant enhancements to accommodate the scope and the requirements of [OPD and Reimbursement use cases](../use-cases/), and streamlining action categories for clarity. The key changes include:&#x20;
 
 1. **Expansion of Provider Roles:** The Provider role has been expanded to explicitly encompass hospitals, clinics, practitioners, diagnostics, and pharmacies, aligning with the needs of OPD use cases. This expansion serves several vital purposes:&#x20;
    1. **Tailored Onboarding**: Separating provider roles enables the possibility of tailored onboarding processes unique to each role. This approach fosters deeper trust in the participants joining the network.
@@ -32,7 +32,7 @@ This section has undergone significant enhancements to accommodate the requireme
 8. **HIE/HIO.HCX -** An entity that facilitates electronic clinical data exchange between entities, e.g. other HCXs.
 9. **BSP -** Beneficiary Service Platform, digital platforms dedicated to assisting beneficiaries.
 
-Initial recommendations about onboarding policies of the new roles is included in the [Guidelines for Participant Onboarding](participant-onboarding.md) section.&#x20;
+Initial recommendations about onboarding policies of the new roles is included in the [Guidelines for Participant Onboarding](participant-onboarding/) section.&#x20;
 
 ### Access Groups
 
