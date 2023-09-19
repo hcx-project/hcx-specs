@@ -6,18 +6,18 @@ description: Current status and enhancements from previous version
 
 Inspired by the recommendations of the Joint Working Group of NHA and IRDAI (2019), Health Claims Data Exchange (HCX) is an ambitious open source project that aims to define interoperable protocol specifications to enable a multi-party exchange of health claims information.
 
-The HCXs can be thought of as routing switches or email gateways that facilitate communication with the desired level of consistency, security, privacy, and durability. However, unlike the internet or email, this protocol is defined for a specialized use case of exchanging health claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers, etc.
+The HCX switches can be thought of as routing switches or email gateways that facilitate communication with the desired level of consistency, security, privacy, and durability. However, unlike the internet or email, this protocol is defined for a specialized use case of exchanging health claims (or benefits) related information between relevant actors - payors, providers, beneficiaries, regulators, observers, etc.
 
 ### Current Version
 
-Version - 0.9 | Release date - September, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9)
+Version - 0.9 | Release date - September, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9) | Protocol [website](https://hcxprotocol.io)
 
-#### Summary of changes:
+#### Summary of changes (Changelog):
 
 * Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
 * Introduced additional methods for managing attachments using Document Management Systems (DMS).
-* Updates to the registry schema definitions, allowing for distinct user roles within a tenant.
-* Introduced "Use Cases" section to list various use cases and their mapping with the HCX protocol.
+* Updates to the registry schema definitions for multi-tenancy, allowing for distinct user roles within a tenant.
+* Introduced "Use Cases" section to list various use cases (Cashless/Reimbursement and IPD/OPD) and their mapping with the HCX protocol.
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol modifications have been incorporated:
   * Additional access control roles are added to enable appropriate access control levels.
   * Communication request/response flow is recommended to be used for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
