@@ -35,6 +35,10 @@ We value your feedback and encourage you to participate in shaping the final ver
 
 Please note that this version contains cumulative documentation and can be used by itself.
 
+{% hint style="info" %}
+**Open Items**: \<Ajit please includ the list of open items from GitHub>
+{% endhint %}
+
 ### Previous Versions
 
 The following table provides a summary of the existing specification versions and links to the respective documentation.
