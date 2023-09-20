@@ -2,7 +2,7 @@
 description: Key resources and guidelines to contribute
 ---
 
-# Contributing to the specifications
+# Contributing to the protocol
 
 As mentioned in the governance section, hcx-specifications are fundamental to the success of the envisioned claims network. Specifications need to create consensus amongst a broad base of health system stakeholders to ensure that they can act as this common foundation. Current specifications are a result of collaborative effort from many committed volunteers.
 
@@ -13,7 +13,7 @@ We look forward to further strengthening the collaboration with border participa
 Key resources for this version (v0.9) are available as follows:
 
 * [This GitBook documentation](./) is the reader friendly published documentation for the current version.
-* Source code for documentation and specifications is available in [this GitHub repo](https://github.com/hcx-project/hcx-specs/tree/v0.8).
+* Source code for documentation and specifications is available in [this GitHub repo](https://github.com/hcx-project/hcx-specs/tree/v0.9).
 * Discussions about the specifications are in the github repo’s [discussion forum](https://github.com/hcx-project/hcx-specs/discussions) and on the [discord server](https://discord.gg/jxMTMh5RYw).
 
 ### Contributing to the specs

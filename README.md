@@ -30,8 +30,8 @@ We value your feedback and encourage you to participate in shaping the final ver
   * Additional access control roles are added to enable appropriate access control levels.
   * Communication request/response flow is recommended to be used for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
   * Enhanced the value set for communication reason codes valueset to facilitate the sharing of patient consent and account information in reimbursement claims.
-  * Added new codes to the Claim Supporting Info Codes valueset for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
-  * Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
+  * Added new codes to the [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) valueset for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
+  * Introduced codes to address [claim denials](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-error-codes.html) resulting from policyholder consent declines or missing consent in reimbursement claims.
 
 Please note that this version contains cumulative documentation and can be used by itself.
 
