@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
     "id": "proof-of-presence-codes",
-    "version": "0.8.0",
-    "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-proof-of-presence-codes.html",
+    "version": "0.9.0",
+    "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-proof-of-presence-codes.html",
     "name": "ProofOfPresenceCodes",
     "status": "active",
     "date": "2022-06-01",

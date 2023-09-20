@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequest.html",
-  "version": "0.8.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-CoverageEligibilityRequest.html",
+  "version": "0.9.0",
   "name": "CoverageEligibilityRequest",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -2448,7 +2448,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.9/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -2555,7 +2555,7 @@
           ],
           "strength": "example",
           "description": "Benefit categories such as: oral, medical, vision etc.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-categories.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-service-categories.html"
         }
       },
       {
@@ -2598,7 +2598,7 @@
           ],
           "strength": "example",
           "description": "Allowable service and product codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-service-codes.html"
         }
       },
       {

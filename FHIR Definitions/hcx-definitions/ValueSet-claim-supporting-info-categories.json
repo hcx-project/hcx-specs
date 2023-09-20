@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-supporting-info-categories",
-  "version": "0.8.0",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-supporting-info-categories.html",
+  "version": "0.9.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-categories.html",
   "name": "ClaimSupportingInfoCategories",
   "status": "active",
   "date": "2022-08-01",

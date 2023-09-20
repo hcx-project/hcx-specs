@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes for claim subtypes, which may also be referred to as admission types in certain terminologies.</p></div>"
   },
   "url": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-claim-sub-types",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "name": "HCXClaimSubTypes",
   "status": "draft",
   "date": "2023-03-06",

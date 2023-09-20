@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-denial-codes",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "name": "ClaimDenialCodes",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-denial-codes.html",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html",
   "status": "active",
   "date": "2021-08-15",
   "publisher": "HCX Open Community",
@@ -95,6 +95,11 @@
       {
         "code": "AUTH-012",
         "display": "Request for information",
+        "system": "http://hcxprotocol.io/codes/denial-code"
+      },
+      {
+        "code": "AUTH-013",
+        "display": "Patient consent is not provided or invalid",
         "system": "http://hcxprotocol.io/codes/denial-code"
       },
       {

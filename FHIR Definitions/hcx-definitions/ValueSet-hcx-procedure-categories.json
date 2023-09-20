@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains codes for procedure categories.</p></div>"
   },
   "url": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-procedure-categories",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "name": "HCXProcedureCategories",
   "status": "draft",
   "date": "2023-03-06",

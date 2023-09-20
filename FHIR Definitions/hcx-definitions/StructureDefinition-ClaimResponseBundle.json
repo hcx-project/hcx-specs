@@ -23,8 +23,8 @@
         "valueCode": "not-classified"
       }
     ],
-    "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponseBundle.html",
-    "version": "0.8.0",
+    "url": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-ClaimResponseBundle.html",
+    "version": "0.9.0",
     "name": "ClaimResponseBundle",
     "title": "Claim Response Bundle",
     "status": "draft",
@@ -3264,7 +3264,7 @@
             {
               "code": "ClaimResponse",
               "profile": [
-                "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"
+                "https://ig.hcxprotocol.io/v0.9/StructureDefinition-ClaimResponse.html"
               ]
             }
           ]

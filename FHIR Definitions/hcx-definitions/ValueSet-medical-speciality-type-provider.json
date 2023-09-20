@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "medical-speciality-type-provider",
-  "version": "0.8.0",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-medical-speciality-type-provider.html",
+  "version": "0.9.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-medical-speciality-type-provider.html",
   "name": "MedicalSpecialityTypeProvider",
   "status": "active",
   "date": "2021-09-07",

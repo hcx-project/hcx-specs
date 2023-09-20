@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-error-codes",
-  "version": "0.8.0",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-error-codes.html",
+  "version": "0.9.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-error-codes.html",
   "name": "ClaimErrorCodes",
   "status": "active",
   "date": "2022-08-01",
@@ -95,6 +95,11 @@
       {
         "code": "AUTH-012",
         "display": "Request for information",
+        "system": "http://hcxprotocol.io/codes/claim-error-codes"
+      },
+      {
+        "code": "AUTH-013",
+        "display": "Patient consent is not provided or invalid",
         "system": "http://hcxprotocol.io/codes/claim-error-codes"
       },
       {

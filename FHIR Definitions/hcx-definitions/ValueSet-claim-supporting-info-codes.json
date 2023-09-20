@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-supporting-info-codes",
-  "version": "0.8.0",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-supporting-info-codes.html",
+  "version": "0.9.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html",
   "name": "ClaimSupportingInfoCodes",
   "status": "active",
   "date": "2022-08-01",
@@ -520,6 +520,21 @@
       {
         "code": "MB-3",
         "display": "Estimate Bill",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-4",
+        "display": "Medicines Bill/Receipt",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-5",
+        "display": "Lab Tests Bill/Receipt",
+        "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
+      },
+      {
+        "code": "MB-6",
+        "display": "Medical Services Bill/Receipt",
         "system": "http://hcxprotocol.io/codes/claim-supporting-info-codes"
       },
       {

@@ -26,8 +26,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Claim.html",
-  "version": "0.8.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-Claim.html",
+  "version": "0.9.0",
   "name": "Claim",
   "status": "draft",
   "date": "2019-11-01T09:29:23+11:00",
@@ -6424,7 +6424,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Claim.html"
+              "https://ig.hcxprotocol.io/v0.9/StructureDefinition-Claim.html"
             ]
           }
         ],
@@ -6710,7 +6710,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Coverage.html"
+              "https://ig.hcxprotocol.io/v0.9/StructureDefinition-Coverage.html"
             ]
           }
         ],
@@ -6745,7 +6745,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"
+              "https://ig.hcxprotocol.io/v0.9/StructureDefinition-ClaimResponse.html"
             ]
           }
         ],
@@ -6843,7 +6843,7 @@
           ],
           "strength": "example",
           "description": "Benefit categories such as: oral-basic, major, glasses.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-categories.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-service-categories.html"
         }
       },
       {
@@ -6891,7 +6891,7 @@
           ],
           "strength": "example",
           "description": "Allowable service and product codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-service-codes.html"
         }
       },
       {
@@ -6934,7 +6934,7 @@
           ],
           "strength": "example",
           "description": "The valuset used for additional information category codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-supporting-info-categories.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-categories.html"
         }
       },
       {
@@ -6976,7 +6976,7 @@
           ],
           "strength": "example",
           "description": "The valuset used for additional information codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-supporting-info-codes.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html"
         }
       },
       {
@@ -7019,7 +7019,7 @@
           ],
           "strength": "example",
           "description": "Benefit categories such as: oral-basic, major, glasses.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-billing-subgroup-categories.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-billing-subgroup-categories.html"
         }
       },
       {
@@ -7104,7 +7104,7 @@
           ],
           "strength": "example",
           "description": "Provider specialization.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-medical-speciality-type-provider.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-medical-speciality-type-provider.html"
         }
       },
       {
@@ -7152,7 +7152,7 @@
           ],
           "strength": "example",
           "description": "Sample Procedure codes.",
-          "valueSet": "https://ig.hcxprotocol.io/v0.8/ValueSet-procedure-type-description.html"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-procedure-type-description.html"
         }
       }
     ]

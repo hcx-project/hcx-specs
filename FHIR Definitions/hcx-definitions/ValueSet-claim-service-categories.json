@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
   "id": "claim-service-categories",
-  "version": "0.8.0",
-  "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-claim-service-categories.html",
+  "version": "0.9.0",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-claim-service-categories.html",
   "name": "ClaimServiceCategories",
   "status": "active",
   "date": "2021-08-15",

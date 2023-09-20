@@ -1,8 +1,8 @@
 {
     "resourceType": "ValueSet",
     "id": "informational-messages-codes",
-    "version": "0.8.0",
-    "url": "https://ig.hcxprotocol.io/v0.8/ValueSet-informational-messages-codes.html",
+    "version": "0.9.0",
+    "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-informational-messages-codes.html",
     "name": "InformationalMessagesCodes",
     "status": "active",
     "date": "2022-06-01",

@@ -23,8 +23,8 @@
         "valueCode": "not-classified"
       }
     ],
-    "url": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequestBundle.html",
-    "version": "0.8.0",
+    "url": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-CoverageEligibilityRequestBundle.html",
+    "version": "0.9.0",
     "name": "CovereageEligibilityRequestBundle",
     "title": "Covereage Eligibility Request Bundle",
     "status": "draft",
@@ -3264,7 +3264,7 @@
             {
               "code": "CoverageEligibilityRequest",
               "profile": [
-                "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequest.html"
+                "https://ig.hcxprotocol.io/v0.9/StructureDefinition-CoverageEligibilityRequest.html"
               ]
             }
           ]

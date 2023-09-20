@@ -5,7 +5,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>USCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core</pre><div><p>The US Core Implementation Guide is based on FHIR Version R4 and defines the minimum conformance requirements for accessing patient data. The Argonaut pilot implementations, ONC 2015 Edition Common Clinical Data Set (CCDS), and ONC U.S. Core Data for Interoperability (USCDI) v1 provided the requirements for this guide. The prior Argonaut search and vocabulary requirements, based on FHIR DSTU2, are updated in this guide to support FHIR Version R4. This guide was used as the basis for further testing and guidance by the Argonaut Project Team to provide additional content and guidance specific to Data Query Access for purpose of ONC Certification testing. These profiles are the foundation for future US Realm FHIR implementation guides. In addition to Argonaut, they are used by DAF-Research, QI-Core, and CIMI. Under the guidance of HL7 and the HL7 US Realm Steering Committee, the content will expand in future versions to meet the needs specific to the US Realm.\nThese requirements were originally developed, balloted, and published in FHIR DSTU2 as part of the Office of the National Coordinator for Health Information Technology (ONC) sponsored Data Access Framework (DAF) project. For more information on how DAF became US Core see the US Core change notes.</p>\n</div></div>"
   },
   "id": "hcxprotocol.io",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "url": "https://hcxprotocol.io/fhir/r4/ImplementationGuide/hcxprotocol.io",
   "name": "HCXFHIRImplementationGuide",
   "title": "FHIR Implementation Guide for HCX",
@@ -14,7 +14,7 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "date": "2022-04-01",
+  "date": "2023-09-20",
   "publisher": "HCX Open Community",
   "contact": [
     {
@@ -183,7 +183,7 @@
         },
         "name": "HCX Claim Response example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-ClaimResponse.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-ClaimResponse.html"
       },
       {
         "extension": [
@@ -205,7 +205,7 @@
         },
         "name": "HCX Claim example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-Claim.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-Claim.html"
       },
       {
         "extension": [
@@ -241,7 +241,7 @@
         },
         "name": "HCX Coverage Eligibility Request example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityRequest.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-CoverageEligibilityRequest.html"
       },
       {
         "extension": [
@@ -263,7 +263,7 @@
         },
         "name": "HCX Coverage Eligibility Response example",
         "description": "**Search by subject - a patient**  \n**NOTE**: This US Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
-        "exampleCanonical": "https://ig.hcxprotocol.io/v0.8/StructureDefinition-CoverageEligibilityResponse.html"
+        "exampleCanonical": "https://ig.hcxprotocol.io/v0.9/StructureDefinition-CoverageEligibilityResponse.html"
       },
       {
         "extension": [
