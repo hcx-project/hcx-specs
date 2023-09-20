@@ -70,4 +70,4 @@
       * [OPD](use-cases/reimbursement/mapping-to-the-hcx-protocol/opd.md)
     * [Implementation considerations](use-cases/reimbursement/implementation-considerations.md)
 * [Contributing to the specifications](how-to-submit-responses.md)
-* [✨ Future Roadmap](future-roadmap.md)
+* [✨ Future focus areas](future-roadmap.md)

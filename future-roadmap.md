@@ -1,10 +1,10 @@
 ---
-description: Key enhancements proposed in future versions
+description: Potential enhancements proposed in future versions
 ---
 
-# ✨ Future Roadmap
+# ✨ Future focus areas
 
-Following are the list of key enhancements envisioned/propsed by the working groups for the future versions of the protocol.&#x20;
+Following are the list of potential enhancements envisioned/propsed by the community members for the future versions of the protocol.&#x20;
 
 {% hint style="info" %}
 Please note that this is a tentative list and that the community may revise and prioritize it according to the ecosystem needs.
@@ -39,3 +39,4 @@ Please note that this is a tentative list and that the community may revise and 
 5. Hospital Tariff document (Schedule of Charges, etc…) standardization and contract between hospital and insurer.
 6. Further refinement of Provider onboarding process.&#x20;
 7. Enhancements in model business policies in various operational areas.
+
