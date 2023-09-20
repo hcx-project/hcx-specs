@@ -30,7 +30,7 @@
     * [Handling Processing Errors](hcx-domain-specifications/domain-data-models/handling-processing-errors.md)
   * [Terminologies](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md)
   * [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-specific-languages-dsls.md)
-  * [FHIR Implementation Guide](hcx-domain-specifications/implementation-guide.md)
+  * [✨ FHIR Implementation Guide](hcx-domain-specifications/implementation-guide.md)
 * [Business Policy Specifications](healthcare-operations-policies/README.md)
   * [✨ Access Control (Roles)](healthcare-operations-policies/access-control-roles.md)
   * [✨ Guidelines for Participant Onboarding](healthcare-operations-policies/participant-onboarding/README.md)
