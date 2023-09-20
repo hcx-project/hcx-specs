@@ -65,11 +65,9 @@ Notifications on key use cases that the regulators, educational institutions, et
 
 Notifications for key business use cases requiring PII to third party participants that are not involved in the data exchange. Please note that these would be enabled through the combination of existing data exchange APIs.
 
-| **Notification Title**                      | **Description**                                                            | **Condition detail**       | **Initiating Participant** | **Receiving Participants**  |
-| ------------------------------------------- | -------------------------------------------------------------------------- | -------------------------- | -------------------------- | --------------------------- |
-| Status change of claims of a patient        | Notification about workflow updates on an identified policy.               | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
-| Change in coverage eligibility of a patient | Notification about change in coverage eligibility on an identified policy. | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
-| Reimbursements of claim for a patient       | Notification about claim reimbursement..                                   | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
-| Claim verification                          | Notification about claim verification status                               | Workflow initiation/update | Payor                      |                             |
-
-### &#x20;<a href="#_69zbwvo21imj" id="_69zbwvo21imj"></a>
+| **Notification Title**                      | **Description**                                                                                       | **Condition detail**       | **Initiating Participant** | **Receiving Participants**  |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- | --------------------------- |
+| Status change of claims of a patient        | Notification about workflow updates on an identified policy.                                          | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
+| Change in coverage eligibility of a patient | Notification about change in coverage eligibility on an identified policy.                            | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
+| Reimbursements of claim for a patient       | Notification about claim reimbursement..                                                              | Workflow initiation/update | Payor                      | Subscribed participants/HIU |
+| Claim verification                          | Notification about claim verification status based on the beneficiary consent authentication by payor | Workflow initiation/update | Payor                      | Subscribed BSPs             |

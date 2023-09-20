@@ -1,4 +1,4 @@
-# Key implementation considerations
+# Implementation considerations
 
 This section identifies the key workflow and data attribute considerations for implementing the reimbursement claims for both IPD and OPD usecases.&#x20;
 
@@ -21,6 +21,7 @@ This section identifies the key workflow and data attribute considerations for i
 
 
 
-**Future Considerations :**&#x20;
+{% embed url="https://docs.google.com/document/d/1WIJmw5eAKaOo0GOFOpnSlnjTcPs0OemV6mJBd2opTI0/edit?usp=sharing" %}
+IPD reimbursement claim userstories by the workstream members
+{% endembed %}
 
-TBA
