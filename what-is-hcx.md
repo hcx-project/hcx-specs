@@ -2,7 +2,7 @@
 description: Introduction to Health Claims Data Exchange
 ---
 
-# Introduction to HCX
+# ✨ Introduction to HCX
 
 The Health Claims data Exchange can be envisioned as analogous to the internet in general and email exchange networks more specifically, where data packets travel to and fro between an origin and the destination. In this context, Health Claims Data Exchanges can be thought of as routing switches or email gateways that facilitate communication with the desired level of consistency, security, privacy, and durability. However, unlike the internet or email, this protocol is defined for a specialized use case of exchanging claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers.
 
@@ -54,6 +54,12 @@ The claims network will consist of the following key building blocks:
 The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
 HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol.md#relay)).&#x20;
+
+### Approach
+
+Protocol specifications form the bedrock of the envisioned claims network's success. To achieve this, these specifications must garner consensus among a diverse array of healthcare system stakeholders, serving as the shared foundation upon which the network is built. In pursuit of this goal, we advocate for a community-driven, open, and consultative approach to protocol creation and governance.&#x20;
+
+This comprehensive approach, encompassing governance principles, design principles, and the proposed governance approach, is defined in the "[Governance](https://hcxprotocol.io/governance/)" section of the [protocol website](https://hcxprotocol.io).
 
 ### Key Specifications
 
