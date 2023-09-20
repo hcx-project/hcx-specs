@@ -36,7 +36,9 @@ We value your feedback and encourage you to participate in shaping the final ver
 Please note that this version contains cumulative documentation and can be used by itself.
 
 {% hint style="info" %}
-**Open Items**: \<Ajit please includ the list of open items from GitHub>
+**Open Items**:&#x20;
+
+Addressing open comments/feedback by the domain working group in [GitHub discussion #113](https://github.com/hcx-project/hcx-specs/discussions/113).
 {% endhint %}
 
 ### Previous Versions
