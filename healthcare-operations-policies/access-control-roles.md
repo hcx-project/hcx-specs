@@ -2,7 +2,7 @@
 description: Roles and access control policies on Health Claims Exchange
 ---
 
-# Access Control (Roles)
+# ✨ Access Control (Roles)
 
 Participating organisations in the the Health Claims information exchange ecosystem may possess one or more of the roles mentioned below. These roles are based on the base set of organisation roles defined in hl7 specifications [here](https://www.hl7.org/fhir/valueset-organization-role.html). Namespaced coding is used to further qualify the role in the context of the claims exchange process.
 
@@ -63,7 +63,7 @@ These roles encompass entities that receive and process claims, such as payers a
 | /predetermination/on\_submit   | /predetermination/submit   |
 | /claim/on\_submit              | /claim/submit              |
 | /communication/request         | /hcx/status                |
-| /paymentnotice/request         | <p><br></p>                |
+| /paymentnotice/request         | <p>/eob/fetch<br></p>      |
 | /hcx/on\_status                | <p><br></p>                |
 | /notification                  | <p><br></p>                |
 | /registry/search               | <p><br></p>                |
@@ -74,6 +74,6 @@ These roles, while not directly engaged in claim processing, monitor claims for 
 
 | APIs initiated | APIs responded |
 | -------------- | -------------- |
-| EOB            | <p><br></p>    |
-| Notification   | <p><br></p>    |
+| /eob/fetch     | <p><br></p>    |
+| /notification  | <p><br></p>    |
 
