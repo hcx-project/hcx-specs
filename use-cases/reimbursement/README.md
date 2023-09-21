@@ -26,7 +26,7 @@ Incentive for High-Quality Care: The reimbursement process often incorporates qu
 **Challenges of Reimbursement Claims in Healthcare :**&#x20;
 
 1. **Financial burden on policyholders :** As reimbursement claims require policyholders  to pay for medical expenses out of pocket at non-network facilities. It may lead to financial stress or even medical debts for the patients. Policyholders often experience delays in receiving reimbursement payments, which can further exacerbate their financial condition. These delays can be due to various factors, including claim reviews and administrative processes.&#x20;
-2. **Compromised healthcare outcomes :** As individuals have to make upfront payments to the probiders; they may avoid or delay necessary treatments.
+2. **Compromised healthcare outcomes :** As individuals have to make upfront payments to the providers; they may avoid or delay necessary treatments.
 3. **Degraded patient experience :** Policy exclusion and claim rejections may lead to dissatisfaction and trust deficit among policyholders. It will have negative effect on the health insurance sector, resulting in a decrease in participation and buying.
 4. **Administrative Burden:** The process of submitting and processing reimbursement claims can be highly administrative and complex.Policyholders often need to seek help from as dedicated BSPs or third-party billing services to manage the paperwork efficiently.&#x20;
 5. **Fraud and Abuse:** The complexity of the reimbursement process can also create opportunities for fraud and abuse. Dishonest practices such as upcoding or unnecessary procedures can lead to overbilling, which harms both patients and payers.&#x20;
