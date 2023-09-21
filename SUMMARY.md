@@ -5,7 +5,7 @@
 * [✨ Introduction to HCX](what-is-hcx.md)
 * [Technical Specifications](hcx-technical-specifications/README.md)
   * [Open Protocol](hcx-technical-specifications/open-protocol/README.md)
-    * [Registries](hcx-technical-specifications/open-protocol/registries.md)
+    * [✨ Registries](hcx-technical-specifications/open-protocol/registries.md)
     * [Claims Data Exchange (HCX) Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/README.md)
       * [Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol.md)
       * [Message Structure](hcx-technical-specifications/open-protocol/key-components-building-blocks/message-structure.md)
