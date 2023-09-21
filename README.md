@@ -23,23 +23,26 @@ We value your feedback and encourage you to participate in shaping the final ver
 #### Summary[^2] of changes (Changelog):
 
 * Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
-* Introduced additional methods for managing attachments using Document Management Systems (DMS).
-* Updates to the registry schema definitions for multi-tenancy, allowing for distinct user roles within a tenant.
-* Introduced "Use Cases" section to list various use cases (Cashless/Reimbursement and IPD/OPD) and their mapping with the HCX protocol.
-* In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol modifications have been incorporated:
-  * Additional access control roles are added to enable appropriate access control levels.
-  * Communication request/response flow is recommended to be used for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
-  * Enhanced the value set for communication reason codes valueset to facilitate the sharing of patient consent and account information in reimbursement claims.
-  * Added new codes to the [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) valueset for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
-  * Introduced codes to address [claim denials](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-error-codes.html) resulting from policyholder consent declines or missing consent in reimbursement claims.
-
-Please note that this version contains cumulative documentation and can be used by itself.
+* Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
+* Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries.md#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
+* Introduced "[Use Cases](use-cases/)" section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
+* In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
+  * [Access control](healthcare-operations-policies/access-control-roles.md):
+    * Additional access control roles are added to enable appropriate access control levels.
+    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mappign to roles. &#x20;
+  * [Recommended Communication request/response flow](use-cases/reimbursement/implementation-considerations.md) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
+  * Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
+    * Communication Reason Codes - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
+    * [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
+    * [Claim Denial Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html) - Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
 
 {% hint style="info" %}
 **Open Items**:&#x20;
 
 Addressing open comments/feedback by the domain working group in [GitHub discussion #113](https://github.com/hcx-project/hcx-specs/discussions/113).
 {% endhint %}
+
+Please note that this version contains cumulative documentation and can be used by itself.
 
 ### Previous Versions
 
