@@ -2,11 +2,11 @@
 description: Mapped workflow, key gaps identified and proposed protocol changes
 ---
 
-# OPD
+# Outpatient (OPD)
 
 The reimagined OPD cashless claims workflow leveraging HCX protocol help us understand how claim requests can processed timely and efficiently. Increased provider network coverage, real time updates and approval of the OPD claims will enhance adoption and trust in the system for policyholder.
 
-Ref: [Typical OPD cashless claims workflow](../typical-workflows/opd.md)
+Ref: [Typical OPD cashless claims workflow](../typical-workflows/outpatient-opd.md)
 
 Reimagined OPD cashless claims workflow using HCX :&#x20;
 

@@ -2,7 +2,7 @@
 description: IPD Reimbursement process
 ---
 
-# IPD
+# Inpatient (IPD)
 
 IPD (In-patient department) is a specialised section within a healthcare facility that is designed to provide medical care and treatment to patients who require admission and stay in the hospital for an extended period.
 
@@ -41,7 +41,17 @@ IPD (In-patient department) is a specialised section within a healthcare facilit
 19. Final settlement amount is transferred to the beneficiary i.e policyholder.
 20. Claim is closed
 
-**Reimagined workflow by the community to streamline claim submission :**&#x20;
+**Reimagined workflow proposed by the work stream for streamlining claim submission:**
+
+Reimbursement work stream identified following optional enhancements to enable better workflow for the patients/payers:
+
+1. Comprehensive eligibility check or intimations: Comprehensive information about blacklisted hospitals, network hospitals, coverage limits and exclusions at the time of intimation
+2. Patient-originated pre-auth: Optional ability for the patient to seek a pre-authorisation for the Reimbursement claims prior to treatment. Pre-authorisation may be at a network or non-network hospital.
+3. Reimbursement to Cashless conversion: Optional ability to prompt the patient seeking treatment at a network hospital to convert to Cashless. Potential automatic  conversion of “Patient-originated Pre-auth” to “Cashless Pre-auth”.
+4. Easy and secure delegation:  Well-designed consent mechanism to allow the patient to assign a TSP, agent or another 3rd party to manage the documentation and communication on their behalf.
+5. Seamless patient-provider collaboration: More natural collaboration between the patient and provider in proving case documentation and query responses to the insurer by using forward mechanism from the protocol.&#x20;
+
+**Below diagram depicts the reimagined workflow:**
 
 <figure><img src="../../../.gitbook/assets/IPD reimbursement reimagined workflow.png" alt=""><figcaption></figcaption></figure>
 
