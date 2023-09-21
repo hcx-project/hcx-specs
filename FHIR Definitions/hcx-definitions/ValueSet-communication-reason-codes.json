@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "communication-reason-codes",
+  "version": "0.9.0",
+  "name": "CommunicationReasonCodes",
+  "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html",
+  "status": "active",
+  "date": "2023-09-20",
+  "publisher": "HCX Open Community",
+  "contact": [
+    {
+      "name": "HCX Open Community",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hcxprotocol.io/"
+        }
+      ]
+    }
+  ],
+    "description": "This is an example value set that includes a set of codes specifying the motivation, cause, or reason for a communication.",
+    "compose": {
+      "include": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+        }
+      ]
+    },
+    "expansion": {
+        "timestamp": "2023-09-20T08:15:30+05:30",
+        "contains": [
+          {
+            "code": "COMM-PATIENT-CONSENT",
+            "display": "Patient Consent Details",
+            "system": "http://hcxprotocol.io/codes/communication-reason-codes"
+          },
+          {
+            "code": "COMM-ACCOUNT-INFORMATION",
+            "display": "Payment Account Information",
+            "system": "http://hcxprotocol.io/codes/communication-reason-codes"
+          }
+        ]
+      }
+  }

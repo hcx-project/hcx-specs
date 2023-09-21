@@ -1541,6 +1541,54 @@
         }]
       },
       {
+        "id" : "Communication.reasonCode",
+        "path" : "Communication.reasonCode",
+        "short" : "Indication for message",
+        "definition" : "The reason or justification for the communication.",
+        "comment" : "Textual reasons can be captured using reasonCode.text.",
+        "min" : 0,
+        "max" : "*",
+        "base" : {
+          "path" : "Communication.reasonCode",
+          "min" : 0,
+          "max" : "*"
+        },
+        "type" : [{
+          "code" : "CodeableConcept"
+        }],
+        "constraint" : [{
+          "key" : "ele-1",
+          "severity" : "error",
+          "human" : "All FHIR elements must have a @value or children",
+          "expression" : "hasValue() or (children().count() > id.count())",
+          "xpath" : "@value|f:*|h:div",
+          "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        }],
+        "isModifier" : false,
+        "isSummary" : true,
+        "binding" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+            "valueString" : "CommunicationReason"
+          }],
+          "strength" : "example",
+          "description" : "Codes for describing reasons for the occurrence of a communication.",
+          "valueSet" : "https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html"
+        },
+        "mapping" : [{
+          "identity" : "workflow",
+          "map" : "Event.reasonCode"
+        },
+        {
+          "identity" : "w5",
+          "map" : "FiveWs.why[x]"
+        },
+        {
+          "identity" : "rim",
+          "map" : ".reasonCode"
+        }]
+      },
+      {
         "id" : "Communication.reasonReference",
         "path" : "Communication.reasonReference",
         "short" : "Why was communication done?",
