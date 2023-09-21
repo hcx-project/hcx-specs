@@ -15,12 +15,14 @@ Version - 0.9-draft | Release date - September, 2023 | Published documentation [
 {% hint style="info" %}
 **Important Note:** The version of the HCX Protocol documentation currently published is a draft and is subject to revisions and updates as we engage in the public consultation process. The sections that have significant changes since previous version (v0.8) are marked with a ✨ icon[^1].&#x20;
 
+Please be aware that this version is comprehensive and self-contained, making it [**suitable for use independently**](#user-content-fn-2)[^2]. Furthermore, there are **no identified backward compatibility breaking changes** from the previous version.
+
 We value your feedback and encourage you to participate in shaping the final version of the protocol. Your insights and contributions are essential to ensure the protocol's effectiveness and alignment with ecosystem needs.&#x20;
 
 **To provide feedback or suggestions:** Please use information provided in "[Contributing to the protocol](how-to-submit-responses.md)" reach out or contribute to the protocol.&#x20;
 {% endhint %}
 
-#### Summary[^2] of changes (Changelog):
+#### Summary[^3] of changes (Changelog):
 
 * Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
 * Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
@@ -29,20 +31,23 @@ We value your feedback and encourage you to participate in shaping the final ver
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
   * [Access control](healthcare-operations-policies/access-control-roles.md):
     * Additional access control roles are added to enable appropriate access control levels.
-    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mappign to roles. &#x20;
+    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mappign to roles.
+  * [Guidelines for Participant onboarding](healthcare-operations-policies/participant-onboarding/):  &#x20;
+    * Restructured the section into multiple subpages for enhancing the readability&#x20;
+    * [Production Onboarding](healthcare-operations-policies/participant-onboarding/production-onboarding-go-live.md):&#x20;
+      * Include recommendations on BSP verification
+      * Enhanced recommendations for "Non ABDM enrolled Providers with no ROHINI id" to  encompass verification through both public and private payers.
   * [Recommended Communication request/response flow](use-cases/reimbursement/implementation-considerations.md) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
   * Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
     * Communication Reason Codes - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
     * [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
     * [Claim Denial Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html) - Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Open Items**:&#x20;
 
 Addressing open comments/feedback by the domain working group in [GitHub discussion #113](https://github.com/hcx-project/hcx-specs/discussions/113).
 {% endhint %}
-
-Please note that this version contains cumulative documentation and can be used by itself.
 
 ### Previous Versions
 
@@ -58,3 +63,5 @@ The following table provides a summary of the existing specification versions an
 [^1]: 
 
 [^2]: 
+
+[^3]: 
