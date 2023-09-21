@@ -8,12 +8,8 @@ This section presents key health claims use cases that have been thoroughly anal
 
 Health claims are primarily categorized into the following groups:
 
-1. Cashless Claims
-   * Inpatient (IPD)
-   * Outpatient (OPD)
-2. Reimbursement Claims
-   * Inpatient (IPD)
-   * Outpatient (OPD)
+1. Cashless Claims (IPD & OPD)
+2. Reimbursement Claims (IPD & OPD)
 
 These use cases represent real-world scenarios and serve as essential reference points for stakeholders looking to leverage the HCX protocol effectively within their healthcare processes.
 

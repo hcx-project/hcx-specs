@@ -30,8 +30,8 @@ We value your feedback and encourage you to participate in shaping the final ver
 * Introduced "[Use Cases](use-cases/)" section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
   * [Access control](healthcare-operations-policies/access-control-roles.md):
-    * Additional access control roles are added to enable appropriate access control levels.
-    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mappign to roles.
+    * Additional participant roles are added to enable appropriate access control levels.
+    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mapping to roles.
   * [Guidelines for Participant onboarding](healthcare-operations-policies/participant-onboarding/):  &#x20;
     * Restructured the section into multiple subpages for enhancing the readability&#x20;
     * [Production Onboarding](healthcare-operations-policies/participant-onboarding/production-onboarding-go-live.md):&#x20;
