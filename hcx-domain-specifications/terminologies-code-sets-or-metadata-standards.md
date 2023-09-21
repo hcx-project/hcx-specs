@@ -4,10 +4,6 @@ description: Code sets or domain metadata standards
 
 # Terminologies
 
-{% hint style="danger" %}
-This section needs to be enhanced to incldue the new FHIR IG link after the propsoed enhancements in the valus set (error, supporting info category/code etc.)
-{% endhint %}
-
 To achieve semantic interoperability, it is recommended that HCX data standards incorporate well established and suitable terminology and coding systems.
 
 In various HL7 standards (including FHIR), these are expressed as Concepts and codes and forms essential vocabulary, ontological binding for resources used to describe document types/categories, element codes and clinical coding like procedure codes, diagnosis codes etc. The data standards defined using FHIR resources and types usually will require agreement on references and usages, through agreed Code Systems and codes, typically manifested through ValueSets.
