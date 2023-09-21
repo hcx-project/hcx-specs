@@ -2,7 +2,7 @@
 description: IPD Reimbursement process
 ---
 
-# IPD
+# Inpatient (IPD)
 
 The reimagined IPD reimbursement claims workflow leveraging HCX protocol help us understand how claim requests can processed timely and efficiently. HCX will bring interoperability and transparency in the claim adjudication process.
 
@@ -11,7 +11,7 @@ Link to the typical IPD reimbursement claims workflow.
 
 
 {% hint style="info" %}
-**Important note :** The "reimagined IPD reimbursement claims workflow using HCX" diagram will be enhanced to highlight key protocol steps and improve readability for the reviewers.
+**Important note :** Based on the initial feedback, below diagram/section will be enhanced for improved readability.
 {% endhint %}
 
 Reimagined IPD reimbursement claims workflow using HCX :&#x20;

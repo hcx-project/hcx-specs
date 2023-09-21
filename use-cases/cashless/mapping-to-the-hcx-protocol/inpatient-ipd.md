@@ -8,6 +8,12 @@ The redesigned IPD cashless claims workflow, powered by the HCX protocol, provid
 
 Ref: [Typical IPD cashless claims workflow](../typical-workflows/inpatient-ipd.md)
 
+
+
+{% hint style="info" %}
+**Important note :** Based on the initial feedback, below diagram/section will be enhanced for improved readability.
+{% endhint %}
+
 Reimagined IPD cashless claims workflow using HCX :&#x20;
 
 <figure><img src="../../../.gitbook/assets/IPD cashless using HCX.png" alt=""><figcaption></figcaption></figure>

@@ -8,6 +8,12 @@ The reimagined OPD cashless claims workflow leveraging HCX protocol help us unde
 
 Ref: [Typical OPD cashless claims workflow](../typical-workflows/outpatient-opd.md)
 
+
+
+{% hint style="info" %}
+**Important note :** Based on the initial feedback, below diagram/section will be enhanced for improved readability.
+{% endhint %}
+
 Reimagined OPD cashless claims workflow using HCX :&#x20;
 
 
