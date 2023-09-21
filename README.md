@@ -39,7 +39,7 @@ We value your feedback and encourage you to participate in shaping the final ver
       * Enhanced recommendations for "Non ABDM enrolled Providers with no ROHINI id" to  encompass verification through both public and private payers.
   * [Recommended Communication request/response flow](use-cases/reimbursement/implementation-considerations.md) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
   * Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
-    * Communication Reason Codes - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
+    * [Communication Reason Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html) - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
     * [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
     * [Claim Denial Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html) - Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
 
