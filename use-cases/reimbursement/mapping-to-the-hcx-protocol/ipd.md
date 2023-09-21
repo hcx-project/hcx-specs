@@ -8,6 +8,12 @@ The reimagined IPD reimbursement claims workflow leveraging HCX protocol help us
 
 Link to the typical IPD reimbursement claims workflow.
 
+
+
+{% hint style="info" %}
+**Important note :** The "reimagined IPD reimbursement claims workflow using HCX" diagram will be enhanced to highlight key protocol steps and improve readability for the reviewers.
+{% endhint %}
+
 Reimagined IPD reimbursement claims workflow using HCX :&#x20;
 
 <figure><img src="../../../.gitbook/assets/IPD reimbursement with HCX.png" alt=""><figcaption></figcaption></figure>

@@ -8,6 +8,10 @@ The reimagined OPD reimbursement claims workflow leveraging HCX protocol help us
 
 Link to the typical OPD reimbursement claims workflow.
 
+{% hint style="info" %}
+**Important note :** The "reimagined OPD reimbursement claims workflow using HCX" diagram will be enhanced to highlight key protocol steps and improve readability for the reviewers.
+{% endhint %}
+
 Reimagined OPD reimbursement claims workflow using HCX :&#x20;
 
 <figure><img src="../../../.gitbook/assets/OPD reimbursement with HCX.png" alt=""><figcaption></figcaption></figure>
