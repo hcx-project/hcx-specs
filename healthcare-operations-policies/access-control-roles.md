@@ -4,12 +4,12 @@ description: Roles and access control policies on Health Claims Exchange
 
 # ✨ Access Control (Roles)
 
-Participating organisations in the the Health Claims information exchange ecosystem may possess one or more of the roles mentioned below. These roles are based on the base set of organisation roles defined in hl7 specifications [here](https://www.hl7.org/fhir/valueset-organization-role.html). Namespaced coding is used to further qualify the role in the context of the claims exchange process.
+Participating organisations in the the Health Claims information exchange ecosystem may possess one or more of the roles mentioned below. These roles are based on the base set of organisation roles defined in hl7 specifications [here](https://www.hl7.org/fhir/valueset-organization-role.html). Name spaced coding is used to further qualify the role in the context of the claims exchange process.
 
 {% hint style="info" %}
 This section has undergone significant enhancements to accommodate the scope and the requirements of [OPD and Reimbursement use cases](../use-cases/), and streamlining action categories for clarity. The key changes include:&#x20;
 
-1. **Expansion of Provider Roles:** The Provider role has been expanded to explicitly encompass hospitals, clinics, practitioners, diagnostics, and pharmacies, aligning with the needs of OPD use cases. This expansion serves several vital purposes:&#x20;
+1. **Expansion of Provider Roles:** The Provider role has been expanded to explicitly represent hospitals, clinics, practitioners, diagnostics, and pharmacies, aligning with the needs of OPD use cases. This expansion serves several following key purposes:&#x20;
    1. **Tailored Onboarding**: Separating provider roles enables the possibility of tailored onboarding processes unique to each role. This approach fosters deeper trust in the participants joining the network.
    2. **Adjudication Flexibility**: The differentiation of roles allows for the application of distinct sets of adjudication rules based on provider and claim types, offering more precise control and compliance.
    3. **Enhanced Visibility and Analytics**: This separation provides a more granular view of network activities, thereby improving analytics and insights into the network's operations.
@@ -51,6 +51,7 @@ These roles are responsible for initiating claims on behalf of policyholders, in
 | /hcx/status                | <p><br></p>            |
 | /notification              | <p><br></p>            |
 | /registry/search           | <p><br></p>            |
+| /eob/on\_fetch             |                        |
 
 #### **Claim Responders**
 
@@ -67,6 +68,7 @@ These roles encompass entities that receive and process claims, such as payers a
 | /hcx/on\_status                | <p><br></p>                |
 | /notification                  | <p><br></p>                |
 | /registry/search               | <p><br></p>                |
+| /eob/on\_fetch                 |                            |
 
 #### **Claim Observers**
 

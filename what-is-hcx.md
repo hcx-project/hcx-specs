@@ -31,8 +31,8 @@ The current version of specifications are designed to cater to both cashless & r
 
 1. Get provider/payor details
 2. Eligibility check
-3. Preauthorization request flow
-4. Claims request flow (including Enhancements, Discharge and Settlement)
+3. Pre-authorization request flow
+4. Claims request flow (including enhancements, discharge and settlement)
 5. Status check&#x20;
 6. Fetch data for regulatory compliance, etc.
 7. Requesting & sharing additional information about claims
@@ -45,7 +45,7 @@ The current version of specifications are designed to cater to both cashless & r
 
 The claims network will consist of the following key building blocks:
 
-1. **Specifications** - this layer defines the blueprint for different aspects of the claims network. These include communication protocols, data packet specifications, Taxonomies, privacy and security specifications, network policies (onboarding and deboarding rules), business rules, operational specifications, etc. Please note that the document intentionally calls these artifacts as specifications to indicate that they become standards only after a “de jure” or “de facto” adoption by the ecosystem.
+1. **Specifications** - this layer defines the blueprint for different aspects of the claims network. These include communication protocols, data packet specifications, Taxonomies, privacy and security specifications, network policies (onboarding and deboarding rules), business rules, operational specifications, etc. Please note that the document intentionally calls these artefacts as specifications to indicate that they become standards only after a “de jure” or “de facto” adoption by the ecosystem.
 2. **Reference Health Claims Exchange (aka switch) software** - A reference gateway implementation build as per the standards defined above. The main goal here will be to provide fundamental software building blocks of the network to enable faster adoption by the ecosystem.
 3. **Compliance sandbox** - Implemented using the above reference software, the key goal of the sandbox will be to help the ecosystem test its specific components against the network standards defined above and get certified to become part of the network.
 4. **Health Claim Exchange runtime(s)** - Operating instances of the health claims platform that enable real-world claims interactions on the network. Like with the internet and email example, there can be multiple such running instances that are expected to be interoperable by adhering to the standards defined as in #1 above.
