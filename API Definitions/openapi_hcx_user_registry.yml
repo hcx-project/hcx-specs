@@ -11,12 +11,11 @@ tags:
   - name: Registry APIs
     description: HCX user registry APIs
 paths:
-
   /user/create:
     post:
       tags:
         - Registry APIs
-      description: This API is to create a user in the registry. API generates a unique user id  and returns the id in the response on successfull creation of user.
+      description: This API is designed for user creation within the registry. Upon successful user creation, the API generates a unique user ID and returns it in the response.
       security:
         - bearer_auth: []
       requestBody:
@@ -61,52 +60,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-  /user/read/{user_id}:
-    get:
-      parameters:
-        - in: path
-          name: user_id
-          required: true
-          schema:
-            type: string
-          description: Unique identifier of the user/scheme on the HCX instance
-      tags:
-        - Registry APIs
-      description: This API is to retrieve details of a single user from the registry, using their user id .
-      security:
-        - bearer_auth: []
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                allOf:
-                  - $ref: '#/components/schemas/UserReadResponse'
-        '400':
-          description: Client Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '404':
-          description: Resource not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
-        '500':
-          description: Downstream systems down/unhandled exceptions.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ErrorResponse'
   /user/search:
     post:
       tags:
         - Registry APIs
       description: |
         This API is to search for users in the registry. API returns list of users matching the input criteria.
+        
+        Access to this API is restricted to users with an admin role. Admin users can utilize this API to retrieve a list of users associated with their organization.
+        
+        The root admin has access to retrieve all users.
 
         Search filter supports all the fields. If multiple filter conditions are provided, they are processed by applying AND operation.
 
@@ -167,15 +130,6 @@ paths:
         }
         ```
 
-        3. Filters with nested fields, the below filter will return list of users with the given role .
-        ```
-        {
-          "filters": {
-            "tenant_roles.roles": { "eq": "admin" }
-          }
-        }
-        ```
-
 
       security:
         - bearer_auth: []
@@ -202,7 +156,7 @@ paths:
                         type: array
                         description: List of users matching with the input search criteria
                         items:
-                          $ref: '#/components/schemas/UserUpdateRequest'
+                          $ref: '#/components/schemas/UserReadResponse'
         '400':
           description: Client Error
           content:
@@ -225,7 +179,9 @@ paths:
     post:
       tags:
         - Registry APIs
-      description: This API is to update a user's information in the registry. user_id must be mandatorily provided in the request.
+      description:
+        This API is designed to update a user's information in the registry, and the 'user_id' must be included as a mandatory field in the request.
+        Please note that the email field cannot be modified.
       security:
         - bearer_auth: []
       requestBody:
@@ -329,12 +285,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
-
-  /user/tenant_roles/update:
+  /participant/user/add:
     post:
       tags:
         - Registry APIs
-      description: This API is to update a tenant roles for the user.
+      description: |
+        This API facilitates the addition of users to an organization.
+        
+        When adding users to the organization, you have the option to assign specific roles to each user, which determines their access privileges based on their role.
+        
+        Users with assigned roles can initiate protocol API requests within the HCX platform, however currently, only a user role with admin have the authority to trigger protocol API requests.
       security:
         - bearer_auth: []
       requestBody:
@@ -344,18 +304,20 @@ paths:
               allOf:
                 - type: object
                   required:
-                    - user_id
+                    - participant_code
+                    - users
                   properties:
-                    user_id:
+                    participant_code:
                       type: string
-                      description: Unique identifier of the user on the HCX instance
-                      example: "user01@HCX01"
-                    tenant_roles:
+                      description: Unique identifier of the participant on the HCX instance
+                      example: "participant01@HCX01"
+                    users:
                       type: array
                       items:
                         type: object
-                      description: Base tenant of the admin user and roles
-                      example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
+                      description: List of the users to be added to a participant.
+                      example: [{"user_id": "user01", "role": "viewer"},{"user_id": "user02", "role": "config-manager"}]
+
       responses:
         '200':
           description: OK
@@ -368,20 +330,131 @@ paths:
                     type: string
                     description: Unix timestamp when the request is sent
                     example: "1629057611000"
-                  user_id:
+                  result:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        user_id:
+                          type : string
+                          description: User ID.
+                          example: "user01@HCX01"
+                        status:
+                          type: string
+                          description: Status of the operation
+                          example: "successful"
+                  overallStatus:
                     type: string
-                    description: Machine generated/readable unique identifier of the user on the HCX instance.
-                    example: "user01@HCX01"
+                    description: Overall status of the operation
+                    example: "successful"
 
 
-
+        '400':
+          description: Client Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /participant/user/remove:
+    post:
+      tags:
+        - Registry APIs
+      description: |
+        This API enables the removal of users from the organization.
+        
+        When using this API, you need specify both the 'user_id' and the 'role' to be removed.
+        
+        Please note that using this API results in the comprehensive removal of associated user sessions and related data from the organization
+      security:
+        - bearer_auth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - type: object
+                  required:
+                    - participant_code
+                    - users
+                  properties:
+                    participant_code:
+                      type: string
+                      description: Unique identifier of the participant on the HCX instance
+                      example: "participant01@HCX01"
+                    users:
+                      type: array
+                      items:
+                        type: object
+                      description: List of the users to be added to a participant.
+                      example: [{"user_id": "user01", "role": "viewer"},{"user_id": "user02", "role": "config-manager"}]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  result:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        user_id:
+                          type : string
+                          description: User ID.
+                          example: "user01@HCX01"
+                        status:
+                          type: string
+                          description: Status of the operation
+                          example: "successful"
+                  overallStatus:
+                    type: string
+                    description: Overall status of the operation
+                    example: "successful"
+        '400':
+          description: Client Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Downstream systems down/unhandled exceptions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
 
 components:
   schemas:
 
     UserCreateRequest:
       required:
+        - email
         - user_name
+        - tenant_roles
         - created_by
       type: object
       properties:
@@ -389,9 +462,6 @@ components:
           type: string
           description: Human readable user name
           example: User 01
-        pin:
-          type: string
-          description: Identification pin if needed to be set
         mobile:
           type: string
           description: Mobile number of the user
@@ -401,15 +471,19 @@ components:
           format: email
           description: Email Id of the user
           example: user01@domain_name.com
-        linked_user_id:
-          type: string
-          description: User ID in the source system
+        tenant_roles:
+          type: array
+          items:
+            type: object
+          description: Base tenant of the admin user
+          example: [{"participant_code":"pcpt@hcx","role":"admin"}]
         created_by:
           description: participant_code or user_id  of the created_by user
           type: string
           example: Participant code / user Id
-
-
+        linked_user_id:
+          type: string
+          description: User ID in the source system
 
     UserSearchRequest:
       type: object
@@ -442,25 +516,9 @@ components:
           type: string
           description: Human readable name for the user
           example: "user01"
-        pin:
-          type: string
-          description: Identification pin if needed to be set
-        mobile:
-          type: string
-          description: Mobile number of the user
-          example: 8522812345
-        email:
-          type: string
-          format: email
-          description: Email Id of the user
-          example: user01@domain_name.com
         linked_user_id:
           type: string
           description: User ID in the source system
-        created_by:
-          description: participant_code or user id  of the created user
-          type: string
-          example: Participant code / user Id
 
 
     UserReadResponse:
@@ -476,9 +534,6 @@ components:
         user_name:
           type: string
           description: Human readable name for the user
-        pin:
-          type: string
-          description: Identification pin if needed to be set
         mobile:
           type: string
           description: Mobile number of the user
@@ -496,7 +551,7 @@ components:
           items:
             type: object
           description: Base tenant of the admin user
-          example: [{"participant_code":"pcpt@hcx","roles":["roles"]}]
+          example: [{"participant_code":"pcpt@hcx","role":"admin"}]
         created_by:
           description: participant_code or user id  of the created user
           type: string
