@@ -8,7 +8,7 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  version: 0.8.0
+  version: 0.9.0
 externalDocs:
   description: HCX Specifications
   url: >-
@@ -197,19 +197,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '404':
           description: Requested resource was not found
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '500':
           description: Downstream systems down/unhandled exceptions.
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
       security:
       - bearer_auth: []  
   /notification/subscription/update:
@@ -259,25 +259,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/SuccessResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/SuccessResponse'
         '400':
           description: Request Validation failed
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '404':
           description: Requested resource was not found
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '500':
           description: Downstream systems down/unhandled exceptions.
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
       security:
       - bearer_auth: []
   /notification/notify:
@@ -311,25 +311,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/SuccessResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/SuccessResponse'
         '400':
           description: Request Validation failed
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '404':
           description: Requested resource was not found
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
         '500':
           description: Downstream systems down/unhandled exceptions.
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
+                $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/ErrorResponse'
       security:
       - bearer_auth: []
 
@@ -370,7 +370,7 @@ components:
                 Protected headers contain information that helps HCX gateway to identify senders, receivers of the message, perform integrity checks, audits and routing functionality. Header values are posted in clear and must never contain any Personally Identifiable Information (PII) about the patient or any person. HCX protocol uses JWS protected headers for such information to ensure these are not tampered with by the intermediate gateways. Protected Headers for HCX will be the union of the following three header categories.
                 
           
-                JOSE Headers - JSON Web Signature header as per [RFC7515](https://datatracker.ietf.org/doc/html/rfc7515#page-9). For HCX V0.8, this is proposed to be fixed to {"alg":"RS256"}.
+                JOSE Headers - JSON Web Signature header as per [RFC7515](https://datatracker.ietf.org/doc/html/rfc7515#page-9). For HCX, this is proposed to be fixed to {"alg":"RS256"}.
                   
                   
                 Notification Protected Headers - The JWS protected headers as per [RFC7515](https://datatracker.ietf.org/doc/html/rfc7515#page-9). The list of header allowed for the notification request to define the recipients and the details about the notification.
@@ -522,7 +522,7 @@ components:
           description: Unix timestamp when the response is sent.
           example: "1629057611000"
         error:
-          $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.7/API%20Definitions/openapi_hcx.yaml#/components/schemas/Error'
+          $ref: 'https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml#/components/schemas/Error'
     StandardSuccessResponse:
       required:
         - timestamp
