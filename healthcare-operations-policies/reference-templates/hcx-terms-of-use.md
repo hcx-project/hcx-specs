@@ -12,10 +12,10 @@ The Terms of Use and Privacy Policy of an HCX will constitute the Agreement with
 
 In order to create the drafts of the templates, it is necessary to first identify the key terms of the relationship between the parties, i.e., the HCX and a participant. These key terms have been derived from the guidelines earlier specified in the business specifications:
 
-1. [Guidelines for Participant Onboarding](broken-reference)&#x20;
-2. [Guidelines for Grievance redressal](broken-reference)
-3. [Guidelines for SLAs and Customer satisfaction](broken-reference)&#x20;
-4. [Guidelines for Operating charges](broken-reference)&#x20;
+1. [Guidelines for Participant Onboarding](../participant-onboarding/)&#x20;
+2. [Guidelines for Grievance redressal](../guidelines-for-grievance-redressal/)
+3. [Guidelines for SLAs and Customer satisfaction](../guidelines-for-slas-and-ecosystem-satisfaction.md)&#x20;
+4. [Guidelines for Operating charges](../guidelines-for-operating-charges.md)&#x20;
 5. Other guidelines the the current business specifications&#x20;
 
 In effect, the terms of use and privacy policy drafts are summaries of the above guidelines, couched in the form of legally binding contracts.

@@ -70,5 +70,4 @@
       * [OPD](use-cases/reimbursement/mapping-to-the-hcx-protocol/opd.md)
     * [Implementation considerations](use-cases/reimbursement/implementation-considerations.md)
 * [Contributing to the protocol](how-to-submit-responses.md)
-* [✨ Acknowledgements](acknowledgements.md)
 * [✨ Future focus areas](future-roadmap.md)
