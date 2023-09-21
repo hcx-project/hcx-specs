@@ -26,7 +26,7 @@
   * [Digital Network Policies](hcx-technical-specifications/digital-network-policies.md)
 * [Domain Specifications](hcx-domain-specifications/README.md)
   * [Domain Data Models](hcx-domain-specifications/domain-data-models/README.md)
-    * [Handling Attachments](hcx-domain-specifications/domain-data-models/handling-attachments.md)
+    * [✨ Handling Attachments](hcx-domain-specifications/domain-data-models/handling-attachments.md)
     * [Handling Processing Errors](hcx-domain-specifications/domain-data-models/handling-processing-errors.md)
   * [Terminologies](hcx-domain-specifications/terminologies-code-sets-or-metadata-standards.md)
   * [Domain Specific Languages (DSLs)](hcx-domain-specifications/domain-specific-languages-dsls.md)
