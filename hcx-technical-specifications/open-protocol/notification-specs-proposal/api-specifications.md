@@ -12,7 +12,7 @@ In order to make notifications secure, lightweight and easily deliverable and ac
 * Limit the Maximum size of notification payload
 * Templatized messages based on notification topic to encourage semantic interoperability
 
-Following key APIs are envisioned to enable notifications in HCX. Full API specifications in OpenAPI 3.0 format are available [here](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi\_hcx\_notifications.yaml).
+Following key APIs are envisioned to enable notifications in HCX. Full API specifications in OpenAPI 3.0 format are available [here](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx\_notifications.yaml).
 
 ## List supported notifications <a href="#_3sax78uu6y0b" id="_3sax78uu6y0b"></a>
 
@@ -30,12 +30,12 @@ Get the list of notification types supported by the network along with their cla
 
 ### **API details**
 
-/notification/topic/list
+/notification/list
 
 As evident sanctity of the master list of notification is important for effective notification service on the network, hence it is recommended that master list of the notification is given the same treatment as an operator would give to its code for the switch.
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/list" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/list" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
 ## Subscription to notifications <a href="#_cza39c77xpok" id="_cza39c77xpok"></a>
@@ -58,20 +58,20 @@ Input would be the topic\_code and payloads containing use case related details 
 
 /notification/subscribe&#x20;
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscribe" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscribe" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
 /notification/unsubscribe
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/unsubscribe" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/unsubscribe" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
 /notification/subscription/list
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscription/list" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscription/list" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
 ## Trigger notifications <a href="#_jk5n4j2dcr89" id="_jk5n4j2dcr89"></a>
@@ -103,8 +103,8 @@ Proposed attributes of notification header and payload:
 
 /notification/notify: return a synchronous acknowledgement of notification being received. Please note that no callback pair is defined for notify API.
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/notify" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/notify" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
 ## Updating the notification subscriptions <a href="#_1d926rz3zlxf" id="_1d926rz3zlxf"></a>
@@ -126,7 +126,7 @@ Any change in the subscription from the sending participant would be notified to
 
 /notification/subscription/update
 
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscription/update" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.8/API%20Definitions/openapi_hcx_notifications.yaml)
+{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscription/update" method="post" %}
+[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
