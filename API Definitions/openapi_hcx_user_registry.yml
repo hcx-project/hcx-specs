@@ -347,7 +347,27 @@ paths:
                     type: string
                     description: Overall status of the operation
                     example: "successful"
-
+        '206':
+          description: PARTIAL_CONTENT
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  result:
+                    type: array
+                    items:
+                      type: object
+                    description: List of the users to be added to a participant.
+                    example: [ { "user_id": "hcxtest6001@yopmail.com", "error": { "code": null, "message": "Role 'admin' with Participant Code 'participant01@HCX01' already exists.", "trace": null }, "status": "failed" }, { "user_id": "hcxtest6000@yopmail.com", "status": "successful" } ]
+                  overallStatus:
+                    type: string
+                    description: Overall status of the operation
+                    example: "partial"
 
         '400':
           description: Client Error
@@ -428,6 +448,30 @@ paths:
                     type: string
                     description: Overall status of the operation
                     example: "successful"
+        '206':
+          description: PARTIAL_CONTENT
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  timestamp:
+                    type: string
+                    description: Unix timestamp when the request is sent
+                    example: "1629057611000"
+                  result:
+                    type: array
+                    items:
+                      type: object
+                    description: List of the users to be added to a participant.
+                    example: [ { "user_id": "hcxtest6001@yopmail.com", "error": { "code": null, "message": "Role 'admin' with Participant Code 'participant01@HCX01' already exists.", "trace": null }, "status": "failed" }, { "user_id": "hcxtest6000@yopmail.com", "status": "successful" } ]
+                  overallStatus:
+                    type: string
+                    description: Overall status of the operation
+                    example: "partial"
+
+
+
         '400':
           description: Client Error
           content:
