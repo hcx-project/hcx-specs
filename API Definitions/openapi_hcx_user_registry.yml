@@ -67,13 +67,11 @@ paths:
       description: |
         This API is to search for users in the registry. API returns list of users matching the input criteria.
         
-        Access to this API is restricted to users with an admin role. Admin users can utilize this API to retrieve a list of users associated with their organization.
-        
-        The root admin has access to retrieve all users.
+        Access to this API is restricted to users with an admin role. Admin users can utilize this API to retrieve a list of users associated with their organization. The root admin has access to retrieve all users of the HCX Gateway.
 
         Search filter supports all the fields. If multiple filter conditions are provided, they are processed by applying AND operation.
 
-        **Limit** and **Offset** are optional fields. The limit option allows you to limit the number of rows should be returned in the response, while offset allows you to omit a specified number of rows before the beginning of the result set.
+        **Limit** and **Offset** are optional fields. The `limit` option allows you to limit the number of rows should be returned in the response, while `offset` allows you to omit a specified number of rows before the beginning of the result set.
 
 
         Following are the operations supported by search filter:
@@ -180,7 +178,7 @@ paths:
       tags:
         - Registry APIs
       description:
-        This API is designed to update a user's information in the registry, and the 'user_id' must be included as a mandatory field in the request.
+        This API is designed to update a user's information in the registry, and the `user_id` must be included as a mandatory field in the request.
         Please note that the email field cannot be modified.
       security:
         - bearer_auth: []
@@ -394,9 +392,9 @@ paths:
       description: |
         This API enables the removal of users from the organization.
         
-        When using this API, you need specify both the 'user_id' and the 'role' to be removed.
+        When using this API, you need specify both the `user_id` and the `role` to be removed.
         
-        Please note that using this API results in the comprehensive removal of associated user sessions and related data from the organization
+        Please note that using this API results in the comprehensive removal of associated user sessions and related data from the organization.
       security:
         - bearer_auth: []
       requestBody:
