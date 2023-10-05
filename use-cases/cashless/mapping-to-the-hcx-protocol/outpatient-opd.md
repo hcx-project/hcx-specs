@@ -18,13 +18,13 @@ Ref: [Typical OPD cashless claims workflow](../typical-workflows/outpatient-opd.
 
 The OPD service delivery and claims process would usually start with the coverage eligibility (optional) check for the beneficiary. The following diagram shows the steps and stakeholders involved in the coverage eligibility flow.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Pre-auth flow**
 
 After the coverage eligibility process, the provider would determine the required services or treatment plan for the beneficiary's requirements, along with the associated expenses, and submits it to the payer for pre-authorization. The following diagram provides an overview of the steps and stakeholders involved in the pre-auth flow.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Claims flow**
 
