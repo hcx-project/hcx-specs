@@ -1,6 +1,7 @@
 # Table of contents
 
 * [✨ Summary](README.md)
+* [Glossary](glossary.md)
 * [Context](readme-1.md)
 * [✨ Introduction to HCX](what-is-hcx.md)
 * [Technical Specifications](hcx-technical-specifications/README.md)
