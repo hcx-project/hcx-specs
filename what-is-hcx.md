@@ -12,11 +12,11 @@ The figure below shows a simple depiction of a health claims network facilitated
 
 ### Vision, Mission, and Objectives
 
-1. Expand Insurance Penetration
-   1. Significantly lower cost of claims processing implies new use cases – such as OPD and Pharmacy
+1. Expand Benefits/Coverage Penetration
+   1. Significantly lower cost of claims processing thereby facilitating new use cases, including OPD use cases such as consultation, diagnostics, pharmacy, wellness etc.
    2. New kinds of payors in the market that can lead to an increase in insured base
-   3. Reduce receivable cycles and increase acceptance of cashless claims (even in smaller hospitals)
-2. Facilitate insurance innovation
+   3. Reduce receivable cycles and increase acceptance of cashless health claims (at smaller providers, other health service providers)
+2. Facilitate Benefits/Coverage innovation
    1. Highly personalized policies
    2. Short duration, low premium policies
    3. Auto adjudication, better fraud and abuse prevention
@@ -29,17 +29,18 @@ The figure below shows a simple depiction of a health claims network facilitated
 
 The current version of specifications are designed to cater to both cashless & reimbursement health claims processes and envisions to facilitate the following information flows:
 
-1. Get provider/payor details
+1. Network Participant details - addressing, data security and integrity certs
 2. Eligibility check
-3. Pre-authorization request flow
-4. Claims request flow (including enhancements, discharge and settlement)
-5. Status check&#x20;
-6. Fetch data for regulatory compliance, etc.
-7. Requesting & sharing additional information about claims
-8. Communication flows (for additional information about claims and sharing proof of patients consent to process claims on their behalf)
-9. Notifications (including network, participant & workflow related notifications)
-10. Payment notification
-11. Payment acknowledgement
+3. Pre-authorization (including enhancements)
+4. Claims request flow (discharge/settlement)
+5. Requesting & sharing additional information about claims
+   1. Additoinal supporting information
+   2. Policyholder consent to process claim on their behalf, etc.&#x20;
+6. Notifications (including network, participant & workflow related notifications)
+7. Status check&#x20;
+8. Fetch data for regulatory compliance, etc.
+9. Payment notification
+10. Payment acknowledgement
 
 ### Key Constituents
 
