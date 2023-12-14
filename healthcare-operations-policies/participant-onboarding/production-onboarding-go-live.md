@@ -28,8 +28,8 @@ In this step, interested participants will be required to go through the onboard
 **Addressing data privacy and security on BSP platforms** - The HCX protocol necessiate that user/citizen-facing platforms can only assume BSP role with the explicit consent of the beneficiary. The protocol specifies following mechanism and event points for seeking consent:
 
 1. Consent requirement for tracking the claims - Please see “Subscription Mechanism” section under [Workflow notification](../../hcx-technical-specifications/open-protocol/notification-specs-proposal/categories.md#workflow-notification).&#x20;
-2. OPD reimbursement proposed workflow section [here](../../use-cases/reimbursement/mapping-to-the-hcx-protocol/outpatient-opd.md). &#x20;
-3. IPD reimbursement proposed section workflow [here](../../use-cases/reimbursement/mapping-to-the-hcx-protocol/inpatient-ipd.md).
+2. OPD reimbursement proposed workflow section [here](broken-reference). &#x20;
+3. IPD reimbursement proposed section workflow [here](broken-reference).
 {% endhint %}
 
 #### **Step 3: Gather HCX related details**

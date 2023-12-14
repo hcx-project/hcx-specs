@@ -2,7 +2,7 @@
 description: Introduction to Health Claims Data Exchange
 ---
 
-# ✨ Introduction to HCX
+# Introduction to HCX\*
 
 The Health Claims data Exchange can be envisioned as analogous to the internet in general and email exchange networks more specifically, where data packets travel to and fro between an origin and the destination. In this context, Health Claims Data Exchanges can be thought of as routing switches or email gateways that facilitate communication with the desired level of consistency, security, privacy, and durability. However, unlike the internet or email, this protocol is defined for a specialized use case of exchanging claims-related information between relevant actors - payors, providers, beneficiaries, regulators, observers.
 
@@ -54,7 +54,7 @@ The claims network will consist of the following key building blocks:
 
 The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
-HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol.md#relay)).&#x20;
+HCX specifications could enable the existence of multiple HCX instances and relays between them (please see example flow [here](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/#relay)).&#x20;
 
 ### Approach
 
@@ -104,9 +104,7 @@ A thriving data exchange will also require clear rules of engagement to ensure t
 3. Access control policies (Data sharing policies) -  which actor plays what role and gets to see which parts of the data. These policies will then affect the visibility and access to domain-specific attributes that will typically travel in the body of the data structures defined by the data exchange. Role-based, need for consent to access APIs, data attributes, etc.
 4. Business SLAs
 5. Charges/Fees - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
-6. Dispute resolution policies
-7. Onboarding
-8. Defaulting/deboarding policies
-9. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
+6. Dispute resolution policies&#x20;
+7. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.
 
 The next sections detail the protocol specifications under these three key areas (Technical, Domain and Business Policy).

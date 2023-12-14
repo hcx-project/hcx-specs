@@ -21,7 +21,7 @@ This section has undergone significant enhancements to accommodate the scope and
    1. **provider.hospital** - Organised hospitals. &#x20;
    2. **provider.clinic** - Independent clinics/ small care setups.
    3. **provider.practitioner** - Individual practitioners. &#x20;
-   4. **provider.diagnostics** - Diagnostic testing/laboratory services.
+   4. **provider.diagnosticsFacility** - Diagnostic testing/laboratory services facility.
    5. **provider.pharmacy** - Pharmacies and drug stores.
 2. **payer -** Insurance service provider, an entity providing reimbursement, payment, or related services.
 3. **agency.tpa -** Third party administrator, entity acting on behalf of the payer. In the current version, this role is expected to behave like a payer from the data exchange perspective.

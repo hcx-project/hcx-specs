@@ -2,7 +2,7 @@
 description: Current status and enhancements from previous version
 ---
 
-# ✨ Summary
+# Summary\*
 
 Inspired by the recommendations of the Joint Working Group of NHA and IRDAI (2019), Health Claims Data Exchange (HCX) is an ambitious open source project that aims to define interoperable protocol specifications to enable a multi-party exchange of health claims information.
 
@@ -13,20 +13,20 @@ The HCX switches can be thought of as routing switches or email gateways that fa
 Version - 0.9-draft | Release date - September, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9-draft/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9) | Protocol [website](https://hcxprotocol.io)
 
 {% hint style="info" %}
-**Important Note:** The version of the HCX Protocol documentation currently published is a draft and is subject to revisions and updates as we engage in the public consultation process. The sections that have significant changes since previous version (v0.8) are marked with a ✨ icon[^1].&#x20;
+**Important Note:** The version of the HCX Protocol documentation currently published is a draft and is subject to revisions and updates as we engage in the public consultation process. The sections that have significant changes since previous version (v0.8) are marked with "\*" at the end of the title (also visible in the menu tree).&#x20;
 
-Please be aware that this version is comprehensive and self-contained, making it [**suitable for use independently**](#user-content-fn-2)[^2]. Furthermore, there are **no identified backward compatibility breaking changes** from the previous version.
+Please be aware that this version is comprehensive and self-contained, making it [**suitable for use independently**](#user-content-fn-1)[^1]. Furthermore, there are **no identified backward compatibility breaking changes** from the previous version.
 
 We value your feedback and encourage you to participate in shaping the final version of the protocol. Your insights and contributions are essential to ensure the protocol's effectiveness and alignment with ecosystem needs.&#x20;
 
 **To provide feedback or suggestions:** Please use information provided in "[Contributing to the protocol](how-to-submit-responses.md)" reach out or contribute to the protocol.&#x20;
 {% endhint %}
 
-#### Summary[^3] of changes (Changelog):
+#### Summary[^2] of changes (Changelog):
 
 * Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
 * Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
-* Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries.md#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
+* Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries/#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
 * Introduced "[Use Cases](use-cases/)" section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
   * [Access control](healthcare-operations-policies/access-control-roles.md):
@@ -37,7 +37,7 @@ We value your feedback and encourage you to participate in shaping the final ver
     * [Production Onboarding](healthcare-operations-policies/participant-onboarding/production-onboarding-go-live.md):&#x20;
       * Include recommendations on BSP verification
       * Enhanced recommendations for "Non ABDM enrolled Providers with no ROHINI id" to  encompass verification through both public and private payers.
-  * [Recommended Communication request/response flow](use-cases/reimbursement/implementation-considerations.md) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
+  * [Recommended Communication request/response flow](broken-reference) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
   * Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
     * [Communication Reason Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html) - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
     * [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
@@ -63,5 +63,3 @@ The following table provides a summary of the existing specification versions an
 [^1]: 
 
 [^2]: 
-
-[^3]: 
