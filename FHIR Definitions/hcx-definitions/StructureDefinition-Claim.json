@@ -6186,6 +6186,55 @@
         ]
       },
       {
+        "id": "Claim.type",
+        "path": "Claim.type",
+        "short": "Category or discipline",
+        "definition": "The category of claim, e.g. oral, pharmacy, vision, institutional, professional, or diagnostics.",
+        "comment": "The majority of jurisdictions use: oral, pharmacy, vision, professional, institutional, and diagnostics, or variants on those terms, as the general styles of claims. Professional and Diagnostics are typically used for OPD claims. The valueset is extensible to accommodate other jurisdictional requirements.",
+        "requirements": "Claim type determine the general sets of business rules applied for information requirements and adjudication.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Claim.type",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ClaimType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The type or discipline-style of the claim.",
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-hcx-claim-types.html"
+        },
+        "mapping": [
+          {
+            "identity": "w5",
+            "map": "FiveWs.class"
+          }
+        ]
+      },
+      {
         "id": "Claim.subType",
         "path": "Claim.subType",
         "short": "More granular claim type",
@@ -6225,7 +6274,7 @@
           ],
           "strength": "example",
           "description": "A more granular claim typecode.",
-          "valueSet": "https://staging-hcx.swasth.app/hapi-fhir/fhir/ValueSet/hcx-claim-sub-types"
+          "valueSet": "https://ig.hcxprotocol.io/v0.9/ValueSet-hcx-claim-sub-types.html"
         },
         "mapping": [
           {

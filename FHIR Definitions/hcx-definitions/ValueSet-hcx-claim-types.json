@@ -1,0 +1,66 @@
+{
+    "resourceType": "ValueSet",
+    "id": "hcx-claim-types",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes for claim types.</p></div>"
+    },
+    "url": "https://ig.hcxprotocol.io/v0.9/ValueSet-hcx-claim-types.html",
+    "version": "0.9.0",
+    "name": "HCXClaimTypes",
+    "status": "draft",
+    "date": "2023-03-06",
+    "publisher": "HCX Open Community",
+    "contact": [
+      {
+        "name": "HCX Open Community",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "http://hcxprotocol.io/"
+          }
+        ]
+      }
+    ],
+    "description": "This is the value set listing the claim type codes, with Professional and Diagnostics commonly applied to OPD claims. Subsequent protocol versions will require a thorough examination of this value set to precisely articulate various claim categorizations through the claim.type and claim.subType elements. It is crucial to guarantee seamless backward compatibility in future iterations in case the valueset definition undergoes changes following the review.",
+    "compose": {
+        "include" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/claim-type"
+        }]
+    },
+    "expansion": {
+      "timestamp": "2023-03-06T08:15:30+05:30",
+      "contains": [
+        {
+            "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+            "code": "institutional",
+            "display": "Institutional"
+        },
+        {
+            "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+            "code": "oral",
+            "display": "Oral"
+        },
+        {
+            "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+            "code": "pharmacy",
+            "display": "Pharmacy"
+        },
+        {
+            "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+            "code": "professional",
+            "display": "Professional"
+        },
+        {
+            "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+            "code": "vision",
+            "display": "Vision"
+        },
+        {
+          "system": "http://hcxprotocol.io/codes/hcx-claim-types",
+          "code": "diagnostics",
+          "display": "Diagnostics"
+        }
+      ]
+    }
+  }
