@@ -60,3 +60,5 @@ Here is a sample of the set of libraries that you can explore:
 4. Libgcrypt
 5. PyNaCl
 6. TweetNaCl
+
+Following section provides details on the mechanism to secure API authentication and access.

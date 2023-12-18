@@ -130,3 +130,4 @@ Any change in the subscription from the sending participant would be notified to
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
 
+Following section lists the key notification for each notification category, sender & recipient details, and triggers.

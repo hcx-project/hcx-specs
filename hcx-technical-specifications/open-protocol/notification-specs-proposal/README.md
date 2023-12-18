@@ -1,5 +1,5 @@
 ---
-description: Specifications to enable participant notifications
+description: Specifications to enable participant notifications on HCX
 ---
 
 # Notifications
@@ -30,4 +30,6 @@ Event driven notification can enable valuable near real time information for the
 6. Guidelines for policies related to notification capabilities
 
 As part of the overall HCX specifications, the Notification delivery specifications are designed keeping in mind the HCX design principles listed [here](https://hcxprotocol.io/governance/).
+
+Following sub-section provides details on the key notification categories and their triggers.
 

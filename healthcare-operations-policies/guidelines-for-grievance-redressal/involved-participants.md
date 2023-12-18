@@ -21,3 +21,5 @@ In addition, participants like IRDAI (IGMS system - the existing dispute resolut
 {% hint style="info" %}
 Each participant in the above list will be mapped with HCX participnt roels mentioned in the [Access Control ](broken-reference)section.
 {% endhint %}
+
+Followign sections provides details on the proposed process to follow in the dispute resolution.

@@ -25,3 +25,5 @@ Based on these principles and design considerations, subsections below define th
 2. Health Claims data Exchange (HCX) Protocol - Details of the exchange flows including terminologies used, key constructs, message structures, unbundled APIs and error handling.
 3. Data Privacy and Security - Details of key security features of the protocol.
 4. Audit and Reporting
+
+Following sub-section provides details on the HCX registries and different participant registries.

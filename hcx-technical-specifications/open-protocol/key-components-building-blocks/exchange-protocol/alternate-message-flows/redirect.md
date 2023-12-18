@@ -15,3 +15,4 @@ Redirect flow would have the following steps:
 
 <figure><img src="../../../../../.gitbook/assets/Redirect flow.png" alt=""><figcaption></figcaption></figure>
 
+Following section provides details of the leveraging forward claims construct on HCX.

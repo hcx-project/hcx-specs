@@ -70,3 +70,7 @@ E.g. In the current cashless claims scenario, domain working groups have decided
 ### **Signatures**
 
 As per [RFC7516](https://datatracker.ietf.org/doc/html/rfc7516), cryptographic mechanisms used in JWE encrypts and provides integrity protection to encrypted payload and protected headers using Authenticated Encryption with Associated Data (AEAD), hence additional signatures are not needed for message integrity protection.
+
+
+
+Follwing section provides details of the API structure and the API responses.

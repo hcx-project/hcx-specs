@@ -124,3 +124,5 @@ Communications API will be used for communications between the payors and provid
 {% endswagger %}
 
 Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail. These API specs can be opened in swagger editor via this [link](https://editor.swagger.io/?url=https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx.yaml).
+
+Next section provides details of the possible error scenarios and the HCX error handling mechanisms.

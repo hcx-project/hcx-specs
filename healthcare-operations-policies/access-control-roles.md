@@ -79,3 +79,4 @@ These roles, while not directly engaged in claim processing, monitor claims for 
 | /eob/fetch     | <p><br></p>    |
 | /notification  | <p><br></p>    |
 
+Following section focuses on the participant onboarding requirement &  processes on HCX.

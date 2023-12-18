@@ -10,3 +10,5 @@ This section defines the following key building blocks of the data exchange prot
 2. Message Structure: Components of the protocol messages and their details
 3. API structure: Details of the protocol APIs that facilitate the exchange
 4. Error handling: Types of protocol errors, list of error codes and their descriptions
+
+Following sub-section provides details of the various data exchange scenarios, workflows, and stakeholders involved in each exchange.

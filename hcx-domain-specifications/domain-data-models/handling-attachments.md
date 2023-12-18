@@ -69,3 +69,5 @@ Here is an overview of how the inline DMS details sharing is intended to work:
    3. Organisation.endpoint.header (array) should contain the protocol specific headers to access the DMS
       1. In the case of HTTP, the headers required would depend on the authentication scheme chosen by the DMS. You can refer to the list of authentication schemes and their respective RFCs [here](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml).
       2. In the case of FTP, the headers could be used to carry needed FTP credentials.
+
+Following section provides details of the attachment handling erros and responses.

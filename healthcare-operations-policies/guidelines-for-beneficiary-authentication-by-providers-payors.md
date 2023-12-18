@@ -1,3 +1,7 @@
+---
+description: Beneficiary authentication valid instruments
+---
+
 # Guidelines for Beneficiary Authentication by Providers/Payors
 
 ## Aadhaar Digital eKYC API

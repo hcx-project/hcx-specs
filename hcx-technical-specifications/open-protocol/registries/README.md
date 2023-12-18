@@ -1,3 +1,7 @@
+---
+description: Introduction to registries and key participant registries
+---
+
 # Registries\*
 
 HCX registries will act as a source of truth for participant information on the platform. These may be extended from/link to already existing registries in the ecosystem, e.g. registry may extend from National Health Facility Registry provided by NHA. The benefit of extending from an existing registry would be:
@@ -53,3 +57,5 @@ While the exchange protocol by itself may not need to focus on the human user (a
 | linked\_user\_id | User ID in the source system                                                     | String | <ul><li>Optional</li></ul>                                                                                                   |
 
 Following [OpenAPI 3.0 document](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx\_registry.yml) describes these registries and the associated APIs. Same specification can be visualised in [Swagger Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx\_registry.yml).
+
+Next sub-section provides details on application of QR code to capture participant details.

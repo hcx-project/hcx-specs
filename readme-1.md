@@ -41,3 +41,5 @@ The goal is to create an open, widely agreed Health Claims data Exchange Specifi
 {% hint style="info" %}
 While the [recommendations of the Joint Working Group of NHA and IRDAI (2019)](https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report\_11-09-19.pdf) refers to the concept as HCP (Health Claims Platform), working groups decided to choose the new name HCX (Health Claims Data Exchange) after the feedback from the ecosystem that an HCP would involve many more things than data exchange facilitation.
 {% endhint %}
+
+The next section provides high level details of the HCX vision, mission, & structure of the protocol.

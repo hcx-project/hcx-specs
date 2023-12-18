@@ -20,3 +20,4 @@ A forward flow would have the following steps:
 
 <figure><img src="../../../../../.gitbook/assets/Forward flow.png" alt=""><figcaption></figcaption></figure>
 
+Following section provides details of the alternate communication flows to get additional information, obtain consent, etc. through HCX.

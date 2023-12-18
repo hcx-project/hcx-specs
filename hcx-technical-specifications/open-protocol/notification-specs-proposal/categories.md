@@ -119,4 +119,4 @@ Post subscription, the key challenge would be to inform the subscriber of the no
 
 Examples section below lists a set of example notifications by phase 1 working groups along with their classification as above.
 
-### &#x20;<a href="#_as5nkkfw3036" id="_as5nkkfw3036"></a>
+Following section provides the API specifications and structure to facilitate notifications through HCX.

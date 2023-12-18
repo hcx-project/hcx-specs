@@ -1,3 +1,7 @@
+---
+description: Details of the key data exchange flow on HCX
+---
+
 # Primary Message Flow
 
 HCX protocol is designed for the exchanges to work in an asynchronous manner (like SMTP), therefore each use case will be completed in a cycle of messages as detailed below:

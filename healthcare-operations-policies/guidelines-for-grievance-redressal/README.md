@@ -1,3 +1,7 @@
+---
+description: Key policy considerations to design grievance redressal policy
+---
+
 # Guidelines for Grievance Redressal
 
 While the actual grievance redressal policy for an HCX ecosystem would be drafted by its operator and agreed upon by its participants, this section outlines key design guidelines and an overall approach to arrive at such a policy. These guidelines and approach are aligned with earlier thinking from IRDAI in its publication [Re: GUIDELINES FOR GRIEVANCE REDRESSAL BY INSURANCE COMPANIES](https://www.policyholder.gov.in/uploads/CEDocuments/Guidelines%20on%20Grievance%20Redressal.pdf), however, these are now envisioned to cover grievance from any actor of the ecosystem with respect to other actors.
