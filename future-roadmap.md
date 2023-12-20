@@ -27,6 +27,9 @@ Please note that this is a tentative list and that the community may revise and 
 11. **Further detailing of the domain objects (descriptions, examples, etc.) :** Enhancing IG to provide better description of the Profiles/Attributes/Valuesets and including more examples/use cases from the domain.
 12. **Examples of typical use cases :** Adding real-life usecases of the medical episodes and insurance claims.
 13. **Guidelines on Technical Operations of the HCX switch(es)/network**
+14. **Notification Delivery status API**
+15. **Notification - Failure and retry policies**
+16. **Consumers wanting to unsubscribe notification from a HIU/ISNP** - Consumers may want to stop notifications from the HIUs (Like policy bazaar, etc.) or switch the HIU to get updates on their policies.
 
 #### Policy related
 
