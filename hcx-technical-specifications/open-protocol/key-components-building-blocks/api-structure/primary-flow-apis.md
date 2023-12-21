@@ -1,14 +1,12 @@
 ---
-description: >-
-  Details of the protocol APIs that facilitate the exchange and the additional
-  processes
+description: Details of the APIs that facilitate the claims exchange flow
 ---
 
-# API Specifications
+# Primary Flow APIs
 
 ## API Structure
 
-Based on the above protocol definition and the message structure, each use case API in the HCP ecosystem is expected to follow the following pattern for the onward and return journey of the use case message:
+Based on the protocol definition and the message structure, each use case API in the HCX ecosystem is expected to follow the following pattern for the onward and return journey of the use case message:
 
 \<transport\_protocol>://\<server\_address>/\<protocol\_version/>\<resource\_name>/\<action|on\_action>, where
 
@@ -19,9 +17,7 @@ Based on the above protocol definition and the message structure, each use case 
 * **action** is the action sought within the context of that resource
 * **on\_action** represents the callback from the receiving system for responding to the original message
 
-Keeping this pattern in mind, in the current cashless use case following APIs are expected to be supported.
-
-Please note that search APIs are expected to support search parameters as detailed in the [domain data specifications](../../../hcx-domain-specifications/). For FHIR based entities this is expected to be clearly published in the corresponding implementation guides. Visibility and availability of the attributes in the search result payloads are also expected to be defined in domain data specifications.
+Keeping this pattern in mind, following APIs are expected to be supported.
 
 ### **CoverageEligibility**
 
@@ -79,22 +75,6 @@ Please note that search APIs are expected to support search parameters as detail
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
 {% endswagger %}
 
-### **Communications**
-
-Communications API will be used for communications between the payors and providers within the claims cycle.
-
-* /communication/request
-
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml" path="/communication/request" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
-{% endswagger %}
-
-* /communication/on\_request
-
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml" path="/communication/on_request" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
-{% endswagger %}
-
 ### **Payments**
 
 * **Payment notice and acknowledgement**
@@ -110,21 +90,4 @@ Communications API will be used for communications between the payors and provid
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
 {% endswagger %}
 
-### **Operational APIs**
-
-* **Entity Status API**: Status API can be used by providers to know the status of a request made by them. For example, a provider can query the status of a pre-auth request using the status API. HCX gateway shall return the protocol status synchronously and the recipient returns the status in the on\_status callback API asynchronously.
-* /hcx/status
-
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml" path="/hcx/status" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
-{% endswagger %}
-
-* /hcx/on\_status
-
-{% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml" path="/hcx/on_status" method="post" %}
-[https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx.yaml)
-{% endswagger %}
-
 Following [OpenAPI 3.0 specification](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx.yaml) details these APIs in detail. These API specs can be opened in swagger editor via this [link](https://editor.swagger.io/?url=https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi\_hcx.yaml).
-
-Next section provides details of the possible error scenarios and the HCX error handling mechanisms.

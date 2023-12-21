@@ -1,8 +1,8 @@
 ---
-description: APIs to enable notifications
+description: Details of APIs that facilitate notifications through HCX.
 ---
 
-# API specifications
+# Notification APIs
 
 ## Key Design Considerations <a href="#_3c37zmyw8f6w" id="_3c37zmyw8f6w"></a>
 
@@ -129,5 +129,3 @@ Any change in the subscription from the sending participant would be notified to
 {% swagger src="https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml" path="/notification/subscription/update" method="post" %}
 [https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml](https://raw.githubusercontent.com/hcx-project/hcx-specs/v0.9/API%20Definitions/openapi_hcx_notifications.yaml)
 {% endswagger %}
-
-Following section lists the key notification for each notification category, sender & recipient details, and triggers.
