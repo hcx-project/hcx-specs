@@ -4,9 +4,6 @@ info:
   description: >-
     HCX participant registry acts as a source of truth for participant information on the platform. This registry stores key details about the participants on the exchange who can exchange data through it and exposes open APIs to manage & access the registry data.
   version: 1.0.0
-servers:
-  - url: https://api.example.com
-    description: Mock server
 tags:
   - name: Registry APIs
     description: HCX participant registry APIs
