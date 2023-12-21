@@ -14,7 +14,7 @@
         * [Additional Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/README.md)
           * [Redirect](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/redirect.md)
           * [Forward](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/forward.md)
-          * [✨ Intra Cycle Communication](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/intra-cycle-communication/README.md)
+          * [Intra Cycle Communication\*](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/intra-cycle-communication/README.md)
             * [Seeking Supporting Information](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/intra-cycle-communication/seeking-supporting-information.md)
             * [Seeking Beneficiary Consent](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/intra-cycle-communication/seeking-beneficiary-consent.md)
             * [Seeking Account Information](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/intra-cycle-communication/seeking-account-information.md)

@@ -2,7 +2,7 @@
 description: Additional communication to aid claim processing
 ---
 
-# ✨ Intra Cycle Communication
+# Intra Cycle Communication\*
 
 HCX protocol facilitates the intra cycle communication among stakeholder for claim related clarifications. Participants can leverage communication request/on\_request API pair for these information exchanges. Intra cycle communication may be need for following purposes :&#x20;
 
