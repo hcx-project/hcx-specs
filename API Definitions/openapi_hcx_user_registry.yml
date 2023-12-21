@@ -329,7 +329,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  participant/user/add:
+  /participant/user/add:
     post:
       tags:
         - Registry APIs
@@ -391,7 +391,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  participant/user/remove:
+  /participant/user/remove:
     post:
       tags:
         - Registry APIs
