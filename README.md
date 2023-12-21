@@ -10,7 +10,7 @@ The HCX switches can be thought of as routing switches or email gateways that fa
 
 ### Version Information
 
-Version - 0.9-draft | Release date - September, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9-draft/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9) | Protocol [website](https://hcxprotocol.io)
+Version - 0.9 | Release date - December, 2023 | Published documentation [link](https://docs.hcxprotocol.io/v/v0.9-draft/) | Github [link](https://github.com/hcx-project/hcx-specs/tree/v0.9) | Protocol [website](https://hcxprotocol.io)
 
 {% hint style="info" %}
 **Important Note:** The version of the HCX Protocol documentation currently published is a draft and is subject to revisions and updates as we engage in the public consultation process. The sections that have significant changes since previous version (v0.8) are marked with asterisk "\*" at the end of the title (also visible in the menu tree).&#x20;
