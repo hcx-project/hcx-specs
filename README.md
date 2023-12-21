@@ -27,7 +27,14 @@ We value your feedback and encourage you to participate in shaping the final ver
 * Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
 * Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
 * Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries/#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
-* Introduced "[Use Cases](use-cases/)" section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
+* Restructured [Claims Data Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/) section as follows&#x20;
+  * Restructure [Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/) section to include all message flows covered in the protocol under their respctive sections as follows
+    * [Primary Message Flow](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/primary-message-flow.md) - Base flow for the claim process
+    * [Additional Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/) - Flows that help achieve variations/enhancements in the claim process - Redirect, Forward, Relay, Intra-Cycle Communication, Third party Information sharing
+    * Notifications - Notification flow to help enhance participant and user experinece of the main claim process
+  * Restructured the [API Specification](hcx-technical-specifications/open-protocol/key-components-building-blocks/api-structure.md) section to separate out various kind of APIs (Registry, Primary Message Flow, Operational APIs, Notification, Third Party Info sharing, etc.) into their own sections.&#x20;
+* Enhanced [API security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md) section to facilitate participants to use per participant, per user API keys for better security and auditability. &#x20;
+* Introduced [Use Cases](use-cases/) section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
 * In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
   * [Access control](healthcare-operations-policies/access-control-roles.md):
     * Additional participant roles are added to enable appropriate access control levels.

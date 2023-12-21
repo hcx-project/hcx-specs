@@ -24,7 +24,7 @@
           * [API specifications](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/notification-specs-proposal/api-specifications.md)
           * [List of key topics](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/notification-specs-proposal/list-of-key-topics.md)
       * [Message Structure](hcx-technical-specifications/open-protocol/key-components-building-blocks/message-structure.md)
-      * [API Structure](hcx-technical-specifications/open-protocol/key-components-building-blocks/api-structure.md)
+      * [API Specifications](hcx-technical-specifications/open-protocol/key-components-building-blocks/api-structure.md)
       * [Error Handling](hcx-technical-specifications/open-protocol/key-components-building-blocks/error-descriptions.md)
     * [Data Security and Privacy](hcx-technical-specifications/open-protocol/data-security-and-privacy/README.md)
       * [Transport Security](hcx-technical-specifications/open-protocol/data-security-and-privacy/transport-security.md)

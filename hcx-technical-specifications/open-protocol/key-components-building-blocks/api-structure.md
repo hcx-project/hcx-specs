@@ -1,8 +1,10 @@
 ---
-description: Details of the protocol APIs that facilitate the exchange
+description: >-
+  Details of the protocol APIs that facilitate the exchange and the additional
+  processes
 ---
 
-# API Structure
+# API Specifications
 
 ## API Structure
 
