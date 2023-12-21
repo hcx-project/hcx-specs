@@ -10,7 +10,7 @@ This section presents key aspects of simplifying the resolution process and leve
 
 #### **Formation of Dispute Resolution Facilitation Council (DRFC) at HCX**
 
-This will be a group of eminent people appointed by the HCX governing council. This group will facilitate settlements by non-binding mediation between any two parties who may have a dispute. The scope of disputes can be between an HCX operator and its participants, or between the participants on an HCX exchange.
+This will be a group of eminent people appointed by the HCX governing council. This group will facilitate settlements by non-binding mediation between any two parties who may have a dispute. The scope of disputes can be between an HCX operator and its participants, or between the participants on an HCX.
 
 This Council will function on similar lines as the MSME (Micro, Small and Medium Enterprises) Facilitation Council. The only difference being, currently it does not have statutory blessing and none of its suggestions would be binding.
 
@@ -73,3 +73,6 @@ In this regard, policy guidelines working group has worked on “model addendums
 The HCX specifications encourages the HCX netwrok participants to adopt these model contract addendums. The promise of rapid dispute resolution is a fundamentally important service standard and will aid the  competitive in service provisioning standards.&#x20;
 
 In addition, HCX operators may also offer its empanelled Arbitration Institutions/Dispute Resolution Platforms for any party to choose from.
+
+
+

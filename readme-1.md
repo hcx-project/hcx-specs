@@ -10,7 +10,7 @@ description: Background of the Health Claims Data Exchange effort
 
 The current health claims filing and processing experience is fairly manual in nature.
 
-Patients usually reach the health service provider and provide the provider with either the policy details or a card issued by the Payers. The provider fills out the pre-auth/claim form by hand, scans all the required documents that need to be part of the claim, and sends these to the appropriate Payer (Insurance, TPA, …) typically over email. Several Payers also provide providers with their own electronic portal where their claims can be submitted as an alternative to email.
+Patients usually reach the health service provider and provide the provider with either the policy details or a card issued by the Payers. The provider fills out the pre-auth/claim form by hand, scans all the required documents that need to be part of the claim, and sends these to the appropriate Payer (Insurance, TPA, …) typically over email. Several payers also provide providers with their own electronic portal where their claims can be submitted as an alternative to email.
 
 On receipt of the pre-auth/claim form, the Payer verifies and digitizes the form in the software they use internally for claims processing. The team then adjudicates the claims. A large portion of adjudication in India is currently manual while many developed markets auto-adjudicate over 90% of their claims.
 
@@ -34,7 +34,7 @@ This results in:
 * Poor scalability
 * Poor patient experience
 
-Inspired by the [recommendations of the Joint Working Group of NHA and IRDAI (2019)](https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report\_11-09-19.pdf), these specifications have been developed over the last two years by 100+ volunteers from across the healthcare ecosystem (including Insurers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth.
+Inspired by the [recommendations of the Joint Working Group of NHA and IRDAI (2019)](https://pmjay.gov.in/sites/default/files/2019-09/Sub%20Group%20on%20Common%20IT%20Infrastructure%20Report\_11-09-19.pdf), these specifications have been developed over the last two years by 120+ volunteers from across the healthcare ecosystem (including Insurers/payers, Hospitals, TPAs, Insurance Technology players and Think tanks), as a part of a transparent, collaborative and open effort anchored by Swasth Alliance.
 
 The goal is to create an open, widely agreed Health Claims data Exchange Specifications as a public good that can be adopted. Specifications in this context refer to the blueprint of each aspect of the envisioned claims network and are fundamental to the working of the network. They have been carefully designed to be open to support technology and vendor neutrality, evolvable over a period of time thereby helping adapt to changing needs, enable and not restrict innovation or inclusion. The specifications are comprehensively evaluated for various health claims scenarios, including cashless and reimbursement procedures for both Inpatient (IPD) and Outpatient (OPD) treatments. This evaluation is conducted by volunteers from various sectors within the health claims industry. And there are plans to evaluate and incorporate additional use cases in the future.
 

@@ -8,9 +8,9 @@ description: Guidelines on enhancement of Payer-Policyholder agreements
 
 The HCX network initiative is also an opportunity to review the relationships between other stakeholders in the health claims ecosystem and take advantage of the capabilities of the network to further improve these relationships. One such relationship is the one between a Payor and a Policy Holder. The proposed addendum is an endeavour to optimise the relationship between a Payor and Policy holder by making a few changes to the contract between them so as to make the contract FTA friendly.
 
-In addition to the guidelines metioned in this document (specially the guidance for grievance redressal) the template is based on a sample Health Insurance Contract from SBI. A link to the sample contract can be found [here](https://www.irdai.gov.in/admincms/cms/Uploadedfiles/SBI15/Health%20Insurance%20Policy%20-%20Retail.pdf).&#x20;
+In addition to the guidelines mentioned in this document (specially the guidance for grievance redressal) the template is based on a sample Health Insurance Contract from SBI. A link to the sample contract can be found [here](https://www.irdai.gov.in/admincms/cms/Uploadedfiles/SBI15/Health%20Insurance%20Policy%20-%20Retail.pdf).&#x20;
 
-This section discusses potential disputes that could arise between a payor and policy holder, along with some suggested resolution mechanisms.&#x20;
+This section discusses potential disputes that could arise between a payer and policyholder, along with some suggested resolution mechanisms.&#x20;
 
 Based on the [guidelines for dispute resolution](../guidelines-for-grievance-redressal/) and the sample contract, the following disputes could potentially arise between a payor and policy holder:
 
@@ -22,9 +22,9 @@ However, before going into detail about the potential disputes, it would be impo
 
 Under the sample contract, arbitration is not available in cases where the insurance company denies or disputes its liability under the policy. The arbitration clause in the contract specifically excludes disputes arising out of denial or dispute of the claim from the scope of arbitration. This appears to be standard practice across various types of insurance contracts.
 
-In the context of a property insurance contract, the scope and validity of this kind of arbitration clause was considered by the Supreme Court in Oriental Insurance Company Vs M/S Narbheram Power & Steel Ltd, \[2018 (6) SCC 534]. The Court held that if the arbitration clause excluded disputes over denial of claim, then the policy holder’s only remedy would be to file a civil suit.
+In the context of a property insurance contract, the scope and validity of this kind of arbitration clause was considered by the Supreme Court in Oriental Insurance Company Vs M/S Narbheram Power & Steel Ltd, \[2018 (6) SCC 534]. The Court held that if the arbitration clause excluded disputes over denial of claim, then the policyholder’s only remedy would be to file a civil suit.
 
-While in the above case, the only remedy for the policy holder was to approach the civil court, in the case of a health insurance contract, the policy holder could also approach the Insurance Ombudsman as it is a statutory remedy, or the Consumer Court, as it is a remedy in addition to all other remedies.
+While in the above case, the only remedy for the policy holder was to approach the civil court, in the case of a health insurance contract, the policyholder could also approach the Insurance Ombudsman as it is a statutory remedy, or the Consumer Court, as it is a remedy in addition to all other remedies.
 
 However, as mentioned above, going by the current sample contract(s), the matter cannot be referred to arbitration. Therefore, in order to make insurance contracts FTA friendly, it is recommended that the arbitration clause in the contract be amended to bring any dispute that arises from the contract under the scope of the clause, including those arising out of a denial of claim. This will require a fundamental shift in the current industry practice.
 

@@ -27,9 +27,9 @@ It may help to unbundle different aspects of the pricing strategy to allow neede
    2. Advance process facilitation, e.g.
       1. Enabling forward/redirects for multi party processing facilitation
       2. Auto status check and reporting to providers/ISNPs
-      3. In process communication for preauth/claims cycle etc.
+      3. In process communication for pre-auth/claims cycle etc.
 3. Facilitating compliance reporting of the claims data, e.g.&#x20;
-   1. Operating entity may run and maintain schedules against which it can search the data from the payors and forward to IIB, thereby easing the process for the payor)
+   1. Operating entity may run and maintain schedules against which it can search the data from the payers and forward to IIB, thereby easing the process for the payor)
 4. Open data streams on the agreed data (data in protocol/domain headers)
 5. Other innovating offerings&#x20;
 
@@ -38,11 +38,11 @@ It may help to unbundle different aspects of the pricing strategy to allow neede
 Here is the [list of key roles](https://docs.swasth.app/v1.1-draft/hcx-domain-specifications/healthcare-operations-policies/access-control-roles) envisioned in the current version of the HCXS specifications. While the list includes many roles, they can be high level categorized in following personas:
 
 1. Claim Sender - providers
-2. Claim Receiver - payors/sponsors
+2. Claim Receiver - payers/sponsors
 3. Processing helpers - TPAs, TSPs, ISNPs, other HCX instance
 4. Observers - regulators, Sponsors, ISNPs, researchers
 
-In the current scenario, claim processing expenses are mostly borne by the payors, however, based on the nature of key offerings on HCX there may be a potential to levy charges to other persona/roles also.
+In the current scenario, claim processing expenses are mostly borne by the payers, however, based on the nature of key offerings on HCX there may be a potential to levy charges to other roles too.
 
 **What could be the Basis and Quantum of charges**
 

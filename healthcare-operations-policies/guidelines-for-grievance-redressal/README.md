@@ -44,7 +44,7 @@ Based on the key design considerations and aproach listed above, policy guidelin
 {% hint style="info" %}
 Please note that following topics were explicitly kept out of scope for the current guidelines:&#x20;
 
-* Government Schemes&#x20;
+* Government schemes&#x20;
 * Payor rates agreed with the provider network&#x20;
 * Quality and Compliance of policy adjudication
 {% endhint %}

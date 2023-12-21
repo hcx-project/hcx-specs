@@ -18,7 +18,7 @@ While the actual onboarding/deboarding process for an HCX ecosystem would be dra
 Building further from the key design considerations laid out for business policies in the HCX open specifications, the onboarding approach should:
 
 1. Aim to enable rather than control the participation of the interested ecosystem actors.
-2. Require minimal and necessary information, enough to prove the identity of the participant and enable working of the network. The process requirements should be non-discriminatory and at the same time requrie enough detail to keep out any frivolous organizations.
+2. Require minimal and necessary information, enough to prove the identity of the participant and enable working of the network. The process requirements should be non-discriminatory and at the same time require enough detail to keep out any frivolous organisations.
 3. Needs to be simple and cost effective enough to encourage participation of entities working with low income segments.
 
 A list of different kinds of participants who would need onboarding into an HCX registry is provided in the [Access Control](https://docs.swasth.app/enhancements-policy-guidelines-group-phase-1/9EKhP0MBRjkQ0mAd1A3W/healthcare-operations-policies/access-control-roles) section above. Onboarding onto the HCX is envisioned as a two step process:
@@ -26,8 +26,8 @@ A list of different kinds of participants who would need onboarding into an HCX 
 1. Sandbox - for compliance testing and certification
 2. Go Live on live instances
 
-Diagrams below depicts the key steps in onboarding process across these two phases:Proposed onbaording process flowSections below provide high level description for each of these steps:
+Diagrams below depicts the key steps in onboarding process across these two phases: Proposed onboarding process flow; Sections below provide high level description for each of these steps:
 
-<figure><img src="https://lh6.googleusercontent.com/xa8Y0i1jVYqAgiYbWVjO6WhzY0wB-h9-8g1_JV3QN27FfK7ogVSLgeelqU3AKQJ2TC_3biTUqQz98gKP0HlV6CuWPimhFhQ09WClIIytNvuDxqrYXXr_1U3CXkChFNyvefYnuBr5ie08-Mn_8wZXpHG6-32f5cWoHUH7CaeoGBTrtUMjZmmVTETAWw" alt=""><figcaption><p>Envisioned onbaording process flow</p></figcaption></figure>
+<figure><img src="https://lh6.googleusercontent.com/xa8Y0i1jVYqAgiYbWVjO6WhzY0wB-h9-8g1_JV3QN27FfK7ogVSLgeelqU3AKQJ2TC_3biTUqQz98gKP0HlV6CuWPimhFhQ09WClIIytNvuDxqrYXXr_1U3CXkChFNyvefYnuBr5ie08-Mn_8wZXpHG6-32f5cWoHUH7CaeoGBTrtUMjZmmVTETAWw" alt=""><figcaption><p>Envisioned onboarding process flow</p></figcaption></figure>
 
 Following subsections provide high level description for each of these phases.

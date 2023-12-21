@@ -4,10 +4,10 @@ description: Operating policy guidelines for key business processes on HCX
 
 # Business Policy Specifications
 
-A thriving data exchange requires clear rules of engagement on various activities in the data exchange to ensure trust from all actors. The key list of policy candidates to be addressed is:
+A thriving data exchange requires clear rules of engagement on various activities in the data exchange to ensure trust from all actors. The key list of policy candidates to be addressed are:
 
 1. Onboarding
-2. Defaulting/Deboarding policies
+2. Defaulting & De-boarding policies
 3. Dispute resolution policies
 4. Access control (Data sharing) policies - which actor plays what role and gets to see which parts of data. These policies will then affect the visibility and access to domain specific attributes that will typically travel in the body of the data structures defined by the data exchange.
 5. Business SLAs

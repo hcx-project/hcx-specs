@@ -6,10 +6,10 @@ There are two key DSLs being considered for the Health Claims Exchange - Policy 
 
 As indicated in the previous version of the protocol, policy markup language was being envisioned by the working groups to provide a digital encoding mechanism to payers such that the policies can be encoded in machine readable format, thereby helping with the accurate communication of plan details to various ecosystem actors that could help with use cases like:
 
-1. Intuitive UIs for provider/TPAs to help patients navigate policy information
+1. Intuitive UIs for provider/TPAs/BSPs to help patients navigate policy information
 2. Allow providers to validate their submissions and help reduce multiple roundtrip for a valid claim submission
 3. Potential automation of coverage eligibility checks
-4. Automation of claim submission and adjudication processes, etc.
+4. Automation of claim tracking, claim submission, adjudication processes, etc.
 
 In earlier discussions, PML was being thought of as a single DSL to express Insurance Plans (products) and Policies/rules around these plans. However, further analysis with various groups suggested that needs from PML can be unbundled into the following keys asks:
 

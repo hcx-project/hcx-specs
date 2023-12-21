@@ -22,7 +22,7 @@ The payer TMS system and HCP will integrate the Aadhar authentication open API f
 
 Authentication of beneficiaries by providers on provider TMS/beneficiary APP
 
-The providers and payers may choose to integrate different open APIs in their TMS systems to validate the beneficiary ID based on verifiable Government identity database lookup (e.g. PAN, Ration Card, Passport etc.) as well as any other mechanism to verify the beneficiary credentials during enrollment of beneficiary in their systems and validate the beneficiary ID during claim processing
+The providers and payers may choose to integrate different open APIs in their TMS systems to validate the beneficiary ID based on verifiable Government identity database lookup (e.g. PAN, Ration Card, Passport etc.) as well as any other mechanism to verify the beneficiary credentials during enrolment of beneficiary in their systems and validate the beneficiary ID during claim processing
 
 ## Token based authentication by Payer
 

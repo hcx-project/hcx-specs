@@ -20,7 +20,7 @@ The figure below shows a simple depiction of a health claims network facilitated
    1. Highly personalized policies
    2. Short duration, low premium policies
    3. Auto adjudication, better fraud and abuse prevention
-3. Simplify and bring efficiency to claims processing
+3. Simplify and bring efficiency to claims processing :&#x20;
    1. Standardized claims process, less operational overheads
    2. Increase trust among payers and providers through a transparent, rule-based mechanism
 4. Better patient experience
@@ -34,7 +34,7 @@ The current version of specifications are designed to cater to both cashless & r
 3. Pre-authorization (including enhancements)
 4. Claims request flow (discharge/settlement)
 5. Requesting & sharing additional information about claims
-   1. Additoinal supporting information
+   1. Additional supporting information
    2. Policyholder consent to process claim on their behalf, etc.&#x20;
 6. Notifications (including network, participant & workflow related notifications)
 7. Status check&#x20;
@@ -46,11 +46,11 @@ The current version of specifications are designed to cater to both cashless & r
 
 The claims network will consist of the following key building blocks:
 
-1. **Specifications** - this layer defines the blueprint for different aspects of the claims network. These include communication protocols, data packet specifications, Taxonomies, privacy and security specifications, network policies (onboarding and deboarding rules), business rules, operational specifications, etc. Please note that the document intentionally calls these artefacts as specifications to indicate that they become standards only after a “de jure” or “de facto” adoption by the ecosystem.
+1. **Specifications** - this layer defines the blueprint for different aspects of the claims network. These include communication protocols, data packet specifications, Taxonomies, privacy and security specifications, network policies (onboarding and de-boarding rules), business rules, operational specifications, etc. Please note that the document intentionally calls these artefacts as specifications to indicate that they become standards only after a “de jure” or “de facto” adoption by the ecosystem.
 2. **Reference Health Claims Exchange (aka switch) software** - A reference gateway implementation build as per the standards defined above. The main goal here will be to provide fundamental software building blocks of the network to enable faster adoption by the ecosystem.
 3. **Compliance sandbox** - Implemented using the above reference software, the key goal of the sandbox will be to help the ecosystem test its specific components against the network standards defined above and get certified to become part of the network.
 4. **Health Claim Exchange runtime(s)** - Operating instances of the health claims platform that enable real-world claims interactions on the network. Like with the internet and email example, there can be multiple such running instances that are expected to be interoperable by adhering to the standards defined as in #1 above.
-5. **Participating systems** - These are digital systems of the network participants (Payors, Providers, Regulators, Observers, etc) that sit on the edges of the claims network and initiate/receive the communication happening through the network. These would be analogous to client/servers in the internet analogy and various email service providers in the email analogy.
+5. **Participating systems** - These are digital systems of the network participants (Payers, Providers, Regulators, Observers, etc.) that sit on the edges of the claims network and initiate/receive the communication happening through the network. These would be analogous to client/servers in the internet analogy and various email service providers in the email analogy.
 
 The following sections describe the key aspects of the proposed open specifications including design principles, a list of key specifications, proposed governance and details of technology and domain specifications work completed so far.
 
@@ -70,7 +70,7 @@ This section lists key types of specification needed for Health Claims data exch
 
 Like HTTP or SMTP, open protocol (Health Claims data Transfer Protocol) for claims exchange will define the following key aspects:
 
-1. Authentication (Payor, Provider, Regulator, Observer, ...)
+1. Authentication (Payer, Provider, Regulator, Observer, ...)
 2. Request/response message syntax - header and header attributes, optional body, mandatory vs optional, transport constraint on the messages, etc.
 3. Supported methods (APIs)
 4. Communication mode (synchronous or asynchronous nature of APIs)
@@ -100,9 +100,9 @@ Specifications about format and definition of domain specific elements. A lot of
 A thriving data exchange will also require clear rules of engagement to ensure trust from all actors. These specifications will involve guidelines around:
 
 1. Onboarding policies - How does any entity get on board on the data exchange? Adherence to protocol, the process for a compliance review, frequency of compliance review, etc
-2. Deboarding policies: What makes an entity to be blocked or ejected from the data exchange. Things like adherence to technical SLAs, non-compliance with expected protocol versions, message security or privacy violations, etc.
+2. De-boarding policies: What makes an entity to be blocked or ejected from the data exchange. Things like adherence to technical SLAs, non-compliance with expected protocol versions, message security or privacy violations, etc.
 3. Access control policies (Data sharing policies) -  which actor plays what role and gets to see which parts of the data. These policies will then affect the visibility and access to domain-specific attributes that will typically travel in the body of the data structures defined by the data exchange. Role-based, need for consent to access APIs, data attributes, etc.
-4. Business SLAs
+4. Business SLAs : Determine the service level agreements (SLAs) to be adhered by the participants.
 5. Charges/Fees - these would be policies around charges various data exchange entities will be allowed to levy on others depending on the role they play
 6. Dispute resolution policies&#x20;
 7. Service rating policies - that would be the parameters and mechanisms to rate each type of actor on the data exchange.

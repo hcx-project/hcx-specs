@@ -87,7 +87,7 @@ Consent verification may fail due to human errors, such as mistyping or incorrec
 
 #### Scenario 3 : Invalid/Expired consent token due to delays in sharing the consent token
 
-If the beneficiary fails to submit the verification token within the specified timeframe stipulated by the payer, the payer may consider the token as invalid or expired. Consequently, the payer will decline the claim request, transmitting a claim denial response to the BSP, marked with the claim denial code "consent\_cycle\_timeout."
+If the beneficiary fails to submit the verification token within the specified timeframe stipulated by the payer, the payer may consider the token as invalid or expired. Consequently, the payer will decline the claim request, transmitting a claim denial response to the BSP application, marked with the claim denial code "consent\_cycle\_timeout."
 
 In this situation, the BSPs can use the information from the claim and offer a faster way for the beneficiary to resubmit their claim without having to enter all the information again.
 

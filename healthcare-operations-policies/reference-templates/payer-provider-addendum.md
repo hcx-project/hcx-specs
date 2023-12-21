@@ -15,7 +15,7 @@ The benefits of an FTA friendly contract are two-fold:&#x20;
 1. Because there is less ambiguity, it reduces the likelihood of parties getting into disputes&#x20;
 2. Even if a dispute does occur, having an FTA friendly agreement enables the adjudicator (arbitrator/tribunal/ombudsman/court) to quickly adjudicate the dispute, thereby reducing the time spent litigating.
 
-In order to do so, it is essential to first identify potential disputes. Based on a reading of the multi-party dispute document and the sample agreement, the following disputes could arise between a payor and provider:
+In order to do so, it is essential to first identify potential disputes. Based on a reading of the multi-party dispute document and the sample agreement, the following disputes could arise between a payer and provider:
 
 1. Provider’s obligation to provide ‘reasonable care’ to the Members&#x20;
 2. Delayed payment of invoices by payor/defective invoice submitted by provider&#x20;

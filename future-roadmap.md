@@ -2,7 +2,7 @@
 description: Potential focus areas proposed in future versions
 ---
 
-# Future focus areas\*
+# Future Focus Areas\*
 
 Following are the list of potential enhancements envisioned/propsed by the community members for the future versions of the protocol.&#x20;
 
@@ -25,7 +25,7 @@ Please note that this is a tentative list and that the community may revise and 
 9. **Multiple claims submission :** Analysis the feasibility of allowing multiple claims submissions against a single pre-authorization.&#x20;
 10. **Detailed approach on handling attachments/supporting information :** Further elaboration on the multiple options to share the supporting information when not available in structured format.
 11. **Further detailing of the domain objects (descriptions, examples, etc.) :** Enhancing IG to provide better description of the Profiles/Attributes/Valuesets and including more examples/use cases from the domain.
-12. **Examples of typical use cases :** Adding real-life usecases of the medical episodes and insurance claims.
+12. **Examples of typical use cases :** Adding real-life use cases of the medical episodes and insurance claims.
 13. **Guidelines on Technical Operations of the HCX switch(es)/network**
 14. **Notification Delivery status API**
 15. **Notification - Failure and retry policies**

@@ -6,7 +6,7 @@ description: Specifications to enable participant notifications on HCX
 
 ### Context <a href="#_9wme70gzafwp" id="_9wme70gzafwp"></a>
 
-As a facilitator of the value between various participating entities, while HCX is envisioned to help different participants directly exchange the claims related information in standardised manner, the network would benefit further if the relevant information about such exchanges could also be shared with other interested/relevant participating entities in a safe and secure manner. Example of such information could be onboarding/deboarding of participants, information about participant system maintenance/upgrades, availability of new functionality, or specific information needed by a participant on a particular claims use case - e.g. Regulator (IRDA/IIB) or Sponser (NHA/SHA/Corporate/Community) needing to know about completion of a claims cycle, or an ISNP needing to know status of a claim on behalf of its patient.
+As a facilitator of the value between various participating entities, while HCX is envisioned to help different participants directly exchange the claims related information in standardised manner, the network would benefit further if the relevant information about such exchanges could also be shared with other interested/relevant participants in a safe and secure manner. Example of such information could be onboarding/de-boarding of participants, information about participant system maintenance/upgrades, availability of new functionality, or specific information needed by a participant on a particular claims use case - e.g. Regulator (IRDA/IIB) or Sponser (NHA/SHA/Corporate/Community) needing to know about completion of a claims cycle, or an ISNP needing to know status of a claim on behalf of its beneficiaries.
 
 Key benefits of such a notification infrastructure would be:
 
@@ -14,7 +14,7 @@ Key benefits of such a notification infrastructure would be:
 2. Transparency
 3. Trust in ecosystem
 4. Better user experience
-5. Improved support and risk mitigation
+5. Better participant support&#x20;
 
 This section of the specification describes such needs and proposed enhancements to facilitate such information exchange in the network.
 
