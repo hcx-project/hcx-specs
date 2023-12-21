@@ -2,11 +2,11 @@ openapi: 3.0.1
 info:
   title: HCX User Registry APIs
   description: >-
-    While the exchange protocol by itself may not need to focus on the human user (as the exchange is between systems), operational management of the exchange infrastructure may require administrative infrastructure that may necessitate a registry for operational users from organizations running HCX as well as participating organizations.
+    While the HCX exchange protocol by itself may not need to focus on the human user (as the exchange is between systems), operational management of the exchange infrastructure may require administrative infrastructure that may necessitate a registry for operational users from organizations running HCX as well as participating organizations.
   version: 1.0.0
 tags:
   - name: Registry APIs
-    description: HCX user registry APIs
+    description: HCX User Registry APIs
 paths:
   /user/create:
     post:
