@@ -4,9 +4,6 @@ info:
   description: >-
     While the exchange protocol by itself may not need to focus on the human user (as the exchange is between systems), operational management of the exchange infrastructure may require administrative infrastructure that may necessitate a registry for operational users from organizations running HCX as well as participating organizations.
   version: 1.0.0
-servers:
-  - url: https://api.example.com
-    description: Mock server
 tags:
   - name: Registry APIs
     description: HCX user registry APIs
