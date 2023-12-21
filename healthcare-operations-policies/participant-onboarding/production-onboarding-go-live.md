@@ -2,7 +2,7 @@
 description: Recommendations for onboarding onto live network
 ---
 
-# ✨ Production onboarding (Go live)
+# Production onboarding (Go live)\*
 
 After obtaining the affiliated sandbox certification, the participant would have to apply for onboarding into the HCX production environment. This process will consist of the following key steps:
 

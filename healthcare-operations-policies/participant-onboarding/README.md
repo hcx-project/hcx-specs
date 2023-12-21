@@ -2,7 +2,7 @@
 description: Process of onboarding network participants
 ---
 
-# ✨ Guidelines for Participant Onboarding
+# Guidelines for Participant Onboarding\*
 
 {% hint style="info" %}
 This section has been enhanced to accommodate the scope and the requirements of [OPD and Reimbursement use cases](../../use-cases/), and address the on-ground provider onboarding realities. The key changes include:
