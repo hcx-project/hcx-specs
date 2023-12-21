@@ -24,37 +24,34 @@ We value your feedback and encourage you to participate in shaping the final ver
 
 #### Summary[^2] of changes (Changelog):
 
-* Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
-* Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
-* Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries/#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
-* Restructured [Claims Data Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/) section as follows&#x20;
-  * Restructure [Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/) section to include all message flows covered in the protocol under their respctive sections as follows
-    * [Primary Message Flow](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/primary-message-flow.md) - Base flow for the claim process
-    * [Additional Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/) - Flows that help achieve variations/enhancements in the claim process - Redirect, Forward, Relay, Intra-Cycle Communication, Third party Information sharing
-    * Notifications - Notification flow to help enhance participant and user experinece of the main claim process
-  * Restructured the [API Specification](hcx-technical-specifications/open-protocol/key-components-building-blocks/api-structure/) section to separate out various kind of APIs (Registry, Primary Message Flow, Operational APIs, Notification, Third Party Info sharing, etc.) into their own sections.&#x20;
-* Enhanced [API security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md) section to facilitate participants to use per participant, per user API keys for better security and auditability. &#x20;
-* Introduced [Use Cases](use-cases/) section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
-* In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
-  * [Access control](healthcare-operations-policies/access-control-roles.md):
-    * Additional participant roles are added to enable appropriate access control levels.
-    * Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mapping to roles.
-  * [Guidelines for Participant onboarding](healthcare-operations-policies/participant-onboarding/):  &#x20;
-    * Restructured the section into multiple subpages for enhancing the readability&#x20;
-    * [Production Onboarding](healthcare-operations-policies/participant-onboarding/production-onboarding-go-live.md):&#x20;
-      * Include recommendations on BSP verification
-      * Enhanced recommendations for "Non ABDM enrolled Providers with no ROHINI id" to  encompass verification through both public and private payers.
-  * [Recommended Communication request/response flow](broken-reference) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
-  * Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
-    * [Communication Reason Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html) - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
-    * [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
-    * [Claim Denial Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html) - Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
-
-{% hint style="warning" %}
-**Open Items**:&#x20;
-
-Addressing open comments/feedback by the domain working group in [GitHub discussion #113](https://github.com/hcx-project/hcx-specs/discussions/113).
-{% endhint %}
+1. Relocated the design principles and proposed governance approach from the specification documentation to the HCX protocol [website](https://hcxprotocol.io/governance/).
+2. Introduced additional methods for managing attachments using Document Management Systems (DMS) in [handling attachment](hcx-domain-specifications/domain-data-models/handling-attachments.md) section.
+3. Updates to the [user registry schema](hcx-technical-specifications/open-protocol/registries/#user-registry) definitions for multi-tenancy, allowing for distinct user roles within a tenant.
+4. Restructured [Open Protocol](hcx-technical-specifications/open-protocol/) section as follows&#x20;
+   1. "Notifications" and "Third Party Information Sharing" sections, that were directly under Open Protocol, are now divided into [Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/) and [API specifications](hcx-technical-specifications/open-protocol/key-components-building-blocks/api-structure/) sections. &#x20;
+   2. Restructured [Claims Data Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/) section as follows&#x20;
+      1. Renamed "Exchange Protocol" sub-section to "[Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/)" and restructured to include all message flows covered in the protocol under their respctive sections as follows
+         1. [Primary Message Flow](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/primary-message-flow.md) - Base flow for the claim process
+         2. [Additional Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/) - Flows that help achieve variations/enhancements in the claim process - Redirect, Forward, Relay, Intra-Cycle Communication, Third party Information sharing
+         3. [Notifications](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/notification-specs-proposal/) - Notification flow to help enhance participant and user experinece of the main claim process
+      2. Renamed "API Structure" section "API Specifications" and  restructured the section to separate out various kind of APIs (Registry, Primary Message Flow, Operational APIs, Notification, Third Party Info sharing, etc.) into their own sub-sections.&#x20;
+         1. API specifications section of earlier "Notifications" and "Third Party Information Sharing" sections has been subsumed here as sub sections as part of the point 4.2.2 above.
+5. Enhanced [API security](hcx-technical-specifications/open-protocol/data-security-and-privacy/api-security.md) section to facilitate participants to use per participant, per user API keys for better security and auditability. &#x20;
+6. Introduced [Use Cases](use-cases/) section to list various use cases (Cashless/Reimbursement and IPD/OPD), their mapping with the HCX protocol and important implementation considerations.
+7. In the process of mapping Cashless and Reimbursement use cases, both for Inpatient (IPD) and Outpatient (OPD) treatments, the following protocol enhancements have been incorporated:
+   1. [Access control](healthcare-operations-policies/access-control-roles.md):
+      1. Additional participant roles are added to enable appropriate access control levels.
+      2. Defined [Access Groups](healthcare-operations-policies/access-control-roles.md#access-groups) to simplify access mapping to roles.
+   2. [Guidelines for Participant onboarding](healthcare-operations-policies/participant-onboarding/):  &#x20;
+      1. Restructured the section into multiple subpages for enhancing the readability&#x20;
+      2. [Production Onboarding](healthcare-operations-policies/participant-onboarding/production-onboarding-go-live.md):&#x20;
+         1. Include recommendations on BSP verification
+         2. Enhanced recommendations for "Non ABDM enrolled Providers with no ROHINI id" to  encompass verification through both public and private payers.
+   3. [Recommended Communication request/response flow](broken-reference) for seeking patients consent verification token when submitting reimbursement claims through a TSP/ISNP platform.
+   4. Following valueset have been enhanced in the [Implementation Guide](hcx-domain-specifications/implementation-guide.md)
+      1. [Communication Reason Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-communication-reason-codes.html) - Enhanced to facilitate the sharing of patient consent and account information in reimbursement claims.
+      2. [Claim Supporting Info Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-supporting-info-codes.html) - Added new codes for bills/receipts associated with a claim, covering items such as medicines, lab tests, medical services, and more.
+      3. [Claim Denial Codes](https://ig.hcxprotocol.io/v0.9/ValueSet-claim-denial-codes.html) - Introduced codes to address claim denials resulting from policyholder consent declines or missing consent in reimbursement claims.
 
 ### Previous Versions
 

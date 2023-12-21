@@ -9,7 +9,7 @@
     * [Registries\*](hcx-technical-specifications/open-protocol/registries/README.md)
       * [QR Code Specifications\*](hcx-technical-specifications/open-protocol/registries/qr-code-specifications.md)
     * [Claims Data Exchange (HCX) Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/README.md)
-      * [Exchange Protocol](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/README.md)
+      * [Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/README.md)
         * [Primary Message Flow](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/primary-message-flow.md)
         * [Additional Message Flows](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/README.md)
           * [Redirect](hcx-technical-specifications/open-protocol/key-components-building-blocks/exchange-protocol/additional-message-flows/redirect.md)

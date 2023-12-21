@@ -1,8 +1,8 @@
 ---
-description: Details of various exchange scenarios and steps involved
+description: Details of various types of message flows and steps involved
 ---
 
-# Exchange Protocol
+# Message Flows
 
 ## **Key Terms**
 
